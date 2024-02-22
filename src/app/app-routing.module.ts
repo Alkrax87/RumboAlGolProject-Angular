@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './components/main/home/home.component';
+import { SocialComponent } from './components/main/social/social.component';
+import { AboutComponent } from './components/main/about/about.component';
 import { Liga1MainComponent } from './components/liga1/liga1-main/liga1-main.component';
 import { Liga1EquiposComponent } from './components/liga1/liga1-equipos/liga1-equipos.component';
 import { Liga1FixtureComponent } from './components/liga1/liga1-fixture/liga1-fixture.component';
@@ -20,7 +23,11 @@ import { EliminatoriasTablaComponent } from './components/eliminatorias/eliminat
 import { EliminatoriasTecnicosComponent } from './components/eliminatorias/eliminatorias-tecnicos/eliminatorias-tecnicos.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'path' },
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent, children:[
+    { path: 'social', component: SocialComponent },
+    { path: 'about', component: AboutComponent },
+  ] },
   { path:'liga1', component: Liga1MainComponent, children:[
     { path: 'equipos', component: Liga1EquiposComponent },
     { path: 'fixture', component: Liga1FixtureComponent },

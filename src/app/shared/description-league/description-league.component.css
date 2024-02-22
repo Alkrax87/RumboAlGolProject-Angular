@@ -1,0 +1,22 @@
+/* Description */
+.notes {
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-style: italic;
+}
+.notes2 {
+  font-size: 16px;
+  white-space: nowrap;
+  margin: 0px;
+}
+.description-image {
+  text-align: end;
+}
+.description-image img {
+  height: 70px;
+}
+@media screen and (max-width: 767px) {
+  .description-image {
+    text-align: center;
+  }
+}

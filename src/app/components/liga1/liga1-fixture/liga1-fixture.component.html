@@ -1,1 +1,111 @@
-<p>liga1-fixture works!</p>
+<!-- Title -->
+<div class="container-fluid background content-block">
+  <div class="row">
+    <div class="col-10 title">
+      <div class="row">
+        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 1<i class="fas fa-chevron-right px-3"></i><span>FIXTURE</span></p>
+      </div>
+      <h1><b>Fixture</b></h1>
+    </div>
+  </div>
+</div>
+<!-- Description -->
+<app-description-league [value]="1"/>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
+<!-- Fixture -->
+<div class="fixture-content container-fluid content-block py-5">
+  <div class="row">
+
+    <!-- Switch Table -->
+    <div class="container-fluid switch-container">
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 text-center"><button (click)="fixtureSwitch(1)" class="fixture-switch" [ngClass]="{'active': activeButton === 1}"><span>Apertura</span></button></div>
+            <div class="col-sm-12 col-md-6 text-center"><button (click)="fixtureSwitch(2)" class="fixture-switch" [ngClass]="{'active': activeButton === 2}"><span>Clausura</span></button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apertura -->
+    @if (fixtureA) {
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        @for (item of matchesByRoundA; track $index) {
+          @if (selectedFixtureA === null || selectedFixtureA === item.round) {
+            @if ($index === 0 || item.round !== matchesByRoundA[$index - 1].round) {
+              <p class="fixture-title">Apertura Fecha {{ item.round }}</p>
+              <!-- Selector -->
+              <div class="select">
+                <select class="form-select" [(ngModel)]="selectedFixtureA">
+                  @for (fixture of fixtureIndexA; track $index) {
+                    <option [value]="fixture">Fecha {{ fixture }}</option>
+                  }
+                </select>
+              </div>
+              <div class="line my-4"></div>
+            }
+            <div class="container-fluid fixture-location">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <div class="fixture-location-form "><p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid my-1 content-block fixture-item-bg">
+              <div class="fixture-row-container">
+                <div class="col fixture-name text-end W-100"><span class="name-team">{{ item.homeTeam.name }}</span><span class="abbreviation-team">{{ item.homeTeam.abbreviation }}</span></div>
+                <div class="col fixture-item"><img [src]="item.homeTeam.image" alt="{{ item.homeTeam.alt }}"></div>
+                <div class="col fixture-item result-bg">{{ item.result.home !== null ? item.result.home : '' }}</div>
+                <div class="col fixture-item result-bg">{{ item.result.away !== null ? item.result.away : '' }}</div>
+                <div class="col fixture-item"><img [src]="item.awayTeam.image" alt="{{ item.awayTeam.alt }}"></div>
+                <div class="col fixture-name text-start W-100"><span class="name-team">{{ item.awayTeam.name }}</span><span class="abbreviation-team">{{ item.awayTeam.abbreviation }}</span></div>
+              </div>
+            </div>
+          }
+        }
+      </div>
+    }
+
+    <!-- Clausura -->
+    @if (fixtureC) {
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        @for (item of matchesByRoundC; track $index) {
+          @if (selectedFixtureC === null || selectedFixtureC === item.round) {
+            @if ($index === 0 || item.round !== matchesByRoundC[$index - 1].round) {
+              <p class="fixture-title">Clausura Fecha {{ item.round }}</p>
+              <!-- Selector -->
+              <div class="select">
+                <select class="form-select" [(ngModel)]="selectedFixtureC">
+                  <option *ngFor="let fixture of fixtureIndexC" [value]="fixture">Fecha {{ fixture }}</option>
+                </select>
+              </div>
+              <div class="line my-4"></div>
+            }
+            <div class="container-fluid fixture-location">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <div class="fixture-location-form "><p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid my-1 content-block fixture-item-bg">
+              <div class="fixture-row-container">
+                <div class="col fixture-name text-end W-100"><span class="name-team">{{ item.homeTeam.name }}</span><span class="abbreviation-team">{{ item.homeTeam.abbreviation }}</span></div>
+                <div class="col fixture-item"><img [src]="item.homeTeam.image" alt="{{ item.homeTeam.alt }}"></div>
+                <div class="col fixture-item result-bg">{{ item.result.home !== null ? item.result.home : '' }}</div>
+                <div class="col fixture-item result-bg">{{ item.result.away !== null ? item.result.away : '' }}</div>
+                <div class="col fixture-item"><img [src]="item.awayTeam.image" alt="{{ item.awayTeam.alt }}"></div>
+                <div class="col fixture-name text-start W-100"><span class="name-team">{{ item.awayTeam.name }}</span><span class="abbreviation-team">{{ item.awayTeam.abbreviation }}</span></div>
+              </div>
+            </div>
+          }
+        }
+      </div>
+    }
+
+  </div>
+</div>
+<!-- Divider -->
+<div class="container-fluid divider"></div>

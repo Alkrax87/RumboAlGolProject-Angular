@@ -1,1 +1,234 @@
-<p>liga1-tabla works!</p>
+<!-- Title -->
+<div class="container-fluid background content-block">
+  <div class="row">
+    <div class="col-10 title">
+      <div class="row">
+        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 1<i class="fas fa-chevron-right px-3"></i><span>TABLA</span></p>
+      </div>
+      <h1><b>Tabla</b></h1>
+    </div>
+  </div>
+</div>
+<!-- Description -->
+<app-description-league [value]="1"/>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
+<!-- Tables -->
+<div class="table-content container-fluid content-block py-5">
+  <div class="row">
+
+    <!-- Switch Table -->
+    <div class="container-fluid switch-container">
+      <div class="row">
+        <div class="col-sm-12 col-md-9 ">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 text-center"><button (click)="tableSwitch(1)" class="table-switch" [ngClass]="{'active': activeButton === 1}"><span>Acumulado</span></button></div>
+            <div class="col-sm-12 col-md-4 text-center"><button (click)="tableSwitch(2)" class="table-switch" [ngClass]="{'active': activeButton === 2}"><span>Apertura</span></button></div>
+            <div class="col-sm-12 col-md-4 text-center"><button (click)="tableSwitch(3)" class="table-switch" [ngClass]="{'active': activeButton === 3}"><span>Clausura</span></button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apertura -->
+    @if (table1) {
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        <div class="table-responsive">
+          <!-- Table -->
+          <table class="table align-middle">
+            <thead class="table-header">
+              <tr class="text-center">
+                <th scope="col"></th>
+                <th scope="col">#</th>
+                <th scope="col" class="text-start w-25">Nombre</th>
+                <th scope="col" class="w-10">Puntos</th>
+                <th scope="col" class="w-5">PJ</th>
+                <th scope="col" class="w-5">PG</th>
+                <th scope="col" class="w-5">PE</th>
+                <th scope="col" class="w-5">PP</th>
+                <th scope="col" class="w-5">GF</th>
+                <th scope="col" class="w-5">GC</th>
+                <th scope="col" class="w-5">DG</th>
+                <th scope="col" class="t-w-lg">Últimos 5</th>
+              </tr>
+            </thead>
+            @if (apertura) {
+              <tbody>
+                @for (item of apertura; track $index) {
+                  <tr class="text-center">
+                    <th class="team-status"><div class="clasifier" [ngClass]="{'winner': $index == 0}"></div>
+                    <th>{{ 1 + $index }}</th>
+                    <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                    <td class="fw-bold">{{ item.data.apertura.puntos ? item.data.apertura.puntos : '0'}}</td>
+                    <td>{{ item.data.apertura.pj ? item.data.apertura.pj  : '0'}}</td>
+                    <td>{{ item.data.apertura.pg ? item.data.apertura.pg  : '0'}}</td>
+                    <td>{{ item.data.apertura.pe ? item.data.apertura.pe  : '0'}}</td>
+                    <td>{{ item.data.apertura.pp ? item.data.apertura.pp  : '0'}}</td>
+                    <td>{{ item.data.apertura.gf ? item.data.apertura.gf  : '0'}}</td>
+                    <td>{{ item.data.apertura.gc ? item.data.apertura.gc  : '0'}}</td>
+                    <td>{{ item.data.apertura.dg ? item.data.apertura.dg  : '0'}}</td>
+                    <td>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                    </td>
+                  </tr>
+                }
+              </tbody>
+            }
+          </table>
+        </div>
+        <!-- Table Footer -->
+        <div class="line-table"></div>
+        <div class="table-info">
+          <h6 class="text-start"><b>Estado</b></h6>
+          <div class="text-start">
+            <i class="fas fa-square winner"></i>
+            <span class="mx-2">Ganador Apertura</span>
+          </div>
+        </div>
+        <div class="line-table"></div>
+      </div>
+    }
+
+    <!-- Clausura -->
+    @if (table2) {
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        <div class="table-responsive">
+          <!-- Table -->
+          <table class="table align-middle">
+            <thead class="table-header">
+              <tr class="text-center">
+                <th scope="col"></th>
+                <th scope="col">#</th>
+                <th scope="col" class="text-start w-25">Nombre</th>
+                <th scope="col" class="w-10">Puntos</th>
+                <th scope="col" class="w-5">PJ</th>
+                <th scope="col" class="w-5">PG</th>
+                <th scope="col" class="w-5">PE</th>
+                <th scope="col" class="w-5">PP</th>
+                <th scope="col" class="w-5">GF</th>
+                <th scope="col" class="w-5">GC</th>
+                <th scope="col" class="w-5">DG</th>
+                <th scope="col" class="t-w-lg">Últimos 5</th>
+              </tr>
+            </thead>
+            @if (clausura) {
+              <tbody>
+                @for (item of clausura; track $index) {
+                  <tr class="text-center">
+                    <th class="team-status"><div class="clasifier" [ngClass]="{'winner': $index == 0}"></div>
+                    </th>
+                    <th>{{ 1 + $index }}</th>
+                    <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                    <td class="fw-bold">{{ item.data.clausura.puntos ? item.data.clausura.puntos : '0'}}</td>
+                    <td>{{ item.data.clausura.pj ? item.data.clausura.pj  : '0'}}</td>
+                    <td>{{ item.data.clausura.pg ? item.data.clausura.pg  : '0'}}</td>
+                    <td>{{ item.data.clausura.pe ? item.data.clausura.pe  : '0'}}</td>
+                    <td>{{ item.data.clausura.pp ? item.data.clausura.pp  : '0'}}</td>
+                    <td>{{ item.data.clausura.gf ? item.data.clausura.gf  : '0'}}</td>
+                    <td>{{ item.data.clausura.gc ? item.data.clausura.gc  : '0'}}</td>
+                    <td>{{ item.data.clausura.dg ? item.data.clausura.dg  : '0'}}</td>
+                    <td>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                    </td>
+                  </tr>
+                }
+              </tbody>
+            }
+          </table>
+        </div>
+        <!-- Table Footer -->
+        <div class="line-table"></div>
+        <div class="table-info">
+          <h6 class="text-start"><b>Estado</b></h6>
+          <div class="text-start">
+            <i class="fas fa-square winner"></i>
+            <span class="mx-2">Ganador Clausura</span>
+          </div>
+        </div>
+        <div class="line-table"></div>
+      </div>
+    }
+
+    <!-- Acumulado -->
+    @if (table3) {
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        <div class="table-responsive">
+          <!-- Table -->
+          <table class="table align-middle">
+            <thead class="table-header">
+              <tr class="text-center">
+                <th scope="col"></th>
+                <th scope="col">#</th>
+                <th scope="col" class="text-start w-25">Nombre</th>
+                <th scope="col" class="w-10">Puntos</th>
+                <th scope="col" class="w-5">PJ</th>
+                <th scope="col" class="w-5">PG</th>
+                <th scope="col" class="w-5">PE</th>
+                <th scope="col" class="w-5">PP</th>
+                <th scope="col" class="w-5">GF</th>
+                <th scope="col" class="w-5">GC</th>
+                <th scope="col" class="w-5">DG</th>
+                <th scope="col" class="t-w-lg">Últimos 5</th>
+              </tr>
+            </thead>
+            @if (acumulado) {
+              <tbody>
+                @for (item of acumulado; track $index) {
+                  <tr class="text-center">
+                    <th class="team-status"><div class="clasifier" [ngClass]="{'libertadores': $index >= 0 && $index <= 3, 'sudamericana': $index >= 4 && $index <= 6, 'relegation': $index >= 16 && $index <= 17}"></div></th>
+                    <th>{{ 1 + $index }}</th>
+                    <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                    <td class="fw-bold">{{ item.puntos }}</td>
+                    <td>{{ item.pj }}</td>
+                    <td>{{ item.pg }}</td>
+                    <td>{{ item.pe }}</td>
+                    <td>{{ item.pp }}</td>
+                    <td>{{ item.gf }}</td>
+                    <td>{{ item.gc }}</td>
+                    <td>{{ item.dg }}</td>
+                    <td>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                      <i class="fas fa-circle draw"></i>
+                    </td>
+                  </tr>
+                }
+              </tbody>
+            }
+          </table>
+        </div>
+        <!-- Table Footer -->
+        <div class="line-table"></div>
+        <div class="table-info">
+          <h6 class="text-start"><b>Clasificación / Descenso</b></h6>
+          <div class="text-start">
+            <i class="fas fa-square libertadores"></i>
+            <span class="mx-2">Copa Libertadores</span>
+          </div>
+          <div class="text-start">
+            <i class="fas fa-square sudamericana"></i>
+            <span class="mx-2">Copa Sudamericana</span>
+          </div>
+          <div class="text-start">
+            <i class="fas fa-square relegation"></i>
+            <span class="mx-2">Descenso</span>
+          </div>
+        </div>
+        <div class="line-table"></div>
+      </div>
+    }
+
+  </div>
+</div>
+<!-- Divider -->
+<div class="container-fluid divider"></div>

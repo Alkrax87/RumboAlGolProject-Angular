@@ -1,1 +1,33 @@
-<p>home works!</p>
+<!-- D -->
+<div class="container-fluid bg-light nav-options-bar hide-options-D">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a routerLink="/home">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-home"></i> Home</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a routerLink="/nosotros">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-users"></i> Nosotros</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a routerLink="/social">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-share-alt"></i> Social</div>
+      </a>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<!-- M -->
+<div class="dropdown hide-options-M">
+  <button class="btn bg-light dropdown-option w-100 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Home
+  </button>
+  <ul class="dropdown-menu bg-light w-100">
+    <li><a class="dropdown-item text-center dropdown-option-item" routerLink="/home">Home</a></li>
+    <li><a class="dropdown-item text-center dropdown-option-item" routerLink="/nosotros">Nosotros</a></li>
+    <li><a class="dropdown-item text-center dropdown-option-item" routerLink="/social">Social</a></li>
+  </ul>
+</div>

@@ -28,6 +28,8 @@ import { TopListTeamsComponent } from './shared/top-list-teams/top-list-teams.co
 import { HomeComponent } from './components/main/home/home.component';
 import { SocialComponent } from './components/main/social/social.component';
 import { AboutComponent } from './components/main/about/about.component';
+import { DescriptionLeagueComponent } from './shared/description-league/description-league.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -56,11 +58,13 @@ import { AboutComponent } from './components/main/about/about.component';
     TopListTeamsComponent,
     HomeComponent,
     SocialComponent,
-    AboutComponent
+    AboutComponent,
+    DescriptionLeagueComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

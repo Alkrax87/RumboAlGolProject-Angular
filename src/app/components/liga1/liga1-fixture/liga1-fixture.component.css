@@ -1,0 +1,224 @@
+/* Title */
+.background{
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 250px;
+}
+.background h1 {
+  font-size: 73px;
+  color: #fff;
+}
+/* Page Tree */
+.arrow {
+  padding: 40px 12px;
+  color: #ffbaba;
+  font-weight: bold;
+}
+.arrow span{
+  color: #fff;
+}
+.arrow i{
+  padding: 0px 20px;
+}
+@media screen and (max-width: 575.5px) {
+  .background h1 {
+    padding-top: 80px;
+  }
+  .description-image {
+    text-align: center;
+  }
+  .arrow {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+}
+/* Divider */
+.divider {
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 20px;
+}
+
+/* ======================================================================================================*/
+/* ==============================================Content=================================================*/
+/* ======================================================================================================*/
+.container-fluid .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-block {
+  user-select: none;
+}
+/* Fixture content background */
+.fixture-content {
+  color: #ffffff;
+  background: #161513;
+}
+/* Fixture Switch */
+.switch-container {
+  padding-bottom: 3rem;
+}
+.fixture-switch {
+  width: 95%;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 0.9rem 2rem;
+  position: relative;
+  display: inline-block;
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+  background: #DC143C;
+  overflow: hidden;
+  transform: skew(30deg);
+}
+.fixture-switch:hover,
+.fixture-switch.active {
+  color: #fff;
+}
+.fixture-switch span {
+  border: none;
+  position: relative;
+  transition: color 0.3s;
+  display:inline-block;
+  line-height: inherit;
+  transform: skew(-30deg);
+}
+.fixture-switch.active span {
+  color: #fff;
+}
+.fixture-switch::before,
+.fixture-switch::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.fixture-switch::before {
+  content: "";
+  background: #ffffff;
+  width: 120%;
+  left: -10%;
+  transition: transform 0.5s cubic-bezier(0.3, 1, 0.8, 1);
+}
+.fixture-switch:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+.fixture-switch.active::before {
+  transform: translate3d(100%, 0, 0);
+}
+/* Linea */
+.line {
+  width: 100%;
+  height: 10px;
+  background: #fff;
+  transform: skew(50deg);
+}
+/* Fixture Selector */
+select {
+  border: 0;
+  flex: 1;
+  padding: 0 1em;
+  background: #242424;
+  color: #fff;
+}
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #393939;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+.select:hover::after {
+  color: #DC143C;
+}
+/* Fixture content */
+.fixture-row-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixture-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixture-location-form {
+  border-bottom: 18px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  font-size: 12px;
+  font-weight: 500;
+  width: 220px;
+  color: #161513;
+  margin-bottom: -4px;
+  margin-top: 2px;
+}
+.fixture-location-form p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixture-item-bg {
+  background: #242424;
+  color: #fff;
+}
+.fixture-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+.fixture-name{
+  font-size: 13.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.abbreviation-team {
+  display: none;
+}
+.fixture-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 44px;
+  min-width: 44px;
+}
+.fixture-item img {
+  width: 35px;
+}
+.result-bg {
+  margin: 0px 2px;
+  height: 50px;
+  background: #393939;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 475px) {
+  .name-team {
+    display: none;
+  }
+  .abbreviation-team {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

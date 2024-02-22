@@ -1,0 +1,156 @@
+/* Title */
+.background{
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 250px;
+}
+.background h1 {
+  font-size: 73px;
+  color: #fff;
+}
+/* Page Tree */
+.arrow {
+  padding: 40px 12px;
+  color: #ffbaba;
+  font-weight: bold;
+}
+.arrow span{
+  color: #fff;
+}
+@media screen and (max-width: 767.5px) {
+  .description-image {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575.5px) {
+  .background h1 {
+    padding-top: 80px;
+  }
+  .description-image {
+    text-align: center;
+  }
+  .arrow {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+}
+/* Divider */
+.divider {
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 20px;
+}
+
+/* ======================================================================================================*/
+/* ==============================================Content=================================================*/
+/* ======================================================================================================*/
+.container-fluid .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vertical-center{
+  display: flex;
+  align-items: center;
+}
+.content-block {
+  user-select: none;
+}
+/* List content background */
+.list-content {
+  color: #ffffff;
+  background: #161513;
+}
+/* Items */
+.line {
+  width: 220px;
+  height: 8px;
+  background: #DC143C;
+  transform: skew(50deg);
+}
+.logos{
+  width: 50px;
+}
+/* DT */
+.dt{
+  width: 16rem;
+  height: 90px;
+  background-color: #fff;
+  color: #000;
+  margin-left: -5%;
+}
+.dt-status{
+  font-size: 15px;
+}
+.dt-status p {
+  width: 6rem;
+  padding: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.dt-active {
+  background: #d8b145;
+}
+.dt-disable {
+  background: #a00424;
+  color: #fff;
+}
+.dt-name{
+  font-size: 16px;
+  padding: 5px 0px;
+}
+.dt-flag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dt-flag .flag{
+  font-size: 25px;
+}
+.dt p{
+  margin: 0px;
+}
+.dt-logo{
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  padding: 0px;
+  position: relative;
+  object-fit: cover;
+  right: -40px;
+  left: 5px;
+}
+.slider-carousel{
+  font-size: 30px;
+}
+@media screen and (max-width: 575.5px) {
+  .dt{
+    width: 12rem;
+    height: 70px;
+    margin-left: -30px;
+  }
+  .dt-status{
+    font-size: 12px;
+  }
+  .dt-name{
+    font-size: 12px;
+  }
+  .dt-flag{
+    font-size: 12px;
+  }
+  .dt-flag .flag{
+    font-size: 16px;
+  }
+  .dt-logo{
+    left: 5px;
+    width: 80px;
+    height: 80px;
+  }
+  .slider-carousel{
+    font-size: 20px;
+  }
+}

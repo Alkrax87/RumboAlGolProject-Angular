@@ -1,0 +1,62 @@
+nav {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 55px;
+}
+nav div:first-child {
+  padding-left: 0px;
+}
+.nav-bg {
+  background-color: #161513;
+  font-size: 16px;
+}
+.brand {
+  position: absolute;
+  transition: 0.2s;
+  width: 80px;
+  top: 20px;
+  left: 10px;
+}
+.brand-space{
+  min-width: 80px;
+}
+.nav-items {
+  color: #ffffff;
+  border-radius: 15px;
+}
+.nav-items:hover {
+  color: crimson;
+}
+.nav-item-selected a{
+  color: crimson;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.square{
+  min-width: 60px;
+  height: 55px;
+  background: crimson;
+}
+.triangle{
+  width: 80px;
+  height: 55px;
+  border-right: 55px solid transparent;
+  border-bottom: 55px solid crimson;
+}
+.divisor-type-1 {
+  height: 10px;
+  background: crimson;
+}
+@media screen and (max-width: 767.5px) {
+  .brand {
+    top: 10px;
+    width: 38px;
+  }
+  .square{
+    display: none;
+  }
+  .triangle{
+    display: none;
+  }
+}

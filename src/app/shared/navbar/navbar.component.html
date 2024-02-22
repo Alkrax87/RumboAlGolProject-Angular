@@ -1,1 +1,28 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-md nav-bg">
+  <div class="container-fluid">
+    <div class="square">
+      <img src="./assets/images/logos/liga-logo-r.png" alt="liga-logo" width="55px">
+    </div>
+    <div class="triangle"></div>
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nv-pj" aria-controls="nv-pj" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-bg" id="nv-pj">
+      <ul class="navbar-nav">
+        <li class="nav-item text-center px-3" routerLinkActive="nav-item-selected">
+          <a class="nav-link nav-items" [routerLink]="['/liga1', { mainPage: true }]">Liga 1</a>
+        </li>
+        <li class="nav-item text-center px-3" routerLinkActive="nav-item-selected">
+          <a class="nav-link nav-items" [routerLink]="['/liga2', { mainPage: true }]">Liga 2</a>
+        </li>
+        <li class="nav-item text-center px-3" routerLinkActive="nav-item-selected">
+          <a class="nav-link nav-items" [routerLink]="['/copa-peru', { mainPage: true }]">Copa Perú</a>
+        </li>
+        <li class="nav-item text-center px-3" routerLinkActive="nav-item-selected">
+          <a class="nav-link nav-items" [routerLink]="['/eliminatorias', { mainPage: true }]">Eliminatorias</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid divisor-type-1"></div>

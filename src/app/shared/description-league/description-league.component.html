@@ -1,0 +1,19 @@
+<div class="container-fluid bg-light">
+  <div class="row">
+    <div class="col-sm-4 col-md-3 text-center py-2">
+      <p class="notes">Temporada</p>
+      <b class="notes2">{{ data  ? data.Info.temporada : '' }}</b>
+    </div>
+    <div class="col-sm-4 col-md-3 text-center py-2">
+      <p class="notes">Equipos</p>
+      <b class="notes2">{{ data ? data.Info.equipos : '' }}</b>
+    </div>
+    <div class="col-sm-4 col-md-3 text-center py-2">
+      <p class="notes">Categoría</p>
+      <p class="notes2"><b>{{ data ? data.Info.division : '' }}<sup>{{ data ? data.Info.ordinal : '' }}</sup> {{ data ? data.Info.text : '' }}</b></p>
+    </div>
+    <div class="col-sm-12 col-md-3 description-image">
+      <img [src]=" data ? data.Info.logo : '' " [alt]="data ? data.Info.alt : '' ">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,247 @@
+{
+   "Info": {
+      "nombre": "Mexico - USA - Canada 2026",
+      "equipos": 10,
+      "fecha": "1"
+   },
+   "Teams": [
+      {
+         "id": "Team1",
+         "name": "Argentina",
+         "image": "./assets/images/eliminatorias/afa.png",
+         "alt": "AFA-logo",
+         "banner": "./assets/images/eliminatorias/estadio-afa.png",
+         "url": "",
+         "stadium": "Estadio Más Monumental",
+         "color1": "#5ABBE4",
+         "color2": "#333333",
+         "dt": [
+            {
+               "name": "Leonel Escaloni",
+               "country": "Argentina",
+               "cod": "ar",
+               "status" : true
+            }
+         ]
+      },
+      {
+         "id": "Team2",
+         "name": "Bolivia",
+         "image": "./assets/images/eliminatorias/fbf.png",
+         "alt": "FBF-logo",
+         "banner": "./assets/images/eliminatorias/estadio-fbf.png",
+         "url": "",
+         "stadium": "Estadio Hernando Siles",
+         "color1": "#00620D",
+         "dt": [
+            {
+               "name": "Gustavo Costas",
+               "country": "Argentina",
+               "cod": "ar",
+               "status" : true
+            }
+         ]
+      },
+      {
+         "id": "Team3",
+         "name": "Brasil",
+         "image": "./assets/images/eliminatorias/cbf.png",
+         "alt": "CBF-logo",
+         "banner": "./assets/images/eliminatorias/estadio-cbf.png",
+         "url": "",
+         "stadium": "Estadio Maracaná",
+         "color1": "#FFDA4E",
+         "color2": "#333333",
+         "dt": [
+            {
+               "name": "Ramón Menezes",
+               "country": "Brasil",
+               "cod": "br",
+               "status" : true
+            }
+         ]
+      },
+      {
+         "id": "Team4",
+         "name": "Colombia",
+         "image": "./assets/images/eliminatorias/fcf.png",
+         "alt": "FCF-logo",
+         "banner": "./assets/images/eliminatorias/estadio-fcf.png",
+         "url": "",
+         "stadium": "Estadio Metropólitano",
+         "color1": "#111B4D",
+         "dt": [
+            {
+               "name": "Néstor Lorenzo",
+               "country": "Argentina",
+               "cod": "ar",
+               "status" : true
+            }
+         ]
+      },
+      {
+         "id": "Team5",
+         "name": "Chile",
+         "image": "./assets/images/eliminatorias/ffch.png",
+         "alt": "FFCH-logo",
+         "banner": "./assets/images/eliminatorias/estadio-ffch.png",
+         "url": "",
+         "stadium": "Estadio Nacional",
+         "color1": "#981C18",
+         "dt": [
+            {
+               "name": "Eduardo Berizzo",
+               "country": "Argentina",
+               "cod": "ar",
+               "status" : true
+            }
+         ]
+      },
+      {
+         "id": "Team6",
+         "name": "Ecuador",
+         "image": "./assets/images/eliminatorias/fef.png",
+         "alt": "FEF-logo",
+         "banner": "./assets/images/eliminatorias/estadio-fef.png",
+         "url": "",
+         "stadium": "Estadio Rodrigo Paz Delgado",
+         "color1": "#001C56",
+         "dt": [
+            {
+               "name": "Félix Sánchez",
+               "country": "España",
+               "cod": "es",
+               "status" : true
+            }
+         ]
+      },
+      {
+         "id": "Team7",
+         "name": "Paraguay",
+         "image": "./assets/images/eliminatorias/apf.png",
+         "alt": "APF-logo",
+         "banner": "./assets/images/eliminatorias/estadio-apf.png",
+         "url": "",
+         "stadium": "Estadio Defensores del Chaco",
+         "color1": "#005695",
+         "dt": [
+            {
+               "name": "Guillermo Barros Schelotto",
+               "country": "Argentina",
+               "cod": "ar",
+               "status" : true
+            }
+         ]
+      },
+      {
+         "id": "Team8",
+         "name": "Perú",
+         "image": "./assets/images/eliminatorias/fpf.png",
+         "alt": "FPF-logo",
+         "banner": "./assets/images/eliminatorias/estadio-fpf.png",
+         "url": "",
+         "stadium": "Estadio Nacional",
+         "color1": "#FF0115",
+         "dt": [
+            {
+               "name": "Juan Máximo Reynoso",
+               "country": "Perú",
+               "cod": "pe",
+               "status" : true
+            }
+         ]
+      },
+      {
+         "id": "Team9",
+         "name": "Uruguay",
+         "image": "./assets/images/eliminatorias/auf.png",
+         "alt": "AUF-logo",
+         "banner": "./assets/images/eliminatorias/estadio-auf.png",
+         "url": "",
+         "stadium": "Estadio Centenario",
+         "color1": "#025082",
+         "dt": [
+            {
+               "name": "Marcelo Bielsa",
+               "country": "Argentina",
+               "cod": "ar",
+               "status" : true
+            }
+         ]
+      },
+      {
+         "id": "Team10",
+         "name": "Venezuela",
+         "image": "./assets/images/eliminatorias/fvf.png",
+         "alt": "FVF-logo",
+         "banner": "./assets/images/eliminatorias/estadio-fvf.png",
+         "url": "",
+         "stadium": "Estadio Olimpico",
+         "color1": "#6A001C",
+         "dt": [
+            {
+               "name": "Fernando Batista",
+               "country": "Argentina",
+               "cod": "ar",
+               "status" : true
+            }
+         ]
+      }
+   ],
+   "Eliminatorias": {
+      "F1": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F2": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F3": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F4": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F5": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F6": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F7": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F8": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F9": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F10": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F11": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F12": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F13": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F14": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F15": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F16": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F17": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ],
+      "F18": [
+         "0","0","0","0","0","0","0","0","0","0"
+      ]
+   }
+}

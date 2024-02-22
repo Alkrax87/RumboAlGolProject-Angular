@@ -1,0 +1,195 @@
+/* Title */
+.background{
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 250px;
+}
+.background h1 {
+  font-size: 73px;
+  color: #fff;
+}
+/* Page Tree */
+.arrow {
+  padding: 40px 12px;
+  color: #ffbaba;
+  font-weight: bold;
+}
+.arrow span{
+  color: #fff;
+}
+@media screen and (max-width: 767.5px) {
+  .description-image {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575.5px) {
+  .background h1 {
+    padding-top: 80px;
+  }
+  .description-image {
+    text-align: center;
+  }
+  .arrow {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+}
+/* Divider */
+.divider {
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 20px;
+}
+
+/* ======================================================================================================*/
+/* ==============================================Content=================================================*/
+/* ======================================================================================================*/
+.container-fluid .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-block {
+  user-select: none;
+}
+a {
+  text-decoration:none;
+  color: #000;
+}
+/* Table content background */
+.table-content {
+  color: #ffffff;
+  background: #161513;
+}
+/* Table Switch */
+.switch-container {
+  padding-bottom: 3rem;
+}
+.table-switch {
+  width: 95%;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 0.9rem 2rem;
+  background: #DC143C;
+  overflow: hidden;
+  transform: skew(30deg);
+}
+.table-switch:hover,
+.table-switch.active {
+  color: #fff;
+}
+.table-switch span {
+  transition: color 0.3s;
+  display:inline-block;
+  transform: skew(-30deg);
+}
+.table-switch.active span {
+  color: #fff;
+}
+.table-switch::before,
+.table-switch::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.table-switch::before {
+  content: "";
+  background: #ffffff;
+  width: 120%;
+  left: -10%;
+  transition: transform 0.5s cubic-bezier(0.3, 1, 0.8, 1);
+}
+.table-switch:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+.table-switch.active::before {
+  transform: translate3d(100%, 0, 0);
+}
+/* Table */
+.table {
+  margin-bottom: 0px;
+}
+.table-header th{
+  background-color: #DC143C;
+  color: #fff;
+}
+th {
+  font-size: 15px;
+  height: 40px;
+}
+td {
+  padding: 0px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+.t-w-lg{
+  max-width: 130px;
+  min-width: 130px;
+}
+.team-status {
+  padding: 0px;
+}
+.logos{
+  width: 35px;
+}
+.line-table {
+  background: linear-gradient(270deg,#DC143C,#d8b145);
+  width: 6px;
+  height: 5px;
+  width: auto;
+}
+.table-info {
+  padding: 10px;
+  background-color: #fff;
+}
+/* Icons Color */
+.win {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #3AA757;
+  font-size: 18px;
+}
+.draw {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #9AA0A6;
+  font-size: 18px;
+}
+.lose {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #EA4335;
+  font-size: 18px;
+}
+/* Clasifiers */
+.clasifier {
+  width: 6px;
+  height: 39px;
+  padding: 0px;
+}
+.winner {
+  background: #d8b145;
+  color: #d8b145;
+}
+.libertadores {
+  background: #FBBC04;
+  color: #FBBC04;
+}
+.sudamericana {
+  background: #34A853;
+  color: #34A853;
+}
+.relegation {
+  background: #c1272d;
+  color: #c1272d;
+}

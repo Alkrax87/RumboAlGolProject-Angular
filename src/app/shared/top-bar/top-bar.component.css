@@ -1,0 +1,25 @@
+img {
+  padding: 5px 5px;
+}
+.top-background{
+  background: #161513;
+}
+.main-logo{
+  width: 60px;
+  background: #fff;
+}
+.top-left{
+  background: rgb(220,20,60);
+  height: 60px;
+  border-right: 60px solid transparent;
+  border-bottom: 60px solid #161513;
+}
+.top-center{
+  background: rgb(220,20,60);
+}
+.top-right{
+  background: rgb(220,20,60);
+  height: 60px;
+  border-left: 60px solid transparent;
+  border-bottom: 60px solid #161513;
+}

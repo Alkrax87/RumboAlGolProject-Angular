@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  options = {
+    home: true,
+    nosotros: false,
+    social: false
+  }
+
 }
