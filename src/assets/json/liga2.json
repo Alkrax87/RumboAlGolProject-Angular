@@ -2,13 +2,17 @@
   "Info": {
     "temporada": 2024,
     "equipos": 18,
-    "fecha": "1",
-    "playoff-semifinal": true,
-    "playoff-": true
+    "division": "2",
+    "ordinal": "da",
+    "text": "División",
+    "logo": "./assets/images/liga-2/liga2fpf.png",
+    "alt": "liga2-logo",
+    "fecha": "1"
   },
   "Teams": [
     {
       "id": "Team1",
+      "grupo": "sur",
       "name": "AD Cantolao",
       "abbreviation": "CAN",
       "image": "./assets/images/liga-2/can.png",
@@ -21,6 +25,13 @@
         "c1": "#fafafa",
         "c2": "#FDF100",
         "c3": "#333333"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -46,29 +57,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team2",
+      "grupo": "norte",
       "name": "ADA",
       "abbreviation": "ADA",
       "image": "./assets/images/liga-2/ada.png",
@@ -81,6 +75,13 @@
         "c1": "#fafafa",
         "c2": "#008831",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -106,29 +107,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team3",
+      "grupo": "norte",
       "name": "Alianza Universidad",
       "abbreviation": "AUH",
       "image": "./assets/images/liga-2/auh.png",
@@ -141,6 +125,13 @@
         "c1": "#fafafa",
         "c2": "#3238AA",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -166,29 +157,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team4",
+      "grupo": "sur",
       "name": "Ayacucho FC",
       "abbreviation": "AYA",
       "image": "./assets/images/liga-2/aya.png",
@@ -202,6 +176,13 @@
         "c2": "#bead7a",
         "c3": "#333333"
       },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
+      },
       "dt": [
         {
           "name": "Por Definir",
@@ -226,29 +207,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team5",
+      "grupo": "sur",
       "name": "Binacional",
       "abbreviation": "BIN",
       "image": "./assets/images/liga-2/bin.png",
@@ -262,65 +226,12 @@
         "c2": "#84DCEC",
         "c3": "#333333"
       },
-      "dt": [
-        {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
-          "status" : true
-        }
-      ],
-      "league": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
-        { "game": 6, "score": null },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
-        { "game": 14, "score": null },
-        { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
-      ]
-    },
-    {
-      "id": "Team6",
-      "name": "Carlos Stein",
-      "abbreviation": "CST",
-      "image": "./assets/images/liga-2/cst.png",
-      "alt": "CST-logo",
-      "banner": "./assets/images/liga-2/estadio-carlos-samame-caceres.png",
-      "url": "",
-      "stadium": "Carlos Samamé Cáceres",
-      "location": "Lambayeque",
-      "color": {
-        "c1": "#fafafa",
-        "c2": "#FEFD00",
-        "c3": "#333333"
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -346,29 +257,62 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
+      ]
+    },
+    {
+      "id": "Team6",
+      "grupo": "norte",
+      "name": "Carlos Stein",
+      "abbreviation": "CST",
+      "image": "./assets/images/liga-2/cst.png",
+      "alt": "CST-logo",
+      "banner": "./assets/images/liga-2/estadio-carlos-samame-caceres.png",
+      "url": "",
+      "stadium": "Carlos Samamé Cáceres",
+      "location": "Lambayeque",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#FEFD00",
+        "c3": "#333333"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
+      },
+      "dt": [
+        {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "status" : true
+        }
+      ],
+      "league": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team7",
+      "grupo": "sur",
       "name": "Comerciantes FC",
       "abbreviation": "COM",
       "image": "./assets/images/liga-2/com.png",
@@ -381,6 +325,13 @@
         "c1": "#fafafa",
         "c2": "#00AF00",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -406,29 +357,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team8",
+      "grupo": "sur",
       "name": "Deportivo Coopsol",
       "abbreviation": "COO",
       "image": "./assets/images/liga-2/coo.png",
@@ -441,6 +375,13 @@
         "c1": "#fafafa",
         "c2": "#F5B108",
         "c3": "#333333"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -466,29 +407,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team9",
+      "grupo": "sur",
       "name": "Deportivo Municipal",
       "abbreviation": "MUN",
       "image": "./assets/images/liga-2/mun.png",
@@ -501,6 +425,13 @@
         "c1": "#fafafa",
         "c2": "#003083",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -526,29 +457,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team10",
+      "grupo": "norte",
       "name": "Deportivo Llacuabamba",
       "abbreviation": "DLL",
       "image": "./assets/images/liga-2/dll.png",
@@ -561,6 +475,13 @@
         "c1": "#fafafa",
         "c2": "#00B5CE",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -586,29 +507,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team11",
+      "grupo": "norte",
       "name": "FC San Marcos",
       "abbreviation": "SMA",
       "image": "./assets/images/liga-2/sma.png",
@@ -621,6 +525,13 @@
         "c1": "#fafafa",
         "c2": "#005B36",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -646,29 +557,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team12",
+      "grupo": "norte",
       "name": "Juan Aurich",
       "abbreviation": "JUA",
       "image": "./assets/images/liga-2/jua.png",
@@ -681,6 +575,13 @@
         "c1": "#fafafa",
         "c2": "#FF111C",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -706,29 +607,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team13",
+      "grupo": "norte",
       "name": "Juan Pablo II",
       "abbreviation": "JUP",
       "image": "./assets/images/liga-2/jup.png",
@@ -742,11 +626,18 @@
         "c2": "#FF7F00",
         "c3": "#fafafa"
       },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
+      },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
+          "name": "Daniel Valderrama",
+          "country": "Perú",
+          "cod": "pe",
           "status" : true
         }
       ],
@@ -766,29 +657,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team14",
+      "grupo": "norte",
       "name": "Pirata FC",
       "abbreviation": "PIR",
       "image": "./assets/images/liga-2/pir.png",
@@ -801,6 +675,13 @@
         "c1": "#fafafa",
         "c2": "#007E00",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -826,29 +707,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team15",
+      "grupo": "sur",
       "name": "Santos FC",
       "abbreviation": "SAN",
       "image": "./assets/images/liga-2/san.png",
@@ -861,6 +725,13 @@
         "c1": "#fafafa",
         "c2": "#005AD5",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -886,29 +757,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team16",
+      "grupo": "sur",
       "name": "UCV Moquegua",
       "abbreviation": "UCV",
       "image": "./assets/images/liga-2/ucv.png",
@@ -922,11 +776,18 @@
         "c2": "#f97e00",
         "c3": "#fafafa"
       },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
+      },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
+          "name": "Fernando Capobianco",
+          "country": "Argentina",
+          "cod": "ar",
           "status" : true
         }
       ],
@@ -946,29 +807,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team17",
+      "grupo": "norte",
       "name": "Unión Huaral",
       "abbreviation": "UNH",
       "image": "./assets/images/liga-2/unh.png",
@@ -981,6 +825,13 @@
         "c1": "#fafafa",
         "c2": "#FF0000",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -1006,29 +857,12 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     },
     {
       "id": "Team18",
+      "grupo": "sur",
       "name": "Universidad San Martín",
       "abbreviation": "USM",
       "image": "./assets/images/liga-2/usm.png",
@@ -1041,6 +875,13 @@
         "c1": "#fafafa",
         "c2": "#282782",
         "c3": "#fafafa"
+      },
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null
       },
       "dt": [
         {
@@ -1066,36 +907,316 @@
         { "game": 13, "score": null },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
-        { "game": 17, "score": null },
-        { "game": 18, "score": null },
-        { "game": 19, "score": null },
-        { "game": 20, "score": null },
-        { "game": 21, "score": null },
-        { "game": 22, "score": null },
-        { "game": 23, "score": null },
-        { "game": 24, "score": null },
-        { "game": 25, "score": null },
-        { "game": 26, "score": null },
-        { "game": 27, "score": null },
-        { "game": 28, "score": null },
-        { "game": 29, "score": null },
-        { "game": 30, "score": null },
-        { "game": 31, "score": null },
-        { "game": 32, "score": null },
-        { "game": 33, "score": null },
-        { "game": 34, "score": null }
+        { "game": 16, "score": null }
       ]
     }
   ],
-  "Fixture": {
+  "FaseRegional": {
+    "GrupoA": {
+      "1": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "2": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "3": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "4": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "5": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "6": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "7": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "8": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "9": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "10": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "11": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "12": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "13": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "14": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "15": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "16": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ]
+    },
+    "GrupoB": {
+      "1": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "2": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "3": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "4": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "5": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "6": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "7": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "8": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "9": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "10": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "11": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "12": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "13": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "14": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "15": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "16": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ]
+    }
+  },
+  "FaseCampeonato": {
+    "GrupoA": {
+      "1": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "2": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "3": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "4": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "5": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "6": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "7": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "8": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "9": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "10": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ]
+    },
+    "GrupoB": {
+      "1": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "2": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "3": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "4": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "5": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "6": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "7": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "8": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "9": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ],
+      "10": [
+        { "home": "", "away": "" },
+        { "home": "", "away": "" },
+        { "home": "", "away": "" }
+      ]
+    }
+  },
+  "FaseDescenso": {
     "1": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" }
@@ -1103,21 +1224,9 @@
     "2": [
       { "home": "", "away": "" },
       { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" }
     ],
     "3": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" }
@@ -1125,21 +1234,9 @@
     "4": [
       { "home": "", "away": "" },
       { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" }
     ],
     "5": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" }
@@ -1147,21 +1244,9 @@
     "6": [
       { "home": "", "away": "" },
       { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" }
     ],
     "7": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" }
@@ -1169,21 +1254,9 @@
     "8": [
       { "home": "", "away": "" },
       { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" }
     ],
     "9": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" },
       { "home": "", "away": "" }
@@ -1191,305 +1264,47 @@
     "10": [
       { "home": "", "away": "" },
       { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "11": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "12": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "13": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "14": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "15": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "16": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "17": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "18": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "19": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "20": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "21": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "22": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "23": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "24": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "25": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "26": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "27": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "28": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "29": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "30": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "31": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "32": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "33": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" }
-    ],
-    "34": [
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
-      { "home": "", "away": "" },
       { "home": "", "away": "" }
     ]
   },
-  "Campeon": {
-    "status": false,
-    "name": "",
-    "image": "",
-    "alt": ""
-  },
-  "Semifinal": [
+  "Cuartos": [
     {
-        "idaA": "",
-        "idaB": "",
-        "vueltaA": "",
-        "vueltaB": "",
-        "penal":{
-          "TeamA": "",
-          "TeamB": ""
-        }
+      "teamA": "",
+      "teamB": "",
+      "penal":{
+        "teamA": "",
+        "teamB": ""
+      }
     },
     {
-        "idaA": "",
-        "idaB": "",
-        "vueltaA": "",
-        "vueltaB": "",
-        "penal":{
-          "TeamA": "",
-          "TeamB": ""
-        }
+      "teamA": "",
+      "teamB": "",
+      "penal":{
+        "teamA": "",
+        "teamB": ""
+      }
+    }
+  ],
+  "Semifinal": [
+    {
+      "idaA": "",
+      "idaB": "",
+      "vueltaA": "",
+      "vueltaB": "",
+      "penal":{
+        "teamA": "",
+        "teamB": ""
+      }
+    },
+    {
+      "idaA": "",
+      "idaB": "",
+      "vueltaA": "",
+      "vueltaB": "",
+      "penal":{
+        "teamA": "",
+        "teamB": ""
+      }
     }
   ],
   "Final": {
@@ -1498,8 +1313,8 @@
     "vueltaA": "",
     "vueltaB": "",
     "penal":{
-        "TeamA": "",
-        "TeamB": ""
+      "teamA": "",
+      "teamB": ""
     }
   },
   "Map": [

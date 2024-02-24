@@ -1,5 +1,5 @@
 /* Title */
-.background{
+.background {
   background: #DC143C;
   background-image: url('/assets/images/banners/background-pattern.svg');
   background-size: cover;
@@ -15,10 +15,10 @@
   color: #ffbaba;
   font-weight: bold;
 }
-.arrow span{
+.arrow span {
   color: #fff;
 }
-.arrow i{
+.arrow i {
   padding: 0px 20px;
 }
 @media screen and (max-width: 575.5px) {
@@ -46,7 +46,7 @@
 /* ======================================================================================================*/
 /* ==============================================Content=================================================*/
 /* ======================================================================================================*/
-.container-fluid .row{
+.container-fluid .row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,7 +186,7 @@ select {
   font-size: 40px;
   font-weight: bold;
 }
-.fixture-name{
+.fixture-name {
   font-size: 13.5px;
   white-space: nowrap;
   overflow: hidden;
@@ -195,7 +195,7 @@ select {
 .abbreviation-team {
   display: none;
 }
-.fixture-item{
+.fixture-item {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -78,7 +78,9 @@
               <!-- Selector -->
               <div class="select">
                 <select class="form-select" [(ngModel)]="selectedFixtureC">
-                  <option *ngFor="let fixture of fixtureIndexC" [value]="fixture">Fecha {{ fixture }}</option>
+                  @for (fixture of fixtureIndexC; track $index) {
+                    <option [value]="fixture">Fecha {{ fixture }}</option>
+                  }
                 </select>
               </div>
               <div class="line my-4"></div>

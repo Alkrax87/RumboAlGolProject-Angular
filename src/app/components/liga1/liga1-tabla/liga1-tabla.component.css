@@ -1,5 +1,5 @@
 /* Title */
-.background{
+.background {
   background: #DC143C;
   background-image: url('/assets/images/banners/background-pattern.svg');
   background-size: cover;
@@ -15,7 +15,7 @@
   color: #ffbaba;
   font-weight: bold;
 }
-.arrow span{
+.arrow span {
   color: #fff;
 }
 @media screen and (max-width: 767.5px) {
@@ -48,7 +48,7 @@
 /* ======================================================================================================*/
 /* ==============================================Content=================================================*/
 /* ======================================================================================================*/
-.container-fluid .row{
+.container-fluid .row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +116,7 @@ a {
 .table {
   margin-bottom: 0px;
 }
-.table-header th{
+.table-header th {
   background-color: #DC143C;
   color: #fff;
 }
@@ -129,14 +129,14 @@ td {
   white-space: nowrap;
   font-size: 15px;
 }
-.t-w-lg{
+.t-w-lg {
   max-width: 130px;
   min-width: 130px;
 }
 .team-status {
   padding: 0px;
 }
-.logos{
+.logos {
   width: 35px;
 }
 .line-table {

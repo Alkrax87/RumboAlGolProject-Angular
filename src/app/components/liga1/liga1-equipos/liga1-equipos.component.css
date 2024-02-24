@@ -1,5 +1,5 @@
 /* Title */
-.background{
+.background {
   background: #DC143C;
   background-image: url('/assets/images/banners/background-pattern.svg');
   background-size: cover;
@@ -15,7 +15,7 @@
   color: #ffbaba;
   font-weight: bold;
 }
-.arrow span{
+.arrow span {
   color: #fff;
 }
 @media screen and (max-width: 575.5px) {
@@ -43,7 +43,7 @@
 /* ======================================================================================================*/
 /* ==============================================Content=================================================*/
 /* ======================================================================================================*/
-.container-fluid .row{
+.container-fluid .row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,6 +89,6 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.item-location{
+.item-location {
   font-size: 12px;
 }
