@@ -123,6 +123,7 @@ a {
 th {
   font-size: 15px;
   height: 40px;
+  padding-left: 0px;
 }
 td {
   padding: 0px;

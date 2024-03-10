@@ -27,14 +27,14 @@
           <div class="container-fluid">
             <div class="row my-4">
               @if (item.dt.length > 1) {
-                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div [id]="'carousel'+$index" class="carousel slide" [attr.data-bs-ride]="'carousel'+$index">
                   <div class="carousel-inner">
                     @for (dtList of item.dt; track $index) {
                       @if ($index == 0) {
                         <div class="carousel-item active" data-bs-interval="10000">
                           <div class="container-fluid">
                             <div class="row">
-                              <img class="dt-logo" src="{{ dtList.img }}" alt="DT-logo">
+                              <img class="dt-logo" [src]="dtList.img ? dtList.img : './assets/images/otros/no-manager.png'" alt="DT-logo">
                               <div class="dt">
                                 <div class="text-center">
                                   <div class="dt-status">
@@ -53,7 +53,7 @@
                         <div class="carousel-item" data-bs-interval="5000">
                           <div class="container-fluid">
                             <div class="row">
-                              <img class="dt-logo" src="{{ dtList.img }}" alt="DT-logo">
+                              <img class="dt-logo" [src]="dtList.img ? dtList.img : './assets/images/otros/no-manager.png'" alt="DT-logo">
                               <div class="dt">
                                 <div class="text-center">
                                   <div class="dt-status">
@@ -71,15 +71,15 @@
                       }
                     }
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel'+$index" data-bs-slide="prev">
                     <i class="fa-solid fa-angle-left slider-carousel"></i>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel'+$index" data-bs-slide="next">
                     <i class="fa-solid fa-angle-right slider-carousel"></i>
                   </button>
                 </div>
               }@else {
-                <img class="dt-logo" src="{{ item.dt[0].img }}" alt="DT-logo">
+                <img class="dt-logo" [src]="item.dt[0].img ? item.dt[0].img : './assets/images/otros/no-manager.png'" alt="DT-logo">
                 <div class="dt">
                   <div class="text-center">
                     <div class="dt-status">
