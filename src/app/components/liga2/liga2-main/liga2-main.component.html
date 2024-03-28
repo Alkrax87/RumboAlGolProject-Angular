@@ -1,1 +1,98 @@
-<p>liga2-main works!</p>
+<app-top-list-teams [value]="value"/>
+<div class="container-fluid divisor-type"></div>
+<!-- D -->
+<div class="container-fluid bg-light nav-options-bar hide-options-D">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/liga2/equipos">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-shield-alt"></i> Clubes</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/liga2/fixture">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-window-restore"></i> Fixture</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/liga2/tabla">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-stream"></i> Tabla</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/liga2/tecnicos">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-user-shield"></i> Técnicos</div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- M -->
+<div class="dropdown hide-options-M">
+  <button class="btn bg-light dropdown-option w-100 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Liga 2
+  </button>
+  <ul class="dropdown-menu bg-light w-100">
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/liga2/equipos">Clubes</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/liga2/fixture">Fixture</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/liga2/tabla">Tabla</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/liga2/tecnicos">Técnicos</a></li>
+  </ul>
+</div>
+<!-- Content -->
+@if (mainPage) {
+  <!-- Banner -->
+  <img src="./assets/images/banners/liga2banner.jpg" alt="banner" class="w-100">
+  <!-- Description -->
+  <app-description-league [value]="value"/>
+  <!-- Divider -->
+  <div class="container-fluid divider"></div>
+  <!-- Mapa -->
+  <div class="container-fluid bg-light py-5 px-5 text-center content-block">
+    <div class="row vertical-center">
+      <!-- Info -->
+      <div class="col-sm-12 col-md-5 col-lg-7 my-4">
+        <div class="title text-start">Equipos</div>
+        <div class="line my-3"></div>
+        <p>En la temporada <b>{{ data && data.Info ? data.Info.temporada : '' }}</b> el número de equipos participantes de la <b>Liga 1</b> es de <b> {{ data && data.Info ? data.Info.equipos : '' }} </b> equipos:</p>
+        <div class="text-center" *ngIf="data">
+          @for (item of data.Teams; track $index) {
+            <a [href]="item.url">
+              <img [src]="item.image" class="map-item-list" [alt]="item.alt">
+            </a>
+          }
+        </div>
+        <div class="line-lg my-3"></div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            @if (mapVisibility) {
+              <div class="info-card">
+                @if (data) {
+                  <p class="text-center">{{ regionSelected }}</p>
+                  <hr>
+                  @for (item of teamsSelected; track $index) {
+                    <img [src]="item.image" [alt]="item.alt">
+                  }
+                }
+              </div>
+            }
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+      <!-- Mapa -->
+      <div class="col-sm-12 col-md-7 col-lg-4">
+        <div class="map py-5">
+          <svg stroke-width="2" viewBox="-200 0 1400 1470" xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink"version="1.1">
+            @if (data) {
+              @for (item of data.Map; track $index) {
+                <path (mouseover)="item.mapStatus ? mostrar(item.mapName) : null" (mouseout)="ocultar()" (touchstart)="item.mapStatus ? mostrar(item.mapName) : null" (touchmove)="ocultar()" [ngClass]="{'map-item-active': item.mapStatus}" [id]="item.mapId" [attr.name]="item.mapName" [attr.d]="item.mapD">
+                </path>
+              }
+            }
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+<router-outlet/>
