@@ -9,7 +9,7 @@
     "alt": "liga1-logo",
     "apertura": true,
     "clausura": false,
-    "fechaApertura": "9",
+    "fechaApertura": "11",
     "fechaClausura": "1"
 
   },
@@ -39,11 +39,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 3,
-          "pe": 2,
-          "pp": 3,
-          "gf": 14,
-          "gc": 15
+          "pg": 4,
+          "pe": 3,
+          "pp": 4,
+          "gf": 20,
+          "gc": 20
         },
         "clausura": {
           "pg": null,
@@ -62,9 +62,9 @@
         { "game": 6, "score": 2 },
         { "game": 7, "score": 1 },
         { "game": 8, "score": 2 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 2 },
+        { "game": 10, "score": 2 },
+        { "game": 11, "score": 2 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -123,11 +123,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 2,
-          "pe": 2,
-          "pp": 4,
-          "gf": 7,
-          "gc": 11
+          "pg": 3,
+          "pe": 3,
+          "pp": 5,
+          "gf": 9,
+          "gc": 12
         },
         "clausura": {
           "pg": null,
@@ -146,9 +146,9 @@
         { "game": 6, "score": 3 },
         { "game": 7, "score": 0 },
         { "game": 8, "score": 1 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 0 },
+        { "game": 10, "score": 0 },
+        { "game": 11, "score": 2 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -201,10 +201,10 @@
       ],
       "data": {
         "apertura": {
-          "pg": 4,
+          "pg": 7,
           "pe": null,
           "pp": 4,
-          "gf": 14,
+          "gf": 23,
           "gc": 10
         },
         "clausura": {
@@ -224,9 +224,9 @@
         { "game": 6, "score": 0 },
         { "game": 7, "score": 1 },
         { "game": 8, "score": 1 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 3 },
+        { "game": 10, "score": 4 },
+        { "game": 11, "score": 2 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -279,11 +279,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 2,
-          "pe": 4,
-          "pp": 2,
-          "gf": 8,
-          "gc": 8
+          "pg": 3,
+          "pe": 5,
+          "pp": 3,
+          "gf": 11,
+          "gc": 10
         },
         "clausura": {
           "pg": null,
@@ -302,9 +302,9 @@
         { "game": 6, "score": 0 },
         { "game": 7, "score": 1 },
         { "game": 8, "score": 1 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 3 },
+        { "game": 10, "score": 0 },
+        { "game": 11, "score": 0 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -349,6 +349,12 @@
       },
       "dt": [
         {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "img": "./assets/images/otros/no-manager.png"
+        },
+        {
           "name": "Franco Navarro",
           "country": "Perú",
           "cod": "pe",
@@ -359,9 +365,9 @@
         "apertura": {
           "pg": 2,
           "pe": 2,
-          "pp": 4,
+          "pp": 7,
           "gf": 8,
-          "gc": 20
+          "gc": 29
         },
         "clausura": {
           "pg": null,
@@ -380,9 +386,9 @@
         { "game": 6, "score": 2 },
         { "game": 7, "score": 2 },
         { "game": 8, "score": 1 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 0 },
+        { "game": 10, "score": 0 },
+        { "game": 11, "score": 0 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -427,6 +433,12 @@
       },
       "dt": [
         {
+          "name": "Pablo Bossi",
+          "country": "Uruguay",
+          "cod": "uy",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJC-0hc78sbdVLamdZiw6_NUTn7-xPMMWQ4LNhbS-iog&s"
+        },
+        {
           "name": "Juan Carlos Bazalar",
           "country": "Perú",
           "cod": "pe",
@@ -436,10 +448,10 @@
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": null,
-          "pp": 5,
-          "gf": 11,
-          "gc": 13
+          "pe": 1,
+          "pp": 7,
+          "gf": 13,
+          "gc": 20
         },
         "clausura": {
           "pg": null,
@@ -458,9 +470,9 @@
         { "game": 6, "score": 2 },
         { "game": 7, "score": 1 },
         { "game": 8, "score": 0 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 0 },
+        { "game": 10, "score": 2 },
+        { "game": 11, "score": 0 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -513,11 +525,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 4,
-          "pe": 4,
-          "pp": 0,
-          "gf": 14,
-          "gc": 10
+          "pg": 5,
+          "pe": 5,
+          "pp": 1,
+          "gf": 17,
+          "gc": 14
         },
         "clausura": {
           "pg": null,
@@ -536,9 +548,9 @@
         { "game": 6, "score": 2 },
         { "game": 7, "score": 1 },
         { "game": 8, "score": 2 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 0 },
+        { "game": 10, "score": 1 },
+        { "game": 11, "score": 2 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -591,11 +603,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 4,
+          "pg": 5,
           "pe": 2,
-          "pp": 2,
-          "gf": 15,
-          "gc": 15
+          "pp": 4,
+          "gf": 18,
+          "gc": 20
         },
         "clausura": {
           "pg": null,
@@ -614,9 +626,9 @@
         { "game": 6, "score": 0 },
         { "game": 7, "score": 3 },
         { "game": 8, "score": 3 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 2 },
+        { "game": 10, "score": 0 },
+        { "game": 11, "score": 1 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -669,11 +681,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 3,
+          "pg": 6,
           "pe": 2,
           "pp": 3,
-          "gf": 9,
-          "gc": 11
+          "gf": 14,
+          "gc": 13
         },
         "clausura": {
           "pg": null,
@@ -692,9 +704,9 @@
         { "game": 6, "score": 2 },
         { "game": 7, "score": 2 },
         { "game": 8, "score": 0 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 1 },
+        { "game": 10, "score": 1 },
+        { "game": 11, "score": 3 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -754,10 +766,10 @@
       "data": {
         "apertura": {
           "pg": 2,
-          "pe": 1,
-          "pp": 5,
-          "gf": 8,
-          "gc": 11
+          "pe": 2,
+          "pp": 7,
+          "gf": 13,
+          "gc": 18
         },
         "clausura": {
           "pg": null,
@@ -776,9 +788,9 @@
         { "game": 6, "score": 0 },
         { "game": 7, "score": 2 },
         { "game": 8, "score": 4 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 1 },
+        { "game": 10, "score": 2 },
+        { "game": 11, "score": 2 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -837,11 +849,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 4,
-          "pe": 1,
+          "pg": 6,
+          "pe": 2,
           "pp": 3,
-          "gf": 12,
-          "gc": 11
+          "gf": 18,
+          "gc": 13
         },
         "clausura": {
           "pg": null,
@@ -860,9 +872,9 @@
         { "game": 6, "score": 0 },
         { "game": 7, "score": 3 },
         { "game": 8, "score": 2 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 2 },
+        { "game": 10, "score": 2 },
+        { "game": 11, "score": 2 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -916,10 +928,10 @@
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": null,
-          "pp": 5,
-          "gf": 10,
-          "gc": 10
+          "pe": 2,
+          "pp": 6,
+          "gf": 11,
+          "gc": 12
         },
         "clausura": {
           "pg": null,
@@ -938,9 +950,9 @@
         { "game": 6, "score": 0 },
         { "game": 7, "score": 2 },
         { "game": 8, "score": 0 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 0 },
+        { "game": 10, "score": 0 },
+        { "game": 11, "score": 1 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -985,6 +997,12 @@
       },
       "dt": [
         {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "img": "./assets/images/otros/no-manager.png"
+        },
+        {
           "name": "Wilmar Valencia",
           "country": "Perú",
           "cod": "pe",
@@ -995,9 +1013,9 @@
         "apertura": {
           "pg": 4,
           "pe": 2,
-          "pp": 2,
-          "gf": 14,
-          "gc": 8
+          "pp": 5,
+          "gf": 15,
+          "gc": 16
         },
         "clausura": {
           "pg": null,
@@ -1016,9 +1034,9 @@
         { "game": 6, "score": 0 },
         { "game": 7, "score": 2 },
         { "game": 8, "score": 2 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 0 },
+        { "game": 10, "score": 0 },
+        { "game": 11, "score": 1 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -1071,11 +1089,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 6,
+          "pg": 9,
           "pe": 1,
           "pp": 1,
-          "gf": 23,
-          "gc": 8
+          "gf": 32,
+          "gc": 12
         },
         "clausura": {
           "pg": null,
@@ -1094,9 +1112,9 @@
         { "game": 6, "score": 1 },
         { "game": 7, "score": 2 },
         { "game": 8, "score": 1 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 2 },
+        { "game": 10, "score": 4 },
+        { "game": 11, "score": 3 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -1141,10 +1159,10 @@
       },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
-          "img": "./assets/images/otros/no-manager.png"
+          "name": "Milton García",
+          "country": "Colombia",
+          "cod": "co",
+          "img": "https://radiolatinasisa.com/wp-content/uploads/2024/04/El-colombiano-Milton-Garcia-es-el-nuevo-entrenador-de-Union-Comercio.jpg"
         },
         {
           "name": "Néstor Craviotto",
@@ -1156,10 +1174,10 @@
       "data": {
         "apertura": {
           "pg": 1,
-          "pe": 2,
-          "pp": 5,
-          "gf": 9,
-          "gc": 16
+          "pe": 3,
+          "pp": 7,
+          "gf": 11,
+          "gc": 21
         },
         "clausura": {
           "pg": null,
@@ -1178,9 +1196,9 @@
         { "game": 6, "score": 2 },
         { "game": 7, "score": 2 },
         { "game": 8, "score": 0 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 0 },
+        { "game": 10, "score": 2 },
+        { "game": 11, "score": 0 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -1239,11 +1257,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 1,
-          "pe": 3,
+          "pg": 2,
+          "pe": 5,
           "pp": 4,
-          "gf": 8,
-          "gc": 16
+          "gf": 13,
+          "gc": 19
         },
         "clausura": {
           "pg": null,
@@ -1262,9 +1280,9 @@
         { "game": 6, "score": 2 },
         { "game": 7, "score": 0 },
         { "game": 8, "score": 1 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 0 },
+        { "game": 10, "score": 2 },
+        { "game": 11, "score": 3 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -1317,11 +1335,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 6,
-          "pe": 2,
+          "pg": 8,
+          "pe": 3,
           "pp": null,
-          "gf": 13,
-          "gc": 2
+          "gf": 16,
+          "gc": 3
         },
         "clausura": {
           "pg": null,
@@ -1340,9 +1358,9 @@
         { "game": 6, "score": 2 },
         { "game": 7, "score": 2 },
         { "game": 8, "score": 1 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 0 },
+        { "game": 10, "score": 1 },
+        { "game": 11, "score": 2 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
@@ -1395,11 +1413,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 2,
-          "pe": 2,
-          "pp": 4,
-          "gf": 9,
-          "gc": 10
+          "pg": 3,
+          "pe": 3,
+          "pp": 5,
+          "gf": 13,
+          "gc": 13
         },
         "clausura": {
           "pg": null,
@@ -1418,9 +1436,9 @@
         { "game": 6, "score": 0 },
         { "game": 7, "score": 2 },
         { "game": 8, "score": 1 },
-        { "game": 9, "score": null },
-        { "game": 10, "score": null },
-        { "game": 11, "score": null },
+        { "game": 9, "score": 1 },
+        { "game": 10, "score": 1 },
+        { "game": 11, "score": 2 },
         { "game": 12, "score": null },
         { "game": 13, "score": null },
         { "game": 14, "score": null },
