@@ -183,7 +183,7 @@
               <tbody>
                 @for (item of acumulado; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'libertadores': $index >= 0 && $index <= 3, 'sudamericana': $index >= 4 && $index <= 6, 'relegation': $index >= 16 && $index <= 17}"></div></th>
+                    <th class="team-status"><div class="clasifier" [ngClass]="{'libertadores': $index >= 0 && $index <= 3, 'sudamericana': $index >= 4 && $index <= 7, 'relegation': $index >= 15 && $index <= 17}"></div></th>
                     <th>{{ 1 + $index }}</th>
                     <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
                     <td class="fw-bold">{{ item.puntos }}</td>

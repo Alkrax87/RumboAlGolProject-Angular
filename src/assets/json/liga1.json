@@ -9,7 +9,7 @@
     "alt": "liga1-logo",
     "apertura": true,
     "clausura": false,
-    "fechaApertura": "11",
+    "fechaApertura": "13",
     "fechaClausura": "1"
 
   },
@@ -39,11 +39,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 4,
+          "pg": 6,
           "pe": 3,
           "pp": 4,
-          "gf": 20,
-          "gc": 20
+          "gf": 23,
+          "gc": 21
         },
         "clausura": {
           "pg": null,
@@ -65,8 +65,8 @@
         { "game": 9, "score": 2 },
         { "game": 10, "score": 2 },
         { "game": 11, "score": 2 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 1 },
+        { "game": 13, "score": 2 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -124,10 +124,10 @@
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 3,
-          "pp": 5,
-          "gf": 9,
-          "gc": 12
+          "pe": 4,
+          "pp": 6,
+          "gf": 10,
+          "gc": 14
         },
         "clausura": {
           "pg": null,
@@ -149,8 +149,8 @@
         { "game": 9, "score": 0 },
         { "game": 10, "score": 0 },
         { "game": 11, "score": 2 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 0 },
+        { "game": 13, "score": 1 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -201,11 +201,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 7,
+          "pg": 8,
           "pe": null,
-          "pp": 4,
-          "gf": 23,
-          "gc": 10
+          "pp": 5,
+          "gf": 26,
+          "gc": 11
         },
         "clausura": {
           "pg": null,
@@ -227,8 +227,8 @@
         { "game": 9, "score": 3 },
         { "game": 10, "score": 4 },
         { "game": 11, "score": 2 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 3 },
+        { "game": 13, "score": 0 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -281,9 +281,9 @@
         "apertura": {
           "pg": 3,
           "pe": 5,
-          "pp": 3,
-          "gf": 11,
-          "gc": 10
+          "pp": 5,
+          "gf": 14,
+          "gc": 15
         },
         "clausura": {
           "pg": null,
@@ -305,8 +305,8 @@
         { "game": 9, "score": 3 },
         { "game": 10, "score": 0 },
         { "game": 11, "score": 0 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 1 },
+        { "game": 13, "score": 2 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -349,10 +349,10 @@
       },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
-          "img": "./assets/images/otros/no-manager.png"
+          "name": "Milton Mendes",
+          "country": "Brazil",
+          "cod": "br",
+          "img": "https://s2-ge.glbimg.com/oHv-Zq6JJwjPsca1VulFI7bOL7g=/0x0:4454x2969/984x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2019/07/14/mco_2128.jpg"
         },
         {
           "name": "Franco Navarro",
@@ -363,11 +363,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 2,
+          "pg": 3,
           "pe": 2,
-          "pp": 7,
-          "gf": 8,
-          "gc": 29
+          "pp": 8,
+          "gf": 10,
+          "gc": 30
         },
         "clausura": {
           "pg": null,
@@ -389,8 +389,8 @@
         { "game": 9, "score": 0 },
         { "game": 10, "score": 0 },
         { "game": 11, "score": 0 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 2 },
+        { "game": 13, "score": 0 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -447,11 +447,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 3,
-          "pe": 1,
+          "pg": 4,
+          "pe": 2,
           "pp": 7,
-          "gf": 13,
-          "gc": 20
+          "gf": 20,
+          "gc": 21
         },
         "clausura": {
           "pg": null,
@@ -473,8 +473,8 @@
         { "game": 9, "score": 0 },
         { "game": 10, "score": 2 },
         { "game": 11, "score": 0 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 6 },
+        { "game": 13, "score": 1 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -527,9 +527,9 @@
         "apertura": {
           "pg": 5,
           "pe": 5,
-          "pp": 1,
+          "pp": 3,
           "gf": 17,
-          "gc": 14
+          "gc": 18
         },
         "clausura": {
           "pg": null,
@@ -551,8 +551,8 @@
         { "game": 9, "score": 0 },
         { "game": 10, "score": 1 },
         { "game": 11, "score": 2 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 0 },
+        { "game": 13, "score": 0 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -604,10 +604,10 @@
       "data": {
         "apertura": {
           "pg": 5,
-          "pe": 2,
-          "pp": 4,
+          "pe": 3,
+          "pp": 5,
           "gf": 18,
-          "gc": 20
+          "gc": 26
         },
         "clausura": {
           "pg": null,
@@ -629,8 +629,8 @@
         { "game": 9, "score": 2 },
         { "game": 10, "score": 0 },
         { "game": 11, "score": 1 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 0 },
+        { "game": 13, "score": 0 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -681,11 +681,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 6,
+          "pg": 7,
           "pe": 2,
-          "pp": 3,
-          "gf": 14,
-          "gc": 13
+          "pp": 4,
+          "gf": 16,
+          "gc": 15
         },
         "clausura": {
           "pg": null,
@@ -707,8 +707,8 @@
         { "game": 9, "score": 1 },
         { "game": 10, "score": 1 },
         { "game": 11, "score": 3 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 0 },
+        { "game": 13, "score": 2 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -765,11 +765,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 2,
-          "pe": 2,
+          "pg": 3,
+          "pe": 3,
           "pp": 7,
-          "gf": 13,
-          "gc": 18
+          "gf": 16,
+          "gc": 19
         },
         "clausura": {
           "pg": null,
@@ -791,8 +791,8 @@
         { "game": 9, "score": 1 },
         { "game": 10, "score": 2 },
         { "game": 11, "score": 2 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 2 },
+        { "game": 13, "score": 1 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -849,11 +849,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 6,
+          "pg": 8,
           "pe": 2,
           "pp": 3,
-          "gf": 18,
-          "gc": 13
+          "gf": 21,
+          "gc": 14
         },
         "clausura": {
           "pg": null,
@@ -875,8 +875,8 @@
         { "game": 9, "score": 2 },
         { "game": 10, "score": 2 },
         { "game": 11, "score": 2 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 2 },
+        { "game": 13, "score": 1 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -919,6 +919,12 @@
       },
       "dt": [
         {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "img": "./assets/images/otros/no-manager.png"
+        },
+        {
           "name": "Fernando Gamboa",
           "country": "Argentina",
           "cod": "ar",
@@ -928,10 +934,10 @@
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 2,
-          "pp": 6,
+          "pe": 3,
+          "pp": 7,
           "gf": 11,
-          "gc": 12
+          "gc": 15
         },
         "clausura": {
           "pg": null,
@@ -953,8 +959,8 @@
         { "game": 9, "score": 0 },
         { "game": 10, "score": 0 },
         { "game": 11, "score": 1 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 0 },
+        { "game": 13, "score": 0 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -1011,11 +1017,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 4,
+          "pg": 5,
           "pe": 2,
-          "pp": 5,
-          "gf": 15,
-          "gc": 16
+          "pp": 6,
+          "gf": 16,
+          "gc": 22
         },
         "clausura": {
           "pg": null,
@@ -1037,8 +1043,8 @@
         { "game": 9, "score": 0 },
         { "game": 10, "score": 0 },
         { "game": 11, "score": 1 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 0 },
+        { "game": 13, "score": 1 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -1089,11 +1095,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 9,
+          "pg": 10,
           "pe": 1,
-          "pp": 1,
-          "gf": 32,
-          "gc": 12
+          "pp": 2,
+          "gf": 35,
+          "gc": 14
         },
         "clausura": {
           "pg": null,
@@ -1115,8 +1121,8 @@
         { "game": 9, "score": 2 },
         { "game": 10, "score": 4 },
         { "game": 11, "score": 3 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 2 },
+        { "game": 13, "score": 1 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -1174,10 +1180,10 @@
       "data": {
         "apertura": {
           "pg": 1,
-          "pe": 3,
-          "pp": 7,
-          "gf": 11,
-          "gc": 21
+          "pe": 4,
+          "pp": 8,
+          "gf": 12,
+          "gc": 23
         },
         "clausura": {
           "pg": null,
@@ -1199,8 +1205,8 @@
         { "game": 9, "score": 0 },
         { "game": 10, "score": 2 },
         { "game": 11, "score": 0 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 1 },
+        { "game": 13, "score": 0 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -1257,11 +1263,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 2,
+          "pg": 3,
           "pe": 5,
-          "pp": 4,
-          "gf": 13,
-          "gc": 19
+          "pp": 5,
+          "gf": 15,
+          "gc": 21
         },
         "clausura": {
           "pg": null,
@@ -1283,8 +1289,8 @@
         { "game": 9, "score": 0 },
         { "game": 10, "score": 2 },
         { "game": 11, "score": 3 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 0 },
+        { "game": 13, "score": 2 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -1335,11 +1341,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 8,
+          "pg": 10,
           "pe": 3,
           "pp": null,
-          "gf": 16,
-          "gc": 3
+          "gf": 24,
+          "gc": 4
         },
         "clausura": {
           "pg": null,
@@ -1361,8 +1367,8 @@
         { "game": 9, "score": 0 },
         { "game": 10, "score": 1 },
         { "game": 11, "score": 2 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 2 },
+        { "game": 13, "score": 6 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
@@ -1413,11 +1419,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 3,
+          "pg": 4,
           "pe": 3,
-          "pp": 5,
-          "gf": 13,
-          "gc": 13
+          "pp": 6,
+          "gf": 16,
+          "gc": 17
         },
         "clausura": {
           "pg": null,
@@ -1439,8 +1445,8 @@
         { "game": 9, "score": 1 },
         { "game": 10, "score": 1 },
         { "game": 11, "score": 2 },
-        { "game": 12, "score": null },
-        { "game": 13, "score": null },
+        { "game": 12, "score": 0 },
+        { "game": 13, "score": 3 },
         { "game": 14, "score": null },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
