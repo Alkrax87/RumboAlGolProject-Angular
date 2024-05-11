@@ -7,7 +7,7 @@
     "text": "División",
     "logo": "./assets/images/liga-2/liga2fpf.png",
     "alt": "liga2-logo",
-    "fecha": "1",
+    "fecha": "5",
     "fechaGrupos": "1",
     "playoff": false,
     "cuartos": false,
@@ -40,18 +40,18 @@
         }
       ],
       "data": {
-        "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pg": 3,
+        "pe": 1,
+        "pp": 1,
+        "gf": 7,
+        "gc": 5
       },
       "league": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 1, "score": 2 },
+        { "game": 2, "score": 2 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -117,17 +117,17 @@
       ],
       "data": {
         "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pe": 2,
+        "pp": 2,
+        "gf": 1,
+        "gc": 3
       },
       "league": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 0 },
         { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -192,17 +192,17 @@
         }
       ],
       "data": {
-        "pg": null,
-        "pe": null,
+        "pg": 1,
+        "pe": 1,
         "pp": null,
-        "gf": null,
-        "gc": null
+        "gf": 3,
+        "gc": 1
       },
       "league": [
         { "game": 1, "score": null },
         { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 1 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -268,18 +268,18 @@
         }
       ],
       "data": {
-        "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pg": 1,
+        "pe": 1,
+        "pp": 1,
+        "gf": 4,
+        "gc": 4
       },
       "league": [
         { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 3 },
         { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -344,18 +344,18 @@
         }
       ],
       "data": {
-        "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pg": 1,
+        "pe": 1,
+        "pp": 2,
+        "gf": 4,
+        "gc": 4
       },
       "league": [
-        { "game": 1, "score": null },
+        { "game": 1, "score": 0 },
         { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 2 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -422,15 +422,15 @@
       "data": {
         "pg": null,
         "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pp": 2,
+        "gf": 1,
+        "gc": 4
       },
       "league": [
         { "game": 1, "score": null },
         { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 1 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -496,18 +496,18 @@
         }
       ],
       "data": {
-        "pg": null,
-        "pe": null,
+        "pg": 1,
+        "pe": 3,
         "pp": null,
-        "gf": null,
-        "gc": null
+        "gf": 4,
+        "gc": 3
       },
       "league": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
+        { "game": 1, "score": 2 },
+        { "game": 2, "score": 0 },
         { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -573,17 +573,17 @@
       ],
       "data": {
         "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pe": 2,
+        "pp": 2,
+        "gf": 2,
+        "gc": 5
       },
       "league": [
         { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -648,17 +648,17 @@
         }
       ],
       "data": {
-        "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pg": 2,
+        "pe": 1,
+        "pp": 1,
+        "gf": 6,
+        "gc": 6
       },
       "league": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 3 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 1 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -724,18 +724,18 @@
         }
       ],
       "data": {
-        "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pg": 1,
+        "pe": 1,
+        "pp": 1,
+        "gf": 2,
+        "gc": 3
       },
       "league": [
-        { "game": 1, "score": null },
+        { "game": 1, "score": 1 },
         { "game": 2, "score": null },
-        { "game": 3, "score": null },
+        { "game": 3, "score": 0 },
         { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -800,18 +800,18 @@
         }
       ],
       "data": {
-        "pg": null,
+        "pg": 3,
         "pe": null,
         "pp": null,
-        "gf": null,
-        "gc": null
+        "gf": 7,
+        "gc": 1
       },
       "league": [
         { "game": 1, "score": null },
-        { "game": 2, "score": null },
+        { "game": 2, "score": 2 },
         { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 4, "score": 3 },
+        { "game": 5, "score": 2 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -953,17 +953,17 @@
       ],
       "data": {
         "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pe": 2,
+        "pp": 1,
+        "gf": 1,
+        "gc": 2
       },
       "league": [
         { "game": 1, "score": null },
-        { "game": 2, "score": null },
+        { "game": 2, "score": 0 },
         { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -1028,17 +1028,17 @@
         }
       ],
       "data": {
-        "pg": null,
+        "pg": 2,
         "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pp": 1,
+        "gf": 3,
+        "gc": 3
       },
       "league": [
         { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 2 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -1104,18 +1104,18 @@
         }
       ],
       "data": {
-        "pg": null,
+        "pg": 2,
         "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pp": 2,
+        "gf": 4,
+        "gc": 3
       },
       "league": [
         { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 2, "score": 1 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 2 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -1180,18 +1180,18 @@
         }
       ],
       "data": {
-        "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pg": 1,
+        "pe": 2,
+        "pp": 2,
+        "gf": 5,
+        "gc": 6
       },
       "league": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 1, "score": 2 },
+        { "game": 2, "score": 2 },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -1332,18 +1332,18 @@
         }
       ],
       "data": {
-        "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null
+        "pg": 1,
+        "pe": 3,
+        "pp": 1,
+        "gf": 3,
+        "gc": 3
       },
       "league": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 1 },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },

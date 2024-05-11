@@ -9,7 +9,7 @@
     "alt": "liga1-logo",
     "apertura": true,
     "clausura": false,
-    "fechaApertura": "13",
+    "fechaApertura": "14",
     "fechaClausura": "1"
 
   },
@@ -39,10 +39,10 @@
       ],
       "data": {
         "apertura": {
-          "pg": 6,
+          "pg": 7,
           "pe": 3,
           "pp": 4,
-          "gf": 23,
+          "gf": 25,
           "gc": 21
         },
         "clausura": {
@@ -67,7 +67,7 @@
         { "game": 11, "score": 2 },
         { "game": 12, "score": 1 },
         { "game": 13, "score": 2 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 2 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -125,9 +125,9 @@
         "apertura": {
           "pg": 3,
           "pe": 4,
-          "pp": 6,
-          "gf": 10,
-          "gc": 14
+          "pp": 7,
+          "gf": 11,
+          "gc": 16
         },
         "clausura": {
           "pg": null,
@@ -151,7 +151,7 @@
         { "game": 11, "score": 2 },
         { "game": 12, "score": 0 },
         { "game": 13, "score": 1 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 1 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -201,10 +201,10 @@
       ],
       "data": {
         "apertura": {
-          "pg": 8,
+          "pg": 9,
           "pe": null,
           "pp": 5,
-          "gf": 26,
+          "gf": 27,
           "gc": 11
         },
         "clausura": {
@@ -229,7 +229,7 @@
         { "game": 11, "score": 2 },
         { "game": 12, "score": 3 },
         { "game": 13, "score": 0 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 1 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -280,7 +280,7 @@
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 5,
+          "pe": 6,
           "pp": 5,
           "gf": 14,
           "gc": 15
@@ -307,7 +307,7 @@
         { "game": 11, "score": 0 },
         { "game": 12, "score": 1 },
         { "game": 13, "score": 2 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 0 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -364,10 +364,10 @@
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 2,
+          "pe": 3,
           "pp": 8,
-          "gf": 10,
-          "gc": 30
+          "gf": 11,
+          "gc": 31
         },
         "clausura": {
           "pg": null,
@@ -391,7 +391,7 @@
         { "game": 11, "score": 0 },
         { "game": 12, "score": 2 },
         { "game": 13, "score": 0 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 1 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -447,10 +447,10 @@
       ],
       "data": {
         "apertura": {
-          "pg": 4,
+          "pg": 5,
           "pe": 2,
           "pp": 7,
-          "gf": 20,
+          "gf": 22,
           "gc": 21
         },
         "clausura": {
@@ -475,7 +475,7 @@
         { "game": 11, "score": 0 },
         { "game": 12, "score": 6 },
         { "game": 13, "score": 1 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 2 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -526,10 +526,10 @@
       "data": {
         "apertura": {
           "pg": 5,
-          "pe": 5,
+          "pe": 6,
           "pp": 3,
-          "gf": 17,
-          "gc": 18
+          "gf": 18,
+          "gc": 19
         },
         "clausura": {
           "pg": null,
@@ -553,7 +553,7 @@
         { "game": 11, "score": 2 },
         { "game": 12, "score": 0 },
         { "game": 13, "score": 0 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 1 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -603,11 +603,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 5,
+          "pg": 6,
           "pe": 3,
           "pp": 5,
-          "gf": 18,
-          "gc": 26
+          "gf": 21,
+          "gc": 27
         },
         "clausura": {
           "pg": null,
@@ -631,7 +631,7 @@
         { "game": 11, "score": 1 },
         { "game": 12, "score": 0 },
         { "game": 13, "score": 0 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 3 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -683,9 +683,9 @@
         "apertura": {
           "pg": 7,
           "pe": 2,
-          "pp": 4,
+          "pp": 5,
           "gf": 16,
-          "gc": 15
+          "gc": 17
         },
         "clausura": {
           "pg": null,
@@ -709,7 +709,7 @@
         { "game": 11, "score": 3 },
         { "game": 12, "score": 0 },
         { "game": 13, "score": 2 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 0 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -766,10 +766,10 @@
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 3,
+          "pe": 4,
           "pp": 7,
-          "gf": 16,
-          "gc": 19
+          "gf": 17,
+          "gc": 20
         },
         "clausura": {
           "pg": null,
@@ -793,7 +793,7 @@
         { "game": 11, "score": 2 },
         { "game": 12, "score": 2 },
         { "game": 13, "score": 1 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 1 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -849,11 +849,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 8,
+          "pg": 9,
           "pe": 2,
           "pp": 3,
-          "gf": 21,
-          "gc": 14
+          "gf": 23,
+          "gc": 15
         },
         "clausura": {
           "pg": null,
@@ -877,7 +877,7 @@
         { "game": 11, "score": 2 },
         { "game": 12, "score": 2 },
         { "game": 13, "score": 1 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 2 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -935,9 +935,9 @@
         "apertura": {
           "pg": 3,
           "pe": 3,
-          "pp": 7,
-          "gf": 11,
-          "gc": 15
+          "pp": 8,
+          "gf": 12,
+          "gc": 17
         },
         "clausura": {
           "pg": null,
@@ -961,7 +961,7 @@
         { "game": 11, "score": 1 },
         { "game": 12, "score": 0 },
         { "game": 13, "score": 0 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 1 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -1018,7 +1018,7 @@
       "data": {
         "apertura": {
           "pg": 5,
-          "pe": 2,
+          "pe": 3,
           "pp": 6,
           "gf": 16,
           "gc": 22
@@ -1045,7 +1045,7 @@
         { "game": 11, "score": 1 },
         { "game": 12, "score": 0 },
         { "game": 13, "score": 1 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 0 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -1095,11 +1095,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 10,
+          "pg": 11,
           "pe": 1,
           "pp": 2,
-          "gf": 35,
-          "gc": 14
+          "gf": 37,
+          "gc": 15
         },
         "clausura": {
           "pg": null,
@@ -1123,7 +1123,7 @@
         { "game": 11, "score": 3 },
         { "game": 12, "score": 2 },
         { "game": 13, "score": 1 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 2 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -1181,9 +1181,9 @@
         "apertura": {
           "pg": 1,
           "pe": 4,
-          "pp": 8,
-          "gf": 12,
-          "gc": 23
+          "pp": 9,
+          "gf": 13,
+          "gc": 26
         },
         "clausura": {
           "pg": null,
@@ -1207,7 +1207,7 @@
         { "game": 11, "score": 0 },
         { "game": 12, "score": 1 },
         { "game": 13, "score": 0 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 1 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -1264,10 +1264,10 @@
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 5,
+          "pe": 6,
           "pp": 5,
-          "gf": 15,
-          "gc": 21
+          "gf": 16,
+          "gc": 22
         },
         "clausura": {
           "pg": null,
@@ -1291,7 +1291,7 @@
         { "game": 11, "score": 3 },
         { "game": 12, "score": 0 },
         { "game": 13, "score": 2 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 1 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -1343,9 +1343,9 @@
         "apertura": {
           "pg": 10,
           "pe": 3,
-          "pp": null,
+          "pp": 1,
           "gf": 24,
-          "gc": 4
+          "gc": 6
         },
         "clausura": {
           "pg": null,
@@ -1369,7 +1369,7 @@
         { "game": 11, "score": 2 },
         { "game": 12, "score": 2 },
         { "game": 13, "score": 6 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 0 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
@@ -1421,9 +1421,9 @@
         "apertura": {
           "pg": 4,
           "pe": 3,
-          "pp": 6,
+          "pp": 7,
           "gf": 16,
-          "gc": 17
+          "gc": 18
         },
         "clausura": {
           "pg": null,
@@ -1447,7 +1447,7 @@
         { "game": 11, "score": 2 },
         { "game": 12, "score": 0 },
         { "game": 13, "score": 3 },
-        { "game": 14, "score": null },
+        { "game": 14, "score": 0 },
         { "game": 15, "score": null },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
