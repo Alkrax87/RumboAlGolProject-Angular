@@ -9,7 +9,7 @@
     "alt": "liga1-logo",
     "apertura": true,
     "clausura": false,
-    "fechaApertura": "14",
+    "fechaApertura": "15",
     "fechaClausura": "1"
 
   },
@@ -37,13 +37,16 @@
           "img": "https://resizer.glanacion.com/resizer/v2/carlos-desio-responsable-de-la-sub-UASVPBY23JATVOPFFAUMLNMZQ4.jpg?auth=8046451f6f61166baef2f65a32e1d12e715edb56eb6278fe6ade7dae6452da31&width=768&quality=70&smart=false"
         }
       ],
+      "lastGames": [
+        "draw","win","win","win","lose"
+      ],
       "data": {
         "apertura": {
           "pg": 7,
-          "pe": 3,
+          "pe": 4,
           "pp": 4,
-          "gf": 25,
-          "gc": 21
+          "gf": 27,
+          "gc": 23
         },
         "clausura": {
           "pg": null,
@@ -68,7 +71,7 @@
         { "game": 12, "score": 1 },
         { "game": 13, "score": 2 },
         { "game": 14, "score": 2 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 2 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -121,13 +124,16 @@
           "img": "data:image/jpeg;base64,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"
         }
       ],
+      "lastGames": [
+        "lose","lose","lose","draw","win"
+      ],
       "data": {
         "apertura": {
           "pg": 3,
           "pe": 4,
-          "pp": 7,
+          "pp": 8,
           "gf": 11,
-          "gc": 16
+          "gc": 17
         },
         "clausura": {
           "pg": null,
@@ -152,7 +158,7 @@
         { "game": 12, "score": 0 },
         { "game": 13, "score": 1 },
         { "game": 14, "score": 1 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 0 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -199,12 +205,15 @@
           "img": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2023/12/06/001018881W.jpg"
         }
       ],
+      "lastGames": [
+        "win","win","lose","win","win"
+      ],
       "data": {
         "apertura": {
-          "pg": 9,
+          "pg": 10,
           "pe": null,
           "pp": 5,
-          "gf": 27,
+          "gf": 29,
           "gc": 11
         },
         "clausura": {
@@ -230,7 +239,7 @@
         { "game": 12, "score": 3 },
         { "game": 13, "score": 0 },
         { "game": 14, "score": 1 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 2 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -277,10 +286,13 @@
           "img": "data:image/jpeg;base64,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"
         }
       ],
+      "lastGames": [
+        "draw","draw","lose","lose","lose"
+      ],
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 6,
+          "pe": 7,
           "pp": 5,
           "gf": 14,
           "gc": 15
@@ -308,7 +320,7 @@
         { "game": 12, "score": 1 },
         { "game": 13, "score": 2 },
         { "game": 14, "score": 0 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 0 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -361,13 +373,16 @@
           "img": "https://depor.com/resizer/pwDUpIrB8OlSFaWhYbhvV7dJKMc=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/OXA54YHC4JEAJKZID3PQUDLHYM.jpg"
         }
       ],
+      "lastGames": [
+        "lose","draw","lose","win","lose"
+      ],
       "data": {
         "apertura": {
           "pg": 3,
           "pe": 3,
-          "pp": 8,
+          "pp": 9,
           "gf": 11,
-          "gc": 31
+          "gc": 34
         },
         "clausura": {
           "pg": null,
@@ -392,7 +407,7 @@
         { "game": 12, "score": 2 },
         { "game": 13, "score": 0 },
         { "game": 14, "score": 1 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 0 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -445,13 +460,16 @@
           "img": "https://elcomercio.pe/resizer/gb5qT9KZ6jfmCb2_wcYs6lWHu58=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/AZILDJ3ZKRDQ5AECFCL3M262UM.jpg"
         }
       ],
+      "lastGames": [
+        "draw","win","draw","win","lose"
+      ],
       "data": {
         "apertura": {
           "pg": 5,
-          "pe": 2,
+          "pe": 3,
           "pp": 7,
-          "gf": 22,
-          "gc": 21
+          "gf": 23,
+          "gc": 22
         },
         "clausura": {
           "pg": null,
@@ -476,7 +494,7 @@
         { "game": 12, "score": 6 },
         { "game": 13, "score": 1 },
         { "game": 14, "score": 2 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 1 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -523,12 +541,15 @@
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/%C3%93scar_Ib%C3%A1%C3%B1ez.png/320px-%C3%93scar_Ib%C3%A1%C3%B1ez.png"
         }
       ],
+      "lastGames": [
+        "win","draw","lose","lose","win"
+      ],
       "data": {
         "apertura": {
-          "pg": 5,
+          "pg": 6,
           "pe": 6,
           "pp": 3,
-          "gf": 18,
+          "gf": 19,
           "gc": 19
         },
         "clausura": {
@@ -554,7 +575,7 @@
         { "game": 12, "score": 0 },
         { "game": 13, "score": 0 },
         { "game": 14, "score": 1 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 1 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -601,13 +622,16 @@
           "img": "https://media.licdn.com/dms/image/C4E03AQFL4pUN1w7cCw/profile-displayphoto-shrink_800_800/0/1623187034882?e=2147483647&v=beta&t=RStnvqYAEoxZ9Bk9zkeU57ll3c4gsJqseW_81Q1Xj0c"
         }
       ],
+      "lastGames": [
+        "draw","win","lose","draw","lose"
+      ],
       "data": {
         "apertura": {
           "pg": 6,
-          "pe": 3,
+          "pe": 4,
           "pp": 5,
-          "gf": 21,
-          "gc": 27
+          "gf": 22,
+          "gc": 28
         },
         "clausura": {
           "pg": null,
@@ -632,7 +656,7 @@
         { "game": 12, "score": 0 },
         { "game": 13, "score": 0 },
         { "game": 14, "score": 3 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 1 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -679,12 +703,15 @@
           "img": "https://www.directvsports.com/__export/1681147097687/sites/dsports/img/2023/04/10/20230410_021817301_1kqck9iowen561t4nb29zsjdtq.jpg_1301049368.jpg"
         }
       ],
+      "lastGames": [
+        "win","lose","win","lose","win"
+      ],
       "data": {
         "apertura": {
-          "pg": 7,
+          "pg": 8,
           "pe": 2,
           "pp": 5,
-          "gf": 16,
+          "gf": 19,
           "gc": 17
         },
         "clausura": {
@@ -710,7 +737,7 @@
         { "game": 12, "score": 0 },
         { "game": 13, "score": 2 },
         { "game": 14, "score": 0 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 3 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -763,10 +790,13 @@
           "img": "https://www.eldiez.com.pe/wp-content/uploads/2024/02/Gerardo-Ameli-no-continuara-en-Deportivo-Garcilaso-y-es-el-primer-DT-cesado-de-la-Liga-1.jpg"
         }
       ],
+      "lastGames": [
+        "draw","draw","draw","win","lose"
+      ],
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 4,
+          "pe": 5,
           "pp": 7,
           "gf": 17,
           "gc": 20
@@ -794,7 +824,7 @@
         { "game": 12, "score": 2 },
         { "game": 13, "score": 1 },
         { "game": 14, "score": 1 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 0 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -847,13 +877,16 @@
           "img": "https://depor.com/resizer/qhMGNQyeflFrhTNczWZNSoCHnQ0=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/RMHJDLS5N5AOFGYRHOOAKVCLCE.jpg"
         }
       ],
+      "lastGames": [
+        "win","win","win","win","win"
+      ],
       "data": {
         "apertura": {
-          "pg": 9,
+          "pg": 10,
           "pe": 2,
           "pp": 3,
-          "gf": 23,
-          "gc": 15
+          "gf": 29,
+          "gc": 17
         },
         "clausura": {
           "pg": null,
@@ -878,7 +911,7 @@
         { "game": 12, "score": 2 },
         { "game": 13, "score": 1 },
         { "game": 14, "score": 2 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 6 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -919,10 +952,10 @@
       },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
-          "img": "./assets/images/otros/no-manager.png"
+          "name": "Juan Alayo",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://ojo.pe/resizer/KcvXwhLHPyujJxOonOs799Fzllw=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/WZ2ZCPOPZRFYFKNH7XQIVI2LAY.jpg"
         },
         {
           "name": "Fernando Gamboa",
@@ -931,13 +964,16 @@
           "img": "https://elamague.com/wp-content/uploads/2023/06/fernando-gamboa-sport-boys-1.jpg"
         }
       ],
+      "lastGames": [
+        "draw","lose","draw","lose","lose"
+      ],
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 3,
+          "pe": 4,
           "pp": 8,
-          "gf": 12,
-          "gc": 17
+          "gf": 13,
+          "gc": 18
         },
         "clausura": {
           "pg": null,
@@ -962,7 +998,7 @@
         { "game": 12, "score": 0 },
         { "game": 13, "score": 0 },
         { "game": 14, "score": 1 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 1 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -1003,10 +1039,10 @@
       },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
-          "img": "./assets/images/otros/no-manager.png"
+          "name": "Mifflin Bermúdez",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00UaOLHgXTaJNIVGR3j-VkEJGZNqL-JAewhXXfKdKDQ&s"
         },
         {
           "name": "Wilmar Valencia",
@@ -1015,13 +1051,16 @@
           "img": "https://cdn2.mediotiempo.com/uploads/media/2016/05/13/wilmar-valencia-3.jpg"
         }
       ],
+      "lastGames": [
+        "lose","draw","win","lose","lose"
+      ],
       "data": {
         "apertura": {
           "pg": 5,
           "pe": 3,
-          "pp": 6,
+          "pp": 7,
           "gf": 16,
-          "gc": 22
+          "gc": 24
         },
         "clausura": {
           "pg": null,
@@ -1046,7 +1085,7 @@
         { "game": 12, "score": 0 },
         { "game": 13, "score": 1 },
         { "game": 14, "score": 0 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 0 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -1093,13 +1132,16 @@
           "img": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2023/11/23/001015390W.jpg"
         }
       ],
+      "lastGames": [
+        "lose","win","lose","win","win"
+      ],
       "data": {
         "apertura": {
           "pg": 11,
           "pe": 1,
-          "pp": 2,
-          "gf": 37,
-          "gc": 15
+          "pp": 3,
+          "gf": 38,
+          "gc": 19
         },
         "clausura": {
           "pg": null,
@@ -1124,7 +1166,7 @@
         { "game": 12, "score": 2 },
         { "game": 13, "score": 1 },
         { "game": 14, "score": 2 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 1 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -1177,13 +1219,16 @@
           "img": "https://i0.wp.com/www.radioejedelcafe.com/wp-content/uploads/2020/09/CRAVIOTTO-min.jpg?resize=1080%2C675&ssl=1"
         }
       ],
+      "lastGames": [
+        "draw","lose","draw","lose","lose"
+      ],
       "data": {
         "apertura": {
           "pg": 1,
-          "pe": 4,
+          "pe": 5,
           "pp": 9,
-          "gf": 13,
-          "gc": 26
+          "gf": 15,
+          "gc": 28
         },
         "clausura": {
           "pg": null,
@@ -1208,7 +1253,7 @@
         { "game": 12, "score": 1 },
         { "game": 13, "score": 0 },
         { "game": 14, "score": 1 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 2 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -1261,13 +1306,16 @@
           "img": "https://www.tvperu.gob.pe/sites/default/files/roberto_mosquera.jpg"
         }
       ],
+      "lastGames": [
+        "draw","draw","win","lose","win"
+      ],
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 6,
+          "pe": 7,
           "pp": 5,
-          "gf": 16,
-          "gc": 22
+          "gf": 17,
+          "gc": 23
         },
         "clausura": {
           "pg": null,
@@ -1292,7 +1340,7 @@
         { "game": 12, "score": 0 },
         { "game": 13, "score": 2 },
         { "game": 14, "score": 1 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 1 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -1339,13 +1387,16 @@
           "img": "https://imgmedia.libero.pe/652x359/libero/original/2023/12/29/658ee23199145721d768d598.webp"
         }
       ],
+      "lastGames": [
+        "win","lose","win","win","win"
+      ],
       "data": {
         "apertura": {
-          "pg": 10,
+          "pg": 11,
           "pe": 3,
           "pp": 1,
-          "gf": 24,
-          "gc": 6
+          "gf": 28,
+          "gc": 7
         },
         "clausura": {
           "pg": null,
@@ -1370,7 +1421,7 @@
         { "game": 12, "score": 2 },
         { "game": 13, "score": 6 },
         { "game": 14, "score": 0 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 4 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
@@ -1417,13 +1468,16 @@
           "img": "https://depor.com/resizer/Jigtww-kGTm4SamKo1sZKdxFlPw=/580x330/smart/filters:format(jpeg):quality(90)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/C2NLSJMUEBGOPJP2MVWNDFW4WI.jpg"
         }
       ],
+      "lastGames": [
+        "lose","lose","win","lose","win"
+      ],
       "data": {
         "apertura": {
           "pg": 4,
           "pe": 3,
-          "pp": 7,
-          "gf": 16,
-          "gc": 18
+          "pp": 8,
+          "gf": 18,
+          "gc": 24
         },
         "clausura": {
           "pg": null,
@@ -1448,7 +1502,7 @@
         { "game": 12, "score": 0 },
         { "game": 13, "score": 3 },
         { "game": 14, "score": 0 },
-        { "game": 15, "score": null },
+        { "game": 15, "score": 2 },
         { "game": 16, "score": null },
         { "game": 17, "score": null }
       ],
