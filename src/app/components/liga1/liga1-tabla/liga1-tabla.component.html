@@ -68,11 +68,22 @@
                     <td>{{ item.data.apertura.gc ? item.data.apertura.gc  : '0'}}</td>
                     <td>{{ item.data.apertura.dg ? item.data.apertura.dg  : '0'}}</td>
                     <td>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
+                      @for (lg of item.lastGames; track $index) {
+                        @switch (lg) {
+                          @case ("win") {
+                            <i class="fa-solid fa-circle-check win"></i>
+                          }
+                          @case ("draw") {
+                            <i class="fa-solid fa-circle-minus draw"></i>
+                          }
+                          @case ("lose") {
+                            <i class="fa-solid fa-circle-xmark lose"></i>
+                          }
+                          @default {
+                            <i class="fa-solid fa-circle draw"></i>
+                          }
+                        }
+                      }
                     </td>
                   </tr>
                 }
@@ -132,11 +143,22 @@
                     <td>{{ item.data.clausura.gc ? item.data.clausura.gc  : '0'}}</td>
                     <td>{{ item.data.clausura.dg ? item.data.clausura.dg  : '0'}}</td>
                     <td>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
+                      @for (lg of item.lastGames; track $index) {
+                        @switch (lg) {
+                          @case ("win") {
+                            <i class="fa-solid fa-circle-check win"></i>
+                          }
+                          @case ("draw") {
+                            <i class="fa-solid fa-circle-minus draw"></i>
+                          }
+                          @case ("lose") {
+                            <i class="fa-solid fa-circle-xmark lose"></i>
+                          }
+                          @default {
+                            <i class="fa-solid fa-circle draw"></i>
+                          }
+                        }
+                      }
                     </td>
                   </tr>
                 }
@@ -195,11 +217,22 @@
                     <td>{{ item.gc }}</td>
                     <td>{{ item.dg }}</td>
                     <td>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
+                      @for (lg of item.lastGames; track $index) {
+                        @switch (lg) {
+                          @case ("win") {
+                            <i class="fa-solid fa-circle-check win"></i>
+                          }
+                          @case ("draw") {
+                            <i class="fa-solid fa-circle-minus draw"></i>
+                          }
+                          @case ("lose") {
+                            <i class="fa-solid fa-circle-xmark lose"></i>
+                          }
+                          @default {
+                            <i class="fa-solid fa-circle draw"></i>
+                          }
+                        }
+                      }
                     </td>
                   </tr>
                 }

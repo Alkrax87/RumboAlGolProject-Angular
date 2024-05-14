@@ -144,7 +144,8 @@ export class Liga1TablaComponent {
         "pp": ppAcumulado,
         "gf": gfAcumulado,
         "gc": gcAcumulado,
-        "dg": dgAcumulado
+        "dg": dgAcumulado,
+        "lastGames": item.lastGames
       }
 
       // Agregar al array
