@@ -46,7 +46,10 @@ export class Liga2TablaComponent {
 
       // Playoff
       if (data.Info.playoff){
-        this.selectTeams(this.norte,this.sur)
+        this.selectTeams([...this.norte],[...this.sur]);
+        this.ascenso1 = this.sortDataTeamsGA();
+        this.ascenso2 = this.sortDataTeamsGB();
+        this.descenso = this.sortDataTeamsGR();
       }
 
       // Eliminatorias
@@ -77,8 +80,6 @@ export class Liga2TablaComponent {
           }
         }
       }
-
-
     }).catch(error => {
       console.error('Error al cargar datos en el componente:', error);
     });
@@ -129,7 +130,8 @@ export class Liga2TablaComponent {
         "pp": item.data.pp,
         "gf": item.data.gf,
         "gc": item.data.gc,
-        "dg": (item.data.gf - item.data.gc) > 0 ? "+"+(item.data.gf - item.data.gc): (item.data.gf - item.data.gc)
+        "dg": (item.data.gf - item.data.gc) > 0 ? "+"+(item.data.gf - item.data.gc): (item.data.gf - item.data.gc),
+        "lastGames": item.lastGames
       }
 
       // Agregar al array
@@ -173,7 +175,8 @@ export class Liga2TablaComponent {
         "pp": item.data.pp,
         "gf": item.data.gf,
         "gc": item.data.gc,
-        "dg": (item.data.gf - item.data.gc) > 0 ? "+"+(item.data.gf - item.data.gc): (item.data.gf - item.data.gc)
+        "dg": (item.data.gf - item.data.gc) > 0 ? "+"+(item.data.gf - item.data.gc): (item.data.gf - item.data.gc),
+        "lastGames": item.lastGames
       }
 
       // Agregar al array
@@ -215,6 +218,150 @@ export class Liga2TablaComponent {
     this.ascenso1 = ascenso1;
     this.ascenso2 = ascenso2;
     this.descenso = descenso;
+  }
+
+  // Ordenar Grupo A
+  sortDataTeamsGA() {
+    // Seleccionar por indices los equipos
+    const clasifiersGroupA = this.ascenso1.map((element: { index: Number; }) => element.index);
+
+    // Filtramos los los equipos clasificados del Grupo A
+    const equiposFiltrados = clasifiersGroupA.map((index: number) => this.data.Teams[index]);
+
+    // Declaracion de Array de items
+    const teamsArray = [];
+
+    for (const item of equiposFiltrados) {
+      // Definicion de objeto
+      var team = {
+        "image": item.image,
+        "alt": item.alt,
+        "name": item.name,
+        "url": item.url,
+        "index": item.index,
+        "puntos": (item.dataplayoff.pg * 3) + item.dataplayoff.pe,
+        "pj": item.dataplayoff.pg + item.dataplayoff.pe + item.dataplayoff.pp,
+        "pg": item.dataplayoff.pg,
+        "pe": item.dataplayoff.pe,
+        "pp": item.dataplayoff.pp,
+        "gf": item.dataplayoff.gf,
+        "gc": item.dataplayoff.gc,
+        "dg": (item.dataplayoff.gf - item.dataplayoff.gc) > 0 ? "+"+(item.dataplayoff.gf - item.dataplayoff.gc): (item.dataplayoff.gf - item.dataplayoff.gc),
+        "lastGames": item.lastGames
+      }
+
+      // Agregar al array
+      teamsArray.push(team)
+    }
+
+    // Ordenar el array en base criterios
+    teamsArray.sort((a:any, b:any) => {
+      if (a.puntos !== b.puntos) {
+          return b.puntos - a.puntos;
+      }
+      if (a.dg !== b.dg) {
+          return b.dg - a.dg;
+      }
+      return b.gf - a.gf;
+    });
+
+    return teamsArray;
+  }
+
+  // Ordenar Grupo B
+  sortDataTeamsGB() {
+    // Seleccionar por indices los equipos
+    const clasifiersGroupB = this.ascenso2.map((element: { index: Number; }) => element.index);
+
+    // Filtramos los los equipos clasificados del Grupo A
+    const equiposFiltrados = clasifiersGroupB.map((index: number) => this.data.Teams[index]);
+
+    // Declaracion de Array de items
+    const teamsArray = [];
+
+    for (const item of equiposFiltrados) {
+      // Definicion de objeto
+      var team = {
+        "image": item.image,
+        "alt": item.alt,
+        "name": item.name,
+        "url": item.url,
+        "index": item.index,
+        "puntos": (item.dataplayoff.pg * 3) + item.dataplayoff.pe,
+        "pj": item.dataplayoff.pg + item.dataplayoff.pe + item.dataplayoff.pp,
+        "pg": item.dataplayoff.pg,
+        "pe": item.dataplayoff.pe,
+        "pp": item.dataplayoff.pp,
+        "gf": item.dataplayoff.gf,
+        "gc": item.dataplayoff.gc,
+        "dg": (item.dataplayoff.gf - item.dataplayoff.gc) > 0 ? "+"+(item.dataplayoff.gf - item.dataplayoff.gc): (item.dataplayoff.gf - item.dataplayoff.gc),
+        "lastGames": item.lastGames
+      }
+
+      // Agregar al array
+      teamsArray.push(team)
+    }
+
+    // Ordenar el array en base criterios
+    teamsArray.sort((a:any, b:any) => {
+      if (a.puntos !== b.puntos) {
+          return b.puntos - a.puntos;
+      }
+      if (a.dg !== b.dg) {
+          return b.dg - a.dg;
+      }
+      return b.gf - a.gf;
+    });
+
+    return teamsArray;
+  }
+
+  // Ordenar Grupo B
+  sortDataTeamsGR() {
+    // Seleccionar por indices los equipos
+    const clasifiersRelegation = this.descenso.map((element: { index: Number; }) => element.index);
+
+    // Filtramos los los equipos clasificados del Grupo A
+    const equiposFiltrados = clasifiersRelegation.map((index: number) => this.data.Teams[index]);
+
+    // Declaracion de Array de items
+    const teamsArray = [];
+
+    for (const item of equiposFiltrados) {
+      // Definicion de objeto
+      var team = {
+        "image": item.image,
+        "alt": item.alt,
+        "name": item.name,
+        "url": item.url,
+        "index": item.index,
+        "puntos": (item.dataplayoff.pg * 3) + item.dataplayoff.pe,
+        "pj": item.dataplayoff.pg + item.dataplayoff.pe + item.dataplayoff.pp,
+        "pg": item.dataplayoff.pg,
+        "pe": item.dataplayoff.pe,
+        "pp": item.dataplayoff.pp,
+        "gf": item.dataplayoff.gf,
+        "gc": item.dataplayoff.gc,
+        "dg": (item.dataplayoff.gf - item.dataplayoff.gc) > 0 ? "+"+(item.dataplayoff.gf - item.dataplayoff.gc): (item.dataplayoff.gf - item.dataplayoff.gc),
+        "lastGames": item.lastGames
+      }
+
+      // Agregar al array
+      teamsArray.push(team)
+    }
+
+    // Ordenar el array en base criterios
+    teamsArray.sort((a:any, b:any) => {
+      if (a.puntos !== b.puntos) {
+          return b.puntos - a.puntos;
+      }
+      if (a.dg !== b.dg) {
+          return b.dg - a.dg;
+      }
+      return b.gf - a.gf;
+    });
+
+    return teamsArray;
   }
 
   // Seleccionar Clasificados Fases Eliminatorias

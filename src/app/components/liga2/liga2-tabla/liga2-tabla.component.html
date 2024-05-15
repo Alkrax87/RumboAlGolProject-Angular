@@ -20,7 +20,7 @@
     <!-- Grupo Norte -->
     <div class="col-md-12 col-lg-10 col-xl-8">
       <div class="title-table text-start">Grupo Norte</div>
-      <div class="line my-3"></div>
+      <div class="line mb-3"></div>
       <div class="table-responsive">
         <!-- Table -->
         <table class="table align-middle">
@@ -55,11 +55,22 @@
                 <td>{{ item.gc ? item.gc : '0'}}</td>
                 <td>{{ item.dg ? item.dg : '0'}}</td>
                 <td>
-                  <i class="fas fa-circle draw"></i>
-                  <i class="fas fa-circle draw"></i>
-                  <i class="fas fa-circle draw"></i>
-                  <i class="fas fa-circle draw"></i>
-                  <i class="fas fa-circle draw"></i>
+                  @for (lg of item.lastGames; track $index) {
+                    @switch (lg) {
+                      @case ("win") {
+                        <i class="fa-solid fa-circle-check win"></i>
+                      }
+                      @case ("draw") {
+                        <i class="fa-solid fa-circle-minus draw"></i>
+                      }
+                      @case ("lose") {
+                        <i class="fa-solid fa-circle-xmark lose"></i>
+                      }
+                      @default {
+                        <i class="fa-solid fa-circle draw"></i>
+                      }
+                    }
+                  }
                 </td>
               </tr>
             }
@@ -85,7 +96,7 @@
     <!-- Grupo Sur -->
     <div class="col-md-12 col-lg-10 col-xl-8 mt-5">
       <div class="title-table text-start">Grupo Sur</div>
-      <div class="line my-3"></div>
+      <div class="line mb-3"></div>
       <div class="table-responsive">
         <!-- Table -->
         <table class="table align-middle">
@@ -120,11 +131,22 @@
                 <td>{{ item.gc ? item.gc : '0'}}</td>
                 <td>{{ item.dg ? item.dg : '0'}}</td>
                 <td>
-                  <i class="fas fa-circle draw"></i>
-                  <i class="fas fa-circle draw"></i>
-                  <i class="fas fa-circle draw"></i>
-                  <i class="fas fa-circle draw"></i>
-                  <i class="fas fa-circle draw"></i>
+                  @for (lg of item.lastGames; track $index) {
+                    @switch (lg) {
+                      @case ("win") {
+                        <i class="fa-solid fa-circle-check win"></i>
+                      }
+                      @case ("draw") {
+                        <i class="fa-solid fa-circle-minus draw"></i>
+                      }
+                      @case ("lose") {
+                        <i class="fa-solid fa-circle-xmark lose"></i>
+                      }
+                      @default {
+                        <i class="fa-solid fa-circle draw"></i>
+                      }
+                    }
+                  }
                 </td>
               </tr>
             }
@@ -162,7 +184,7 @@
   <div class="row description-stages">
     <div class="col-12 text-center">
       <p class="notes">Descripción</p>
-      <b>Equipos ubicados del 1° al 6° lugar de cada grupo</b>
+      <b>Equipos ubicados del 1° al 6° lugar de cada grupo de la fase regional</b>
     </div>
   </div>
 </div>
@@ -175,7 +197,7 @@
     <!-- Ascenso A -->
     <div class="col-md-12 col-lg-10 col-xl-8">
       <div class="title-table text-start">Grupo A</div>
-      <div class="line my-3"></div>
+      <div class="line mb-3"></div>
       <div class="table-responsive">
         <!-- Table -->
         <table class="table align-middle">
@@ -212,11 +234,22 @@
                     <td>{{ item.gc ? item.gc : '0'}}</td>
                     <td>{{ item.dg ? item.dg : '0'}}</td>
                     <td>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
+                      @for (lg of item.lastGames; track $index) {
+                        @switch (lg) {
+                          @case ("win") {
+                            <i class="fa-solid fa-circle-check win"></i>
+                          }
+                          @case ("draw") {
+                            <i class="fa-solid fa-circle-minus draw"></i>
+                          }
+                          @case ("lose") {
+                            <i class="fa-solid fa-circle-xmark lose"></i>
+                          }
+                          @default {
+                            <i class="fa-solid fa-circle draw"></i>
+                          }
+                        }
+                      }
                     </td>
                   </tr>
                 }
@@ -263,7 +296,7 @@
     <!-- Ascenso B -->
     <div class="col-md-12 col-lg-10 col-xl-8 mt-5">
       <div class="title-table text-start">Grupo B</div>
-      <div class="line my-3"></div>
+      <div class="line mb-3"></div>
       <div class="table-responsive">
         <!-- Table -->
         <table class="table align-middle">
@@ -300,11 +333,22 @@
                     <td>{{ item.gc ? item.gc : '0'}}</td>
                     <td>{{ item.dg ? item.dg : '0'}}</td>
                     <td>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
+                      @for (lg of item.lastGames; track $index) {
+                        @switch (lg) {
+                          @case ("win") {
+                            <i class="fa-solid fa-circle-check win"></i>
+                          }
+                          @case ("draw") {
+                            <i class="fa-solid fa-circle-minus draw"></i>
+                          }
+                          @case ("lose") {
+                            <i class="fa-solid fa-circle-xmark lose"></i>
+                          }
+                          @default {
+                            <i class="fa-solid fa-circle draw"></i>
+                          }
+                        }
+                      }
                     </td>
                   </tr>
                 }
@@ -363,7 +407,7 @@
   <div class="row description-stages">
     <div class="col-12 text-center">
       <p class="notes">Descripción</p>
-      <b>Equipos ubicados del 7° al 9° lugar de cada grupo</b>
+      <b>Equipos ubicados del 7° al 9° lugar de cada grupo de la fase regional</b>
     </div>
   </div>
 </div>
@@ -411,11 +455,22 @@
                     <td>{{ item.gc ? item.gc : '0'}}</td>
                     <td>{{ item.dg ? item.dg : '0'}}</td>
                     <td>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
-                      <i class="fas fa-circle draw"></i>
+                      @for (lg of item.lastGames; track $index) {
+                        @switch (lg) {
+                          @case ("win") {
+                            <i class="fa-solid fa-circle-check win"></i>
+                          }
+                          @case ("draw") {
+                            <i class="fa-solid fa-circle-minus draw"></i>
+                          }
+                          @case ("lose") {
+                            <i class="fa-solid fa-circle-xmark lose"></i>
+                          }
+                          @default {
+                            <i class="fa-solid fa-circle draw"></i>
+                          }
+                        }
+                      }
                     </td>
                   </tr>
                 }
@@ -474,7 +529,7 @@
   <div class="row description-stages">
     <div class="col-12 text-center">
       <p class="notes">Descripción</p>
-      <b>Equipos ubicados del 1° al 3° lugar de cada grupo del ascenso</b>
+      <b>Equipos ubicados del 1° al 3° lugar de cada grupo de ascenso</b>
     </div>
   </div>
 </div>

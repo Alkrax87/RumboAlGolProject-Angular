@@ -51,7 +51,7 @@
       <!-- Info -->
       <div class="col-sm-12 col-md-5 col-lg-7 my-4">
         <div class="title text-start">Equipos</div>
-        <div class="line my-3"></div>
+        <div class="line mb-3"></div>
         <p>En la temporada <b>{{ data && data.Info ? data.Info.temporada : '' }}</b> el número de equipos participantes de la <b>Liga 1</b> es de <b> {{ data && data.Info ? data.Info.equipos : '' }} </b> equipos:</p>
         <div class="text-center" *ngIf="data">
           @for (item of data.Teams; track $index) {
@@ -94,5 +94,143 @@
       </div>
     </div>
   </div>
+  <!-- Formato -->
+  <div class="container-fluid py-5 px-5 format-content content-block">
+    <div class="row">
+      <!-- L -->
+      <div class="col-sm-12 col-md-5 col-lg-4 vertical-center">
+        <div>
+          <div class="title">Ascenso</div>
+          <div class="line mb-3"></div>
+          <p>El campeonato de <b>Ascenso</b> se definirá mediante una clasificacion a una <b>Fase de Grupos y </b>posteriormente una <b>Fase Eliminatoria</b>.</p>
+          <img class="img-fluid" src="https://cdn.futbolperuano.com/sdi/2022/01/10/los-equipos-mas-ganadores-de-la-segunda-division-986505.jpg" alt="formato-logo">
+        </div>
+      </div>
+      <!-- R -->
+      <div class="col-sm-12 col-md-7 col-lg-7 vertical-center">
+        <div class="col-12">
+          <!-- Item 1 -->
+          <div class="row format-item my-4 mx-1">
+            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-10">
+              <p><b>Fase Regional</b></p>
+              <div class="line2"></div>
+              <p>El torneo se llevará a cabo mediante una división de dos zonas, según la distribución geográfica de los equipos. Estos se agruparán en <b>Zona Norte</b> y <b>Zona Sur</b>, y se enfrentarán en dos rondas <b>(ida y vuelta)</b>.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="row format-item my-4 mx-1">
+            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-10">
+              <p><b>Fase de Grupos</b></p>
+              <div class="line2"></div>
+              <p>Basado en los resultados de la Zona Norte y Zona Sur, se crearán tres nuevas tablas: dos para disputar el ascenso y una para definir el descenso, con seis equipos en cada grupo, respectivamente.</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="row format-item my-4 mx-1">
+            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-10">
+              <p><b>Playoff</b></p>
+              <div class="line2"></div>
+              <p>El torneo se definirá a través de tres etapas eliminatorias: <b>Fase 1, Semifinales y Final</b>, para determinar al <b>Campeón y Subcampeón</b>, los cuales ascenderán a la <b>Liga 1</b>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Grupos -->
+  <div class="container-fluid bg-light py-5 px-5 content-block">
+    <div class="row">
+      <div class="col-sm-12 col-md-11">
+        <div class="title">Grupos</div>
+        <div class="line mb-3"></div>
+        <p>La clasificación de los equipos a la fase de grupos se realizarán en base a la posición obtenida en la <b>Zona Norte</b> y <b>Zona Sur</b>, para ello se crearán 3 grupos: <b>Grupo A</b>,, <b>Grupo B</b> y <b>Grupo Descenso</b>. La distribución de los equipos será de la siguente manera.</p>
+      </div>
+      <div class="col-sm-12 col-md-11">
+        <div class="row">
+          <!-- L -->
+          <div class="col-sm-12 col-md-5">
+            <div class="text-center my-2 py-3">
+              <img class="img-fluid px-3" src="https://cdn.futbolperuano.com/sdi/2024/01/03/cuando-arrancara-la-nueva-temporada-de-la-liga-2-este-2024-1216430.jpg">
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5">
+            <div class="clasifiers border-A">
+              <!-- Grupo A -->
+              <b class="group-title mx-3">Grupo A</b>
+              <!-- Item 1 -->
+              <div class="row clasifiers-item">
+                <div class="col-1"><i class="far fa-futbol"></i></div>
+                <div class="col-10">
+                  <p><b>Zona Norte</b></p>
+                  <div class="lineA"></div>
+                  <p>Equipos en el 1°, 3° y 5° lugar.</p>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="row clasifiers-item">
+                <div class="col-1"><i class="far fa-futbol"></i></div>
+                <div class="col-10">
+                  <p><b>Zona Sur</b></p>
+                  <div class="lineA"></div>
+                  <p>Equipos en el 2°, 4° y 6° lugar.</p>
+                </div>
+              </div>
+              <!-- Grupo B -->
+              <b class="group-title mx-3">Grupo B</b>
+              <!-- Item 1 -->
+              <div class="row clasifiers-item">
+                <div class="col-1"><i class="far fa-futbol"></i></div>
+                <div class="col-10">
+                  <p><b>Zona Norte</b></p>
+                  <div class="lineA"></div>
+                  <p>Equipos en el 2°, 4° y 6° lugar.</p>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="row clasifiers-item">
+                <div class="col-1"><i class="far fa-futbol"></i></div>
+                <div class="col-10">
+                  <p><b>Zona Sur</b></p>
+                  <div class="lineA"></div>
+                  <p>Equipos en el 1°, 3° y 5° lugar.</p>
+                </div>
+              </div>
+            </div>
+            <div class="clasifiers border-D">
+              <!-- Descenso -->
+              <b class="group-title mx-3">Grupo Descenso</b>
+              <!-- Item 1 -->
+              <div class="row clasifiers-item">
+                <div class="col-1"><i class="far fa-futbol"></i></div>
+                <div class="col-10">
+                  <p><b>Zona Norte y Sur</b></p>
+                  <div class="lineD"></div>
+                  <p>Equipos en los 3 últimas lugares.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Descenso -->
+  <div class="container-fluid py-5 px-5 relegation-content content-block">
+    <div class="row">
+      <div class="col-sm-12 col-md-5">
+        <div class="title">Descenso</div>
+        <div class="line mb-3"></div>
+        <p>En la temporada actual, los equipos situados en las <b>2 últimas posiciones</b> del grupo de <b>Descenso</b> sufrirán el <b>descenso directo de categoría</b>, relegándolos a participar en la <b>Liga 3</b>.</p>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <img class="img-fluid relegation-img"  alt="liga-3" src="./assets/images/liga-2/liga2-descenso.png">
+      </div>
+    </div>
+  </div>
+  <!-- Divider -->
+  <div class="container-fluid divider"></div>
 }
 <router-outlet/>
