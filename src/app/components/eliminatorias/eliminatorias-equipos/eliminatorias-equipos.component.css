@@ -1,0 +1,94 @@
+/* Title */
+.background {
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 250px;
+}
+.background h1 {
+  font-size: 73px;
+  color: #fff;
+}
+/* Page Tree */
+.arrow {
+  padding: 40px 12px;
+  color: #ffbaba;
+  font-weight: bold;
+}
+.arrow span {
+  color: #fff;
+}
+@media screen and (max-width: 575.5px) {
+  .background h1 {
+    padding-top: 80px;
+  }
+  .description-image {
+    text-align: center;
+  }
+  .arrow {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+}
+/* Divider */
+.divider {
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 20px;
+}
+
+/* ======================================================================================================*/
+/* ==============================================Content=================================================*/
+/* ======================================================================================================*/
+.container-fluid .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-block {
+  user-select: none;
+}
+a {
+  text-decoration:none;
+  color: #ffff;
+  border: none;
+}
+/* Teams content background */
+.team-content {
+  color: #ffffff;
+  background: #161513;
+}
+/* Cards */
+.card:hover img {
+  transform: scale(1.2);
+}
+.card img {
+  transition: all 2s ease;
+}
+.item {
+  background: #312f2b;
+  color: #fafafa;
+}
+.item p {
+  margin: 0px;
+}
+.item i {
+  padding-left: 5px;
+}
+.item .card-img {
+  max-width: 80px;
+}
+.card-img img {
+  width: 64px;
+}
+.club-stadium {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-location {
+  font-size: 12px;
+}

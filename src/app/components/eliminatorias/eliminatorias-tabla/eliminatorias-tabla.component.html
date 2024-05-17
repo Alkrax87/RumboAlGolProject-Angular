@@ -1,1 +1,98 @@
-<p>eliminatorias-tabla works!</p>
+<!-- Title -->
+<div class="container-fluid background content-block">
+  <div class="row">
+    <div class="col-10 title">
+      <div class="row">
+        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>ELIMINATORIAS<i class="fas fa-chevron-right px-3"></i><span>TABLA</span></p>
+      </div>
+      <h1><b>Tabla</b></h1>
+    </div>
+  </div>
+</div>
+<!-- Description -->
+<app-description-league [value]="5"/>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
+<!-- Tables -->
+<div class="table-content container-fluid content-block py-5">
+  <div class="row">
+
+    <div class="col-md-12 col-lg-10 col-xl-8">
+      <div class="table-responsive">
+        <!-- Table -->
+        <table class="table align-middle">
+          <thead class="table-header">
+            <tr class="text-center">
+              <th scope="col"></th>
+              <th scope="col">#</th>
+              <th scope="col" class="text-start w-25">Nombre</th>
+              <th scope="col" class="w-10">Puntos</th>
+              <th scope="col" class="w-5">PJ</th>
+              <th scope="col" class="w-5">PG</th>
+              <th scope="col" class="w-5">PE</th>
+              <th scope="col" class="w-5">PP</th>
+              <th scope="col" class="w-5">GF</th>
+              <th scope="col" class="w-5">GC</th>
+              <th scope="col" class="w-5">DG</th>
+              <th scope="col" class="t-w-lg">Últimos 5</th>
+            </tr>
+          </thead>
+          @if (clasificacion) {
+            <tbody>
+              @for (item of clasificacion; track $index) {
+                <tr class="text-center">
+                  <th class="team-status"><div class="clasifier" [ngClass]="{'world-cup': $index >= 0 && $index < 6, 'play-off': $index == 6}"></div>
+                  <th>{{ 1 + $index }}</th>
+                  <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                  <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
+                  <td>{{ item.pj ? item.pj  : '0'}}</td>
+                  <td>{{ item.pg ? item.pg  : '0'}}</td>
+                  <td>{{ item.pe ? item.pe  : '0'}}</td>
+                  <td>{{ item.pp ? item.pp  : '0'}}</td>
+                  <td>{{ item.gf ? item.gf  : '0'}}</td>
+                  <td>{{ item.gc ? item.gc  : '0'}}</td>
+                  <td>{{ item.dg ? item.dg  : '0'}}</td>
+                  <td>
+                    @for (lg of item.lastGames; track $index) {
+                      @switch (lg) {
+                        @case ("win") {
+                          <i class="fa-solid fa-circle-check win"></i>
+                        }
+                        @case ("draw") {
+                          <i class="fa-solid fa-circle-minus draw"></i>
+                        }
+                        @case ("lose") {
+                          <i class="fa-solid fa-circle-xmark lose"></i>
+                        }
+                        @default {
+                          <i class="fa-solid fa-circle draw"></i>
+                        }
+                      }
+                    }
+                  </td>
+                </tr>
+              }
+            </tbody>
+          }
+        </table>
+      </div>
+      <!-- Table Footer -->
+      <div class="line-table"></div>
+      <div class="table-info">
+        <h6 class="text-start"><b>Clasificacion</b></h6>
+        <div class="text-start">
+          <i class="fas fa-square world-cup"></i>
+          <span class="mx-2">Clasificados Mundial 2026</span>
+        </div>
+        <div class="text-start">
+          <i class="fas fa-square play-off"></i>
+          <span class="mx-2">Repechaje</span>
+        </div>
+      </div>
+      <div class="line-table"></div>
+    </div>
+
+  </div>
+</div>
+<!-- Divider -->
+<div class="container-fluid divider"></div>

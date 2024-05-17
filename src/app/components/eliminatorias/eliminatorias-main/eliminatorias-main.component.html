@@ -1,1 +1,45 @@
-<p>eliminatorias-main works!</p>
+<app-top-list-teams [value]="value"/>
+<div class="container-fluid divisor-type"></div>
+<!-- D -->
+<div class="container-fluid bg-light nav-options-bar hide-options-D">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/eliminatorias/equipos">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-shield-alt"></i> Selecciones</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/eliminatorias/fixture">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-window-restore"></i> Fixture</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/eliminatorias/tabla">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-stream"></i> Tabla</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/eliminatorias/tecnicos">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-user-shield"></i> Técnicos</div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- M -->
+<div class="dropdown hide-options-M">
+  <button class="btn bg-light dropdown-option w-100 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Liga 2
+  </button>
+  <ul class="dropdown-menu bg-light w-100">
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/eliminatorias/equipos">Clubes</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/eliminatorias/fixture">Fixture</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/eliminatorias/tabla">Tabla</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/eliminatorias/tecnicos">Técnicos</a></li>
+  </ul>
+</div>
+<!-- Content -->
+@if (mainPage) {
+  <!-- Banner -->
+  <img src="./assets/images/banners/eliminatoriasbanner.jpg" alt="banner" class="w-100">
+}
+<router-outlet/>

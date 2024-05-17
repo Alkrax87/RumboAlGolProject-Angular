@@ -1,247 +1,720 @@
 {
-   "Info": {
-      "nombre": "Mexico - USA - Canada 2026",
-      "equipos": 10,
-      "fecha": "1"
-   },
-   "Teams": [
-      {
-         "id": "Team1",
-         "name": "Argentina",
-         "image": "./assets/images/eliminatorias/afa.png",
-         "alt": "AFA-logo",
-         "banner": "./assets/images/eliminatorias/estadio-afa.png",
-         "url": "",
-         "stadium": "Estadio Más Monumental",
-         "color1": "#5ABBE4",
-         "color2": "#333333",
-         "dt": [
-            {
-               "name": "Leonel Escaloni",
-               "country": "Argentina",
-               "cod": "ar",
-               "status" : true
-            }
-         ]
+  "Info": {
+    "temporada": "Mexico - USA - Canada 2026",
+    "equipos": 10,
+    "division": "Clasificatoria",
+    "logo": "./assets/images/eliminatorias/qatarconmebol.png",
+    "alt": "eliminatorias-logo",
+    "fecha": "6"
+  },
+  "Teams": [
+    {
+      "id": "Team1",
+      "name": "Argentina",
+      "abbreviation": "ARG",
+      "image": "./assets/images/eliminatorias/afa.png",
+      "alt": "AFA-logo",
+      "banner": "./assets/images/eliminatorias/estadio-afa.png",
+      "url": "",
+      "stadium": "Estadio Más Monumental",
+      "location": "Buenos Aires",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#5ABBE4",
+        "c3": "#333333"
       },
-      {
-         "id": "Team2",
-         "name": "Bolivia",
-         "image": "./assets/images/eliminatorias/fbf.png",
-         "alt": "FBF-logo",
-         "banner": "./assets/images/eliminatorias/estadio-fbf.png",
-         "url": "",
-         "stadium": "Estadio Hernando Siles",
-         "color1": "#00620D",
-         "dt": [
-            {
-               "name": "Gustavo Costas",
-               "country": "Argentina",
-               "cod": "ar",
-               "status" : true
-            }
-         ]
+      "dt": [
+        {
+          "name": "Leonel Escaloni",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://tvperu.gob.pe/sites/default/files/styles/note/public/lionel-scaloni-entrenador-de-la-seleccion-argentina.jpg?itok=7UrDGbHE"
+        }
+      ],
+      "lastGames": [
+        "win","lose","win","win","win"
+      ],
+      "data": {
+        "pg": 5,
+        "pe": null,
+        "pp": 1,
+        "gf": 8,
+        "gc": 2,
+        "sanction": null
       },
-      {
-         "id": "Team3",
-         "name": "Brasil",
-         "image": "./assets/images/eliminatorias/cbf.png",
-         "alt": "CBF-logo",
-         "banner": "./assets/images/eliminatorias/estadio-cbf.png",
-         "url": "",
-         "stadium": "Estadio Maracaná",
-         "color1": "#FFDA4E",
-         "color2": "#333333",
-         "dt": [
-            {
-               "name": "Ramón Menezes",
-               "country": "Brasil",
-               "cod": "br",
-               "status" : true
-            }
-         ]
-      },
-      {
-         "id": "Team4",
-         "name": "Colombia",
-         "image": "./assets/images/eliminatorias/fcf.png",
-         "alt": "FCF-logo",
-         "banner": "./assets/images/eliminatorias/estadio-fcf.png",
-         "url": "",
-         "stadium": "Estadio Metropólitano",
-         "color1": "#111B4D",
-         "dt": [
-            {
-               "name": "Néstor Lorenzo",
-               "country": "Argentina",
-               "cod": "ar",
-               "status" : true
-            }
-         ]
-      },
-      {
-         "id": "Team5",
-         "name": "Chile",
-         "image": "./assets/images/eliminatorias/ffch.png",
-         "alt": "FFCH-logo",
-         "banner": "./assets/images/eliminatorias/estadio-ffch.png",
-         "url": "",
-         "stadium": "Estadio Nacional",
-         "color1": "#981C18",
-         "dt": [
-            {
-               "name": "Eduardo Berizzo",
-               "country": "Argentina",
-               "cod": "ar",
-               "status" : true
-            }
-         ]
-      },
-      {
-         "id": "Team6",
-         "name": "Ecuador",
-         "image": "./assets/images/eliminatorias/fef.png",
-         "alt": "FEF-logo",
-         "banner": "./assets/images/eliminatorias/estadio-fef.png",
-         "url": "",
-         "stadium": "Estadio Rodrigo Paz Delgado",
-         "color1": "#001C56",
-         "dt": [
-            {
-               "name": "Félix Sánchez",
-               "country": "España",
-               "cod": "es",
-               "status" : true
-            }
-         ]
-      },
-      {
-         "id": "Team7",
-         "name": "Paraguay",
-         "image": "./assets/images/eliminatorias/apf.png",
-         "alt": "APF-logo",
-         "banner": "./assets/images/eliminatorias/estadio-apf.png",
-         "url": "",
-         "stadium": "Estadio Defensores del Chaco",
-         "color1": "#005695",
-         "dt": [
-            {
-               "name": "Guillermo Barros Schelotto",
-               "country": "Argentina",
-               "cod": "ar",
-               "status" : true
-            }
-         ]
-      },
-      {
-         "id": "Team8",
-         "name": "Perú",
-         "image": "./assets/images/eliminatorias/fpf.png",
-         "alt": "FPF-logo",
-         "banner": "./assets/images/eliminatorias/estadio-fpf.png",
-         "url": "",
-         "stadium": "Estadio Nacional",
-         "color1": "#FF0115",
-         "dt": [
-            {
-               "name": "Juan Máximo Reynoso",
-               "country": "Perú",
-               "cod": "pe",
-               "status" : true
-            }
-         ]
-      },
-      {
-         "id": "Team9",
-         "name": "Uruguay",
-         "image": "./assets/images/eliminatorias/auf.png",
-         "alt": "AUF-logo",
-         "banner": "./assets/images/eliminatorias/estadio-auf.png",
-         "url": "",
-         "stadium": "Estadio Centenario",
-         "color1": "#025082",
-         "dt": [
-            {
-               "name": "Marcelo Bielsa",
-               "country": "Argentina",
-               "cod": "ar",
-               "status" : true
-            }
-         ]
-      },
-      {
-         "id": "Team10",
-         "name": "Venezuela",
-         "image": "./assets/images/eliminatorias/fvf.png",
-         "alt": "FVF-logo",
-         "banner": "./assets/images/eliminatorias/estadio-fvf.png",
-         "url": "",
-         "stadium": "Estadio Olimpico",
-         "color1": "#6A001C",
-         "dt": [
-            {
-               "name": "Fernando Batista",
-               "country": "Argentina",
-               "cod": "ar",
-               "status" : true
-            }
-         ]
-      }
-   ],
-   "Eliminatorias": {
-      "F1": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F2": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F3": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F4": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F5": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F6": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F7": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F8": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F9": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F10": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F11": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F12": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F13": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F14": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F15": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F16": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F17": [
-         "0","0","0","0","0","0","0","0","0","0"
-      ],
-      "F18": [
-         "0","0","0","0","0","0","0","0","0","0"
+      "clasificatoria": [
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 3 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 2 },
+        { "game": 5, "score": 0 },
+        { "game": 6, "score": 1 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
       ]
-   }
+    },
+    {
+      "id": "Team2",
+      "name": "Bolivia",
+      "abbreviation": "BOL",
+      "image": "./assets/images/eliminatorias/fbf.png",
+      "alt": "FBF-logo",
+      "banner": "./assets/images/eliminatorias/estadio-fbf.png",
+      "url": "",
+      "stadium": "Estadio Hernando Siles",
+      "location": "La Paz",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#00620D",
+        "c3": "#fafafa"
+      },
+      "dt": [
+        {
+          "name": "Antônio Zago",
+          "country": "Brasil",
+          "cod": "br",
+          "img": "https://limay.pe/uploads/master/zagodtbolivia1.jpg"
+        },
+        {
+          "name": "Gustavo Costas",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://e.rpp-noticias.io/xlarge/2023/10/24/303630_1490979.webp"
+        }
+      ],
+      "lastGames": [
+        "lose","win","lose","lose","lose"
+      ],
+      "data": {
+        "pg": 1,
+        "pe": null,
+        "pp": 5,
+        "gf": 4,
+        "gc": 14,
+        "sanction": null
+      },
+      "clasificatoria": [
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 2 },
+        { "game": 6, "score": 0 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
+      ]
+    },
+    {
+      "id": "Team3",
+      "name": "Brasil",
+      "abbreviation": "BRA",
+      "image": "./assets/images/eliminatorias/cbf.png",
+      "alt": "CBF-logo",
+      "banner": "./assets/images/eliminatorias/estadio-cbf.png",
+      "url": "",
+      "stadium": "Estadio Maracaná",
+      "location": "Rio de Janeiro",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#FFDA4E",
+        "c3": "#333333"
+      },
+      "dt": [
+        {
+          "name": "Dorival Junior",
+          "country": "Brasil",
+          "cod": "br",
+          "img": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2024/01/08/001027466W.jpg"
+        },
+        {
+          "name": "Fernando Diniz",
+          "country": "Brasil",
+          "cod": "br",
+          "img": "https://www.eldiez.com.pe/wp-content/uploads/2024/01/Fernando-Diniz-no-va-mas-en-Brasil.jpg"
+        }
+      ],
+      "lastGames": [
+        "lose","lose","lose","draw","win"
+      ],
+      "data": {
+        "pg": 2,
+        "pe": 1,
+        "pp": 3,
+        "gf": 8,
+        "gc": 7,
+        "sanction": null
+      },
+      "clasificatoria": [
+        { "game": 1, "score": 5 },
+        { "game": 2, "score": 1 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 1 },
+        { "game": 6, "score": 0 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
+      ]
+    },
+    {
+      "id": "Team4",
+      "name": "Colombia",
+      "abbreviation": "COL",
+      "image": "./assets/images/eliminatorias/fcf.png",
+      "alt": "FCF-logo",
+      "banner": "./assets/images/eliminatorias/estadio-fcf.png",
+      "url": "",
+      "stadium": "Estadio Metropólitano",
+      "location": "Barranquilla",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#111B4D",
+        "c3": "#fafafa"
+      },
+      "dt": [
+        {
+          "name": "Néstor Lorenzo",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://caracoltv.brightspotcdn.com/dims4/default/d1976c4/2147483647/strip/true/crop/1080x1080+0+0/resize/1000x1000!/quality/90/?url=http%3A%2F%2Fcaracol-brightspot.s3.amazonaws.com%2Fe6%2F0f%2Fdf24e7bb44f18f7515959a962bc5%2Fnestor-lorenzo.jpg"
+        }
+      ],
+      "lastGames": [
+        "win","win","draw","draw","draw"
+      ],
+      "data": {
+        "pg": 3,
+        "pe": 3,
+        "pp": null,
+        "gf": 6,
+        "gc": 3,
+        "sanction": null
+      },
+      "clasificatoria": [
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 2 },
+        { "game": 6, "score": 1 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
+      ]
+    },
+    {
+      "id": "Team5",
+      "name": "Chile",
+      "abbreviation": "CHI",
+      "image": "./assets/images/eliminatorias/ffch.png",
+      "alt": "FFCH-logo",
+      "banner": "./assets/images/eliminatorias/estadio-ffch.png",
+      "url": "",
+      "stadium": "Estadio Nacional",
+      "location": "Santiago",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#981C18",
+        "c3": "#fafafa"
+      },
+      "dt": [
+        {
+          "name": "Ricardo Gareca",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://www.ole.com.ar/images/2024/03/22/P1eOfx5nf_720x0__1.jpg"
+        },
+        {
+          "name": "Eduardo Berizzo",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://imgmedia.libero.pe/652x359/libero/original/2023/10/11/6526c43e2ce7213e3a3f3c2d.webp"
+        }
+      ],
+      "lastGames": [
+        "lose","draw","lose","win","draw"
+      ],
+      "data": {
+        "pg": 1,
+        "pe": 2,
+        "pp": 3,
+        "gf": 3,
+        "gc": 7,
+        "sanction": null
+      },
+      "clasificatoria": [
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 0 },
+        { "game": 6, "score": 0 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
+      ]
+    },
+    {
+      "id": "Team6",
+      "name": "Ecuador",
+      "abbreviation": "ECU",
+      "image": "./assets/images/eliminatorias/fef.png",
+      "alt": "FEF-logo",
+      "banner": "./assets/images/eliminatorias/estadio-fef.png",
+      "url": "",
+      "stadium": "Estadio Rodrigo Paz Delgado",
+      "location": "Quito",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#001C56",
+        "c3": "#fafafa"
+      },
+      "dt": [
+        {
+          "name": "Félix Sánchez",
+          "country": "España",
+          "cod": "es",
+          "img": "https://www.directvsports.com/__export/1709919255919/sites/dsports/img/2024/03/08/felix-sanchez-bas-dt-de-ecuador.jpg_1714319161.jpg"
+        }
+      ],
+      "lastGames": [
+        "win","draw","draw","win","win"
+      ],
+      "data": {
+        "pg": 3,
+        "pe": 2,
+        "pp": 1,
+        "gf": 5,
+        "gc": 3,
+        "sanction": 3
+      },
+      "clasificatoria": [
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 2 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 0 },
+        { "game": 6, "score": 1 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
+      ]
+    },
+    {
+      "id": "Team7",
+      "name": "Paraguay",
+      "abbreviation": "PAR",
+      "image": "./assets/images/eliminatorias/apf.png",
+      "alt": "APF-logo",
+      "banner": "./assets/images/eliminatorias/estadio-apf.png",
+      "url": "",
+      "stadium": "Estadio Defensores del Chaco",
+      "location": "Asunción",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#005695",
+        "c3": "#fafafa"
+      },
+      "dt": [
+        {
+          "name": "Daniel Garnero",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "data:image/jpeg;base64,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"
+        },
+        {
+          "name": "Barros Schelotto",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://peru21.pe/resizer/B2m-UPcLsh87oCY0Hlb9p5ys-7g=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/DK27CXTYSZFATCBGM7BUQ5OIZU.jpg"
+        }
+      ],
+      "lastGames": [
+        "lose","draw","win","lose","lose"
+      ],
+      "data": {
+        "pg": 1,
+        "pe": 2,
+        "pp": 3,
+        "gf": 1,
+        "gc": 3,
+        "sanction": null
+      },
+      "clasificatoria": [
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 0 },
+        { "game": 6, "score": 0 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
+      ]
+    },
+    {
+      "id": "Team8",
+      "name": "Perú",
+      "abbreviation": "PER",
+      "image": "./assets/images/eliminatorias/fpf.png",
+      "alt": "FPF-logo",
+      "banner": "./assets/images/eliminatorias/estadio-fpf.png",
+      "url": "",
+      "stadium": "Estadio Nacional",
+      "location": "Lima",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#FF0115",
+        "c3": "#fafafa"
+      },
+      "dt": [
+        {
+          "name": "Jorge Fossati",
+          "country": "Uruguay",
+          "cod": "uy",
+          "img": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2023/07/22/000978343W.jpg"
+        },
+        {
+          "name": "Juan Reynoso",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://www.atv.pe/wp-content/uploads/2023/11/REYNOSO-SALIDA.jpg"
+        }
+      ],
+      "lastGames": [
+        "draw","lose","lose","lose","lose"
+      ],
+      "data": {
+        "pg": null,
+        "pe": 2,
+        "pp": 4,
+        "gf": 1,
+        "gc": 8,
+        "sanction": null
+      },
+      "clasificatoria": [
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 0 },
+        { "game": 6, "score": 1 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
+      ]
+    },
+    {
+      "id": "Team9",
+      "name": "Uruguay",
+      "abbreviation": "URU",
+      "image": "./assets/images/eliminatorias/auf.png",
+      "alt": "AUF-logo",
+      "banner": "./assets/images/eliminatorias/estadio-auf.png",
+      "url": "",
+      "stadium": "Estadio Centenario",
+      "location": "Montevideo",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#025082",
+        "c3": "#fafafa"
+      },
+      "dt": [
+        {
+          "name": "Marcelo Bielsa",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://phantom-marca-mx.unidadeditorial.es/8f7eec830bb0865989b31d86d70347b8/resize/828/f/jpg/mx/assets/multimedia/imagenes/2023/06/15/16867930097093.jpg"
+        }
+      ],
+      "lastGames": [
+        "win","win","win","draw","lose"
+      ],
+      "data": {
+        "pg": 4,
+        "pe": 1,
+        "pp": 1,
+        "gf": 13,
+        "gc": 5,
+        "sanction": null
+      },
+      "clasificatoria": [
+        { "game": 1, "score": 3 },
+        { "game": 2, "score": 1 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 2 },
+        { "game": 5, "score": 2 },
+        { "game": 6, "score": 3 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
+      ]
+    },
+    {
+      "id": "Team10",
+      "name": "Venezuela",
+      "abbreviation": "VEN",
+      "image": "./assets/images/eliminatorias/fvf.png",
+      "alt": "FVF-logo",
+      "banner": "./assets/images/eliminatorias/estadio-fvf.png",
+      "url": "",
+      "stadium": "Estadio Olimpico",
+      "location": "Caracas",
+      "color": {
+        "c1": "#fafafa",
+        "c2": "#6A001C",
+        "c3": "#fafafa"
+      },
+      "dt": [
+        {
+          "name": "Fernando Batista",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://e.rpp-noticias.io/xlarge/2023/03/10/204220_1399678.jpg"
+        }
+      ],
+      "lastGames": [
+        "draw","draw","win","draw","win"
+      ],
+      "data": {
+        "pg": 2,
+        "pe": 3,
+        "pp": 1,
+        "gf": 6,
+        "gc": 3,
+        "sanction": null
+      },
+      "clasificatoria": [
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 1 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 3 },
+        { "game": 5, "score": 0 },
+        { "game": 6, "score": 1 },
+        { "game": 7, "score": null },
+        { "game": 8, "score": null },
+        { "game": 9, "score": null },
+        { "game": 10, "score": null },
+        { "game": 11, "score": null },
+        { "game": 12, "score": null },
+        { "game": 13, "score": null },
+        { "game": 14, "score": null },
+        { "game": 15, "score": null },
+        { "game": 16, "score": null },
+        { "game": 17, "score": null },
+        { "game": 18, "score": null }
+      ]
+    }
+  ],
+  "Fixture": {
+    "1": [
+      { "home": "Team7", "away": "Team8" },
+      { "home": "Team4", "away": "Team10" },
+      { "home": "Team1", "away": "Team6" },
+      { "home": "Team9", "away": "Team5" },
+      { "home": "Team3", "away": "Team2" }
+    ],
+    "2": [
+      { "home": "Team2", "away": "Team1" },
+      { "home": "Team6", "away": "Team9" },
+      { "home": "Team10", "away": "Team7" },
+      { "home": "Team5", "away": "Team4" },
+      { "home": "Team8", "away": "Team3" }
+    ],
+    "3": [
+      { "home": "Team4", "away": "Team9" },
+      { "home": "Team2", "away": "Team6" },
+      { "home": "Team1", "away": "Team7" },
+      { "home": "Team5", "away": "Team8" },
+      { "home": "Team3", "away": "Team10" }
+    ],
+    "4": [
+      { "home": "Team10", "away": "Team5" },
+      { "home": "Team7", "away": "Team2" },
+      { "home": "Team6", "away": "Team4" },
+      { "home": "Team9", "away": "Team3" },
+      { "home": "Team8", "away": "Team1" }
+    ],
+    "5": [
+      { "home": "Team2", "away": "Team8" },
+      { "home": "Team10", "away": "Team6" },
+      { "home": "Team4", "away": "Team3" },
+      { "home": "Team1", "away": "Team9" },
+      { "home": "Team5", "away": "Team7" }
+    ],
+    "6": [
+      { "home": "Team7", "away": "Team4" },
+      { "home": "Team9", "away": "Team2" },
+      { "home": "Team6", "away": "Team5" },
+      { "home": "Team3", "away": "Team1" },
+      { "home": "Team8", "away": "Team10" }
+    ],
+    "7": [
+      { "home": "Team2", "away": "Team10" },
+      { "home": "Team9", "away": "Team7" },
+      { "home": "Team1", "away": "Team5" },
+      { "home": "Team8", "away": "Team4" },
+      { "home": "Team3", "away": "Team6" }
+    ],
+    "8": [
+      { "home": "Team6", "away": "Team8" },
+      { "home": "Team10", "away": "Team9" },
+      { "home": "Team4", "away": "Team1" },
+      { "home": "Team7", "away": "Team3" },
+      { "home": "Team5", "away": "Team2" }
+    ],
+    "9": [
+      { "home": "Team2", "away": "Team4" },
+      { "home": "Team6", "away": "Team7" },
+      { "home": "Team10", "away": "Team1" },
+      { "home": "Team5", "away": "Team3" },
+      { "home": "Team8", "away": "Team9" }
+    ],
+    "10": [
+      { "home": "Team9", "away": "Team6" },
+      { "home": "Team7", "away": "Team10" },
+      { "home": "Team4", "away": "Team5" },
+      { "home": "Team1", "away": "Team2" },
+      { "home": "Team3", "away": "Team8" }
+    ],
+    "11": [
+      { "home": "Team7", "away": "Team1" },
+      { "home": "Team9", "away": "Team4" },
+      { "home": "Team10", "away": "Team3" },
+      { "home": "Team6", "away": "Team2" },
+      { "home": "Team8", "away": "Team5" }
+    ],
+    "12": [
+      { "home": "Team2", "away": "Team7" },
+      { "home": "Team4", "away": "Team6" },
+      { "home": "Team1", "away": "Team8" },
+      { "home": "Team5", "away": "Team10" },
+      { "home": "Team3", "away": "Team9" }
+    ],
+    "13": [
+      { "home": "Team6", "away": "Team10" },
+      { "home": "Team7", "away": "Team5" },
+      { "home": "Team3", "away": "Team4" },
+      { "home": "Team8", "away": "Team2" },
+      { "home": "Team9", "away": "Team1" }
+    ],
+    "14": [
+      { "home": "Team2", "away": "Team9" },
+      { "home": "Team10", "away": "Team8" },
+      { "home": "Team4", "away": "Team7" },
+      { "home": "Team1", "away": "Team3" },
+      { "home": "Team5", "away": "Team6" }
+    ],
+    "15": [
+      { "home": "Team6", "away": "Team3" },
+      { "home": "Team7", "away": "Team9" },
+      { "home": "Team5", "away": "Team1" },
+      { "home": "Team4", "away": "Team8" },
+      { "home": "Team10", "away": "Team2" }
+    ],
+    "16": [
+      { "home": "Team2", "away": "Team5" },
+      { "home": "Team9", "away": "Team10" },
+      { "home": "Team1", "away": "Team4" },
+      { "home": "Team3", "away": "Team7" },
+      { "home": "Team8", "away": "Team6" }
+    ],
+    "17": [
+      { "home": "Team4", "away": "Team2" },
+      { "home": "Team9", "away": "Team8" },
+      { "home": "Team3", "away": "Team5" },
+      { "home": "Team7", "away": "Team6" },
+      { "home": "Team1", "away": "Team10" }
+    ],
+    "18": [
+      { "home": "Team2", "away": "Team3" },
+      { "home": "Team10", "away": "Team4" },
+      { "home": "Team6", "away": "Team1" },
+      { "home": "Team5", "away": "Team9" },
+      { "home": "Team8", "away": "Team7" }
+    ]
+  }
 }

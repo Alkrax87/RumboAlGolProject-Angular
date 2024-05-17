@@ -1,0 +1,150 @@
+/* Title */
+.background {
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 250px;
+}
+.background h1 {
+  font-size: 73px;
+  color: #fff;
+}
+/* Page Tree */
+.arrow {
+  padding: 40px 12px;
+  color: #ffbaba;
+  font-weight: bold;
+}
+.arrow span {
+  color: #fff;
+}
+@media screen and (max-width: 767.5px) {
+  .description-image {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575.5px) {
+  .background h1 {
+    padding-top: 80px;
+  }
+  .description-image {
+    text-align: center;
+  }
+  .arrow {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+}
+/* Divider */
+.divider {
+  background: #DC143C;
+  background-image: url('/assets/images/banners/background-pattern.svg');
+  background-size: cover;
+  height: 20px;
+}
+
+/* ======================================================================================================*/
+/* ==============================================Content=================================================*/
+/* ======================================================================================================*/
+.container-fluid .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-block {
+  user-select: none;
+}
+a {
+  text-decoration:none;
+  color: #000;
+}
+.line {
+  width: 220px;
+  height: 8px;
+  background: #DC143C;
+  transform: skew(50deg);
+}
+.title-table {
+  font-size: 40px;
+}
+/* Table content background */
+.table-content {
+  color: #ffffff;
+  background: #161513;
+}
+/* Table */
+.table {
+  margin-bottom: 0px;
+}
+.table-header th {
+  background-color: #DC143C;
+  color: #fff;
+}
+th {
+  font-size: 15px;
+  height: 40px;
+  padding-left: 0px;
+}
+td {
+  padding: 0px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+.t-w-lg {
+  max-width: 130px;
+  min-width: 130px;
+}
+.team-status {
+  padding: 0px;
+}
+.logos {
+  width: 35px;
+}
+.line-table {
+  background: linear-gradient(270deg,#DC143C,#d8b145);
+  width: 6px;
+  height: 5px;
+  width: auto;
+}
+.table-info {
+  padding: 10px;
+  background-color: #fff;
+}
+/* Icons Color */
+.win {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #3AA757;
+  font-size: 18px;
+}
+.draw {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #9AA0A6;
+  font-size: 18px;
+}
+.lose {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #EA4335;
+  font-size: 18px;
+}
+/* Clasifiers */
+.clasifier {
+  width: 6px;
+  height: 39px;
+  padding: 0px;
+}
+.world-cup {
+  background: #ac1a57;
+  color: #ac1a57;
+}
+.play-off {
+  background: #025288;
+  color: #025288;
+}
