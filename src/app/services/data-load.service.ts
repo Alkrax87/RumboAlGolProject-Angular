@@ -30,6 +30,8 @@ export class DataLoadService {
         return 'copa-peru';
       case 5:
         return 'eliminatorias';
+      case 6:
+        return 'reservas';
       default:
         return 'a';
     }

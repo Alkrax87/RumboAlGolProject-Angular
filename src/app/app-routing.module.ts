@@ -21,6 +21,9 @@ import { EliminatoriasEquiposComponent } from './components/eliminatorias/elimin
 import { EliminatoriasFixtureComponent } from './components/eliminatorias/eliminatorias-fixture/eliminatorias-fixture.component';
 import { EliminatoriasTablaComponent } from './components/eliminatorias/eliminatorias-tabla/eliminatorias-tabla.component';
 import { EliminatoriasTecnicosComponent } from './components/eliminatorias/eliminatorias-tecnicos/eliminatorias-tecnicos.component';
+import { ReservasMainComponent } from './components/reservas/reservas-main/reservas-main.component';
+import { ReservasFixtureComponent } from './components/reservas/reservas-fixture/reservas-fixture.component';
+import { ReservasTablaComponent } from './components/reservas/reservas-tabla/reservas-tabla.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -49,6 +52,10 @@ const routes: Routes = [
     { path: 'fixture', component: EliminatoriasFixtureComponent },
     { path: 'tabla', component: EliminatoriasTablaComponent },
     { path: 'tecnicos', component: EliminatoriasTecnicosComponent }
+  ]},
+  { path: 'reservas', component: ReservasMainComponent, children: [
+      { path: 'fixture', component: ReservasFixtureComponent },
+      { path: 'tabla', component: ReservasTablaComponent }
   ]},
   //{ path: '**', component: PathNotFoundComponent },
 ];

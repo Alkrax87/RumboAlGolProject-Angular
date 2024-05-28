@@ -21,6 +21,9 @@ import { EliminatoriasEquiposComponent } from './components/eliminatorias/elimin
 import { EliminatoriasFixtureComponent } from './components/eliminatorias/eliminatorias-fixture/eliminatorias-fixture.component';
 import { EliminatoriasMainComponent } from './components/eliminatorias/eliminatorias-main/eliminatorias-main.component';
 import { EliminatoriasTablaComponent } from './components/eliminatorias/eliminatorias-tabla/eliminatorias-tabla.component';
+import { ReservasMainComponent } from './components/reservas/reservas-main/reservas-main.component';
+import { ReservasFixtureComponent } from './components/reservas/reservas-fixture/reservas-fixture.component';
+import { ReservasTablaComponent } from './components/reservas/reservas-tabla/reservas-tabla.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { TopBarComponent } from './shared/top-bar/top-bar.component';
@@ -52,6 +55,9 @@ import { FormsModule } from '@angular/forms';
     EliminatoriasFixtureComponent,
     EliminatoriasMainComponent,
     EliminatoriasTablaComponent,
+    ReservasMainComponent,
+    ReservasFixtureComponent,
+    ReservasTablaComponent,
     NavbarComponent,
     FooterComponent,
     TopBarComponent,

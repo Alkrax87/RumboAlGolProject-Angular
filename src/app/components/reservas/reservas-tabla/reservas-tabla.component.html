@@ -1,0 +1,193 @@
+<!-- Title -->
+<div class="container-fluid background content-block">
+  <div class="row">
+    <div class="col-10 title">
+      <div class="row">
+        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>RESERVAS<i class="fas fa-chevron-right px-3"></i><span>TABLA</span></p>
+      </div>
+      <h1><b>Tabla</b></h1>
+    </div>
+  </div>
+</div>
+<!-- Description -->
+<app-description-league [value]="6"/>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
+<!-- Tables -->
+<div class="table-content container-fluid content-block py-5">
+  <div class="row">
+
+    <!-- Grupo Norte -->
+    <div class="col-md-12 col-lg-10 col-xl-8">
+      <div class="title-table text-start">Grupo Norte</div>
+      <div class="line mb-3"></div>
+      <div class="table-responsive">
+        <!-- Table -->
+        <table class="table align-middle">
+          <thead class="table-header">
+            <tr class="text-center">
+              <th scope="col"></th>
+              <th scope="col">#</th>
+              <th scope="col" class="text-start w-25">Nombre</th>
+              <th scope="col" class="w-10">Puntos</th>
+              <th scope="col" class="w-5">PJ</th>
+              <th scope="col" class="w-5">PG</th>
+              <th scope="col" class="w-5">PE</th>
+              <th scope="col" class="w-5">PP</th>
+              <th scope="col" class="w-5">GF</th>
+              <th scope="col" class="w-5">GC</th>
+              <th scope="col" class="w-5">DG</th>
+              <th scope="col" class="t-w-lg">Últimos 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (item of norte; track $index) {
+              <tr class="text-center">
+                <th class="team-status"><div class="clasifier" [ngClass]="{'playoff-4tos': $index >= 0 && $index <= 1, 'playoff-8vos': $index >= 2 && $index <= 5}"></div>
+                <th>{{ 1 + $index }}</th>
+                <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
+                <td>{{ item.pj ? item.pj : '0'}}</td>
+                <td>{{ item.pg ? item.pg : '0'}}</td>
+                <td>{{ item.pe ? item.pe : '0'}}</td>
+                <td>{{ item.pp ? item.pp : '0'}}</td>
+                <td>{{ item.gf ? item.gf : '0'}}</td>
+                <td>{{ item.gc ? item.gc : '0'}}</td>
+                <td>{{ item.dg ? item.dg : '0'}}</td>
+                <td>
+                  @for (lg of item.lastGames; track $index) {
+                    @switch (lg) {
+                      @case ("win") {
+                        <i class="fa-solid fa-circle-check win"></i>
+                      }
+                      @case ("draw") {
+                        <i class="fa-solid fa-circle-minus draw"></i>
+                      }
+                      @case ("lose") {
+                        <i class="fa-solid fa-circle-xmark lose"></i>
+                      }
+                      @default {
+                        <i class="fa-solid fa-circle draw"></i>
+                      }
+                    }
+                  }
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      <!-- Table Footer -->
+      <div class="line-table"></div>
+      <div class="table-info">
+        <h6 class="text-start"><b>Clasificación</b></h6>
+        <div class="text-start">
+          <i class="fas fa-square playoff-4tos"></i>
+          <span class="mx-2">Cuartos de final</span>
+        </div>
+        <div class="text-start">
+          <i class="fas fa-square playoff-8vos"></i>
+          <span class="mx-2">Octavos de final</span>
+        </div>
+      </div>
+      <div class="line-table"></div>
+    </div>
+
+    <!-- Grupo Sur -->
+    <div class="col-md-12 col-lg-10 col-xl-8 mt-5">
+      <div class="title-table text-start">Grupo Sur</div>
+      <div class="line mb-3"></div>
+      <div class="table-responsive">
+        <!-- Table -->
+        <table class="table align-middle">
+          <thead class="table-header">
+            <tr class="text-center">
+              <th scope="col"></th>
+              <th scope="col">#</th>
+              <th scope="col" class="text-start w-25">Nombre</th>
+              <th scope="col" class="w-10">Puntos</th>
+              <th scope="col" class="w-5">PJ</th>
+              <th scope="col" class="w-5">PG</th>
+              <th scope="col" class="w-5">PE</th>
+              <th scope="col" class="w-5">PP</th>
+              <th scope="col" class="w-5">GF</th>
+              <th scope="col" class="w-5">GC</th>
+              <th scope="col" class="w-5">DG</th>
+              <th scope="col" class="t-w-lg">Últimos 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (item of sur; track $index) {
+              <tr class="text-center">
+                <th class="team-status"><div class="clasifier" [ngClass]="{'playoff-4tos': $index >= 0 && $index <= 1, 'playoff-8vos': $index >= 2 && $index <= 5}"></div>
+                <th>{{ 1 + $index }}</th>
+                <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
+                <td>{{ item.pj ? item.pj : '0'}}</td>
+                <td>{{ item.pg ? item.pg : '0'}}</td>
+                <td>{{ item.pe ? item.pe : '0'}}</td>
+                <td>{{ item.pp ? item.pp : '0'}}</td>
+                <td>{{ item.gf ? item.gf : '0'}}</td>
+                <td>{{ item.gc ? item.gc : '0'}}</td>
+                <td>{{ item.dg ? item.dg : '0'}}</td>
+                <td>
+                  @for (lg of item.lastGames; track $index) {
+                    @switch (lg) {
+                      @case ("win") {
+                        <i class="fa-solid fa-circle-check win"></i>
+                      }
+                      @case ("draw") {
+                        <i class="fa-solid fa-circle-minus draw"></i>
+                      }
+                      @case ("lose") {
+                        <i class="fa-solid fa-circle-xmark lose"></i>
+                      }
+                      @default {
+                        <i class="fa-solid fa-circle draw"></i>
+                      }
+                    }
+                  }
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      <!-- Table Footer -->
+      <div class="line-table"></div>
+      <div class="table-info">
+        <h6 class="text-start"><b>Clasificación</b></h6>
+        <div class="text-start">
+          <i class="fas fa-square playoff-4tos"></i>
+          <span class="mx-2">Cuartos de final</span>
+        </div>
+        <div class="text-start">
+          <i class="fas fa-square playoff-8vos"></i>
+          <span class="mx-2">Octavos de final</span>
+        </div>
+      </div>
+      <div class="line-table"></div>
+    </div>
+
+  </div>
+</div>
+<!-- Play-offs -->
+<div class="container-fluid background content-block">
+  <div class="row title-stages">
+    <div class="col-10">
+      <h1><b>Play-offs</b></h1>
+    </div>
+  </div>
+</div>
+<!-- Description -->
+<div class="container-fluid bg-light content-block">
+  <div class="row description-stages">
+    <div class="col-12 text-center">
+      <p class="notes">Descripción</p>
+      <b>Equipos ubicados del 1° al 6° lugar de cada grupo</b>
+    </div>
+  </div>
+</div>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
+<!-- Table -->

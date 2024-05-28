@@ -1,0 +1,89 @@
+<!-- Title -->
+<div class="container-fluid background content-block">
+  <div class="row">
+    <div class="col-10 title">
+      <div class="row">
+        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>RESERVAS<i class="fas fa-chevron-right px-3"></i><span>FIXTURE</span></p>
+      </div>
+      <h1><b>Fixture</b></h1>
+    </div>
+  </div>
+</div>
+<!-- Description -->
+<app-description-league [value]="6"/>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
+<!-- Fixture -->
+<div class="fixture-content container-fluid content-block py-5">
+  <div class="row">
+
+    <!-- Titulo -->
+    <div class="col-md-12 col-lg-10 col-xl-8">
+      <p class="fixture-title">Fecha {{ selectedFixture }}</p>
+      <!-- Selector -->
+      <div class="select">
+        <select class="form-select" [(ngModel)]="selectedFixture">
+          @for (fixture of fixtureIndexNorth; track $index) {
+            <option [value]="fixture">Fecha {{ fixture }}</option>
+          }
+        </select>
+      </div>
+      <div class="line my-4"></div>
+    </div>
+    <!-- Fixture Grupo Norte -->
+    <div class="col-md-12 col-lg-10 col-xl-8">
+      <div class="title-group-fixture text-start">Grupo Norte</div>
+      <div class="line3 my-3"></div>
+      @for (item of matchesByRoundNorth; track $index) {
+        @if (selectedFixture === null || selectedFixture === item.round) {
+          <div class="container-fluid fixture-location">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="fixture-location-form "><p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid my-1 content-block fixture-item-bg">
+            <div class="fixture-row-container">
+              <div class="col fixture-name text-end W-100"><span class="name-team">{{ item.homeTeam.name }}</span><span class="abbreviation-team">{{ item.homeTeam.abbreviation }}</span></div>
+              <div class="col fixture-item"><img [src]="item.homeTeam.image" alt="{{ item.homeTeam.alt }}"></div>
+              <div class="col fixture-item result-bg">{{ item.result.home !== null ? item.result.home : '' }}</div>
+              <div class="col fixture-item result-bg">{{ item.result.away !== null ? item.result.away : '' }}</div>
+              <div class="col fixture-item"><img [src]="item.awayTeam.image" alt="{{ item.awayTeam.alt }}"></div>
+              <div class="col fixture-name text-start W-100"><span class="name-team">{{ item.awayTeam.name }}</span><span class="abbreviation-team">{{ item.awayTeam.abbreviation }}</span></div>
+            </div>
+          </div>
+        }
+      }
+    </div>
+    <!-- Fixture Grupo Sur -->
+    <div class="col-md-12 col-lg-10 col-xl-8">
+      <div class="title-group-fixture text-start">Grupo Sur</div>
+      <div class="line3 my-3"></div>
+      @for (item of matchesByRoundSouth; track $index) {
+        @if (selectedFixture === null || selectedFixture === item.round) {
+          <div class="container-fluid fixture-location">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="fixture-location-form "><p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid my-1 content-block fixture-item-bg">
+            <div class="fixture-row-container">
+              <div class="col fixture-name text-end W-100"><span class="name-team">{{ item.homeTeam.name }}</span><span class="abbreviation-team">{{ item.homeTeam.abbreviation }}</span></div>
+              <div class="col fixture-item"><img [src]="item.homeTeam.image" alt="{{ item.homeTeam.alt }}"></div>
+              <div class="col fixture-item result-bg">{{ item.result.home !== null ? item.result.home : '' }}</div>
+              <div class="col fixture-item result-bg">{{ item.result.away !== null ? item.result.away : '' }}</div>
+              <div class="col fixture-item"><img [src]="item.awayTeam.image" alt="{{ item.awayTeam.alt }}"></div>
+              <div class="col fixture-name text-start W-100"><span class="name-team">{{ item.awayTeam.name }}</span><span class="abbreviation-team">{{ item.awayTeam.abbreviation }}</span></div>
+            </div>
+          </div>
+        }
+      }
+    </div>
+
+  </div>
+</div>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
