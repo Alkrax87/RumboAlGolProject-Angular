@@ -9,7 +9,7 @@
     "alt": "liga1-logo",
     "apertura": true,
     "clausura": false,
-    "fechaApertura": "16",
+    "fechaApertura": "17",
     "fechaClausura": "1"
 
   },
@@ -38,15 +38,15 @@
         }
       ],
       "lastGames": [
-        "win","draw","win","win","win"
+        "lose","win","draw","win","win"
       ],
       "data": {
         "apertura": {
           "pg": 8,
           "pe": 4,
-          "pp": 4,
+          "pp": 5,
           "gf": 29,
-          "gc": 23
+          "gc": 24
         },
         "clausura": {
           "pg": null,
@@ -73,7 +73,7 @@
         { "game": 14, "score": 2 },
         { "game": 15, "score": 2 },
         { "game": 16, "score": 2 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 0 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -130,7 +130,7 @@
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 4,
+          "pe": 5,
           "pp": 9,
           "gf": 11,
           "gc": 19
@@ -160,7 +160,7 @@
         { "game": 14, "score": 1 },
         { "game": 15, "score": 0 },
         { "game": 16, "score": 0 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 0 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -206,15 +206,15 @@
         }
       ],
       "lastGames": [
-        "win","win","win","lose","win"
+        "lose","win","win","win","lose"
       ],
       "data": {
         "apertura": {
           "pg": 11,
           "pe": null,
-          "pp": 5,
+          "pp": 6,
           "gf": 32,
-          "gc": 13
+          "gc": 16
         },
         "clausura": {
           "pg": null,
@@ -241,7 +241,7 @@
         { "game": 14, "score": 1 },
         { "game": 15, "score": 2 },
         { "game": 16, "score": 3 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 0 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -287,15 +287,15 @@
         }
       ],
       "lastGames": [
-        "win","draw","draw","lose","lose"
+        "lose","win","draw","draw","lose"
       ],
       "data": {
         "apertura": {
           "pg": 4,
           "pe": 7,
-          "pp": 5,
-          "gf": 18,
-          "gc": 15
+          "pp": 6,
+          "gf": 19,
+          "gc": 17
         },
         "clausura": {
           "pg": null,
@@ -322,7 +322,7 @@
         { "game": 14, "score": 0 },
         { "game": 15, "score": 0 },
         { "game": 16, "score": 4 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 1 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -374,12 +374,12 @@
         }
       ],
       "lastGames": [
-        "draw","lose","draw","lose","win"
+        "draw","draw","lose","draw","lose"
       ],
       "data": {
         "apertura": {
           "pg": 3,
-          "pe": 4,
+          "pe": 5,
           "pp": 9,
           "gf": 11,
           "gc": 34
@@ -409,7 +409,7 @@
         { "game": 14, "score": 1 },
         { "game": 15, "score": 0 },
         { "game": 16, "score": 0 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 0 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -461,15 +461,15 @@
         }
       ],
       "lastGames": [
-        "win","draw","win","draw","win"
+        "lose","win","draw","win","draw"
       ],
       "data": {
         "apertura": {
           "pg": 6,
           "pe": 3,
-          "pp": 7,
+          "pp": 8,
           "gf": 25,
-          "gc": 22
+          "gc": 26
         },
         "clausura": {
           "pg": null,
@@ -496,7 +496,7 @@
         { "game": 14, "score": 2 },
         { "game": 15, "score": 1 },
         { "game": 16, "score": 2 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 0 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -542,15 +542,15 @@
         }
       ],
       "lastGames": [
-        "draw","win","draw","lose","lose"
+        "draw","draw","win","draw","lose"
       ],
       "data": {
         "apertura": {
           "pg": 6,
-          "pe": 7,
+          "pe": 8,
           "pp": 3,
-          "gf": 20,
-          "gc": 20
+          "gf": 21,
+          "gc": 21
         },
         "clausura": {
           "pg": null,
@@ -577,7 +577,7 @@
         { "game": 14, "score": 1 },
         { "game": 15, "score": 1 },
         { "game": 16, "score": 0 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 1 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -623,15 +623,15 @@
         }
       ],
       "lastGames": [
-        "lose","draw","win","lose","draw"
+        "lose","lose","draw","win","lose"
       ],
       "data": {
         "apertura": {
           "pg": 6,
           "pe": 4,
-          "pp": 6,
+          "pp": 7,
           "gf": 22,
-          "gc": 30
+          "gc": 31
         },
         "clausura": {
           "pg": null,
@@ -658,7 +658,7 @@
         { "game": 14, "score": 3 },
         { "game": 15, "score": 1 },
         { "game": 16, "score": 0 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 0 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -704,14 +704,14 @@
         }
       ],
       "lastGames": [
-        "lose","win","lose","win","lose"
+        "win","lose","win","lose","win"
       ],
       "data": {
         "apertura": {
-          "pg": 8,
+          "pg": 9,
           "pe": 2,
           "pp": 6,
-          "gf": 19,
+          "gf": 22,
           "gc": 21
         },
         "clausura": {
@@ -739,7 +739,7 @@
         { "game": 14, "score": 0 },
         { "game": 15, "score": 3 },
         { "game": 16, "score": 0 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 3 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -791,15 +791,15 @@
         }
       ],
       "lastGames": [
-        "lose","draw","draw","draw","win"
+        "lose","lose","draw","draw","draw"
       ],
       "data": {
         "apertura": {
           "pg": 3,
           "pe": 5,
-          "pp": 8,
-          "gf": 19,
-          "gc": 23
+          "pp": 9,
+          "gf": 20,
+          "gc": 26
         },
         "clausura": {
           "pg": null,
@@ -826,7 +826,7 @@
         { "game": 14, "score": 1 },
         { "game": 15, "score": 0 },
         { "game": 16, "score": 2 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 1 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -865,10 +865,10 @@
       },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
-          "img": "./assets/images/otros/no-manager.png"
+          "name": "Marco Valencia",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://elbuho.pe/wp-content/uploads/2024/03/MARCO-VALENCIA-FBC-MELGAR-AREQUIPA-CRIStAL-MENORES-ENtRENADOR.jpg"
         },
         {
           "name": "Pablo De Muner",
@@ -882,11 +882,11 @@
       ],
       "data": {
         "apertura": {
-          "pg": 11,
+          "pg": 12,
           "pe": 2,
           "pp": 3,
-          "gf": 33,
-          "gc": 18
+          "gf": 36,
+          "gc": 19
         },
         "clausura": {
           "pg": null,
@@ -913,7 +913,7 @@
         { "game": 14, "score": 2 },
         { "game": 15, "score": 6 },
         { "game": 16, "score": 4 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 3 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -965,14 +965,14 @@
         }
       ],
       "lastGames": [
-        "win","draw","lose","draw","lose"
+        "lose","win","draw","lose","draw"
       ],
       "data": {
         "apertura": {
-          "pg": 4,
+          "pg": 5,
           "pe": 4,
           "pp": 8,
-          "gf": 17,
+          "gf": 18,
           "gc": 20
         },
         "clausura": {
@@ -1000,7 +1000,7 @@
         { "game": 14, "score": 1 },
         { "game": 15, "score": 1 },
         { "game": 16, "score": 4 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 1 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -1052,15 +1052,15 @@
         }
       ],
       "lastGames": [
-        "lose","lose","draw","win","lose"
+        "draw","lose","lose","draw","win"
       ],
       "data": {
         "apertura": {
           "pg": 5,
-          "pe": 3,
+          "pe": 4,
           "pp": 8,
-          "gf": 17,
-          "gc": 28
+          "gf": 18,
+          "gc": 29
         },
         "clausura": {
           "pg": null,
@@ -1087,7 +1087,7 @@
         { "game": 14, "score": 0 },
         { "game": 15, "score": 0 },
         { "game": 16, "score": 1 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 1 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -1133,14 +1133,14 @@
         }
       ],
       "lastGames": [
-        "win","lose","win","lose","win"
+        "win","win","lose","win","lose"
       ],
       "data": {
         "apertura": {
-          "pg": 12,
+          "pg": 13,
           "pe": 1,
           "pp": 3,
-          "gf": 43,
+          "gf": 44,
           "gc": 20
         },
         "clausura": {
@@ -1168,7 +1168,7 @@
         { "game": 14, "score": 2 },
         { "game": 15, "score": 1 },
         { "game": 16, "score": 5 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 1 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -1220,15 +1220,15 @@
         }
       ],
       "lastGames": [
-        "lose","draw","lose","draw","lose"
+        "draw","lose","draw","lose","draw"
       ],
       "data": {
         "apertura": {
           "pg": 1,
-          "pe": 5,
+          "pe": 6,
           "pp": 10,
-          "gf": 16,
-          "gc": 33
+          "gf": 17,
+          "gc": 34
         },
         "clausura": {
           "pg": null,
@@ -1255,7 +1255,7 @@
         { "game": 14, "score": 1 },
         { "game": 15, "score": 2 },
         { "game": 16, "score": 1 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 1 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -1307,15 +1307,15 @@
         }
       ],
       "lastGames": [
-        "draw","draw","draw","win","lose"
+        "win","draw","draw","draw","win"
       ],
       "data": {
         "apertura": {
-          "pg": 3,
+          "pg": 4,
           "pe": 8,
           "pp": 5,
-          "gf": 17,
-          "gc": 23
+          "gf": 19,
+          "gc": 24
         },
         "clausura": {
           "pg": null,
@@ -1342,7 +1342,7 @@
         { "game": 14, "score": 1 },
         { "game": 15, "score": 1 },
         { "game": 16, "score": 0 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 2 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -1388,14 +1388,14 @@
         }
       ],
       "lastGames": [
-        "draw","win","lose","win","win"
+        "win","draw","win","lose","win"
       ],
       "data": {
         "apertura": {
-          "pg": 11,
+          "pg": 12,
           "pe": 4,
           "pp": 1,
-          "gf": 29,
+          "gf": 33,
           "gc": 8
         },
         "clausura": {
@@ -1423,7 +1423,7 @@
         { "game": 14, "score": 0 },
         { "game": 15, "score": 4 },
         { "game": 16, "score": 0 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 4 }
       ],
       "clausura": [
         { "game": 1, "score": null },
@@ -1469,15 +1469,15 @@
         }
       ],
       "lastGames": [
-        "lose","lose","lose","win","lose"
+        "draw","lose","lose","lose","win"
       ],
       "data": {
         "apertura": {
           "pg": 4,
-          "pe": 3,
+          "pe": 4,
           "pp": 9,
-          "gf": 20,
-          "gc": 28
+          "gf": 21,
+          "gc": 29
         },
         "clausura": {
           "pg": null,
@@ -1504,7 +1504,7 @@
         { "game": 14, "score": 0 },
         { "game": 15, "score": 2 },
         { "game": 16, "score": 2 },
-        { "game": 17, "score": null }
+        { "game": 17, "score": 1 }
       ],
       "clausura": [
         { "game": 1, "score": null },
