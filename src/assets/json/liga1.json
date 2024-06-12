@@ -112,6 +112,12 @@
       },
       "dt": [
         {
+          "name": "Gerardo Ameli",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://www.eldiez.com.pe/wp-content/uploads/2024/02/Gerardo-Ameli-no-continuara-en-Deportivo-Garcilaso-y-es-el-primer-DT-cesado-de-la-Liga-1.jpg"
+        },
+        {
           "name": "Jorge Espejo",
           "country": "Perú",
           "cod": "pe",
@@ -778,6 +784,12 @@
       },
       "dt": [
         {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "img": "./assets/images/otros/no-manager.png"
+        },
+        {
           "name": "Bernardo Redín",
           "country": "Colombia",
           "cod": "co",
@@ -1039,6 +1051,12 @@
       },
       "dt": [
         {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "img": "./assets/images/otros/no-manager.png"
+        },
+        {
           "name": "Mifflin Bermúdez",
           "country": "Perú",
           "cod": "pe",
@@ -1126,6 +1144,12 @@
       },
       "dt": [
         {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "img": "./assets/images/otros/no-manager.png"
+        },
+        {
           "name": "Ederson Moreira",
           "country": "Brazil",
           "cod": "br",
@@ -1206,6 +1230,12 @@
         "c3": "#fafafa"
       },
       "dt": [
+        {
+          "name": "Jesús Oropesa",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://imgmedia.elpopular.pe/640x358/elpopular/original/2023/02/11/63e78da3e6904815c97d3d79.webp"
+        },
         {
           "name": "Milton García",
           "country": "Colombia",
