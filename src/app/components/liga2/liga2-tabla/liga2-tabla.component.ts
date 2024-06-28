@@ -67,8 +67,6 @@ export class Liga2TablaComponent {
         this.semifinalSet()
 
         if (data.Final.teamA != null && data.Final.teamB != null) {
-          console.log(this.finalist);
-
           let winner = this.bracketWinner(0,data.Final.teamA,data.Final.penal.teamA,1,data.Final.teamB,data.Final.penal.teamB)
 
           if (winner == 0) {
@@ -265,6 +263,10 @@ export class Liga2TablaComponent {
       return b.gf - a.gf;
     });
 
+    // Asignación de puntos extra en fase de ascenso
+    teamsArray[0].puntos = teamsArray[0].puntos + 2;
+    teamsArray[1].puntos = teamsArray[1].puntos + 1;
+
     return teamsArray;
   }
 
@@ -313,10 +315,14 @@ export class Liga2TablaComponent {
       return b.gf - a.gf;
     });
 
+    // Asignación de puntos extra en fase de ascenso
+    teamsArray[0].puntos = teamsArray[0].puntos + 2;
+    teamsArray[1].puntos = teamsArray[1].puntos + 1;
+
     return teamsArray;
   }
 
-  // Ordenar Grupo B
+  // Ordenar Grupo Descenso
   sortDataTeamsGR() {
     // Seleccionar por indices los equipos
     const clasifiersRelegation = this.descenso.map((element: { index: Number; }) => element.index);
@@ -395,14 +401,14 @@ export class Liga2TablaComponent {
   semifinalSelector(){
     this.semifinalist.push(this.clasifiers[0])
     this.semifinalist.push(this.clasifiers[1])
-    this.semifinalist.push(this.clasifiers[this.bracketWinner(3,(this.data.Cuartos[0].teamA),(this.data.Cuartos[0].penal.teamA),4,(this.data.Cuartos[0].teamB),(this.data.Cuartos[0].penal.teamB))])
-    this.semifinalist.push(this.clasifiers[this.bracketWinner(2,(this.data.Cuartos[1].teamA),(this.data.Cuartos[1].penal.teamA),5,(this.data.Cuartos[1].teamB),(this.data.Cuartos[1].penal.teamB))])
+    this.semifinalist.push(this.clasifiers[this.bracketWinner(2,(this.data.Cuartos[0].idaA + this.data.Cuartos[0].vueltaA),(this.data.Cuartos[0].penal.teamA),5,(this.data.Cuartos[0].idaB + this.data.Cuartos[0].vueltaB),(this.data.Cuartos[0].penal.teamB))])
+    this.semifinalist.push(this.clasifiers[this.bracketWinner(3,(this.data.Cuartos[1].idaA + this.data.Cuartos[1].vueltaA),(this.data.Cuartos[1].penal.teamA),4,(this.data.Cuartos[1].idaB + this.data.Cuartos[1].vueltaB),(this.data.Cuartos[1].penal.teamB))])
   }
 
   // Calculos Semifinal
   semifinalSet(){
     let semifinalResults = [];
-    if (this.data.Semifinal[0].vueltaA != null && this.data.Semifinal[1].vueltaB != null) {
+    if (this.data.Semifinal[0].vueltaA != null && this.data.Semifinal[0].vueltaB != null) {
       semifinalResults.push(
         {
           "globalA": this.data.Semifinal[0].idaA + this.data.Semifinal[0].vueltaA,

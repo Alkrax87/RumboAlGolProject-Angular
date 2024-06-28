@@ -222,7 +222,7 @@
               @if (data.Info.playoff) {
                 @for (item of ascenso1; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'promotion': $index >= 0 && $index <= 2}"></div>
+                    <th class="team-status"><div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
                     <th>{{ 1 + $index }}</th>
                     <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
                     <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
@@ -256,7 +256,7 @@
               } @else {
                 @for (i of [1,2,3,4,5,6]; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'promotion': $index >= 0 && $index <= 2}"></div>
+                    <th class="team-status"><div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
                     <th>{{ i }}</th>
                     <td class="text-start">Por Definir</td>
                     <td class="fw-bold">0</td>
@@ -286,8 +286,12 @@
       <div class="table-info">
         <h6 class="text-start"><b>Ascenso</b></h6>
         <div class="text-start">
-          <i class="fas fa-square promotion"></i>
-          <span class="mx-2">Clasificados</span>
+          <i class="fas fa-square semifinal"></i>
+          <span class="mx-2">Semifinal</span>
+        </div>
+        <div class="text-start">
+          <i class="fas fa-square quarter"></i>
+          <span class="mx-2">Cuartos de Final</span>
         </div>
       </div>
       <div class="line-table"></div>
@@ -321,7 +325,7 @@
               @if (data.Info.playoff) {
                 @for (item of ascenso2; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'promotion': $index >= 0 && $index <= 2}"></div>
+                    <th class="team-status"><div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
                     <th>{{ 1 + $index }}</th>
                     <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
                     <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
@@ -355,7 +359,7 @@
               } @else {
                 @for (i of [1,2,3,4,5,6]; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'promotion': $index >= 0 && $index <= 2}"></div>
+                    <th class="team-status"><div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
                     <th>{{ i }}</th>
                     <td class="text-start">Por Definir</td>
                     <td class="fw-bold">0</td>
@@ -385,8 +389,12 @@
       <div class="table-info">
         <h6 class="text-start"><b>Ascenso</b></h6>
         <div class="text-start">
-          <i class="fas fa-square promotion"></i>
-          <span class="mx-2">Clasificados</span>
+          <i class="fas fa-square semifinal"></i>
+          <span class="mx-2">Semifinal</span>
+        </div>
+        <div class="text-start">
+          <i class="fas fa-square quarter"></i>
+          <span class="mx-2">Cuartos de Final</span>
         </div>
       </div>
       <div class="line-table"></div>
@@ -545,7 +553,7 @@
           <table class="table-bracket">
             <!-- 1 -->
             <tr>
-              <td colspan="3" class="bracket-title"><p>Eliminatoria</p></td>
+              <td colspan="5" class="bracket-title"><p>Eliminatoria</p></td>
               <td colspan="2"></td>
               <td colspan="5" class="bracket-title"><p>Semifinal</p></td>
               <td colspan="2"></td>
@@ -557,7 +565,7 @@
             </tr>
             <!-- 3 -->
             <tr>
-              <td colspan="4"></td>
+              <td colspan="6"></td>
               <td class="linebottom"></td>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
@@ -586,16 +594,20 @@
             <tr>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[3].url"><img class="logos" [src]="clasifiers[3].image" [alt]="clasifiers[3].alt">&nbsp; {{ clasifiers[3].name }}</a>
+                  <a [href]="clasifiers[2].url"><img class="logos" [src]="clasifiers[2].image" [alt]="clasifiers[2].alt">&nbsp; {{ clasifiers[2].name }}</a>
                 </td>
+                <td colspan="1" class="bracket result">{{ data.Cuartos[0].idaA }}</td>
+                <td colspan="1" class="bracket result">{{ data.Cuartos[0].vueltaA }}</td>
                 <td colspan="1" class="bracket result">
-                  <div>{{ data.Cuartos[0].teamA }}</div>
+                  <div class="fw-bold">{{ data.Cuartos[0].idaA !== null && data.Cuartos[0].vueltaA !== null ? data.Cuartos[0].idaA + data.Cuartos[0].vueltaA : "" }}</div>
                   @if (data.Cuartos[0].penal.teamA) {
                     <div><b>({{ data.Cuartos[0].penal.teamA }})</b></div>
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°2 Grupo B</td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°2 Grupo A</td>
+                <td colspan="1" class="bracket result"></td>
+                <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
               }
               <td class="lineright"></td>
@@ -609,11 +621,11 @@
                 <td colspan="1" class="bracket result">
                   <div class="fw-bold">{{ data.Semifinal[0].idaB !== null && data.Semifinal[0].vueltaB !== null ? data.Semifinal[0].idaB + data.Semifinal[0].vueltaB : "" }}</div>
                   @if (data.Semifinal[0].penal.teamB) {
-                    <div><b>({{ data.Semifinal[1].penal.teamB }})</b></div>
+                    <div><b>({{ data.Semifinal[0].penal.teamB }})</b></div>
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Semifinal 1</td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Eliminatoria 1</td>
                 <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
@@ -624,16 +636,20 @@
             <tr>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[4].url"><img class="logos" [src]="clasifiers[4].image" [alt]="clasifiers[4].alt">&nbsp; {{ clasifiers[4].name }}</a>
+                  <a [href]="clasifiers[5].url"><img class="logos" [src]="clasifiers[5].image" [alt]="clasifiers[5].alt">&nbsp; {{ clasifiers[5].name }}</a>
                 </td>
+                <td colspan="1" class="bracket result">{{ data.Cuartos[0].idaB }}</td>
+                <td colspan="1" class="bracket result">{{ data.Cuartos[0].vueltaB }}</td>
                 <td colspan="1" class="bracket result">
-                  <div>{{ data.Cuartos[0].teamB }}</div>
+                  <div class="fw-bold">{{ data.Cuartos[0].idaB !== null && data.Cuartos[0].vueltaB !== null ? data.Cuartos[0].idaB + data.Cuartos[0].vueltaB : "" }}</div>
                   @if (data.Cuartos[0].penal.teamB) {
                     <div><b>({{ data.Cuartos[0].penal.teamB }})</b></div>
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°3 Grupo A</td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°3 Grupo B</td>
+                <td colspan="1" class="bracket result"></td>
+                <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
               }
               <td class="linetop"></td>
@@ -657,7 +673,7 @@
             </tr>
             <!-- 6 -->
             <tr>
-              <td colspan="10"></td>
+              <td colspan="12"></td>
               <td class="lineright"></td>
               <td class="linetop"></td>
               @if (data && data.Info.final) {
@@ -677,7 +693,7 @@
             </tr>
             <!-- 7 -->
             <tr>
-              <td colspan="4"></td>
+              <td colspan="6"></td>
               <td class="linebottom"></td>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
@@ -706,16 +722,20 @@
             <tr>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[2].url"><img class="logos" [src]="clasifiers[2].image" [alt]="clasifiers[2].alt">&nbsp; {{ clasifiers[2].name }}</a>
+                  <a [href]="clasifiers[3].url"><img class="logos" [src]="clasifiers[3].image" [alt]="clasifiers[3].alt">&nbsp; {{ clasifiers[3].name }}</a>
                 </td>
+                <td colspan="1" class="bracket result">{{ data.Cuartos[1].idaA }}</td>
+                <td colspan="1" class="bracket result">{{ data.Cuartos[1].vueltaA }}</td>
                 <td colspan="1" class="bracket result">
-                  <div>{{ data.Cuartos[1].teamA }}</div>
+                  <div class="fw-bold">{{ data.Cuartos[1].idaA !== null && data.Cuartos[1].vueltaA !== null ? data.Cuartos[1].idaA + data.Cuartos[1].vueltaA : "" }}</div>
                   @if (data.Cuartos[1].penal.teamA) {
                     <div><b>({{ data.Cuartos[1].penal.teamA }})</b></div>
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°2 Grupo A</td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°2 Grupo B</td>
+                <td colspan="1" class="bracket result"></td>
+                <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
               }
               <td class="lineright"></td>
@@ -733,7 +753,7 @@
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Semifinal 2</td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Eliminatoria 2</td>
                 <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
@@ -744,16 +764,20 @@
             <tr>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[5].url"><img class="logos" [src]="clasifiers[5].image" [alt]="clasifiers[5].alt">&nbsp; {{ clasifiers[5].name }}</a>
+                  <a [href]="clasifiers[4].url"><img class="logos" [src]="clasifiers[4].image" [alt]="clasifiers[4].alt">&nbsp; {{ clasifiers[4].name }}</a>
                 </td>
+                <td colspan="1" class="bracket result">{{ data.Cuartos[1].idaB }}</td>
+                <td colspan="1" class="bracket result">{{ data.Cuartos[1].vueltaB }}</td>
                 <td colspan="1" class="bracket result">
-                  <div>{{ data.Cuartos[1].teamB }}</div>
+                  <div class="fw-bold">{{ data.Cuartos[1].idaB !== null && data.Cuartos[1].vueltaB !== null ? data.Cuartos[1].idaB + data.Cuartos[1].vueltaB : "" }}</div>
                   @if (data.Cuartos[1].penal.teamB) {
                     <div><b>({{ data.Cuartos[1].penal.teamB }})</b></div>
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°3 Grupo B</td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°3 Grupo A</td>
+                <td colspan="1" class="bracket result"></td>
+                <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
               }
               <td class="linetop"></td>

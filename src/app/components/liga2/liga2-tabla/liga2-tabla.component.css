@@ -141,16 +141,20 @@ td {
   padding: 0px;
 }
 .playoff-promotion {
-  background: #a1cb40;
-  color: #a1cb40;
-}
-.playoff-relegation {
-  background: #f76267;
-  color: #f76267;
-}
-.promotion {
   background: #27943C;
   color: #27943C;
+}
+.playoff-relegation {
+  background: #c1272d;
+  color: #c1272d;
+}
+.semifinal {
+  background: #f1c13a;
+  color: #f1c13a;
+}
+.quarter {
+  background: #11759c;
+  color: #11759c;
 }
 .relegation {
   background: #c1272d;
