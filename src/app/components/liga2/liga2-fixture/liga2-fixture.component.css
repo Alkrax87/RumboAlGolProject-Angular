@@ -196,14 +196,31 @@ select {
   display: flex;
   align-items: center;
 }
-.description-stages {
-  height: 70px;
+.description-stages{
+  min-height: 70px;
+  padding: 14px 0px;
 }
 .description-stages .notes{
   margin-bottom: 0px;
+  font-size: 12px;
+  font-style: italic;
+}
+@media screen and (max-width: 575.5px) {
+  .title-stages h1{
+    padding: 0px;
+  }
+  .title-stages div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title-stages h1{
+    font-size: 50px;
+  }
 }
 .title-group-fixture {
   font-size: 28px;
   margin-top: 25px;
 }
-
