@@ -229,6 +229,9 @@ export class Liga2TablaComponent {
     // Declaracion de Array de items
     const teamsArray = [];
 
+    // Iterador para suma de puntos
+    let plus = 0;
+
     for (const item of equiposFiltrados) {
       // Definicion de objeto
       var team = {
@@ -248,6 +251,17 @@ export class Liga2TablaComponent {
         "lastGames": item.lastGames
       }
 
+      // Sumar puntos al primer (+2) y segundo (+1) lugar
+      switch (plus) {
+        case 0:
+          team.puntos += 2;
+          break;
+        case 1:
+          team.puntos += 1;
+          break;
+      }
+      plus++
+
       // Agregar al array
       teamsArray.push(team)
     }
@@ -262,10 +276,6 @@ export class Liga2TablaComponent {
       }
       return b.gf - a.gf;
     });
-
-    // Asignación de puntos extra en fase de ascenso
-    teamsArray[0].puntos = teamsArray[0].puntos + 2;
-    teamsArray[1].puntos = teamsArray[1].puntos + 1;
 
     return teamsArray;
   }
@@ -281,6 +291,9 @@ export class Liga2TablaComponent {
     // Declaracion de Array de items
     const teamsArray = [];
 
+    // Iterador para suma de puntos
+    let plus = 0;
+
     for (const item of equiposFiltrados) {
       // Definicion de objeto
       var team = {
@@ -300,6 +313,17 @@ export class Liga2TablaComponent {
         "lastGames": item.lastGames
       }
 
+      // Sumar puntos al primer (+2) y segundo (+1) lugar
+      switch (plus) {
+        case 0:
+          team.puntos += 2;
+          break;
+        case 1:
+          team.puntos += 1;
+          break;
+      }
+      plus++
+
       // Agregar al array
       teamsArray.push(team)
     }
@@ -314,10 +338,6 @@ export class Liga2TablaComponent {
       }
       return b.gf - a.gf;
     });
-
-    // Asignación de puntos extra en fase de ascenso
-    teamsArray[0].puntos = teamsArray[0].puntos + 2;
-    teamsArray[1].puntos = teamsArray[1].puntos + 1;
 
     return teamsArray;
   }
