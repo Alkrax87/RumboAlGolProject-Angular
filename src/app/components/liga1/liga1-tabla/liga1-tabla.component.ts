@@ -18,12 +18,40 @@ export class Liga1TablaComponent {
   clausura:any; // Data clausura ordenada
   acumulado:any; // Data clausura ordenada
 
+  winnerApertura:any; // Equipo ganador del apertura
+  winnerClausura:any; // Equipo ganador del clausura
+
+  champion:any;
+
   loadData() {
     this.dataLoadService.loadData(1).then((data: any) => {
       this.data = data;
       this.apertura = this.sortDataTeamsApertura([...data.Teams]);
       this.clausura = this.sortDataTeamsClausura([...data.Teams]);
       this.acumulado = this.sortDataTeamsAcumulado([...data.Teams]);
+
+      // Asignamos los ganadores del apertura y clausura
+      this.winnerApertura = data.Teams.find((element: {id:string}) => element.id === data.Info.winnerTeamApertura);
+      this.winnerClausura = data.Teams.find((element: {id:string}) => element.id === data.Info.winnerTeamClausura);
+
+      // Definicion del campeón
+      if (data.Info.final) {
+        const { idaA, vueltaA, penal: { teamA: penalA } } = data.Final;
+        const { idaB, vueltaB, penal: { teamB: penalB } } = data.Final;
+
+        if (idaA != null && vueltaA != null && idaB != null && vueltaB != null) {
+          const totalA = idaA + vueltaA;
+          const totalB = idaB + vueltaB;
+
+          if (totalA > totalB) {
+            this.champion = this.winnerApertura;
+          } else if (totalB > totalA) {
+            this.champion = this.winnerClausura;
+          } else if (penalA != null && penalB != null) {
+            this.champion = penalA > penalB ? this.winnerApertura : this.winnerClausura;
+          }
+        }
+      }
     }).catch(error => {
       console.error('Error al cargar datos en el componente:', error);
     });

@@ -263,5 +263,108 @@
 
   </div>
 </div>
+<!-- Campeón -->
+<div class="container-fluid background content-block">
+  <div class="row title-stages">
+    <div class="col-10">
+      <h1><b>Campeón</b></h1>
+    </div>
+  </div>
+</div>
+<!-- Description -->
+<div class="container-fluid bg-light content-block">
+  <div class="row">
+    <div class="col-sm-4 col-md-5 text-center description-stages">
+      <p class="notes">Ganador Apertura</p>
+      <b>{{ winnerApertura ? winnerApertura.name : 'Por Definir' }}</b>
+    </div>
+    <div class="col-sm-4 col-md-5 text-center description-stages">
+      <p class="notes">Ganador Clausura</p>
+      <b>{{ winnerClausura ? winnerClausura.name : 'Por Definir' }}</b>
+    </div>
+  </div>
+</div>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
+<!-- Table -->
+<div class="table-content container-fluid  py-5">
+  <div class="row">
+    <div class="col-xl-9 col-lg-11 col-md-12">
+      <div class="bg-light py-3">
+        <!-- Final -->
+        <div class="container">
+          <div class="row text-center">
+            <!-- Team 1 -->
+            <div class="col-sm-12 col-md-4 champion-team">
+              @if (winnerApertura) {
+                <img [src]="winnerApertura.image" [alt]="winnerApertura.alt">
+                <p>{{ winnerApertura.name }}</p>
+              } @else {
+                <span><i class="fas fa-shield-alt team-shield"></i></span>
+                <p>Por Definir</p>
+              }
+            </div>
+            <!-- Marcador -->
+            <div class="col-sm-6 col-md-3 text-center">
+              <!-- Ida -->
+              <table class="scoreboard">
+                <tr>
+                  <td colspan="3" class="score"><div><p>Ida</p></div></td>
+                </tr>
+                <tr>
+                  <td><b>{{ data && data.Info.final ? data.Final.idaA : "" }}</b></td>
+                  <td>-</td>
+                  <td><b>{{ data && data.Info.final ? data.Final.idaB : "" }}</b></td>
+                </tr>
+                <!-- Vuelta -->
+                <tr>
+                  <td colspan="3" class="score"><div><p>Vuelta</p></div></td>
+                </tr>
+                <tr>
+                  <td><b>{{ data && data.Info.final ? data.Final.vueltaA : "" }}</b></td>
+                  <td>-</td>
+                  <td><b>{{ data && data.Info.final ? data.Final.vueltaB : "" }}</b></td>
+                </tr>
+                <!-- Global -->
+                <tr>
+                  <td colspan="3" class="score"><div><p>Global</p></div></td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="score-global">({{ data && data.Final.penal.teamA != null ? data.Final.penal.teamA + ")" : "" }} <span>{{ data && data.Info.final && data.Final.idaA && data.Final.vueltaA ? data.Final.idaA + data.Final.vueltaA : '' }}</span> - <span>{{ data && data.Info.final && data.Final.idaB && data.Final.vueltaB ? data.Final.idaB + data.Final.vueltaB : '' }}</span> {{ data && data.Final.penal.teamB != null ? "(" + data.Final.penal.teamB : "" }})</td>
+                </tr>
+              </table>
+            </div>
+            <!-- Team 2 -->
+            <div class="col-sm-12 col-md-4 champion-team">
+              @if (winnerClausura) {
+                <img [src]="winnerClausura.image" [alt]="winnerClausura.alt">
+                <p>{{ winnerClausura.name }}</p>
+              } @else {
+                <span><i class="fas fa-shield-alt team-shield"></i></span>
+                <p>Por Definir</p>
+              }
+            </div>
+          </div>
+        </div>
+        <hr class="divider-bracket">
+        <!-- Campeón -->
+        <div class="row text-center">
+          <div class="col-sm-12 col-md-7">
+            <div class="champion-team">
+              <div><p>CAMPEÓN</p></div>
+              @if (champion) {
+                <img [src]="champion.image" [alt]="champion.alt">
+                <p>{{ champion.name }}</p>
+              } @else {
+                <span><i class="fas fa-shield-alt team-shield"></i></span>
+                <p>Por Definir</p>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Divider -->
 <div class="container-fluid divider"></div>

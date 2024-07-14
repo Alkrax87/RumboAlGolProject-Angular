@@ -62,7 +62,6 @@ a {
 }
 /* Table content background */
 .table-content {
-  color: #ffffff;
   background: #161513;
 }
 /* Table Switch */
@@ -72,7 +71,7 @@ a {
 .table-switch {
   width: 95%;
   border: none;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   padding: 0.9rem 2rem;
   background: #DC143C;
@@ -193,4 +192,93 @@ td {
 .relegation {
   background: #c1272d;
   color: #c1272d;
+}
+/* Titles */
+.title-stages {
+  height: 100%;
+}
+.title-stages {
+  display: flex;
+  align-items: center;
+}
+.description-stages{
+  min-height: 70px;
+  padding: 14px 0px;
+}
+.description-stages .notes{
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-style: italic;
+}
+@media screen and (max-width: 575.5px) {
+  .title-stages h1{
+    padding: 0px;
+  }
+  .title-stages div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title-stages h1{
+    font-size: 50px;
+  }
+}
+/* Final */
+.team-shield {
+  font-size: 120px;
+  color: #646464;
+}
+/* Line */
+.divider-bracket {
+  border: 10px solid;
+  color: crimson;
+  opacity: 100;
+  margin: 15px 0px;
+}
+/* Final Title */
+.champion-team div{
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #d8b145;
+  transform: skew(30deg);
+  margin: 10px 50px;
+}
+.champion-team div p:first-child {
+  margin: 0px;
+  font-size: 25px;
+  transform: skew(-30deg);
+  color: #fff;
+}
+.champion-team img {
+  width: 120px;
+}
+.champion-team p{
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+.scoreboard {
+  width: 100%;
+}
+.scoreboard .score{
+  font-size: 13px;
+  font-style: italic;
+}
+.scoreboard td {
+  font-size: 40px;
+}
+.scoreboard div{
+  font-style: italic;
+  background-color: crimson;
+  transform: skew(30deg);
+}
+.scoreboard p{
+  margin: 0px;
+  font-size: 15px;
+  transform: skew(-30deg);
+  color: #fff;
+}
+.scoreboard .score-global{
+  font-size: 18px;
 }
