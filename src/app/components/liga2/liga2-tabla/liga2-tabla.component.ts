@@ -121,7 +121,7 @@ export class Liga2TablaComponent {
         "name": item.name,
         "url": item.url,
         "index": item.index,
-        "puntos": (item.data.pg * 3) + item.data.pe,
+        "puntos": (item.data.pg * 3) + item.data.pe - item.data.sanction,
         "pj": item.data.pg + item.data.pe + item.data.pp,
         "pg": item.data.pg,
         "pe": item.data.pe,
@@ -166,7 +166,7 @@ export class Liga2TablaComponent {
         "name": item.name,
         "url": item.url,
         "index": item.index,
-        "puntos": (item.data.pg * 3) + item.data.pe,
+        "puntos": (item.data.pg * 3) + item.data.pe - item.data.sanction,
         "pj": item.data.pg + item.data.pe + item.data.pp,
         "pg": item.data.pg,
         "pe": item.data.pe,
@@ -202,16 +202,19 @@ export class Liga2TablaComponent {
     let descenso = [];
 
     for (let i = 0; i < 6; i += 2) {
-        ascenso1.push(grupoNorte[i]);
-        ascenso1.push(grupoSur[i + 1]);
-        ascenso2.push(grupoSur[i]);
-        ascenso2.push(grupoNorte[i + 1]);
+      ascenso1.push(grupoNorte[i]);
+      ascenso1.push(grupoSur[i + 1]);
+      ascenso2.push(grupoSur[i]);
+      ascenso2.push(grupoNorte[i + 1]);
     }
 
     for (let i = 6; i < 9; i++) {
-        descenso.push(grupoNorte[i]);
-        descenso.push(grupoSur[i]);
+      descenso.push(grupoNorte[i]);
+      descenso.push(grupoSur[i]);
     }
+
+    descenso.splice(2,1);
+    descenso.splice(3,1);
 
     this.ascenso1 = ascenso1;
     this.ascenso2 = ascenso2;

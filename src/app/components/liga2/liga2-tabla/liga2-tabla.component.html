@@ -451,7 +451,7 @@
               @if (data.Info.playoff) {
                 @for (item of descenso; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'relegation': $index == 5 }"></div>
+                    <th class="team-status"><div class="clasifier" [ngClass]="{'relegation': $index == 3 }"></div>
                     <th>{{ 1 + $index }}</th>
                     <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
                     <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
