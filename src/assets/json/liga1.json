@@ -7,11 +7,13 @@
     "text": "División",
     "logo": "./assets/images/liga-1/liga1fpf.png",
     "alt": "liga1-logo",
-    "apertura": true,
-    "clausura": false,
+    "apertura": false,
+    "clausura": true,
     "fechaApertura": "17",
-    "fechaClausura": "1"
-
+    "winnerTeamApertura": "Team17",
+    "fechaClausura": "4",
+    "winnerTeamClausura": "",
+    "final": false
   },
   "Teams": [
     {
@@ -31,6 +33,12 @@
       },
       "dt": [
         {
+          "name": "Wilmar Valencia",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://cdn2.mediotiempo.com/uploads/media/2016/05/13/wilmar-valencia-3.jpg"
+        },
+        {
           "name": "Carlos Desio",
           "country": "Argentina",
           "cod": "ar",
@@ -38,7 +46,7 @@
         }
       ],
       "lastGames": [
-        "lose","win","draw","win","win"
+        "lose","win","win","win","lose"
       ],
       "data": {
         "apertura": {
@@ -49,11 +57,11 @@
           "gc": 24
         },
         "clausura": {
-          "pg": null,
+          "pg": 3,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 1,
+          "gf": 8,
+          "gc": 5
         }
       },
       "apertura": [
@@ -76,10 +84,10 @@
         { "game": 17, "score": 0 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 3 },
+        { "game": 2, "score": 1 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 2 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -131,7 +139,7 @@
         }
       ],
       "lastGames": [
-        "lose","lose","lose","lose","draw"
+        "draw","win","lose","draw","lose"
       ],
       "data": {
         "apertura": {
@@ -142,11 +150,11 @@
           "gc": 19
         },
         "clausura": {
-          "pg": null,
-          "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pg": 1,
+          "pe": 2,
+          "pp": 1,
+          "gf": 4,
+          "gc": 4
         }
       },
       "apertura": [
@@ -169,10 +177,10 @@
         { "game": 17, "score": 0 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 3 },
+        { "game": 4, "score": 1 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -205,6 +213,12 @@
       },
       "dt": [
         {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "img": "./assets/images/otros/no-manager.png"
+        },
+        {
           "name": "Alejandro Restrepo",
           "country": "Colombia",
           "cod": "co",
@@ -212,7 +226,7 @@
         }
       ],
       "lastGames": [
-        "lose","win","win","win","lose"
+        "win","lose","win","win","lose"
       ],
       "data": {
         "apertura": {
@@ -223,11 +237,11 @@
           "gc": 16
         },
         "clausura": {
-          "pg": null,
+          "pg": 3,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 1,
+          "gf": 7,
+          "gc": 4
         }
       },
       "apertura": [
@@ -250,10 +264,10 @@
         { "game": 17, "score": 0 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 3 },
+        { "game": 2, "score": 2 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 1 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -293,7 +307,7 @@
         }
       ],
       "lastGames": [
-        "lose","win","draw","draw","lose"
+        "win","draw","draw","lose","win"
       ],
       "data": {
         "apertura": {
@@ -304,11 +318,11 @@
           "gc": 17
         },
         "clausura": {
-          "pg": null,
-          "pe": null,
+          "pg": 1,
+          "pe": 2,
           "pp": null,
-          "gf": null,
-          "gc": null
+          "gf": 4,
+          "gc": 1
         }
       },
       "apertura": [
@@ -331,10 +345,10 @@
         { "game": 17, "score": 1 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 1 },
         { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 4, "score": 3 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -367,6 +381,12 @@
       },
       "dt": [
         {
+          "name": "Salomón Paredes",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrFbvHDSYGmclBblRLwNgDLcO18AJDhpAkJw&s"
+        },
+        {
           "name": "Milton Mendes",
           "country": "Brazil",
           "cod": "br",
@@ -380,7 +400,7 @@
         }
       ],
       "lastGames": [
-        "draw","draw","lose","draw","lose"
+        "win","lose","draw","lose","draw"
       ],
       "data": {
         "apertura": {
@@ -391,11 +411,11 @@
           "gc": 34
         },
         "clausura": {
-          "pg": null,
-          "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pg": 1,
+          "pe": 1,
+          "pp": 2,
+          "gf": 4,
+          "gc": 10
         }
       },
       "apertura": [
@@ -418,10 +438,10 @@
         { "game": 17, "score": 0 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 3 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -467,7 +487,7 @@
         }
       ],
       "lastGames": [
-        "lose","win","draw","win","draw"
+        "draw","lose","win","win","lose"
       ],
       "data": {
         "apertura": {
@@ -478,11 +498,11 @@
           "gc": 26
         },
         "clausura": {
-          "pg": null,
-          "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pg": 2,
+          "pe": 1,
+          "pp": 1,
+          "gf": 8,
+          "gc": 6
         }
       },
       "apertura": [
@@ -505,10 +525,10 @@
         { "game": 17, "score": 0 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 2 },
+        { "game": 2, "score": 2 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 3 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -548,7 +568,7 @@
         }
       ],
       "lastGames": [
-        "draw","draw","win","draw","lose"
+        "lose","lose","lose","win","draw"
       ],
       "data": {
         "apertura": {
@@ -559,11 +579,11 @@
           "gc": 21
         },
         "clausura": {
-          "pg": null,
+          "pg": 1,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 3,
+          "gf": 3,
+          "gc": 9
         }
       },
       "apertura": [
@@ -586,10 +606,10 @@
         { "game": 17, "score": 1 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 2 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 0 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -625,11 +645,11 @@
           "name": "Carlos Silvestri",
           "country": "Perú",
           "cod": "pe",
-          "img": "https://media.licdn.com/dms/image/C4E03AQFL4pUN1w7cCw/profile-displayphoto-shrink_800_800/0/1623187034882?e=2147483647&v=beta&t=RStnvqYAEoxZ9Bk9zkeU57ll3c4gsJqseW_81Q1Xj0c"
+          "img": "https://todosport.pe/wp-content/uploads/2022/02/FMFZUCPH6ZCMJE2JQYRCUCT3YI.webp"
         }
       ],
       "lastGames": [
-        "lose","lose","draw","win","lose"
+        "lose","win","lose","lose","lose"
       ],
       "data": {
         "apertura": {
@@ -640,11 +660,11 @@
           "gc": 31
         },
         "clausura": {
-          "pg": null,
+          "pg": 1,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 3,
+          "gf": 3,
+          "gc": 8
         }
       },
       "apertura": [
@@ -667,10 +687,10 @@
         { "game": 17, "score": 0 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 0 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -710,7 +730,7 @@
         }
       ],
       "lastGames": [
-        "win","lose","win","lose","win"
+        "win","win","lose","lose","win"
       ],
       "data": {
         "apertura": {
@@ -721,11 +741,11 @@
           "gc": 21
         },
         "clausura": {
-          "pg": null,
+          "pg": 2,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 2,
+          "gf": 6,
+          "gc": 5
         }
       },
       "apertura": [
@@ -748,10 +768,10 @@
         { "game": 17, "score": 3 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 1 },
+        { "game": 3, "score": 3 },
+        { "game": 4, "score": 2 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -784,10 +804,10 @@
       },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
-          "img": "./assets/images/otros/no-manager.png"
+          "name": "Guillermo Duró",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5ccOMwdcc0lvcErWJXJbezaiOqCO0Ig49Yg&s"
         },
         {
           "name": "Bernardo Redín",
@@ -803,7 +823,7 @@
         }
       ],
       "lastGames": [
-        "lose","lose","draw","draw","draw"
+        "lose","win","lose","win","lose"
       ],
       "data": {
         "apertura": {
@@ -814,11 +834,11 @@
           "gc": 26
         },
         "clausura": {
-          "pg": null,
+          "pg": 2,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 2,
+          "gf": 3,
+          "gc": 3
         }
       },
       "apertura": [
@@ -841,10 +861,10 @@
         { "game": 17, "score": 1 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 0 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -890,7 +910,7 @@
         }
       ],
       "lastGames": [
-        "win","win","win","win","win"
+        "win","lose","win","win","win"
       ],
       "data": {
         "apertura": {
@@ -901,11 +921,11 @@
           "gc": 19
         },
         "clausura": {
-          "pg": null,
+          "pg": 3,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 1,
+          "gf": 10,
+          "gc": 5
         }
       },
       "apertura": [
@@ -928,10 +948,10 @@
         { "game": 17, "score": 3 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 3 },
+        { "game": 2, "score": 5 },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 1 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -973,11 +993,11 @@
           "name": "Fernando Gamboa",
           "country": "Argentina",
           "cod": "ar",
-          "img": "https://elamague.com/wp-content/uploads/2023/06/fernando-gamboa-sport-boys-1.jpg"
+          "img": "https://www.eldiez.com.pe/wp-content/uploads/2024/02/gambi.jpg"
         }
       ],
       "lastGames": [
-        "lose","win","draw","lose","draw"
+        "win","lose","lose","win","lose"
       ],
       "data": {
         "apertura": {
@@ -988,11 +1008,11 @@
           "gc": 20
         },
         "clausura": {
-          "pg": null,
+          "pg": 2,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 2,
+          "gf": 4,
+          "gc": 7
         }
       },
       "apertura": [
@@ -1015,10 +1035,10 @@
         { "game": 17, "score": 1 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 2 },
+        { "game": 2, "score": 0 },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 2 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -1051,10 +1071,10 @@
       },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
-          "img": "./assets/images/otros/no-manager.png"
+          "name": "Franco Navarro",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://depor.com/resizer/pwDUpIrB8OlSFaWhYbhvV7dJKMc=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/OXA54YHC4JEAJKZID3PQUDLHYM.jpg"
         },
         {
           "name": "Mifflin Bermúdez",
@@ -1070,7 +1090,7 @@
         }
       ],
       "lastGames": [
-        "draw","lose","lose","draw","win"
+        "win","lose","win","lose","draw"
       ],
       "data": {
         "apertura": {
@@ -1081,11 +1101,11 @@
           "gc": 29
         },
         "clausura": {
-          "pg": null,
+          "pg": 2,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 2,
+          "gf": 3,
+          "gc": 5
         }
       },
       "apertura": [
@@ -1108,10 +1128,10 @@
         { "game": 17, "score": 1 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 1 },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 1 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -1144,10 +1164,10 @@
       },
       "dt": [
         {
-          "name": "Por Definir",
-          "country": "",
-          "cod": "",
-          "img": "./assets/images/otros/no-manager.png"
+          "name": "Guillermo Farré",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://www.topmercato.com/wp-content/uploads/2024/06/FARRE.jpg"
         },
         {
           "name": "Ederson Moreira",
@@ -1157,7 +1177,7 @@
         }
       ],
       "lastGames": [
-        "win","win","lose","win","lose"
+        "draw","win","win","lose","win"
       ],
       "data": {
         "apertura": {
@@ -1168,11 +1188,11 @@
           "gc": 20
         },
         "clausura": {
-          "pg": null,
-          "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pg": 2,
+          "pe": 1,
+          "pp": 1,
+          "gf": 13,
+          "gc": 7
         }
       },
       "apertura": [
@@ -1195,10 +1215,10 @@
         { "game": 17, "score": 1 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 4 },
+        { "game": 3, "score": 5 },
+        { "game": 4, "score": 3 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -1250,7 +1270,7 @@
         }
       ],
       "lastGames": [
-        "draw","lose","draw","lose","draw"
+        "lose","draw","lose","draw","lose"
       ],
       "data": {
         "apertura": {
@@ -1262,10 +1282,10 @@
         },
         "clausura": {
           "pg": null,
-          "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pe": 1,
+          "pp": 2,
+          "gf": 1,
+          "gc": 3
         }
       },
       "apertura": [
@@ -1288,10 +1308,10 @@
         { "game": 17, "score": 1 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
+        { "game": 1, "score": 1 },
+        { "game": 2, "score": 0 },
         { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 4, "score": 0 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -1337,7 +1357,7 @@
         }
       ],
       "lastGames": [
-        "win","draw","draw","draw","win"
+        "lose","win","lose","lose","win"
       ],
       "data": {
         "apertura": {
@@ -1348,11 +1368,11 @@
           "gc": 24
         },
         "clausura": {
-          "pg": null,
+          "pg": 1,
           "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pp": 3,
+          "gf": 6,
+          "gc": 9
         }
       },
       "apertura": [
@@ -1375,10 +1395,10 @@
         { "game": 17, "score": 2 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 2 },
+        { "game": 2, "score": 2 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 0 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -1418,7 +1438,7 @@
         }
       ],
       "lastGames": [
-        "win","draw","win","lose","win"
+        "lose","win","draw","win","win"
       ],
       "data": {
         "apertura": {
@@ -1429,11 +1449,11 @@
           "gc": 8
         },
         "clausura": {
-          "pg": null,
-          "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pg": 2,
+          "pe": 1,
+          "pp": 1,
+          "gf": 9,
+          "gc": 3
         }
       },
       "apertura": [
@@ -1456,10 +1476,10 @@
         { "game": 17, "score": 4 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 6 },
+        { "game": 2, "score": 1 },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 0 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -1499,7 +1519,7 @@
         }
       ],
       "lastGames": [
-        "draw","lose","lose","lose","win"
+        "draw","lose","win","lose","draw"
       ],
       "data": {
         "apertura": {
@@ -1510,11 +1530,11 @@
           "gc": 29
         },
         "clausura": {
-          "pg": null,
-          "pe": null,
-          "pp": null,
-          "gf": null,
-          "gc": null
+          "pg": 1,
+          "pe": 1,
+          "pp": 2,
+          "gf": 3,
+          "gc": 5
         }
       },
       "apertura": [
@@ -1537,10 +1557,10 @@
         { "game": 17, "score": 1 }
       ],
       "clausura": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 1, "score": 0 },
+        { "game": 2, "score": 2 },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 1 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -1937,31 +1957,16 @@
       ]
     }
   },
-  "Finalistas": [
-    {
-      "status": false,
-      "name": "",
-      "image": "",
-      "alt": ""
-    },
-    {
-      "status": false,
-      "name": "",
-      "image": "",
-      "alt": ""
-    },
-    {
-      "status": false,
-      "ida": {
-        "Team1": "",
-        "Team2": ""
-      },
-      "vuelta": {
-        "Team1": "",
-        "Team2": ""
-      }
+  "Final": {
+    "idaA": null,
+    "idaB": null,
+    "vueltaA": null,
+    "vueltaB": null,
+    "penal":{
+      "teamA": null,
+      "teamB": null
     }
-  ],
+  },
   "Map": [
     {
       "mapId": "PER1",
