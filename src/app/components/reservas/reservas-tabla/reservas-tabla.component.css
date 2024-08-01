@@ -157,7 +157,7 @@ td {
   align-items: center;
 }
 .description-stages {
-  height: 70px;
+  min-height: 70px;
 }
 .description-stages .notes{
   margin-bottom: 0px;
@@ -177,6 +177,58 @@ td {
     font-size: 50px;
   }
 }
+/* Octavos */
+.octavos-container {
+  background: #161513;
+}
+.octavos-card{
+  padding: 14px 0px;
+}
+.octavos-card p {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.octavos-card img {
+  width: 60px;
+}
+.team-shield {
+  font-size: 60px;
+  color: #646464;
+}
+.scoreboard {
+  width: 100%;
+}
+.scoreboard .score{
+  font-size: 13px;
+  font-style: italic;
+}
+.scoreboard td {
+  font-size: 40px;
+}
+.scoreboard div{
+  font-style: italic;
+  background-color: crimson;
+  transform: skew(30deg);
+}
+.scoreboard p{
+  margin: 0px;
+  font-size: 15px;
+  transform: skew(-30deg);
+  color: #fff;
+}
+.scoreboard .score-global{
+  font-size: 18px;
+}
+/* Liga 3 */
+.ascenso-container {
+  color: #000;
+}
+.ascenso-container img {
+  width: 60px;
+}
+.ascenso-container p {
+  font-size: 15px;
+}
 /* Brackets */
 .table-bracket {
   color: #000;
@@ -190,6 +242,10 @@ td {
   width: 30px;
   min-width: 30px;
   max-width: 30px;
+}
+.table-bracket .shield {
+  font-size: 20px;
+  color: #646464;
 }
 .bracket-title {
   font-weight: bold;
@@ -242,31 +298,28 @@ td {
   opacity: 100;
   margin: 15px 0px;
 }
-/* Promotion */
-.promotion-teams {
-  color: #000;
-}
-.promotion-title div{
+/* Champion */
+.champion-title div{
   font-weight: bold;
   font-size: 20px;
   background-color: #d8b145;
   transform: skew(30deg);
   margin: 10px 50px;
 }
-.promotion-title p:first-child {
+.champion-title p:first-child {
   margin: 0px;
   font-size: 25px;
   transform: skew(-30deg);
   color: #fff;
 }
-.promotion-shield {
+.champion-shield {
   font-size: 120px;
   color: #646464;
 }
-.promotion-title img {
+.champion-title img {
   width: 120px;
 }
-.promotion-title p {
+.champion-title p {
   font-size: 20px;
   color: #646464;
 }
