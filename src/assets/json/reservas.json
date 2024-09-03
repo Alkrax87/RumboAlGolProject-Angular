@@ -5,8 +5,8 @@
     "division": "Reservas",
     "logo": "./assets/images/reservas/reservasfpf.png",
     "alt": "reservas-logo",
-    "fecha": "15",
-    "playoff": false,
+    "fecha": "16",
+    "playoff": true,
     "cuartos": false,
     "semifinal": false,
     "final": false
@@ -28,14 +28,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "win","lose","win","lose","win"
+        "win","win","lose","win","lose"
       ],
       "data": {
-        "pg": 7,
+        "pg": 8,
         "pe": 2,
         "pp": 4,
-        "gf": 24,
-        "gc": 16,
+        "gf": 27,
+        "gc": 18,
         "sanction": null
       },
       "results": [
@@ -54,7 +54,7 @@
         { "game": 13, "score": 4 },
         { "game": 14, "score": 0 },
         { "game": 15, "score": 7 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 3 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -75,14 +75,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "lose","lose","lose","win","draw"
+        "lose","lose","lose","lose","win"
       ],
       "data": {
         "pg": 1,
         "pe": 1,
-        "pp": 12,
-        "gf": 16,
-        "gc": 46,
+        "pp": 13,
+        "gf": 17,
+        "gc": 48,
         "sanction": null
       },
       "results": [
@@ -101,7 +101,7 @@
         { "game": 13, "score": 3 },
         { "game": 14, "score": 0 },
         { "game": 15, "score": 0 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 1 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -122,14 +122,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "win","win","win","win","draw"
+        "win","win","win","win","win"
       ],
       "data": {
-        "pg": 9,
+        "pg": 10,
         "pe": 2,
         "pp": 3,
-        "gf": 39,
-        "gc": 17,
+        "gf": 41,
+        "gc": 18,
         "sanction": null
       },
       "results": [
@@ -148,7 +148,7 @@
         { "game": 13, "score": 2 },
         { "game": 14, "score": 2 },
         { "game": 15, "score": 3 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 2 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -169,14 +169,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "win","lose","lose","win","win"
+        "lose","win","lose","lose","win"
       ],
       "data": {
         "pg": 7,
         "pe": 2,
-        "pp": 4,
-        "gf": 20,
-        "gc": 14,
+        "pp": 5,
+        "gf": 21,
+        "gc": 17,
         "sanction": null
       },
       "results": [
@@ -195,7 +195,7 @@
         { "game": 13, "score": 0 },
         { "game": 14, "score": 5 },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 1 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -216,14 +216,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "lose","win","win","win","lose"
+        "win","lose","win","win","win"
       ],
       "data": {
-        "pg": 7,
+        "pg": 8,
         "pe": 2,
         "pp": 5,
-        "gf": 30,
-        "gc": 20,
+        "gf": 33,
+        "gc": 21,
         "sanction": null
       },
       "results": [
@@ -242,7 +242,7 @@
         { "game": 13, "score": 4 },
         { "game": 14, "score": 2 },
         { "game": 15, "score": 0 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 3 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -263,14 +263,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "lose","win","lose","lose","draw"
+        "lose","lose","win","lose","lose"
       ],
       "data": {
         "pg": 1,
         "pe": 3,
-        "pp": 10,
+        "pp": 11,
         "gf": 15,
-        "gc": 34,
+        "gc": 41,
         "sanction": null
       },
       "results": [
@@ -289,7 +289,7 @@
         { "game": 13, "score": 1 },
         { "game": 14, "score": 3 },
         { "game": 15, "score": 2 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 0 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -357,14 +357,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "win","lose","lose","win","lose"
+        "win","win","lose","lose","win"
       ],
       "data": {
-        "pg": 3,
+        "pg": 4,
         "pe": 1,
         "pp": 9,
-        "gf": 16,
-        "gc": 33,
+        "gf": 18,
+        "gc": 34,
         "sanction": null
       },
       "results": [
@@ -383,7 +383,7 @@
         { "game": 13, "score": 0 },
         { "game": 14, "score": null },
         { "game": 15, "score": 2 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 2 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -409,9 +409,9 @@
       "data": {
         "pg": 1,
         "pe": 1,
-        "pp": 11,
-        "gf": 8,
-        "gc": 48,
+        "pp": 12,
+        "gf": 9,
+        "gc": 53,
         "sanction": null
       },
       "results": [
@@ -430,7 +430,7 @@
         { "game": 13, "score": 0 },
         { "game": 14, "score": 2 },
         { "game": 15, "score": 0 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 1 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -451,14 +451,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "lose","lose","win","draw","win"
+        "win","lose","lose","win","draw"
       ],
       "data": {
-        "pg": 4,
+        "pg": 5,
         "pe": 4,
         "pp": 5,
-        "gf": 14,
-        "gc": 18,
+        "gf": 19,
+        "gc": 19,
         "sanction": null
       },
       "results": [
@@ -477,7 +477,7 @@
         { "game": 13, "score": null },
         { "game": 14, "score": 0 },
         { "game": 15, "score": 2 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 5 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -498,13 +498,13 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "win","win","win","draw","lose"
+        "win","win","win","win","draw"
       ],
       "data": {
-        "pg": 9,
+        "pg": 10,
         "pe": 2,
         "pp": 2,
-        "gf": 34,
+        "gf": 41,
         "gc": 12,
         "sanction": null
       },
@@ -524,7 +524,7 @@
         { "game": 13, "score": 7 },
         { "game": 14, "score": null },
         { "game": 15, "score": 3 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 7 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -545,13 +545,13 @@
         "c3": "#333333"
       },
       "lastGames": [
-        "draw","win","draw","win","lose"
+        "win","draw","win","draw","win"
       ],
       "data": {
-        "pg": 8,
+        "pg": 9,
         "pe": 2,
         "pp": 3,
-        "gf": 26,
+        "gf": 27,
         "gc": 16,
         "sanction": null
       },
@@ -571,7 +571,7 @@
         { "game": 13, "score": 1 },
         { "game": 14, "score": 2 },
         { "game": 15, "score": 2 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 1 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -592,14 +592,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "win","lose","lose","win","lose"
+        "lose","win","lose","lose","win"
       ],
       "data": {
         "pg": 7,
         "pe": 1,
-        "pp": 5,
-        "gf": 24,
-        "gc": 23,
+        "pp": 6,
+        "gf": 26,
+        "gc": 26,
         "sanction": null
       },
       "results": [
@@ -618,7 +618,7 @@
         { "game": 13, "score": 0 },
         { "game": 14, "score": 0 },
         { "game": 15, "score": 6 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 2 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -639,14 +639,14 @@
         "c3": "#333333"
       },
       "lastGames": [
-        "win","lose","win","draw","win"
+        "lose","win","lose","win","draw"
       ],
       "data": {
         "pg": 6,
         "pe": 3,
-        "pp": 4,
-        "gf": 25,
-        "gc": 15,
+        "pp": 5,
+        "gf": 26,
+        "gc": 17,
         "sanction": null
       },
       "results": [
@@ -665,7 +665,7 @@
         { "game": 13, "score": 2 },
         { "game": 14, "score": 1 },
         { "game": 15, "score": null },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 1 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -686,14 +686,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "win","lose","draw","draw","win"
+        "lose","win","lose","draw","draw"
       ],
       "data": {
         "pg": 4,
         "pe": 2,
-        "pp": 7,
+        "pp": 8,
         "gf": 22,
-        "gc": 25,
+        "gc": 26,
         "sanction": null
       },
       "results": [
@@ -712,7 +712,7 @@
         { "game": 13, "score": null },
         { "game": 14, "score": 0 },
         { "game": 15, "score": 2 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 0 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -733,14 +733,14 @@
         "c3": "#fafafa"
       },
       "lastGames": [
-        "win","win","win","win","win"
+        "lose","win","win","win","win"
       ],
       "data": {
         "pg": 10,
         "pe": 1,
-        "pp": 2,
-        "gf": 28,
-        "gc": 10,
+        "pp": 3,
+        "gf": 29,
+        "gc": 12,
         "sanction": null
       },
       "results": [
@@ -759,7 +759,7 @@
         { "game": 13, "score": 2 },
         { "game": 14, "score": 3 },
         { "game": 15, "score": 5 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 1 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
@@ -780,14 +780,14 @@
         "c3": "#333333"
       },
       "lastGames": [
-        "draw","lose","win","draw","win"
+        "win","draw","lose","win","draw"
       ],
       "data": {
-        "pg": 8,
+        "pg": 9,
         "pe": 2,
         "pp": 3,
-        "gf": 29,
-        "gc": 16,
+        "gf": 31,
+        "gc": 17,
         "sanction": null
       },
       "results": [
@@ -806,7 +806,7 @@
         { "game": 13, "score": 2 },
         { "game": 14, "score": 0 },
         { "game": 15, "score": 2 },
-        { "game": 16, "score": null },
+        { "game": 16, "score": 2 },
         { "game": 17, "score": null },
         { "game": 18, "score": null }
       ]
