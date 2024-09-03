@@ -8,7 +8,7 @@
     "logo": "./assets/images/liga-2/liga2fpf.png",
     "alt": "liga2-logo",
     "fecha": "18",
-    "fechaGrupos": "2",
+    "fechaGrupos": "5",
     "playoff": true,
     "cuartos": false,
     "semifinal": false,
@@ -40,7 +40,7 @@
         }
       ],
       "lastGames": [
-        "lose","draw","lose","lose","win"
+        "draw","draw","win","lose","draw"
       ],
       "data": {
         "pg": 6,
@@ -71,18 +71,18 @@
         { "game": 18, "score": 0 }
       ],
       "dataplayoff": {
-        "pg": null,
-        "pe": 1,
+        "pg": 1,
+        "pe": 3,
         "pp": 1,
-        "gf": 1,
-        "gc": 3
+        "gf": 7,
+        "gc": 8
       },
       "promotion": [
         { "game": 1, "score": 0 },
         { "game": 2, "score": 1 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 4 },
+        { "game": 4, "score": 2 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -133,7 +133,7 @@
         }
       ],
       "lastGames": [
-        "lose","win","win","win","lose"
+        "lose","draw","win","win","lose"
       ],
       "data": {
         "pg": 8,
@@ -164,18 +164,18 @@
         { "game": 18, "score": 2 }
       ],
       "dataplayoff": {
-        "pg": null,
-        "pe": null,
-        "pp": 1,
-        "gf": 2,
-        "gc": 4
+        "pg": 2,
+        "pe": 1,
+        "pp": 2,
+        "gf": 4,
+        "gc": 6
       },
       "promotion": [
         { "game": 1, "score": 2 },
         { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -220,7 +220,7 @@
         }
       ],
       "lastGames": [
-        "win","lose","win","win","win"
+        "win","win","draw","win","win"
       ],
       "data": {
         "pg": 13,
@@ -251,18 +251,18 @@
         { "game": 18, "score": 1 }
       ],
       "dataplayoff": {
-        "pg": 1,
-        "pe": null,
+        "pg": 4,
+        "pe": 1,
         "pp": null,
-        "gf": 3,
-        "gc": 2
+        "gf": 7,
+        "gc": 4
       },
       "promotion": [
         { "game": 1, "score": null },
         { "game": 2, "score": 3 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -307,7 +307,7 @@
         }
       ],
       "lastGames": [
-        "lose","win","lose","lose","draw"
+        "win","win","lose","lose","win"
       ],
       "data": {
         "pg": 7,
@@ -338,18 +338,18 @@
         { "game": 18, "score": null }
       ],
       "dataplayoff": {
-        "pg": 1,
+        "pg": 3,
         "pe": null,
-        "pp": 1,
-        "gf": 7,
-        "gc": 5
+        "pp": 2,
+        "gf": 14,
+        "gc": 11
       },
       "promotion": [
         { "game": 1, "score": 4 },
         { "game": 2, "score": 3 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 3 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 3 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -387,6 +387,12 @@
       },
       "dt": [
         {
+          "name": "Luis Flores",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://diariocorreo.pe/resizer/TEr6U0QMB8782dftjM7pyvSer1k=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/7RNAUGQ455GWHIV7B3QVDERVIM.jpg"
+        },
+        {
           "name": "Erick Torres",
           "country": "Perú",
           "cod": "pe",
@@ -400,7 +406,7 @@
         }
       ],
       "lastGames": [
-        "win","win","lose","win","win"
+        "draw","win","draw","draw","win"
       ],
       "data": {
         "pg": 7,
@@ -432,7 +438,7 @@
       ],
       "dataplayoff": {
         "pg": 2,
-        "pe": null,
+        "pe": 3,
         "pp": null,
         "gf": 4,
         "gc": 1
@@ -440,9 +446,9 @@
       "promotion": [
         { "game": 1, "score": 2 },
         { "game": 2, "score": 2 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -493,7 +499,7 @@
         }
       ],
       "lastGames": [
-        "lose","lose","lose","win","lose"
+        "lose","lose","lose","lose","lose"
       ],
       "data": {
         "pg": 4,
@@ -526,16 +532,16 @@
       "dataplayoff": {
         "pg": null,
         "pe": null,
-        "pp": 2,
-        "gf": null,
-        "gc": 3
+        "pp": 5,
+        "gf": 2,
+        "gc": 15
       },
       "promotion": [
         { "game": 1, "score": 0 },
         { "game": 2, "score": 0 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -580,7 +586,7 @@
         }
       ],
       "lastGames": [
-        "draw","win","win","win","win"
+        "draw","lose","win","draw","win"
       ],
       "data": {
         "pg": 9,
@@ -611,18 +617,18 @@
         { "game": 18, "score": 2 }
       ],
       "dataplayoff": {
-        "pg": 1,
-        "pe": 1,
-        "pp": null,
-        "gf": 2,
-        "gc": 1
+        "pg": 2,
+        "pe": 2,
+        "pp": 1,
+        "gf": 7,
+        "gc": 2
       },
       "promotion": [
         { "game": 1, "score": 1 },
         { "game": 2, "score": 1 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 5 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -660,6 +666,12 @@
       },
       "dt": [
         {
+          "name": "Willy Laya",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBqV6x8T18WcN0w9K5OhZHg1SQxHV9oYSueQ&s"
+        },
+        {
           "name": "Alberto Valiente",
           "country": "Argentina",
           "cod": "ar",
@@ -673,7 +685,7 @@
         }
       ],
       "lastGames": [
-        "lose","lose","win","win","win"
+        "lose","draw","win","lose","lose"
       ],
       "data": {
         "pg": 5,
@@ -704,18 +716,18 @@
         { "game": 18, "score": 4 }
       ],
       "dataplayoff": {
-        "pg": null,
-        "pe": null,
-        "pp": 2,
-        "gf": 2,
-        "gc": 4
+        "pg": 1,
+        "pe": 1,
+        "pp": 3,
+        "gf": 4,
+        "gc": 7
       },
       "promotion": [
         { "game": 1, "score": 0 },
         { "game": 2, "score": 2 },
         { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -753,6 +765,12 @@
       },
       "dt": [
         {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "img": "./assets/images/otros/no-manager.png"
+        },
+        {
           "name": "Víctor Rivera",
           "country": "Perú",
           "cod": "pe",
@@ -760,7 +778,7 @@
         }
       ],
       "lastGames": [
-        "draw","draw","draw","draw","draw"
+        "win","draw","draw","draw","draw"
       ],
       "data": {
         "pg": 4,
@@ -791,17 +809,17 @@
         { "game": 18, "score": null }
       ],
       "dataplayoff": {
-        "pg": null,
+        "pg": 1,
         "pe": null,
         "pp": null,
-        "gf": null,
-        "gc": null
+        "gf": 2,
+        "gc": 1
       },
       "promotion": [
         { "game": 1, "score": null },
         { "game": 2, "score": null },
         { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 4, "score": 2 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -847,7 +865,7 @@
         }
       ],
       "lastGames": [
-        "draw","win","win","draw","lose"
+        "win","lose","lose","draw","win"
       ],
       "data": {
         "pg": 10,
@@ -878,17 +896,17 @@
         { "game": 18, "score": 8 }
       ],
       "dataplayoff": {
-        "pg": 1,
+        "pg": 2,
         "pe": 1,
-        "pp": null,
+        "pp": 2,
         "gf": 2,
-        "gc": 1
+        "gc": 3
       },
       "promotion": [
         { "game": 1, "score": 1 },
         { "game": 2, "score": 1 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 0 },
         { "game": 5, "score": null },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
@@ -934,7 +952,7 @@
         }
       ],
       "lastGames": [
-        "win","draw","draw","lose","win"
+        "lose","win","lose","win","draw"
       ],
       "data": {
         "pg": 11,
@@ -965,18 +983,18 @@
         { "game": 18, "score": 0 }
       ],
       "dataplayoff": {
-        "pg": 1,
+        "pg": 2,
         "pe": 1,
-        "pp": null,
-        "gf": 4,
-        "gc": 3
+        "pp": 2,
+        "gf": 5,
+        "gc": 9
       },
       "promotion": [
         { "game": 1, "score": 0 },
         { "game": 2, "score": 4 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -1120,7 +1138,7 @@
         }
       ],
       "lastGames": [
-        "win","lose","draw","lose","win"
+        "lose","lose","win","win","lose"
       ],
       "data": {
         "pg": 8,
@@ -1151,18 +1169,18 @@
         { "game": 18, "score": 0 }
       ],
       "dataplayoff": {
-        "pg": 1,
+        "pg": 2,
         "pe": null,
-        "pp": 1,
-        "gf": 3,
-        "gc": 2
+        "pp": 3,
+        "gf": 7,
+        "gc": 7
       },
       "promotion": [
         { "game": 1, "score": 0 },
         { "game": 2, "score": 3 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 2 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -1207,7 +1225,7 @@
         }
       ],
       "lastGames": [
-        "draw","lose","win","win","win"
+        "win","draw","lose","draw","lose"
       ],
       "data": {
         "pg": 9,
@@ -1238,18 +1256,18 @@
         { "game": 18, "score": 3 }
       ],
       "dataplayoff": {
-        "pg": null,
-        "pe": 1,
-        "pp": 1,
-        "gf": 2,
-        "gc": 5
+        "pg": 1,
+        "pe": 2,
+        "pp": 2,
+        "gf": 6,
+        "gc": 9
       },
       "promotion": [
         { "game": 1, "score": 1 },
         { "game": 2, "score": 1 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 1 },
+        { "game": 4, "score": 2 },
+        { "game": 5, "score": 1 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -1294,7 +1312,7 @@
         }
       ],
       "lastGames": [
-        "draw","win","win","draw","lose"
+        "win","lose","draw","draw","win"
       ],
       "data": {
         "pg": 7,
@@ -1325,18 +1343,18 @@
         { "game": 18, "score": null }
       ],
       "dataplayoff": {
-        "pg": 1,
-        "pe": 1,
-        "pp": null,
-        "gf": 5,
-        "gc": 3
+        "pg": 2,
+        "pe": 2,
+        "pp": 1,
+        "gf": 10,
+        "gc": 8
       },
       "promotion": [
         { "game": 1, "score": 4 },
         { "game": 2, "score": 1 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 2 },
+        { "game": 4, "score": 1 },
+        { "game": 5, "score": 2 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -1387,7 +1405,7 @@
         }
       ],
       "lastGames": [
-        "lose","draw","lose","lose","draw"
+        "win","draw","win","lose","draw"
       ],
       "data": {
         "pg": 2,
@@ -1418,18 +1436,18 @@
         { "game": 18, "score": 2 }
       ],
       "dataplayoff": {
-        "pg": null,
-        "pe": 1,
+        "pg": 2,
+        "pe": 2,
         "pp": 1,
-        "gf": 2,
-        "gc": 3
+        "gf": 12,
+        "gc": 4
       },
       "promotion": [
         { "game": 1, "score": 1 },
         { "game": 2, "score": 1 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 4 },
+        { "game": 4, "score": 0 },
+        { "game": 5, "score": 6 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
@@ -1560,6 +1578,12 @@
       },
       "dt": [
         {
+          "name": "Víctor Rivera",
+          "country": "Perú",
+          "cod": "pe",
+          "img": "https://e.rpp-noticias.io/xlarge/2020/09/30/574857_1003676.jpg"
+        },
+        {
           "name": "Dulio Cisneros",
           "country": "Perú",
           "cod": "pe",
@@ -1567,7 +1591,7 @@
         }
       ],
       "lastGames": [
-        "win","draw","lose","draw","draw"
+        "draw","win","draw","win","draw"
       ],
       "data": {
         "pg": 3,
@@ -1598,18 +1622,18 @@
         { "game": 18, "score": null }
       ],
       "dataplayoff": {
-        "pg": 1,
-        "pe": 1,
+        "pg": 2,
+        "pe": 3,
         "pp": null,
-        "gf": 2,
-        "gc": 1
+        "gf": 4,
+        "gc": 2
       },
       "promotion": [
         { "game": 1, "score": 1 },
         { "game": 2, "score": 1 },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
+        { "game": 3, "score": 0 },
+        { "game": 4, "score": 2 },
+        { "game": 5, "score": 0 },
         { "game": 6, "score": null },
         { "game": 7, "score": null },
         { "game": 8, "score": null },
