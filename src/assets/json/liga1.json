@@ -123,7 +123,7 @@
           "name": "Gerardo Ameli",
           "country": "Argentina",
           "cod": "ar",
-          "img": "https://www.eldiez.com.pe/wp-content/uploads/2024/02/Gerardo-Ameli-no-continuara-en-Deportivo-Garcilaso-y-es-el-primer-DT-cesado-de-la-Liga-1.jpg"
+          "img": "https://todosport.pe/wp-content/uploads/2023/09/Gerardo-Ameli-despedido-en-Cienciano.jpg"
         },
         {
           "name": "Jorge Espejo",
@@ -307,7 +307,7 @@
         }
       ],
       "lastGames": [
-        "draw","draw","lose","draw","win"
+        "win","draw","draw","lose","draw"
       ],
       "data": {
         "apertura": {
@@ -318,11 +318,11 @@
           "gc": 17
         },
         "clausura": {
-          "pg": 2,
+          "pg": 3,
           "pe": 5,
           "pp": 1,
-          "gf": 9,
-          "gc": 6
+          "gf": 11,
+          "gc": 7
         }
       },
       "apertura": [
@@ -347,7 +347,7 @@
       "clausura": [
         { "game": 1, "score": 0 },
         { "game": 2, "score": 1 },
-        { "game": 3, "score": null },
+        { "game": 3, "score": 2 },
         { "game": 4, "score": 3 },
         { "game": 5, "score": 2 },
         { "game": 6, "score": 1 },
@@ -400,7 +400,7 @@
         }
       ],
       "lastGames": [
-        "win","win","draw","lose","lose"
+        "draw","win","draw","lose","lose"
       ],
       "data": {
         "apertura": {
@@ -411,8 +411,8 @@
           "gc": 34
         },
         "clausura": {
-          "pg": 3,
-          "pe": 2,
+          "pg": 2,
+          "pe": 3,
           "pp": 4,
           "gf": 13,
           "gc": 20
@@ -655,7 +655,7 @@
         }
       ],
       "lastGames": [
-        "win","draw","draw","lose","lose"
+        "lose","win","draw","draw","lose"
       ],
       "data": {
         "apertura": {
@@ -668,9 +668,9 @@
         "clausura": {
           "pg": 2,
           "pe": 2,
-          "pp": 4,
+          "pp": 5,
           "gf": 9,
-          "gc": 15
+          "gc": 18
         }
       },
       "apertura": [
@@ -698,7 +698,7 @@
         { "game": 3, "score": 2 },
         { "game": 4, "score": 0 },
         { "game": 5, "score": 1 },
-        { "game": 6, "score": null },
+        { "game": 6, "score": 0 },
         { "game": 7, "score": 1 },
         { "game": 8, "score": 2 },
         { "game": 9, "score": 2 },
@@ -825,7 +825,7 @@
           "name": "Gerardo Ameli",
           "country": "Argentina",
           "cod": "ar",
-          "img": "https://www.eldiez.com.pe/wp-content/uploads/2024/02/Gerardo-Ameli-no-continuara-en-Deportivo-Garcilaso-y-es-el-primer-DT-cesado-de-la-Liga-1.jpg"
+          "img": "https://todosport.pe/wp-content/uploads/2023/09/Gerardo-Ameli-despedido-en-Cienciano.jpg"
         }
       ],
       "lastGames": [
@@ -916,7 +916,7 @@
         }
       ],
       "lastGames": [
-        "lose","win","draw","lose","win"
+        "win","lose","win","draw","lose"
       ],
       "data": {
         "apertura": {
@@ -927,10 +927,10 @@
           "gc": 19
         },
         "clausura": {
-          "pg": 4,
+          "pg": 5,
           "pe": 1,
           "pp": 3,
-          "gf": 15,
+          "gf": 18,
           "gc": 11
         }
       },
@@ -959,7 +959,7 @@
         { "game": 3, "score": 1 },
         { "game": 4, "score": 1 },
         { "game": 5, "score": 1 },
-        { "game": 6, "score": null },
+        { "game": 6, "score": 3 },
         { "game": 7, "score": 1 },
         { "game": 8, "score": 2 },
         { "game": 9, "score": 1 },
@@ -1257,6 +1257,12 @@
       },
       "dt": [
         {
+          "name": "Alejandro Russo",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStb2lRMeeWr3AQznVnKzxu-cnB7zPb2Yvltg&s"
+        },
+        {
           "name": "Jesús Oropesa",
           "country": "Perú",
           "cod": "pe",
@@ -1276,7 +1282,7 @@
         }
       ],
       "lastGames": [
-        "draw","lose","lose","lose","win"
+        "lose","draw","lose","lose","lose"
       ],
       "data": {
         "apertura": {
@@ -1289,9 +1295,9 @@
         "clausura": {
           "pg": 1,
           "pe": 2,
-          "pp": 5,
-          "gf": 8,
-          "gc": 14
+          "pp": 6,
+          "gf": 9,
+          "gc": 16
         }
       },
       "apertura": [
@@ -1316,7 +1322,7 @@
       "clausura": [
         { "game": 1, "score": 1 },
         { "game": 2, "score": 0 },
-        { "game": 3, "score": null },
+        { "game": 3, "score": 1 },
         { "game": 4, "score": 0 },
         { "game": 5, "score": 2 },
         { "game": 6, "score": 1 },
