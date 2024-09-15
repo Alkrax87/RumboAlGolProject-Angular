@@ -6,9 +6,15 @@ nav {
 nav div:first-child {
   padding-left: 0px;
 }
+button:focus {
+  outline: none;
+}
 .nav-bg {
   background-color: #161513;
   font-size: 16px;
+}
+.nav-container {
+  z-index: 100;
 }
 .nav-items {
   color: #ffffff;
