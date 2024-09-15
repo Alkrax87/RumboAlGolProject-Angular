@@ -5,7 +5,7 @@
     "division": "Clasificatoria",
     "logo": "./assets/images/eliminatorias/qatarconmebol.png",
     "alt": "eliminatorias-logo",
-    "fecha": "6"
+    "fecha": "8"
   },
   "Teams": [
     {
@@ -32,14 +32,14 @@
         }
       ],
       "lastGames": [
-        "win","lose","win","win","win"
+        "lose","win","win","lose","win"
       ],
       "data": {
-        "pg": 5,
+        "pg": 6,
         "pe": null,
-        "pp": 1,
-        "gf": 8,
-        "gc": 2,
+        "pp": 2,
+        "gf": 12,
+        "gc": 4,
         "sanction": null
       },
       "clasificatoria": [
@@ -49,8 +49,8 @@
         { "game": 4, "score": 2 },
         { "game": 5, "score": 0 },
         { "game": 6, "score": 1 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 3 },
+        { "game": 8, "score": 1 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
@@ -80,6 +80,12 @@
       },
       "dt": [
         {
+          "name": "Óscar Villegas",
+          "country": "Bolivia",
+          "cod": "bo",
+          "img": "https://labolasports.com/wp-content/uploads/2024/07/GS4n42BW0AAYRF0.jpg"
+        },
+        {
           "name": "Antônio Zago",
           "country": "Brasil",
           "cod": "br",
@@ -93,14 +99,14 @@
         }
       ],
       "lastGames": [
-        "lose","win","lose","lose","lose"
+        "win","win","lose","win","lose"
       ],
       "data": {
-        "pg": 1,
+        "pg": 3,
         "pe": null,
         "pp": 5,
-        "gf": 4,
-        "gc": 14,
+        "gf": 10,
+        "gc": 15,
         "sanction": null
       },
       "clasificatoria": [
@@ -110,8 +116,8 @@
         { "game": 4, "score": 0 },
         { "game": 5, "score": 2 },
         { "game": 6, "score": 0 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 4 },
+        { "game": 8, "score": 2 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
@@ -144,7 +150,7 @@
           "name": "Dorival Junior",
           "country": "Brasil",
           "cod": "br",
-          "img": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2024/01/08/001027466W.jpg"
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmuEaC3ZFw1r16Z7rb7Uv6qtJOKKKUrisEw&s"
         },
         {
           "name": "Fernando Diniz",
@@ -154,14 +160,14 @@
         }
       ],
       "lastGames": [
-        "lose","lose","lose","draw","win"
+        "lose","win","lose","lose","lose"
       ],
       "data": {
-        "pg": 2,
+        "pg": 3,
         "pe": 1,
-        "pp": 3,
-        "gf": 8,
-        "gc": 7,
+        "pp": 4,
+        "gf": 9,
+        "gc": 8,
         "sanction": null
       },
       "clasificatoria": [
@@ -171,8 +177,8 @@
         { "game": 4, "score": 0 },
         { "game": 5, "score": 1 },
         { "game": 6, "score": 0 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 1 },
+        { "game": 8, "score": 0 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
@@ -209,14 +215,14 @@
         }
       ],
       "lastGames": [
-        "win","win","draw","draw","draw"
+        "win","draw","win","win","draw"
       ],
       "data": {
-        "pg": 3,
-        "pe": 3,
+        "pg": 4,
+        "pe": 4,
         "pp": null,
-        "gf": 6,
-        "gc": 3,
+        "gf": 9,
+        "gc": 5,
         "sanction": null
       },
       "clasificatoria": [
@@ -226,8 +232,8 @@
         { "game": 4, "score": 0 },
         { "game": 5, "score": 2 },
         { "game": 6, "score": 1 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 1 },
+        { "game": 8, "score": 2 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
@@ -270,14 +276,14 @@
         }
       ],
       "lastGames": [
-        "lose","draw","lose","win","draw"
+        "lose","lose","lose","draw","lose"
       ],
       "data": {
         "pg": 1,
         "pe": 2,
-        "pp": 3,
-        "gf": 3,
-        "gc": 7,
+        "pp": 5,
+        "gf": 4,
+        "gc": 12,
         "sanction": null
       },
       "clasificatoria": [
@@ -287,8 +293,8 @@
         { "game": 4, "score": 0 },
         { "game": 5, "score": 0 },
         { "game": 6, "score": 0 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 0 },
+        { "game": 8, "score": 1 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
@@ -318,6 +324,12 @@
       },
       "dt": [
         {
+          "name": "Sebastián Becaccece",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://meridianbetsport.pe/wp-content/uploads/2022/06/pibe.webp"
+        },
+        {
           "name": "Félix Sánchez",
           "country": "España",
           "cod": "es",
@@ -325,14 +337,14 @@
         }
       ],
       "lastGames": [
-        "win","draw","draw","win","win"
+        "win","lose","win","draw","draw"
       ],
       "data": {
-        "pg": 3,
+        "pg": 4,
         "pe": 2,
-        "pp": 1,
-        "gf": 5,
-        "gc": 3,
+        "pp": 2,
+        "gf": 6,
+        "gc": 4,
         "sanction": 3
       },
       "clasificatoria": [
@@ -342,8 +354,8 @@
         { "game": 4, "score": 0 },
         { "game": 5, "score": 0 },
         { "game": 6, "score": 1 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 0 },
+        { "game": 8, "score": 1 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
@@ -373,6 +385,12 @@
       },
       "dt": [
         {
+          "name": "Gustavo Alfaro",
+          "country": "Argentina",
+          "cod": "ar",
+          "img": "https://resizer.glanacion.com/resizer/v2/gustavo-alfaro-tuvo-un-buen-paso-por-ecuador-4P6CP3TKIJF2FKDZ3RX6FDIMB4.JPG?auth=63cfed300c4cd18aba4da074478a5c408607f3fa90831e649e81390f4faa4d51&width=880&height=586&quality=70&smart=false&focal=1170,382"
+        },
+        {
           "name": "Daniel Garnero",
           "country": "Argentina",
           "cod": "ar",
@@ -382,17 +400,17 @@
           "name": "Barros Schelotto",
           "country": "Argentina",
           "cod": "ar",
-          "img": "https://peru21.pe/resizer/B2m-UPcLsh87oCY0Hlb9p5ys-7g=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/DK27CXTYSZFATCBGM7BUQ5OIZU.jpg"
+          "img": "https://strikers.futbol/__export/1634653421193/sites/strikers/img/2021/10/19/disenxo_sin_tixtulo_-_2021-10-19t112218_152.png_1532577217.png"
         }
       ],
       "lastGames": [
-        "lose","draw","win","lose","lose"
+        "win","draw","lose","draw","win"
       ],
       "data": {
-        "pg": 1,
-        "pe": 2,
+        "pg": 2,
+        "pe": 3,
         "pp": 3,
-        "gf": 1,
+        "gf": 2,
         "gc": 3,
         "sanction": null
       },
@@ -403,8 +421,8 @@
         { "game": 4, "score": 1 },
         { "game": 5, "score": 0 },
         { "game": 6, "score": 0 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 0 },
+        { "game": 8, "score": 1 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
@@ -437,7 +455,7 @@
           "name": "Jorge Fossati",
           "country": "Uruguay",
           "cod": "uy",
-          "img": "https://portal.andina.pe/EDPfotografia3/Thumbnail/2023/07/22/000978343W.jpg"
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQub5tPiVp8vaj5VjGzq1ZXorNQObIm10pqtQ&s"
         },
         {
           "name": "Juan Reynoso",
@@ -447,14 +465,14 @@
         }
       ],
       "lastGames": [
-        "draw","lose","lose","lose","lose"
+        "lose","draw","draw","lose","lose"
       ],
       "data": {
         "pg": null,
-        "pe": 2,
-        "pp": 4,
-        "gf": 1,
-        "gc": 8,
+        "pe": 3,
+        "pp": 5,
+        "gf": 2,
+        "gc": 10,
         "sanction": null
       },
       "clasificatoria": [
@@ -464,8 +482,8 @@
         { "game": 4, "score": 0 },
         { "game": 5, "score": 0 },
         { "game": 6, "score": 1 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 1 },
+        { "game": 8, "score": 0 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
@@ -502,11 +520,11 @@
         }
       ],
       "lastGames": [
-        "win","win","win","draw","lose"
+        "draw","draw","win","win","win"
       ],
       "data": {
         "pg": 4,
-        "pe": 1,
+        "pe": 3,
         "pp": 1,
         "gf": 13,
         "gc": 5,
@@ -519,8 +537,8 @@
         { "game": 4, "score": 2 },
         { "game": 5, "score": 2 },
         { "game": 6, "score": 3 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 0 },
+        { "game": 8, "score": 0 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
@@ -557,14 +575,14 @@
         }
       ],
       "lastGames": [
-        "draw","draw","win","draw","win"
+        "draw","lose","draw","draw","win"
       ],
       "data": {
         "pg": 2,
-        "pe": 3,
-        "pp": 1,
+        "pe": 4,
+        "pp": 2,
         "gf": 6,
-        "gc": 3,
+        "gc": 7,
         "sanction": null
       },
       "clasificatoria": [
@@ -574,8 +592,8 @@
         { "game": 4, "score": 3 },
         { "game": 5, "score": 0 },
         { "game": 6, "score": 1 },
-        { "game": 7, "score": null },
-        { "game": 8, "score": null },
+        { "game": 7, "score": 0 },
+        { "game": 8, "score": 0 },
         { "game": 9, "score": null },
         { "game": 10, "score": null },
         { "game": 11, "score": null },
