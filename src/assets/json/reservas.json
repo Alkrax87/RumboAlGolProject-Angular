@@ -7,7 +7,7 @@
     "alt": "reservas-logo",
     "fecha": "18",
     "playoff": true,
-    "cuartos": false,
+    "cuartos": true,
     "semifinal": false,
     "final": false
   },
@@ -1083,35 +1083,35 @@
   },
   "Octavos": [
     {
-      "teamA": null,
-      "teamB": null,
+      "teamA": 3,
+      "teamB": 0,
       "penal":{
         "teamA": null,
         "teamB": null
       }
     },
     {
-      "teamA": null,
-      "teamB": null,
+      "teamA": 2,
+      "teamB": 3,
       "penal":{
         "teamA": null,
         "teamB": null
       }
     },
     {
-      "teamA": null,
-      "teamB": null,
+      "teamA": 3,
+      "teamB": 3,
       "penal":{
-        "teamA": null,
-        "teamB": null
+        "teamA": 6,
+        "teamB": 5
       }
     },
     {
-      "teamA": null,
-      "teamB": null,
+      "teamA": 0,
+      "teamB": 0,
       "penal":{
-        "teamA": null,
-        "teamB": null
+        "teamA": 2,
+        "teamB": 1
       }
     }
   ],
