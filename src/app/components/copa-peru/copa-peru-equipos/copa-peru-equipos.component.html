@@ -1,1 +1,79 @@
-<p>copa-peru-equipos works!</p>
+<!-- Title -->
+<div class="container-fluid background content-block">
+  <div class="row">
+    <div class="col-10 title">
+      <div class="row">
+        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>COPA PERÚ<i class="fas fa-chevron-right px-3"></i><span>CLUBES</span></p>
+      </div>
+      <h1><b>Clubes</b></h1>
+    </div>
+  </div>
+</div>
+<!-- Description -->
+<app-description-league [value]="4"/>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
+<!-- Teams -->
+<div class="team-content container-fluid py-5 content-block">
+  <div class="row">
+    <div class="col-sm-12 col-md-11 team-list">
+      @if (data) {
+        <div class="row">
+          @for (item of data.Ligas; track $index) {
+            <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+              <a class="card" [href]="item.url">
+                <div class="item" [ngStyle]="{ 'background-color': (hoveredItem === item) ? item.color : '' }" (mouseover)="onItemHover(item)" (mouseout)="onItemLeave()">
+                  <div class="py-4 text-center">
+                    <!-- Liga name -->
+                    <h4 class="mb-0">{{ item.name }}</h4>
+                    <!-- Flag -->
+                    <div class="container-fluid">
+                      <div class="row py-3">
+                        <img [src]="item.image" [alt]="item.alt" class="liga">
+                      </div>
+                    </div>
+                    <!-- Divider with "Equipos" -->
+                    <div class="d-flex align-items-center">
+                      <div class="flex-grow-1 line"></div>
+                      <span class="clasifier-title">Clasificados</span>
+                      <div class="flex-grow-1 line"></div>
+                    </div>
+                    <!-- Team logos and names -->
+                    <div class="row m-0">
+                      @for (teamId of item.qualified; track $index) {
+                        @if (getTeamById(teamId) && getTeamById(teamId).name) {
+                          <div class="col-6">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <img class="logo-team py-2" [src]="getTeamById(teamId).image" [alt]="getTeamById(teamId).alt">
+                                <span class="name-team">{{ getTeamById(teamId).name }}</span>
+                                <span class="abbreviation-team">{{ getTeamById(teamId).abbreviation }}</span>
+                              </div>
+                            </div>
+                            <p class="city pt-2 mb-0 text-nowrap"><i class="fas fa-city"></i>&nbsp; {{ getTeamById(teamId).city }}</p>
+                          </div>
+                        } @else {
+                          <div class="col-6">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <img class="logo-team py-2" src="./assets/images/otros/no-team-copa-peru.png" alt="team-shield-logo">
+                                <span>Por Definir</span>
+                                <p class="pt-2 mb-0 city"><i class="fas fa-city"></i></p>
+                              </div>
+                            </div>
+                          </div>
+                        }
+                      }
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</div>
+<!-- Divider -->
+<div class="container-fluid divider"></div>

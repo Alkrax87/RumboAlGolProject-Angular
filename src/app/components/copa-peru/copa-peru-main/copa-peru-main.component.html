@@ -1,1 +1,261 @@
-<p>copa-peru-main works!</p>
+<div class="container-fluid">
+  <div class="row bg-light top-list-bar">
+    <div class="col"></div>
+    <div class="col-sm-12 col-md-11">
+      <div class="row">
+        @if (data) {
+          <div id="teams-list" class="col-sm-12 col-md-11 top-items">
+            <div class="col-1 top-club-text">
+              <p>Ligas &nbsp;<i class="fa-solid fa-up-right-from-square top-club-icon"></i></p>
+            </div>
+            @for (item of data.Ligas; track $index) {
+              <a class="nav-item" [href]="item.url">
+                <img [src]="item.image" [alt]="item.alt">
+              </a>
+            }
+          </div>
+        }
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div class="container-fluid divisor-type"></div>
+<!-- D -->
+<div class="container-fluid bg-light nav-options-bar hide-options-D">
+  <div class="row">
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/copa-peru/equipos">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-shield-alt"></i> Clubes</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/copa-peru/fixture">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-window-restore"></i> Fixture</div>
+      </a>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 p-0">
+      <a (click)="mainPage = false;" routerLink="/copa-peru/tabla">
+        <div class="nav-options-item" routerLinkActive="nav-options-item-selected"><i class="fas fa-stream"></i> Tabla</div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- M -->
+<div class="dropdown hide-options-M">
+  <button class="btn bg-light dropdown-option w-100 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Copa Perú
+  </button>
+  <ul class="dropdown-menu bg-light w-100">
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/copa-peru/equipos">Clubes</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/copa-peru/fixture">Fixture</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/copa-peru/tabla">Tabla</a></li>
+  </ul>
+</div>
+<!-- Content -->
+@if (mainPage) {
+  <!-- Banner -->
+  <img src="./assets/images/banners/copaperubanner.jpg" alt="banner" class="w-100">
+  <!-- Description -->
+  <app-description-league [value]="value"/>
+  <!-- Divider -->
+  <div class="container-fluid divider"></div>
+  <!-- Mapa -->
+  <div class="container-fluid bg-light py-5 px-5 text-center content-block">
+    <div class="row vertical-center">
+      <!-- Info -->
+      <div class="col-sm-12 col-md-10 col-lg-7 my-4">
+        <div class="title text-start">Equipos</div>
+        <div class="line mb-3"></div>
+        <p>La etapa nacional de la <b>Copa Perú</b> temporada <b>{{ data && data.Info ? data.Info.temporada : '' }}</b> es de <b> {{ data && data.Info ? data.Info.equipos : '' }} </b> equipos, con 2 representantes de cada una de las Ligas Departamentales:</p>
+        <div class="text-center" *ngIf="data">
+          @for (item of data.Teams; track $index) {
+            <img [src]="item.image" class="map-item-list" [alt]="item.alt">
+          }
+        </div>
+        <div class="line-lg my-3"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Formato -->
+  <div class="container-fluid py-5 px-5 format-content content-block">
+    <div class="row">
+      <!-- L -->
+      <div class="col-sm-12 col-md-5 col-lg-4 vertical-center">
+        <div>
+          <div class="title">Título Nacional</div>
+          <div class="line mb-3"></div>
+          <p>El título de la Liga 1 se definirá con 2 rondas denominadas <b>Apertura</b> y <b>Clausura</b> con las siguientes consideraciones.</p>
+          <img class="img-fluid" src="https://img.asmedia.epimg.net/resizer/WGgObp2RSJCwqpTp65q2sHRMBIU=/1472x1104/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/C64XC5QLVFBA5LZB7RKKVOBRLQ.jpg" alt="formato-logo">
+        </div>
+      </div>
+      <!-- R -->
+      <div class="col-sm-12 col-md-7 col-lg-7 vertical-center">
+        <div class="col-12">
+          <!-- Item 1 -->
+          <div class="row format-item my-4 mx-1">
+            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-10">
+              <p><b>Sin Final</b></p>
+              <div class="line2"></div>
+              <p>Si un equipo gana ambos torneos, se proclama automáticamente campeón nacional.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="row format-item my-4 mx-1">
+            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-10">
+              <p><b>Final</b></p>
+              <div class="line2"></div>
+              <p>Si los dos equipos ganadores de los torneos también son los 2 primeros del acumulado, se jugará directamente la Final entre esos equipos.</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="row format-item my-4 mx-1">
+            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-10">
+              <p><b>Semifinal y Final</b></p>
+              <div class="line2"></div>
+              <p>Si un equipo gana el Apertura o Clausura y está entre los dos primeros del acumulado, clasifica directamente a la Final. El rival será el ganador de la semifinal entre el otro ganador de un torneo y el otro equipo del acumulado.</p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="row format-item my-4 mx-1">
+            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-10">
+              <p><b>Doble Semifinal y Final</b></p>
+              <div class="line2"></div>
+              <p>Si los campeones del Apertura, Clausura y los 2 primeros del acumulado son diferentes equipos, se disputarán 2 Semifinales y Final.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Torneos Conmebol -->
+  <div class="container-fluid bg-light py-5 px-5 content-block">
+    <div class="row">
+      <div class="col-sm-12 col-md-11">
+        <div class="title">Torneos Conmebol</div>
+        <div class="line mb-3"></div>
+        <p>Los cupos a torneos internacionales otorgados a equipos de Perú son 8 y estan divididos de la siguiente forma.</p>
+      </div>
+      <!-- Copa Libertadores -->
+      <div class="col-sm-12 col-md-11">
+        <div class="row">
+          <!-- L -->
+          <div class="col-sm-12 col-md-5 conmebol-tournaments">
+            <div class="text-center my-2 py-3">
+              <img src="./assets/images/logos/copa-libertadores-logo.png">
+            </div>
+          </div>
+          <!-- R -->
+          <div class="col-sm-12 col-md-5 clasifiers border-L">
+            <!-- Item 1 -->
+            <div class="row clasifiers-item">
+              <div class="col-1"><i class="far fa-futbol"></i></div>
+              <div class="col-10">
+                <p><b>Perú 1</b></p>
+                <div class="lineL"></div>
+                <p>Campeón de la Liga 1</p>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="row clasifiers-item">
+              <div class="col-1"><i class="far fa-futbol"></i></div>
+              <div class="col-10">
+                <p><b>Perú 2</b></p>
+                <div class="lineL"></div>
+                <p>Subampeón de la Liga 1</p>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="row clasifiers-item">
+              <div class="col-1"><i class="far fa-futbol"></i></div>
+              <div class="col-10">
+                <p><b>Perú 3</b></p>
+                <div class="lineL"></div>
+                <p>Tercer lugar de la Liga 1</p>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="row clasifiers-item">
+              <div class="col-1"><i class="far fa-futbol"></i></div>
+              <div class="col-10">
+                <p><b>Perú 4</b></p>
+                <div class="lineL"></div>
+                <p>Cuarto lugar de la Liga 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copa Sudamericana -->
+      <div class="col-sm-12 col-md-11">
+        <div class="row">
+          <!-- L -->
+          <div class="col-sm-12 col-md-5 conmebol-tournaments">
+            <div class="text-center my-2 py-3">
+              <img src="./assets/images/logos/copa-sudamericana-logo.png">
+            </div>
+          </div>
+          <!-- R -->
+          <div class="col-sm-12 col-md-5 clasifiers border-S">
+            <!-- Item 1 -->
+            <div class="row clasifiers-item">
+              <div class="col-1"><i class="far fa-futbol"></i></div>
+              <div class="col-10">
+                <p><b>Perú 1</b></p>
+                <div class="lineS"></div>
+                <p>Quinto Lugar de la Liga 1</p>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="row clasifiers-item">
+              <div class="col-1"><i class="far fa-futbol"></i></div>
+              <div class="col-10">
+                <p><b>Perú 2</b></p>
+                <div class="lineS"></div>
+                <p>Sexto Lugar de la Liga 1</p>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="row clasifiers-item">
+              <div class="col-1"><i class="far fa-futbol"></i></div>
+              <div class="col-10">
+                <p><b>Perú 3</b></p>
+                <div class="lineS"></div>
+                <p>Séptimo Lugar de la Liga 1</p>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="row clasifiers-item">
+              <div class="col-1"><i class="far fa-futbol"></i></div>
+              <div class="col-10">
+                <p><b>Perú 4</b></p>
+                <div class="lineS"></div>
+                <p>Octavo Lugar de la Liga 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Descenso -->
+  <div class="container-fluid py-5 px-5 relegation-content content-block">
+    <div class="row">
+      <div class="col-sm-12 col-md-5">
+        <div class="title">Descenso</div>
+        <div class="line mb-3"></div>
+        <p>En la temporada actual, los equipos situados en las <b>2 últimas posiciones</b> al término de la fase regular sufrirán el <b>descenso directo de categoría</b>, relegándolos a participar en la <b>Liga 2</b>.</p>
+      </div>
+      <div class="col-sm-12 col-md-3">
+        <img class="img-fluid relegation-img" alt="liga-2" src="https://liga2peru.carrd.co/assets/images/image01.jpg?v98201726126851">
+      </div>
+    </div>
+  </div>
+  <!-- Divider -->
+  <div class="container-fluid divider"></div>
+}
+<router-outlet/>

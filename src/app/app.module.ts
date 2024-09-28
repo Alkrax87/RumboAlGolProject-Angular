@@ -13,9 +13,10 @@ import { Liga2TablaComponent } from './components/liga2/liga2-tabla/liga2-tabla.
 import { Liga2FixtureComponent } from './components/liga2/liga2-fixture/liga2-fixture.component';
 import { Liga2EquiposComponent } from './components/liga2/liga2-equipos/liga2-equipos.component';
 import { Liga2MainComponent } from './components/liga2/liga2-main/liga2-main.component';
-import { CopaPeruTablaComponent } from './components/copa-peru/copa-peru-tabla/copa-peru-tabla.component';
 import { CopaPeruMainComponent } from './components/copa-peru/copa-peru-main/copa-peru-main.component';
 import { CopaPeruEquiposComponent } from './components/copa-peru/copa-peru-equipos/copa-peru-equipos.component';
+import { CopaPeruFixtureComponent } from './components/copa-peru/copa-peru-fixture/copa-peru-fixture.component';
+import { CopaPeruTablaComponent } from './components/copa-peru/copa-peru-tabla/copa-peru-tabla.component';
 import { EliminatoriasTecnicosComponent } from './components/eliminatorias/eliminatorias-tecnicos/eliminatorias-tecnicos.component';
 import { EliminatoriasEquiposComponent } from './components/eliminatorias/eliminatorias-equipos/eliminatorias-equipos.component';
 import { EliminatoriasFixtureComponent } from './components/eliminatorias/eliminatorias-fixture/eliminatorias-fixture.component';
@@ -65,7 +66,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     SocialComponent,
     AboutComponent,
-    DescriptionLeagueComponent
+    DescriptionLeagueComponent,
+    CopaPeruFixtureComponent
   ],
   imports: [
     BrowserModule,

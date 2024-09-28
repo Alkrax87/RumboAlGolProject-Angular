@@ -15,6 +15,7 @@ import { Liga2TablaComponent } from './components/liga2/liga2-tabla/liga2-tabla.
 import { Liga2TecnicosComponent } from './components/liga2/liga2-tecnicos/liga2-tecnicos.component';
 import { CopaPeruMainComponent } from './components/copa-peru/copa-peru-main/copa-peru-main.component';
 import { CopaPeruEquiposComponent } from './components/copa-peru/copa-peru-equipos/copa-peru-equipos.component';
+import { CopaPeruFixtureComponent } from './components/copa-peru/copa-peru-fixture/copa-peru-fixture.component';
 import { CopaPeruTablaComponent } from './components/copa-peru/copa-peru-tabla/copa-peru-tabla.component';
 import { EliminatoriasMainComponent } from './components/eliminatorias/eliminatorias-main/eliminatorias-main.component';
 import { EliminatoriasEquiposComponent } from './components/eliminatorias/eliminatorias-equipos/eliminatorias-equipos.component';
@@ -45,6 +46,7 @@ const routes: Routes = [
   ]},
   { path: 'copa-peru', component: CopaPeruMainComponent, children: [
     { path: 'equipos', component: CopaPeruEquiposComponent },
+    { path: 'fixture', component: CopaPeruFixtureComponent },
     { path: 'tabla', component: CopaPeruTablaComponent },
   ]},
   { path: 'eliminatorias', component: EliminatoriasMainComponent, children: [

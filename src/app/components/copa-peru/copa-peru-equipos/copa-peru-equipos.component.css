@@ -1,0 +1,126 @@
+/* Title */
+.background {
+  background: #2DAAA7;
+  background-image: url('/assets/images/banners/background-pattern-copa-peru.svg');
+  background-size: cover;
+  height: 250px;
+}
+.background h1 {
+  font-size: 73px;
+  color: #fff;
+}
+/* Page Tree */
+.arrow {
+  padding: 40px 12px;
+  color: #cdfeff;
+  font-weight: bold;
+}
+.arrow span {
+  color: #fff;
+}
+@media screen and (max-width: 575.5px) {
+  .background h1 {
+    padding-top: 80px;
+  }
+  .description-image {
+    text-align: center;
+  }
+  .arrow {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+}
+/* Divider */
+.divider {
+  background: #2DAAA7;
+  background-image: url('/assets/images/banners/background-pattern-copa-peru.svg');
+  background-size: cover;
+  height: 20px;
+}
+
+/* ======================================================================================================*/
+/* ==============================================Content=================================================*/
+/* ======================================================================================================*/
+.container-fluid .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-block {
+  user-select: none;
+}
+a {
+  text-decoration:none;
+  color: #ffff;
+  border: none;
+}
+/* Teams content background */
+.team-content {
+  background: #161513;
+}
+/* Cards */
+.item {
+  background: #312f2b;
+  min-height: 370px;
+}
+.line {
+  height: 2px;
+  background-color: #D8A928;
+}
+.clasifier-title {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: solid 3px #D8A928;
+}
+.card .liga {
+  width: 130px;
+  height: 65px;
+}
+.logo-team {
+  width: 100px;
+}
+.card:hover .logo-team {
+  transform: scale(1.2);
+}
+.card img {
+  transition: all 2s ease;
+}
+.card .shield {
+  font-size: 70px;
+}
+.card:hover .shield {
+  transform: scale(1.2);
+}
+.card .shield {
+  transition: all 1s ease;
+}
+.name-team {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%;
+}
+.city {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 100%;
+  font-size: 14px;
+}
+.abbreviation-team {
+  display: none;
+}
+@media screen and (max-width: 475px) {
+  .name-team {
+    display: none;
+  }
+  .abbreviation-team {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

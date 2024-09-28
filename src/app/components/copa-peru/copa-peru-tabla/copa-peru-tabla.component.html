@@ -1,1 +1,96 @@
-<p>copa-peru-tabla works!</p>
+<!-- Title -->
+<div class="container-fluid background content-block">
+  <div class="row">
+    <div class="col-10 title">
+      <div class="row">
+        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>COPA PERÚ<i class="fas fa-chevron-right px-3"></i><span>TABLA</span></p>
+      </div>
+      <h1><b>Tabla</b></h1>
+    </div>
+  </div>
+</div>
+<!-- Description -->
+<app-description-league [value]="4"/>
+<!-- Divider -->
+<div class="container-fluid divider"></div>
+<!-- Tables -->
+<div class="table-content container-fluid content-block py-5">
+  <div class="row">
+
+    <div class="col-md-12 col-lg-10 col-xl-8">
+      <div class="table-responsive">
+        <!-- Table -->
+        <table class="table align-middle">
+          <thead class="table-header">
+            <tr class="text-center">
+              <th scope="col"></th>
+              <th scope="col">#</th>
+              <th scope="col" class="text-start w-25">Nombre</th>
+              <th scope="col" class="w-10">Puntos</th>
+              <th scope="col" class="w-5">PJ</th>
+              <th scope="col" class="w-5">PG</th>
+              <th scope="col" class="w-5">PE</th>
+              <th scope="col" class="w-5">PP</th>
+              <th scope="col" class="w-5">GF</th>
+              <th scope="col" class="w-5">GC</th>
+              <th scope="col" class="w-5">DG</th>
+              <th scope="col" class="w-5">PR</th>
+              <th scope="col" class="t-w-lg">Últimos 5</th>
+            </tr>
+          </thead>
+          @if (teams) {
+            <tbody>
+              @for (item of teams; track $index) {
+                <tr class="text-center">
+                  <th class="team-status"><div class="clasifier" [ngClass]="{'next-round': $index >= 0 && $index < 32}"></div>
+                  <th>{{ 1 + $index }}</th>
+                  <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image ? item.image : './assets/images/otros/no-team-copa-peru.png' }}" alt="{{ item.alt }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a></td>
+                  <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
+                  <td>{{ item.pj ? item.pj  : '0'}}</td>
+                  <td>{{ item.pg ? item.pg  : '0'}}</td>
+                  <td>{{ item.pe ? item.pe  : '0'}}</td>
+                  <td>{{ item.pp ? item.pp  : '0'}}</td>
+                  <td>{{ item.gf ? item.gf  : '0'}}</td>
+                  <td>{{ item.gc ? item.gc  : '0'}}</td>
+                  <td>{{ item.dg ? item.dg  : '0'}}</td>
+                  <td>{{ item.pr ? item.pr  : '0'}}</td>
+                  <td>
+                    @for (lg of item.lastGames; track $index) {
+                      @switch (lg) {
+                        @case ("win") {
+                          <i class="fa-solid fa-circle-check win"></i>
+                        }
+                        @case ("draw") {
+                          <i class="fa-solid fa-circle-minus draw"></i>
+                        }
+                        @case ("lose") {
+                          <i class="fa-solid fa-circle-xmark lose"></i>
+                        }
+                        @default {
+                          <i class="fa-solid fa-circle draw"></i>
+                        }
+                      }
+                    }
+                  </td>
+                </tr>
+              }
+            </tbody>
+          }
+        </table>
+      </div>
+      <!-- Table Footer -->
+      <div class="line-table"></div>
+      <div class="table-info">
+        <h6 class="text-start"><b>Clasificación</b></h6>
+        <div class="text-start">
+          <i class="fas fa-square next-round"></i>
+          <span class="mx-2">Siguiente Ronda</span>
+        </div>
+      </div>
+      <div class="line-table"></div>
+    </div>
+
+  </div>
+</div>
+<!-- Divider -->
+<div class="container-fluid divider"></div>

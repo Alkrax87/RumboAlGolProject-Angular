@@ -1,0 +1,1655 @@
+{
+  "Info": {
+    "temporada": 2024,
+    "equipos": 50,
+    "division": "3",
+    "ordinal": "ra",
+    "text": "División",
+    "logo": "./assets/images/copa-peru/copaperufpf.png",
+    "alt": "copa_peru-logo",
+    "fecha": "1"
+  },
+  "Teams": [
+    {
+      "id": "Amazonas1",
+      "name": "Unión Santo Domingo",
+      "abbreviation": "USD",
+      "image": "./assets/images/copa-peru/usd.png",
+      "alt": "USD-logo",
+      "city": "Chachapoyas",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Amazonas2",
+      "name": "Cajaruro FC",
+      "abbreviation": "CAJ",
+      "image": "./assets/images/copa-peru/caj.png",
+      "alt": "CAJ-logo",
+      "city": "Cajaruro",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Ancash1",
+      "name": "Centro Social Pariacoto",
+      "abbreviation": "PAR",
+      "image": "./assets/images/copa-peru/par.png",
+      "alt": "PAR-logo",
+      "city": "Pariacoto",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Ancash2",
+      "name": "Alianza Arenal",
+      "abbreviation": "ALI",
+      "image": "./assets/images/copa-peru/ali.png",
+      "alt": "ALI-logo",
+      "city": "Moro",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Apurimac1",
+      "name": "Deportivo Florida",
+      "abbreviation": "FLO",
+      "image": "./assets/images/copa-peru/flo.png",
+      "alt": "FLO-logo",
+      "city": "Ocobamba",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Apurimac2",
+      "name": "Miguel Grau",
+      "abbreviation": "MIG",
+      "image": "./assets/images/copa-peru/mig.png",
+      "alt": "MIG-logo",
+      "city": "Abancay",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Arequipa1",
+      "name": "Viargoca FC",
+      "abbreviation": "VIA",
+      "image": "./assets/images/copa-peru/via.png",
+      "alt": "VIA-logo",
+      "city": "Atico",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Arequipa2",
+      "name": "",
+      "abbreviation": "",
+      "image": "",
+      "alt": "",
+      "city": "",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Ayacucho1",
+      "name": "Señor de Quinuapata FC",
+      "abbreviation": "QUI",
+      "image": "./assets/images/copa-peru/qui.png",
+      "alt": "QUI-logo",
+      "city": "Ayacucho",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Ayacucho2",
+      "name": "CD Nuevo San Cristóbal",
+      "abbreviation": "CRI",
+      "image": "./assets/images/copa-peru/cri.png",
+      "alt": "CRI-logo",
+      "city": "Pichari",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Cajamarca1",
+      "name": "",
+      "abbreviation": "",
+      "image": "",
+      "alt": "",
+      "city": "",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Cajamarca2",
+      "name": "",
+      "abbreviation": "",
+      "image": "",
+      "alt": "",
+      "city": "",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Callao1",
+      "name": "Amazon Callao FC",
+      "abbreviation": "AMA",
+      "image": "./assets/images/copa-peru/ama.png",
+      "alt": "AMA-logo",
+      "city": "Callao",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Callao2",
+      "name": "",
+      "abbreviation": "",
+      "image": "",
+      "alt": "",
+      "city": "",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Cusco1",
+      "name": "AJI",
+      "abbreviation": "AJI",
+      "image": "./assets/images/copa-peru/aji.png",
+      "alt": "AJI-logo",
+      "city": "Calca",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Cusco2",
+      "name": "Juventud Alfa FC",
+      "abbreviation": "ALF",
+      "image": "./assets/images/copa-peru/alf.png",
+      "alt": "ALF-LOGO",
+      "city": "Pisac",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Huancavelica1",
+      "name": "",
+      "abbreviation": "",
+      "image": "",
+      "alt": "",
+      "city": "",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Huancavelica2",
+      "name": "",
+      "abbreviation": "",
+      "image": "",
+      "alt": "",
+      "city": "",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Huanuco1",
+      "name": "Construción Civil",
+      "abbreviation": "CCI",
+      "image": "./assets/images/copa-peru/cci.png",
+      "alt": "CCI-logo",
+      "city": "Huánuco",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Huanuco2",
+      "name": "Deportivo Municipal",
+      "abbreviation": "TIN",
+      "image": "./assets/images/copa-peru/tin.png",
+      "alt": "TIN-logo",
+      "city": "Tingo María",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Ica1",
+      "name": "Juventud Santo Domingo",
+      "abbreviation": "JUV",
+      "image": "./assets/images/copa-peru/juv.png",
+      "alt": "JUV-logo",
+      "city": "Nazca",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Ica2",
+      "name": "Sport Nacional La Joya",
+      "abbreviation": "SNA",
+      "image": "./assets/images/copa-peru/sna.png",
+      "alt": "SNA-logo",
+      "city": "Santiago",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Junin1",
+      "name": "",
+      "abbreviation": "",
+      "image": "",
+      "alt": "",
+      "city": "",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Junin2",
+      "name": "",
+      "abbreviation": "",
+      "image": "",
+      "alt": "",
+      "city": "",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "LaLibertad1",
+      "name": "Juventus FC Huamachuco",
+      "abbreviation": "JFC",
+      "image": "/assets/images/copa-peru/jfc.png",
+      "alt": "JFC-logo",
+      "city": "Huamachuco",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "LaLibertad2",
+      "name": "Deportivo el Inca",
+      "abbreviation": "INC",
+      "image": "/assets/images/copa-peru/inc.png",
+      "alt": "INC-logo",
+      "city": "Chao",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Lambayeque1",
+      "name": "Deportivo Lute",
+      "abbreviation": "LUT",
+      "image": "./assets/images/copa-peru/lut.png",
+      "alt": "LUT-logo",
+      "city": "Lagunas",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Lambayeque2",
+      "name": "San Martín Filoque",
+      "abbreviation": "SMA",
+      "image": "./assets/images/copa-peru/sma.png",
+      "alt": "SMA-logo",
+      "city": "Olmos",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Lima1",
+      "name": "Real Independiente",
+      "abbreviation": "IND",
+      "image": "./assets/images/copa-peru/ind.png",
+      "alt": "IND-logo",
+      "city": "Santa María",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Lima2",
+      "name": "Pacífico FC",
+      "abbreviation": "PAC",
+      "image": "./assets/images/copa-peru/pac.png",
+      "alt": "PAC-logo",
+      "city": "San Martín de Porres",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Loreto1",
+      "name": "Estudiantil CNI",
+      "abbreviation": "CNI",
+      "image": "./assets/images/copa-peru/cni.png",
+      "alt": "CNI-logo",
+      "city": "Iquitos",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Loreto2",
+      "name": "Dolce Bretaña FC",
+      "abbreviation": "DOL",
+      "image": "./assets/images/copa-peru/dol.png",
+      "alt": "DOL-logo",
+      "city": "Puinahua",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "MadredeDios1",
+      "name": "Alto Rendimiento",
+      "abbreviation": "ARE",
+      "image": "./assets/images/copa-peru/are.png",
+      "alt": "ARE-logo",
+      "city": "Mazuko",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "MadredeDios2",
+      "name": "AFC Caychihue",
+      "abbreviation": "CAY",
+      "image": "./assets/images/copa-peru/cay.png",
+      "alt": "CAY-logo",
+      "city": "Huepetuhe",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Moquegua1",
+      "name": "FCR San Antonio",
+      "abbreviation": "SAN",
+      "image": "./assets/images/copa-peru/san.png",
+      "alt": "SAN-logo",
+      "city": "San Antonio",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Moquegua2",
+      "name": "Hijos del Antiplano",
+      "abbreviation": "HDA",
+      "image": "/assets/images/copa-peru/hda.png",
+      "alt": "HDA-logo",
+      "city": "El Algarrobal",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Pasco1",
+      "name": "Sociedad Tiro N°28",
+      "abbreviation": "STI",
+      "image": "./assets/images/copa-peru/sti.png",
+      "alt": "STI-logo",
+      "city": "Tinyahuarco",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Pasco2",
+      "name": "Ecosem",
+      "abbreviation": "ECS",
+      "image": "./assets/images/copa-peru/ecs.png",
+      "alt": "ECS-logo",
+      "city": "Tinyahuarco",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Piura1",
+      "name": "Juventud Cautivo",
+      "abbreviation": "CAU",
+      "image": "/assets/images/copa-peru/cau.png",
+      "alt": "CAU-logo",
+      "city": "El Faique",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Piura2",
+      "name": "Deportivo Municipal",
+      "abbreviation": "MUN",
+      "image": "/assets/images/copa-peru/mun.png",
+      "alt": "MUN-logo",
+      "city": "Vice",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Puno1",
+      "name": "CD Juventud Unión Soratira",
+      "abbreviation": "JUS",
+      "image": "./assets/images/copa-peru/jus.png",
+      "alt": "JUS-logo",
+      "city": "Azángaro",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Puno2",
+      "name": "FC Juventud Cultural Tambillo",
+      "abbreviation": "TAM",
+      "image": "./assets/images/copa-peru/tam.png",
+      "alt": "TAM-logo",
+      "city": "Ituala",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "SanMartin1",
+      "name": "Biavo FC",
+      "abbreviation": "BFC",
+      "image": "./assets/images/copa-peru/bfc.png",
+      "alt": "BFC-logo",
+      "city": "Es Eslabon",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "SanMartin2",
+      "name": "Club Deportivo Ucrania",
+      "abbreviation": "UCR",
+      "image": "./assets/images/copa-peru/ucr.png",
+      "alt": "UCR-logo",
+      "city": "Nueva Cajamarca",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Tacna1",
+      "name": "Bentín Tacna Heróica",
+      "abbreviation": "BTH",
+      "image": "./assets/images/copa-peru/bth.png",
+      "alt": "BTH-logo",
+      "city": "Alto de la Alianza",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Tacna2",
+      "name": "Patriotas FC",
+      "abbreviation": "PAT",
+      "image": "./assets/images/copa-peru/pat.png",
+      "alt": "PAT-logo",
+      "city": "Gregorio Albarracin",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Tumbes1",
+      "name": "Sport Bolognesi",
+      "abbreviation": "SBO",
+      "image": "./assets/images/copa-peru/sbo.png",
+      "alt": "SBO-logo",
+      "city": "Zarumilla",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Tumbes2",
+      "name": "Deportivo Tacna Libre",
+      "abbreviation": "DTL",
+      "image": "./assets/images/copa-peru/dtl.png",
+      "alt": "DTL-logo",
+      "city": "Casitas",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Ucayali1",
+      "name": "Rauker FC",
+      "abbreviation": "RAU",
+      "image": "./assets/images/copa-peru/rau.png",
+      "alt": "RAU-logo",
+      "city": "Callería",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Ucayali2",
+      "name": "Real Von Humboldt",
+      "abbreviation": "HUM",
+      "image": "./assets/images/copa-peru/hum.png",
+      "alt": "HUM-logo",
+      "city": "Alexander Von Humboldt",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    }
+  ],
+  "Fixture": {
+    "1": [
+      { "home": "Tumbes1", "away": "Lambayeque2" },
+      { "home": "Piura1", "away": "Tumbes2" },
+      { "home": "Lambayeque1", "away": "Piura2" },
+      { "home": "Amazonas1", "away": "Cajamarca2" },
+      { "home": "Cajamarca1", "away": "Amazonas2" },
+      { "home": "LaLibertad1", "away": "Ancash2" },
+      { "home": "SanMartin1", "away": "LaLibertad2" },
+      { "home": "Loreto1", "away": "SanMartin2" },
+      { "home": "Ucayali1", "away": "Loreto2" },
+      { "home": "Huanuco1", "away": "Ucayali2" },
+      { "home": "Pasco1", "away": "Huanuco2" },
+      { "home": "Ancash1", "away": "Lima2" },
+      { "home": "Lima1", "away": "Callao2" },
+      { "home": "Callao1", "away": "Ica2" },
+      { "home": "Ica1", "away": "Huancavelica2" },
+      { "home": "Huancavelica1", "away": "Junin2" },
+      { "home": "Junin1", "away": "Pasco2" },
+      { "home": "Ayacucho1", "away": "Apurimac2" },
+      { "home": "Apurimac1", "away": "Ayacucho2" },
+      { "home": "Cusco1", "away": "MadredeDios2" },
+      { "home": "MadredeDios1", "away": "Cusco2" },
+      { "home": "Puno1", "away": "Arequipa2" },
+      { "home": "Moquegua1", "away": "Puno2" },
+      { "home": "Arequipa1", "away": "Tacna2" },
+      { "home": "Tacna1", "away": "Moquegua2" }
+    ],
+    "2": [
+      { "home": "Piura2", "away": "Tumbes1" },
+      { "home": "Tumbes2", "away": "Lambayeque1" },
+      { "home": "Amazonas2", "away": "Piura1" },
+      { "home": "Lambayeque2", "away": "Cajamarca1" },
+      { "home": "SanMartin2", "away": "Amazonas1" },
+      { "home": "Cajamarca2", "away": "LaLibertad1" },
+      { "home": "LaLibertad2", "away": "Ancash1" },
+      { "home": "Loreto2", "away": "SanMartin1" },
+      { "home": "Ucayali2", "away": "Loreto1" },
+      { "home": "Huanuco2", "away": "Ucayali1" },
+      { "home": "Ancash2", "away": "Huanuco1" },
+      { "home": "Pasco2", "away": "Lima1" },
+      { "home": "Lima2", "away": "Callao1" },
+      { "home": "Callao2", "away": "Ica1" },
+      { "home": "Ica2", "away": "Ayacucho1" },
+      { "home": "Ayacucho2", "away": "Huancavelica1" },
+      { "home": "Huancavelica2", "away": "Junin1" },
+      { "home": "Junin2", "away": "Pasco1" },
+      { "home": "Cusco2", "away": "Apurimac1" },
+      { "home": "Apurimac2", "away": "Cusco1" },
+      { "home": "Puno2", "away": "MadredeDios1" },
+      { "home": "MadredeDios2", "away": "Puno1" },
+      { "home": "Moquegua2", "away": "Arequipa1" },
+      { "home": "Arequipa2", "away": "Tacna1" },
+      { "home": "Tacna2", "away": "Moquegua1" }
+    ],
+    "3": [
+      { "home": "Tumbes1", "away": "Tumbes2" },
+      { "home": "Piura1", "away": "Piura2" },
+      { "home": "Lambayeque1", "away": "Lambayeque2" },
+      { "home": "Amazonas1", "away": "Amazonas2" },
+      { "home": "Cajamarca1", "away": "Cajamarca2" },
+      { "home": "LaLibertad1", "away": "LaLibertad2" },
+      { "home": "SanMartin1", "away": "SanMartin2" },
+      { "home": "Loreto1", "away": "Loreto2" },
+      { "home": "Ucayali1", "away": "Ucayali2" },
+      { "home": "Huanuco1", "away": "Huanuco2" },
+      { "home": "Ancash1", "away": "Ancash2" },
+      { "home": "Lima1", "away": "Lima2" },
+      { "home": "Callao1", "away": "Callao2" },
+      { "home": "Ica1", "away": "Ica2" },
+      { "home": "Huancavelica1", "away": "Huancavelica2" },
+      { "home": "Junin1", "away": "Junin2" },
+      { "home": "Pasco1", "away": "Pasco2" },
+      { "home": "Ayacucho1", "away": "Ayacucho2" },
+      { "home": "Apurimac1", "away": "Apurimac2" },
+      { "home": "Cusco1", "away": "Cusco2" },
+      { "home": "MadredeDios1", "away": "MadredeDios2" },
+      { "home": "Puno1", "away": "Puno2" },
+      { "home": "Arequipa1", "away": "Arequipa2" },
+      { "home": "Moquegua1", "away": "Moquegua2" },
+      { "home": "Tacna1", "away": "Tacna2" }
+    ],
+    "4": [
+      { "home": "Tumbes2", "away": "Tumbes1" },
+      { "home": "Piura2", "away": "Piura1" },
+      { "home": "Lambayeque2", "away": "Lambayeque1" },
+      { "home": "Amazonas2", "away": "Amazonas1" },
+      { "home": "Cajamarca2", "away": "Cajamarca1" },
+      { "home": "LaLibertad2", "away": "LaLibertad1" },
+      { "home": "SanMartin2", "away": "SanMartin1" },
+      { "home": "Loreto2", "away": "Loreto1" },
+      { "home": "Ucayali2", "away": "Ucayali1" },
+      { "home": "Huanuco2", "away": "Huanuco1" },
+      { "home": "Ancash2", "away": "Ancash1" },
+      { "home": "Lima2", "away": "Lima1" },
+      { "home": "Callao2", "away": "Callao1" },
+      { "home": "Ica2", "away": "Ica1" },
+      { "home": "Huancavelica2", "away": "Huancavelica1" },
+      { "home": "Junin2", "away": "Junin1" },
+      { "home": "Pasco2", "away": "Pasco1" },
+      { "home": "Ayacucho2", "away": "Ayacucho1" },
+      { "home": "Apurimac2", "away": "Apurimac1" },
+      { "home": "Cusco2", "away": "Cusco1" },
+      { "home": "MadredeDios2", "away": "MadredeDios1" },
+      { "home": "Puno2", "away": "Puno1" },
+      { "home": "Arequipa2", "away": "Arequipa1" },
+      { "home": "Moquegua2", "away": "Moquegua1" },
+      { "home": "Tacna2", "away": "Tacna1" }
+    ],
+    "5": [
+      { "home": "Tumbes1", "away": "Piura2" },
+      { "home": "Lambayeque1", "away": "Tumbes2" },
+      { "home": "Piura1", "away": "Amazonas2" },
+      { "home": "Cajamarca1", "away": "Lambayeque2" },
+      { "home": "Amazonas1", "away": "SanMartin2" },
+      { "home": "LaLibertad1", "away": "Cajamarca2" },
+      { "home": "Ancash1", "away": "LaLibertad2" },
+      { "home": "SanMartin1", "away": "Loreto2" },
+      { "home": "Loreto1", "away": "Ucayali2" },
+      { "home": "Ucayali1", "away": "Huanuco2" },
+      { "home": "Huanuco1", "away": "Ancash2" },
+      { "home": "Lima1", "away": "Pasco2" },
+      { "home": "Callao1", "away": "Lima2" },
+      { "home": "Ica1", "away": "Callao2" },
+      { "home": "Ayacucho1", "away": "Ica2" },
+      { "home": "Huancavelica1", "away": "Ayacucho2" },
+      { "home": "Junin1", "away": "Huancavelica2" },
+      { "home": "Pasco1", "away": "Junin2" },
+      { "home": "Apurimac1", "away": "Cusco2" },
+      { "home": "Cusco1", "away": "Apurimac2" },
+      { "home": "MadredeDios1", "away": "Puno2" },
+      { "home": "Puno1", "away": "MadredeDios2" },
+      { "home": "Arequipa1", "away": "Moquegua2" },
+      { "home": "Tacna1", "away": "Arequipa2" },
+      { "home": "Moquegua1", "away": "Tacna2" }
+    ],
+    "6": [
+      { "home": "Lambayeque2", "away": "Tumbes1" },
+      { "home": "Tumbes2", "away": "Piura1" },
+      { "home": "Piura2", "away": "Lambayeque1" },
+      { "home": "Cajamarca2", "away": "Amazonas1" },
+      { "home": "Amazonas2", "away": "Cajamarca1" },
+      { "home": "Ancash2", "away": "LaLibertad1" },
+      { "home": "LaLibertad2", "away": "SanMartin1" },
+      { "home": "SanMartin2", "away": "Loreto1" },
+      { "home": "Loreto2", "away": "Ucayali1" },
+      { "home": "Ucayali2", "away": "Huanuco1" },
+      { "home": "Huanuco2", "away": "Pasco1" },
+      { "home": "Lima2", "away": "Ancash1" },
+      { "home": "Callao2", "away": "Lima1" },
+      { "home": "Ica2", "away": "Callao1" },
+      { "home": "Huancavelica2", "away": "Ica1" },
+      { "home": "Junin2", "away": "Huancavelica1" },
+      { "home": "Pasco2", "away": "Junin1" },
+      { "home": "Apurimac2", "away": "Ayacucho1" },
+      { "home": "Ayacucho2", "away": "Apurimac1" },
+      { "home": "MadredeDios2", "away": "Cusco1" },
+      { "home": "Cusco2", "away": "MadredeDios1" },
+      { "home": "Arequipa2", "away": "Puno1" },
+      { "home": "Puno2", "away": "Moquegua1" },
+      { "home": "Tacna2", "away": "Arequipa1" },
+      { "home": "Moquegua2", "away": "Tacna1" }
+    ]
+  },
+  "Ligas": [
+    {
+      "id": "1",
+      "name": "Amazonas",
+      "image": "./assets/images/copa-peru/flags/amazonas-logo.png",
+      "alt": "AMA-logo",
+      "url": "",
+      "color": "#03581e",
+      "qualified": ["Amazonas1", "Amazonas2"]
+    },
+    {
+      "id": "2",
+      "name": "Áncash",
+      "image": "./assets/images/copa-peru/flags/ancash-logo.png",
+      "alt": "ANC-logo",
+      "url": "",
+      "color": "#153f90",
+      "qualified": ["Ancash1", "Ancash2"]
+    },
+    {
+      "id": "3",
+      "name": "Apurimac",
+      "image": "./assets/images/copa-peru/flags/apurimac-logo.png",
+      "alt": "APU-logo",
+      "url": "",
+      "color": "#6D5DA9",
+      "qualified": ["Apurimac1", "Apurimac2"]
+    },
+    {
+      "id": "4",
+      "name": "Arequipa",
+      "image": "./assets/images/copa-peru/flags/arequipa-logo.png",
+      "alt": "ARE-logo",
+      "url": "",
+      "color": "#740408",
+      "qualified": ["Arequipa1", "Arequipa2"]
+    },
+    {
+      "id": "5",
+      "name": "Ayacucho",
+      "image": "./assets/images/copa-peru/flags/ayacucho-logo.png",
+      "alt": "AYA-logo",
+      "url": "",
+      "color": "#46687C",
+      "qualified": ["Ayacucho1", "Ayacucho2"]
+    },
+    {
+      "id": "6",
+      "name": "Cajamarca",
+      "image": "./assets/images/copa-peru/flags/cajamarca-logo.png",
+      "alt": "CAJ-logo",
+      "url": "",
+      "color": "#524343",
+      "qualified": ["Cajamarca1", "Cajamarca2"]
+    },
+    {
+      "id": "7",
+      "name": "Callao",
+      "image": "./assets/images/copa-peru/flags/callao-logo.png",
+      "alt": "CAL-logo",
+      "url": "",
+      "color": "#46687C",
+      "qualified": ["Callao1", "Callao2"]
+    },
+    {
+      "id": "8",
+      "name": "Cusco",
+      "image": "./assets/images/copa-peru/flags/cusco-logo.png",
+      "alt": "CUS-logo",
+      "url": "",
+      "color": "#5c154a",
+      "qualified": ["Cusco1", "Cusco2"]
+    },
+    {
+      "id": "9",
+      "name": "Huancavelica",
+      "image": "./assets/images/copa-peru/flags/huancavelica-logo.png",
+      "alt": "HCA-logo",
+      "url": "",
+      "color": "#A05928",
+      "qualified": ["Huancavelica1", "Huancavelica2"]
+    },
+    {
+      "id": "10",
+      "name": "Huánuco",
+      "image": "./assets/images/copa-peru/flags/huanuco-logo.png",
+      "alt": "HUA-logo",
+      "url": "",
+      "color": "#01683e",
+      "qualified": ["Huanuco1", "Huanuco2"]
+    },
+    {
+      "id": "11",
+      "name": "Ica",
+      "image": "./assets/images/copa-peru/flags/ica-logo.png",
+      "alt": "ICA-logo",
+      "url": "",
+      "color": "#57467b",
+      "qualified": ["Ica1", "Ica2"]
+    },
+    {
+      "id": "12",
+      "name": "Junín",
+      "image": "./assets/images/copa-peru/flags/junin-logo.png",
+      "alt": "JUN-logo",
+      "url": "",
+      "color": "#002d75",
+      "qualified": ["Junin1", "Junin2"]
+    },
+    {
+      "id": "13",
+      "name": "La Libertad",
+      "image": "./assets/images/copa-peru/flags/la_libertad-logo.png",
+      "alt": "LLI-logo",
+      "url": "",
+      "color": "#c26107",
+      "qualified": ["LaLibertad1", "LaLibertad2"]
+    },
+    {
+      "id": "14",
+      "name": "Lambayeque",
+      "image": "./assets/images/copa-peru/flags/lambayeque-logo.png",
+      "alt": "LAM-logo",
+      "url": "",
+      "color": "#ac0911",
+      "qualified": ["Lambayeque1", "Lambayeque2"]
+    },
+    {
+      "id": "15",
+      "name": "Lima",
+      "image": "./assets/images/copa-peru/flags/lima-logo.png",
+      "alt": "LIM-logo",
+      "url": "",
+      "color": "#013E8F",
+      "qualified": ["Lima1", "Lima2"]
+    },
+    {
+      "id": "16",
+      "name": "Loreto",
+      "image": "./assets/images/copa-peru/flags/loreto-logo.png",
+      "alt": "LOR-logo",
+      "url": "",
+      "color": "#004300",
+      "qualified": ["Loreto1", "Loreto2"]
+    },
+    {
+      "id": "17",
+      "name": "Madre de Dios",
+      "image": "./assets/images/copa-peru/flags/madre_de_dios-logo.png",
+      "alt": "MDD-logo",
+      "url": "",
+      "color": "#006821",
+      "qualified": ["MadredeDios1", "MadredeDios2"]
+    },
+    {
+      "id": "18",
+      "name": "Moquegua",
+      "image": "./assets/images/copa-peru/flags/moquegua-logo.png",
+      "alt": "MOQ-logo",
+      "url": "",
+      "color": "#013081",
+      "qualified": ["Moquegua1", "Moquegua2"]
+    },
+    {
+      "id": "19",
+      "name": "Pasco",
+      "image": "./assets/images/copa-peru/flags/pasco-logo.png",
+      "alt": "PAS-logo",
+      "url": "",
+      "color": "#a9030a",
+      "qualified": ["Pasco1", "Pasco2"]
+    },
+    {
+      "id": "20",
+      "name": "Piura",
+      "image": "./assets/images/copa-peru/flags/piura-logo.png",
+      "alt": "PIU-logo",
+      "url": "",
+      "color": "#a80000",
+      "qualified": ["Piura1", "Piura2"]
+    },
+    {
+      "id": "21",
+      "name": "Puno",
+      "image": "./assets/images/copa-peru/flags/puno-logo.png",
+      "alt": "PUN-logo",
+      "url": "",
+      "color": "#00087b",
+      "qualified": ["Puno1", "Puno2"]
+    },
+    {
+      "id": "22",
+      "name": "San Martín",
+      "image": "./assets/images/copa-peru/flags/san_martin-logo.png",
+      "alt": "SMA-logo",
+      "url": "",
+      "color": "#b35f00",
+      "qualified": ["SanMartin1", "SanMartin2"]
+    },
+    {
+      "id": "23",
+      "name": "Tacna",
+      "image": "./assets/images/copa-peru/flags/tacna-logo.png",
+      "alt": "TAC-logo",
+      "url": "",
+      "color": "#A74133",
+      "qualified": ["Tacna1", "Tacna2"]
+    },
+    {
+      "id": "24",
+      "name": "Tumbes",
+      "image": "./assets/images/copa-peru/flags/tumbes-logo.png",
+      "alt": "TUM-logo",
+      "url": "",
+      "color": "#001e68",
+      "qualified": ["Tumbes1", "Tumbes2"]
+    },
+    {
+      "id": "25",
+      "name": "Ucayali",
+      "image": "./assets/images/copa-peru/flags/ucayali-logo.png",
+      "alt": "UCA-logo",
+      "url": "",
+      "color": "#b20b0b",
+      "qualified": ["Ucayali1", "Ucayali2"]
+    }
+  ]
+}
