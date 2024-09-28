@@ -214,10 +214,10 @@ export class ReservasTablaComponent {
 
   // Calcular resultados Octavos y seleccionar clasificados
   octavosSelector(){
-    this.cuartos.push(this.octavos[this.bracketWinner(3,(this.data.Octavos[0].teamA + 0),this.data.Octavos[0].penal.TeamA,4,(this.data.Octavos[0].teamB + 0),this.data.Octavos[0].penal.TeamB)])
-    this.cuartos.push(this.octavos[this.bracketWinner(0,(this.data.Octavos[1].teamA + 0),this.data.Octavos[1].penal.TeamA,7,(this.data.Octavos[1].teamB + 0),this.data.Octavos[1].penal.TeamB)])
-    this.cuartos.push(this.octavos[this.bracketWinner(2,(this.data.Octavos[2].teamA + 0),this.data.Octavos[2].penal.TeamA,5,(this.data.Octavos[2].teamB + 0),this.data.Octavos[2].penal.TeamB)])
-    this.cuartos.push(this.octavos[this.bracketWinner(1,(this.data.Octavos[3].teamA + 0),this.data.Octavos[3].penal.TeamA,6,(this.data.Octavos[3].teamB + 0),this.data.Octavos[3].penal.TeamB)])
+    this.cuartos.push(this.octavos[this.bracketWinner(3,(this.data.Octavos[0].teamA + 0),this.data.Octavos[0].penal.teamA,4,(this.data.Octavos[0].teamB + 0),this.data.Octavos[0].penal.teamB)])
+    this.cuartos.push(this.octavos[this.bracketWinner(0,(this.data.Octavos[1].teamA + 0),this.data.Octavos[1].penal.teamA,7,(this.data.Octavos[1].teamB + 0),this.data.Octavos[1].penal.teamB)])
+    this.cuartos.push(this.octavos[this.bracketWinner(2,(this.data.Octavos[2].teamA + 0),this.data.Octavos[2].penal.teamA,5,(this.data.Octavos[2].teamB + 0),this.data.Octavos[2].penal.teamB)])
+    this.cuartos.push(this.octavos[this.bracketWinner(1,(this.data.Octavos[3].teamA + 0),this.data.Octavos[3].penal.teamA,6,(this.data.Octavos[3].teamB + 0),this.data.Octavos[3].penal.teamB)])
   }
 
   // Calcular resultados Cuartos y seleccionar clasificados

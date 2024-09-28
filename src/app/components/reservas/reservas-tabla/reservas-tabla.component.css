@@ -216,8 +216,12 @@ td {
   transform: skew(-30deg);
   color: #fff;
 }
-.scoreboard .score-global{
+.scoreboard span {
+  color: #212529;
   font-size: 18px;
+}
+.scoreboard .hyphen {
+  width: 31px;
 }
 /* Liga 3 */
 .ascenso-container {

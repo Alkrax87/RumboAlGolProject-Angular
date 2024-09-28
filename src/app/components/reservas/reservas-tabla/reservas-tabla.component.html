@@ -210,9 +210,9 @@
                       <td colspan="3" class="score"><div><p>LLave 1</p></div></td>
                     </tr>
                     <tr>
-                      <td><b>{{ data && data.Info.playoff ? data.Octavos[0].teamA : "" }}</b></td>
-                      <td>-</td>
-                      <td><b>{{ data && data.Info.playoff ? data.Octavos[0].teamB : "" }}</b></td>
+                      <td class="text-end"><span>{{ data && data.Octavos[0].penal.teamA ? "(" + data.Octavos[0].penal.teamA + ")" : "" }}</span>&nbsp;<b>{{ data && data.Info.playoff ? data.Octavos[0].teamA : "" }}</b></td>
+                      <td class="hyphen">-</td>
+                      <td class="text-start"><b>{{ data && data.Info.playoff ? data.Octavos[0].teamB : "" }}</b>&nbsp;<span>{{ data && data.Octavos[0].penal.teamB ? "(" + data.Octavos[0].penal.teamB + ")" : "" }}</span></td>
                     </tr>
                   </table>
                 </div>
@@ -235,9 +235,9 @@
                       <td colspan="3" class="score"><div><p>LLave 2</p></div></td>
                     </tr>
                     <tr>
-                      <td><b>{{ data && data.Info.playoff ? data.Octavos[1].teamA : "" }}</b></td>
-                      <td>-</td>
-                      <td><b>{{ data && data.Info.playoff ? data.Octavos[1].teamB : "" }}</b></td>
+                      <td class="text-end"><span>{{ data && data.Octavos[1].penal.teamA ? "(" + data.Octavos[1].penal.teamA + ")" : "" }}</span>&nbsp;<b>{{ data && data.Info.playoff ? data.Octavos[1].teamA : "" }}</b></td>
+                      <td class="hyphen">-</td>
+                      <td class="text-start"><b>{{ data && data.Info.playoff ? data.Octavos[1].teamB : "" }}</b>&nbsp;<span>{{ data && data.Octavos[1].penal.teamB ? "(" + data.Octavos[1].penal.teamB + ")" : "" }}</span></td>
                     </tr>
                   </table>
                 </div>
@@ -260,9 +260,9 @@
                       <td colspan="3" class="score"><div><p>LLave 3</p></div></td>
                     </tr>
                     <tr>
-                      <td><b>{{ data && data.Info.playoff ? data.Octavos[2].teamA : "" }}</b></td>
-                      <td>-</td>
-                      <td><b>{{ data && data.Info.playoff ? data.Octavos[2].teamB : "" }}</b></td>
+                      <td class="text-end"><span>{{ data && data.Octavos[2].penal.teamA ? "(" + data.Octavos[2].penal.teamA + ")" : "" }}</span>&nbsp;<b>{{ data && data.Info.playoff ? data.Octavos[2].teamA : "" }}</b></td>
+                      <td class="hyphen">-</td>
+                      <td class="text-start"><b>{{ data && data.Info.playoff ? data.Octavos[2].teamB : "" }}</b>&nbsp;<span>{{ data && data.Octavos[2].penal.teamB ? "(" + data.Octavos[2].penal.teamB + ")" : "" }}</span></td>
                     </tr>
                   </table>
                 </div>
@@ -285,9 +285,9 @@
                       <td colspan="3" class="score"><div><p>LLave 4</p></div></td>
                     </tr>
                     <tr>
-                      <td><b>{{ data && data.Info.playoff ? data.Octavos[3].teamA : "" }}</b></td>
-                      <td>-</td>
-                      <td><b>{{ data && data.Info.playoff ? data.Octavos[3].teamB : "" }}</b></td>
+                      <td class="text-end"><span>{{ data && data.Octavos[3].penal.teamA ? "(" + data.Octavos[3].penal.teamA + ")" : "" }}</span>&nbsp;<b>{{ data && data.Info.playoff ? data.Octavos[3].teamA : "" }}</b></td>
+                      <td class="hyphen">-</td>
+                      <td class="text-start"><b>{{ data && data.Info.playoff ? data.Octavos[3].teamB : "" }}</b>&nbsp;<span>{{ data && data.Octavos[3].penal.teamB ? "(" + data.Octavos[3].penal.teamB + ")" : "" }}</span></td>
                     </tr>
                   </table>
                 </div>
