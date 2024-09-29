@@ -8,9 +8,9 @@
     "logo": "./assets/images/liga-2/liga2fpf.png",
     "alt": "liga2-logo",
     "fecha": "18",
-    "fechaGrupos": "9",
+    "fechaGrupos": "10",
     "playoff": true,
-    "cuartos": false,
+    "cuartos": true,
     "semifinal": false,
     "final": false
   },
@@ -40,7 +40,7 @@
         }
       ],
       "lastGames": [
-        "win","win","lose","win","draw"
+        "win","win","win","lose","win"
       ],
       "data": {
         "pg": 6,
@@ -71,11 +71,11 @@
         { "game": 18, "score": 0 }
       ],
       "dataplayoff": {
-        "pg": 4,
+        "pg": 5,
         "pe": 3,
         "pp": 2,
-        "gf": 13,
-        "gc": 11,
+        "gf": 16,
+        "gc": 12,
         "sanction": null
       },
       "promotion": [
@@ -88,7 +88,7 @@
         { "game": 7, "score": 0 },
         { "game": 8, "score": 3 },
         { "game": 9, "score": 2 },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 3 }
       ],
       "relegation": [
         { "game": 1, "score": null },
@@ -134,7 +134,7 @@
         }
       ],
       "lastGames": [
-        "lose","lose","win","win","lose"
+        "lose","lose","lose","win","win"
       ],
       "data": {
         "pg": 8,
@@ -167,9 +167,9 @@
       "dataplayoff": {
         "pg": 4,
         "pe": 1,
-        "pp": 4,
-        "gf": 7,
-        "gc": 11,
+        "pp": 5,
+        "gf": 10,
+        "gc": 15,
         "sanction": 1
       },
       "promotion": [
@@ -182,7 +182,7 @@
         { "game": 7, "score": null },
         { "game": 8, "score": 0 },
         { "game": 9, "score": 1 },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 3 }
       ],
       "relegation": [
         { "game": 1, "score": null },
@@ -222,7 +222,7 @@
         }
       ],
       "lastGames": [
-        "win","lose","lose","win","win"
+        "win","win","lose","lose","win"
       ],
       "data": {
         "pg": 13,
@@ -253,11 +253,11 @@
         { "game": 18, "score": 1 }
       ],
       "dataplayoff": {
-        "pg": 6,
+        "pg": 7,
         "pe": 1,
         "pp": 2,
-        "gf": 11,
-        "gc": 9,
+        "gf": 15,
+        "gc": 12,
         "sanction": null
       },
       "promotion": [
@@ -270,7 +270,7 @@
         { "game": 7, "score": 0 },
         { "game": 8, "score": 2 },
         { "game": 9, "score": 2 },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 4 }
       ],
       "relegation": [
         { "game": 1, "score": null },
@@ -310,7 +310,7 @@
         }
       ],
       "lastGames": [
-        "draw","lose","lose","lose","win"
+        "lose","draw","lose","lose","lose"
       ],
       "data": {
         "pg": 7,
@@ -343,9 +343,9 @@
       "dataplayoff": {
         "pg": 3,
         "pe": 1,
-        "pp": 5,
-        "gf": 20,
-        "gc": 21,
+        "pp": 6,
+        "gf": 21,
+        "gc": 23,
         "sanction": null
       },
       "promotion": [
@@ -358,7 +358,7 @@
         { "game": 7, "score": 2 },
         { "game": 8, "score": 2 },
         { "game": 9, "score": 1 },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 1 }
       ],
       "relegation": [
         { "game": 1, "score": null },
@@ -585,6 +585,12 @@
       },
       "dt": [
         {
+          "name": "Por Definir",
+          "country": "",
+          "cod": "",
+          "img": "./assets/images/otros/no-manager.png"
+        },
+        {
           "name": "Gustavo Roverano",
           "country": "Uruguay",
           "cod": "uy",
@@ -592,7 +598,7 @@
         }
       ],
       "lastGames": [
-        "draw","draw","draw","lose","draw"
+        "lose","draw","draw","draw","lose"
       ],
       "data": {
         "pg": 9,
@@ -625,9 +631,9 @@
       "dataplayoff": {
         "pg": 2,
         "pe": 5,
-        "pp": 2,
-        "gf": 12,
-        "gc": 8,
+        "pp": 3,
+        "gf": 13,
+        "gc": 11,
         "sanction": null
       },
       "promotion": [
@@ -640,7 +646,7 @@
         { "game": 7, "score": 1 },
         { "game": 8, "score": 1 },
         { "game": 9, "score": 1 },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 1 }
       ],
       "relegation": [
         { "game": 1, "score": null },
@@ -692,7 +698,7 @@
         }
       ],
       "lastGames": [
-        "win","win","win","draw","lose"
+        "draw","win","win","win","draw"
       ],
       "data": {
         "pg": 5,
@@ -724,10 +730,10 @@
       ],
       "dataplayoff": {
         "pg": 4,
-        "pe": 2,
+        "pe": 3,
         "pp": 3,
-        "gf": 10,
-        "gc": 10,
+        "gf": 11,
+        "gc": 11,
         "sanction": null
       },
       "promotion": [
@@ -740,7 +746,7 @@
         { "game": 7, "score": 2 },
         { "game": 8, "score": null },
         { "game": 9, "score": 2 },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 1 }
       ],
       "relegation": [
         { "game": 1, "score": null },
@@ -874,7 +880,7 @@
         }
       ],
       "lastGames": [
-        "lose","win","win","draw","win"
+        "win","lose","win","win","draw"
       ],
       "data": {
         "pg": 10,
@@ -905,7 +911,7 @@
         { "game": 18, "score": 8 }
       ],
       "dataplayoff": {
-        "pg": 4,
+        "pg": 5,
         "pe": 2,
         "pp": 3,
         "gf": 11,
@@ -968,7 +974,7 @@
         }
       ],
       "lastGames": [
-        "draw","draw","win","lose","lose"
+        "win","draw","draw","win","lose"
       ],
       "data": {
         "pg": 11,
@@ -999,12 +1005,12 @@
         { "game": 18, "score": 0 }
       ],
       "dataplayoff": {
-        "pg": 3,
+        "pg": 4,
         "pe": 3,
         "pp": 3,
-        "gf": 11,
-        "gc": 14,
-        "sanction": 2
+        "gf": 15,
+        "gc": 15,
+        "sanction": 3
       },
       "promotion": [
         { "game": 1, "score": 0 },
@@ -1016,7 +1022,7 @@
         { "game": 7, "score": 3 },
         { "game": 8, "score": 1 },
         { "game": 9, "score": 1 },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 4 }
       ],
       "relegation": [
         { "game": 1, "score": null },
@@ -1156,7 +1162,7 @@
         }
       ],
       "lastGames": [
-        "draw","win","win","win","lose"
+        "win","draw","win","win","win"
       ],
       "data": {
         "pg": 8,
@@ -1187,11 +1193,11 @@
         { "game": 18, "score": 0 }
       ],
       "dataplayoff": {
-        "pg": 5,
+        "pg": 6,
         "pe": 1,
         "pp": 3,
-        "gf": 14,
-        "gc": 11,
+        "gf": 16,
+        "gc": 12,
         "sanction": null
       },
       "promotion": [
@@ -1204,7 +1210,7 @@
         { "game": 7, "score": 1 },
         { "game": 8, "score": 2 },
         { "game": 9, "score": 1 },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 2 }
       ],
       "relegation": [
         { "game": 1, "score": null },
@@ -1244,7 +1250,7 @@
         }
       ],
       "lastGames": [
-        "lose","lose","draw","win","win"
+        "lose","lose","lose","draw","win"
       ],
       "data": {
         "pg": 9,
@@ -1277,9 +1283,9 @@
       "dataplayoff": {
         "pg": 2,
         "pe": 3,
-        "pp": 4,
-        "gf": 11,
-        "gc": 15,
+        "pp": 5,
+        "gf": 12,
+        "gc": 19,
         "sanction": null
       },
       "promotion": [
@@ -1292,7 +1298,7 @@
         { "game": 7, "score": 1 },
         { "game": 8, "score": 1 },
         { "game": 9, "score": 0 },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 1 }
       ],
       "relegation": [
         { "game": 1, "score": null },
@@ -1338,7 +1344,7 @@
         }
       ],
       "lastGames": [
-        "win","win","lose","lose","win"
+        "draw","win","win","lose","lose"
       ],
       "data": {
         "pg": 7,
@@ -1370,10 +1376,10 @@
       ],
       "dataplayoff": {
         "pg": 4,
-        "pe": 2,
+        "pe": 3,
         "pp": 3,
-        "gf": 15,
-        "gc": 17,
+        "gf": 16,
+        "gc": 18,
         "sanction": null
       },
       "promotion": [
@@ -1386,7 +1392,7 @@
         { "game": 7, "score": 1 },
         { "game": 8, "score": 3 },
         { "game": 9, "score": null },
-        { "game": 10, "score": null }
+        { "game": 10, "score": 1 }
       ],
       "relegation": [
         { "game": 1, "score": null },
