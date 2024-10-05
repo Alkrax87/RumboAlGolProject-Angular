@@ -401,6 +401,8 @@ export class Liga2TablaComponent {
       clasificados.push(asc2[i])
     }
     this.clasifiers = clasificados;
+    console.log(this.clasifiers);
+    
   }
 
   // Funcion que calcula que equipo clasifica en cada bracket
@@ -424,8 +426,8 @@ export class Liga2TablaComponent {
   semifinalSelector(){
     this.semifinalist.push(this.clasifiers[0])
     this.semifinalist.push(this.clasifiers[1])
-    this.semifinalist.push(this.clasifiers[this.bracketWinner(2,(this.data.Cuartos[0].idaA + this.data.Cuartos[0].vueltaA),(this.data.Cuartos[0].penal.teamA),5,(this.data.Cuartos[0].idaB + this.data.Cuartos[0].vueltaB),(this.data.Cuartos[0].penal.teamB))])
-    this.semifinalist.push(this.clasifiers[this.bracketWinner(3,(this.data.Cuartos[1].idaA + this.data.Cuartos[1].vueltaA),(this.data.Cuartos[1].penal.teamA),4,(this.data.Cuartos[1].idaB + this.data.Cuartos[1].vueltaB),(this.data.Cuartos[1].penal.teamB))])
+    this.semifinalist.push(this.clasifiers[this.bracketWinner(3,this.data.Cuartos[0].teamA,this.data.Cuartos[0].penal.teamA,4,this.data.Cuartos[0].teamB,this.data.Cuartos[0].penal.teamB)])
+    this.semifinalist.push(this.clasifiers[this.bracketWinner(2,this.data.Cuartos[1].teamA,this.data.Cuartos[1].penal.teamA,5,this.data.Cuartos[1].teamB,this.data.Cuartos[1].penal.teamB)])
   }
 
   // Calculos Semifinal
