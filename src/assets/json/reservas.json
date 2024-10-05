@@ -1117,8 +1117,8 @@
   ],
   "Cuartos": [
     {
-      "idaA": null,
-      "idaB": null,
+      "idaA": 0,
+      "idaB": 2,
       "vueltaA": null,
       "vueltaB": null,
       "penal":{
@@ -1127,8 +1127,8 @@
       }
     },
     {
-      "idaA": null,
-      "idaB": null,
+      "idaA": 2,
+      "idaB": 1,
       "vueltaA": null,
       "vueltaB": null,
       "penal":{
@@ -1137,8 +1137,8 @@
       }
     },
     {
-      "idaA": null,
-      "idaB": null,
+      "idaA": 2,
+      "idaB": 0,
       "vueltaA": null,
       "vueltaB": null,
       "penal":{
@@ -1147,8 +1147,8 @@
       }
     },
     {
-      "idaA": null,
-      "idaB": null,
+      "idaA": 0,
+      "idaB": 2,
       "vueltaA": null,
       "vueltaB": null,
       "penal":{
