@@ -401,8 +401,6 @@ export class Liga2TablaComponent {
       clasificados.push(asc2[i])
     }
     this.clasifiers = clasificados;
-    console.log(this.clasifiers);
-    
   }
 
   // Funcion que calcula que equipo clasifica en cada bracket
