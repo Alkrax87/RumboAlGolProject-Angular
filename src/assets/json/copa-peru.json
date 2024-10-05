@@ -112,11 +112,11 @@
     },
     {
       "id": "Apurimac1",
-      "name": "Deportivo Florida",
-      "abbreviation": "FLO",
-      "image": "./assets/images/copa-peru/flo.png",
-      "alt": "FLO-logo",
-      "city": "Ocobamba",
+      "name": "Miguel Grau",
+      "abbreviation": "MIG",
+      "image": "./assets/images/copa-peru/mig.png",
+      "alt": "MIG-logo",
+      "city": "Abancay",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -137,11 +137,11 @@
     },
     {
       "id": "Apurimac2",
-      "name": "Miguel Grau",
-      "abbreviation": "MIG",
-      "image": "./assets/images/copa-peru/mig.png",
-      "alt": "MIG-logo",
-      "city": "Abancay",
+      "name": "Deportivo Florida",
+      "abbreviation": "FLO",
+      "image": "./assets/images/copa-peru/flo.png",
+      "alt": "FLO-logo",
+      "city": "Ocobamba",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -187,11 +187,11 @@
     },
     {
       "id": "Arequipa2",
-      "name": "",
-      "abbreviation": "",
-      "image": "",
-      "alt": "",
-      "city": "",
+      "name": "Nacional FBC",
+      "abbreviation": "NAC",
+      "image": "/assets/images/copa-peru/nac.png",
+      "alt": "NAC-logo",
+      "city": "Islay",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -262,11 +262,11 @@
     },
     {
       "id": "Cajamarca1",
-      "name": "",
-      "abbreviation": "",
-      "image": "",
-      "alt": "",
-      "city": "",
+      "name": "FC Cajamarca",
+      "abbreviation": "FCC",
+      "image": "/assets/images/copa-peru/fcc.png",
+      "alt": "FCC-logo",
+      "city": "Cajamarca",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -312,6 +312,31 @@
     },
     {
       "id": "Callao1",
+      "name": "Scratch FC",
+      "abbreviation": "SCR",
+      "image": "/assets/images/copa-peru/scr.png",
+      "alt": "SCR-logo",
+      "city": "Bellavista",
+      "lastGames": ["","","","",""],
+      "data": {
+        "pg": null,
+        "pe": null,
+        "pp": null,
+        "gf": null,
+        "gc": null,
+        "pr": null
+      },
+      "fixture": [
+        { "game": 1, "score": null },
+        { "game": 2, "score": null },
+        { "game": 3, "score": null },
+        { "game": 4, "score": null },
+        { "game": 5, "score": null },
+        { "game": 6, "score": null }
+      ]
+    },
+    {
+      "id": "Callao2",
       "name": "Amazon Callao FC",
       "abbreviation": "AMA",
       "image": "./assets/images/copa-peru/ama.png",
@@ -336,37 +361,12 @@
       ]
     },
     {
-      "id": "Callao2",
-      "name": "",
-      "abbreviation": "",
-      "image": "",
-      "alt": "",
-      "city": "",
-      "lastGames": ["","","","",""],
-      "data": {
-        "pg": null,
-        "pe": null,
-        "pp": null,
-        "gf": null,
-        "gc": null,
-        "pr": null
-      },
-      "fixture": [
-        { "game": 1, "score": null },
-        { "game": 2, "score": null },
-        { "game": 3, "score": null },
-        { "game": 4, "score": null },
-        { "game": 5, "score": null },
-        { "game": 6, "score": null }
-      ]
-    },
-    {
       "id": "Cusco1",
-      "name": "AJI",
-      "abbreviation": "AJI",
-      "image": "./assets/images/copa-peru/aji.png",
-      "alt": "AJI-logo",
-      "city": "Calca",
+      "name": "Juventud Progreso",
+      "abbreviation": "PRO",
+      "image": "/assets/images/copa-peru/pro.png",
+      "alt": "PRO-logo",
+      "city": "Wanchaq",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -412,10 +412,10 @@
     },
     {
       "id": "Huancavelica1",
-      "name": "",
-      "abbreviation": "",
-      "image": "",
-      "alt": "",
+      "name": "Sport Machete",
+      "abbreviation": "MAC",
+      "image": "/assets/images/copa-peru/mac.png",
+      "alt": "MAC-logo",
       "city": "",
       "lastGames": ["","","","",""],
       "data": {
@@ -491,7 +491,7 @@
       "abbreviation": "TIN",
       "image": "./assets/images/copa-peru/tin.png",
       "alt": "TIN-logo",
-      "city": "Tingo María",
+      "city": "Rupa Rupa",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -562,11 +562,11 @@
     },
     {
       "id": "Junin1",
-      "name": "",
-      "abbreviation": "",
-      "image": "",
-      "alt": "",
-      "city": "",
+      "name": "Deportivo Municipal Pangoa",
+      "abbreviation": "PAN",
+      "image": "/assets/images/copa-peru/pan.png",
+      "alt": "PAN-logo",
+      "city": "Pangoa",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -587,11 +587,11 @@
     },
     {
       "id": "Junin2",
-      "name": "",
-      "abbreviation": "",
-      "image": "",
-      "alt": "",
-      "city": "",
+      "name": "Club Deportivo Sucre",
+      "abbreviation": "SUC",
+      "image": "/assets/images/copa-peru/suc.png",
+      "alt": "SUC-logo",
+      "city": "Huancán",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -816,7 +816,7 @@
       "abbreviation": "ARE",
       "image": "./assets/images/copa-peru/are.png",
       "alt": "ARE-logo",
-      "city": "Mazuko",
+      "city": "Inambari",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -1016,7 +1016,7 @@
       "abbreviation": "JUS",
       "image": "./assets/images/copa-peru/jus.png",
       "alt": "JUS-logo",
-      "city": "Azángaro",
+      "city": "San Antón",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -1062,11 +1062,11 @@
     },
     {
       "id": "SanMartin1",
-      "name": "Biavo FC",
-      "abbreviation": "BFC",
-      "image": "./assets/images/copa-peru/bfc.png",
-      "alt": "BFC-logo",
-      "city": "Es Eslabon",
+      "name": "Club Deportivo Ucrania",
+      "abbreviation": "UCR",
+      "image": "./assets/images/copa-peru/ucr.png",
+      "alt": "UCR-logo",
+      "city": "Nueva Cajamarca",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
@@ -1087,11 +1087,11 @@
     },
     {
       "id": "SanMartin2",
-      "name": "Club Deportivo Ucrania",
-      "abbreviation": "UCR",
-      "image": "./assets/images/copa-peru/ucr.png",
-      "alt": "UCR-logo",
-      "city": "Nueva Cajamarca",
+      "name": "Biavo FC",
+      "abbreviation": "BFC",
+      "image": "./assets/images/copa-peru/bfc.png",
+      "alt": "BFC-logo",
+      "city": "El Eslabon",
       "lastGames": ["","","","",""],
       "data": {
         "pg": null,
