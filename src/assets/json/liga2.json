@@ -11,7 +11,7 @@
     "fechaGrupos": "10",
     "playoff": true,
     "cuartos": true,
-    "semifinal": false,
+    "semifinal": true,
     "final": false
   },
   "Teams": [
@@ -2062,20 +2062,16 @@
   },
   "Cuartos": [
     {
-      "idaA": null,
-      "idaB": null,
-      "vueltaA": null,
-      "vueltaB": null,
+      "teamA": 1,
+      "teamB": 2,
       "penal":{
         "teamA": null,
         "teamB": null
       }
     },
     {
-      "idaA":null,
-      "idaB": null,
-      "vueltaA": null,
-      "vueltaB": null,
+      "teamA": 0,
+      "teamB": 1,
       "penal":{
         "teamA": null,
         "teamB": null
