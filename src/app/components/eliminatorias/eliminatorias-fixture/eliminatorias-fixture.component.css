@@ -1,7 +1,7 @@
 /* Title */
 .background {
-  background: #DC143C;
-  background-image: url('/assets/images/banners/background-pattern.svg');
+  background: #5c0f6b;
+  background-image: url('/assets/images/banners/background-pattern-eliminatorias.svg');
   background-size: cover;
   height: 250px;
 }
@@ -12,7 +12,7 @@
 /* Page Tree */
 .arrow {
   padding: 40px 12px;
-  color: #ffbaba;
+  color: #d4baff;
   font-weight: bold;
 }
 .arrow span {
@@ -37,8 +37,8 @@
 }
 /* Divider */
 .divider {
-  background: #DC143C;
-  background-image: url('/assets/images/banners/background-pattern.svg');
+  background: #5c0f6b;
+  background-image: url('/assets/images/banners/background-pattern-eliminatorias.svg');
   background-size: cover;
   height: 20px;
 }
@@ -108,7 +108,7 @@ select {
   pointer-events: none;
 }
 .select:hover::after {
-  color: #DC143C;
+  color: #922df0;
 }
 /* Fixture content */
 .fixture-row-container {

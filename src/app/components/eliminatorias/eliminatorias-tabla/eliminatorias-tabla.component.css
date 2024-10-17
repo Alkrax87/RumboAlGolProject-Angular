@@ -1,7 +1,7 @@
 /* Title */
 .background {
-  background: #DC143C;
-  background-image: url('/assets/images/banners/background-pattern.svg');
+  background: #5c0f6b;
+  background-image: url('/assets/images/banners/background-pattern-eliminatorias.svg');
   background-size: cover;
   height: 250px;
 }
@@ -12,7 +12,7 @@
 /* Page Tree */
 .arrow {
   padding: 40px 12px;
-  color: #ffbaba;
+  color: #d4baff;
   font-weight: bold;
 }
 .arrow span {
@@ -39,8 +39,8 @@
 }
 /* Divider */
 .divider {
-  background: #DC143C;
-  background-image: url('/assets/images/banners/background-pattern.svg');
+  background: #5c0f6b;
+  background-image: url('/assets/images/banners/background-pattern-eliminatorias.svg');
   background-size: cover;
   height: 20px;
 }
@@ -60,15 +60,6 @@ a {
   text-decoration:none;
   color: #000;
 }
-.line {
-  width: 220px;
-  height: 8px;
-  background: #DC143C;
-  transform: skew(50deg);
-}
-.title-table {
-  font-size: 40px;
-}
 /* Table content background */
 .table-content {
   color: #ffffff;
@@ -79,7 +70,7 @@ a {
   margin-bottom: 0px;
 }
 .table-header th {
-  background-color: #DC143C;
+  background-color: #5c0f6b;
   color: #fff;
 }
 th {
@@ -103,7 +94,7 @@ td {
   width: 35px;
 }
 .line-table {
-  background: linear-gradient(270deg,#DC143C,#d8b145);
+  background: linear-gradient(270deg,#771379,#d8b145);
   width: 6px;
   height: 5px;
   width: auto;

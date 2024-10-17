@@ -41,5 +41,71 @@
 @if (mainPage) {
   <!-- Banner -->
   <img src="./assets/images/banners/eliminatoriasbanner.jpg" alt="banner" class="w-100">
+  <!-- Description -->
+  <app-description-league [value]="value"/>
+  <!-- Divider -->
+  <div class="container-fluid divider"></div>
+  <!-- Teams -->
+  <div class="container-fluid bg-light py-5 px-5 text-center content-block">
+    <div class="row vertical-center">
+      <!-- Info -->
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <div class="title text-start">Equipos</div>
+        <div class="line mb-3"></div>
+        <p>En las eliminatorias rumbo a <b>{{ data && data.Info ? data.Info.temporada : '' }}</b> participan las confederaciones afiliadas a la <b>Conmebol</b>.</p>
+        @if (data) {
+          <div class="text-center">
+            @for (item of data.Teams; track $index) {
+              <a [href]="item.url">
+                <img [src]="item.image" class="item-list" [alt]="item.alt">
+              </a>
+            }
+          </div>
+        }
+        <div class="line-lg my-3"></div>
+      </div>
+      <!-- Image -->
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <img class="img-conmebol" src="./assets/images/banners/conmebolbanner.jpg" alt="CONMEBOL-logo">
+      </div>
+    </div>
+  </div>
+  <!-- Formato -->
+  <div class="container-fluid py-5 px-5 format-content content-block">
+    <div class="row">
+      <!-- L -->
+      <div class="col-sm-12 col-md-5 col-lg-4 vertical-center">
+        <div>
+          <div class="title">Clasificación</div>
+          <div class="line mb-3"></div>
+          <p>La <b>FIFA</b> otorga a la conferedación sudamericana 7 cupos que se dividen de la siguiente manera.</p>
+          <img class="img-fluid" src="https://img.asmedia.epimg.net/resizer/v2/MSI7FRXQGRMTVF5PM5754NSGBQ.jpg?auth=fad7f4f7cd21ee88a1b721c5b673d7dadd719d9c24a7b93fdeef9fd30233fdaf&width=1472&height=828&smart=true" alt="formato-logo">
+        </div>
+      </div>
+      <!-- R -->
+      <div class="col-sm-12 col-md-7 col-lg-7 vertical-center">
+        <div class="col-12">
+          <!-- Item 1 -->
+          <div class="row format-item my-4 mx-1">
+            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-10">
+              <p><b>Cupos Directos</b></p>
+              <div class="line2"></div>
+              <p>Los equipos ubicados entre las posiciones 1° al 6° obtendrán la Clasificación directa al mundial.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="row format-item my-4 mx-1">
+            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-10">
+              <p><b>Repechaje</b></p>
+              <div class="line2"></div>
+              <p>El equipo ubicado en la posicion 7° accederá al repechaje y tendrá que jugar contra otro equipo de repechaje de otra confederación para clasificar al mundial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 }
 <router-outlet/>
