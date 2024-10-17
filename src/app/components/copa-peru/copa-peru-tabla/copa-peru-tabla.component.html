@@ -44,7 +44,7 @@
                 <tr class="text-center">
                   <th class="team-status"><div class="clasifier" [ngClass]="{'next-round': $index >= 0 && $index < 32}"></div>
                   <th>{{ 1 + $index }}</th>
-                  <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image ? item.image : './assets/images/otros/no-team-copa-peru.png' }}" alt="{{ item.alt }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a></td>
+                  <td class="text-start"><img class="logos" src="{{ item.image ? item.image : './assets/images/otros/no-team-copa-peru.png' }}" alt="{{ item.alt }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</td>
                   <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
                   <td>{{ item.pj ? item.pj  : '0'}}</td>
                   <td>{{ item.pg ? item.pg  : '0'}}</td>

@@ -57,10 +57,13 @@ export class CopaPeruTablaComponent {
     // Ordenar el array en base criterios
     teamsArray.sort((a:any, b:any) => {
       if (a.puntos !== b.puntos) {
-          return b.puntos - a.puntos;
+        return b.puntos - a.puntos;
+      }
+      if (a.pr !== b.pr) {
+        return b.pr - a.pr;
       }
       if (a.dg !== b.dg) {
-          return b.dg - a.dg;
+        return b.dg - a.dg;
       }
       return b.gf - a.gf;
     });
