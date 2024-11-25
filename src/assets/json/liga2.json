@@ -12,7 +12,7 @@
     "playoff": true,
     "cuartos": true,
     "semifinal": true,
-    "final": false
+    "final": true
   },
   "Teams": [
     {
@@ -2080,29 +2080,29 @@
   ],
   "Semifinal": [
     {
-      "idaA": null,
-      "idaB": null,
-      "vueltaA": null,
-      "vueltaB": null,
+      "idaA": 2,
+      "idaB": 1,
+      "vueltaA": 3,
+      "vueltaB": 0,
       "penal":{
         "teamA": null,
         "teamB": null
       }
     },
     {
-      "idaA": null,
-      "idaB": null,
-      "vueltaA": null,
-      "vueltaB": null,
+      "idaA": 0,
+      "idaB": 1,
+      "vueltaA": 2,
+      "vueltaB": 1,
       "penal":{
-        "teamA": null,
-        "teamB": null
+        "teamA": 4,
+        "teamB": 3
       }
     }
   ],
   "Final": {
-    "teamA": null,
-    "teamB": null,
+    "teamA": 1,
+    "teamB": 0,
     "penal":{
       "teamA": null,
       "teamB": null
