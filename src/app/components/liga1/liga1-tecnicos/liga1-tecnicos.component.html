@@ -1,10 +1,8 @@
 <!-- Title -->
-<div class="container-fluid background content-block">
+<div class="container-fluid title-container liga-1-cc liga-1-bi block-content">
   <div class="row">
-    <div class="col-10 title">
-      <div class="row">
-        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 1<i class="fas fa-chevron-right px-3"></i><span>TÉCNICOS</span></p>
-      </div>
+    <div class="col-10 title-content">
+      <p class="arrow liga-1-arrow-color">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 1<i class="fas fa-chevron-right px-3"></i><span>TÉCNICOS</span></p>
       <h1><b>Técnicos</b></h1>
     </div>
   </div>
@@ -12,65 +10,63 @@
 <!-- Description -->
 <app-description-league [value]="1"/>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-1-cc liga-1-bi"></div>
 <!-- List -->
-<div class="list-content container-fluid content-block py-5">
+<div class="container-fluid p-4 block-content dark-content">
   <div class="row">
     <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
 
       @if (data) {
         @for (item of data.Teams; track $index) {
           <div class="col-sm-12 col-md-5">
-            <div class="title vertical-center"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; <b>{{ item.name }}</b></div>
-            <div class="line my-2"></div>
+            <img class="manager-logo" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; <b>{{ item.name }}</b>
+            <div class="line-title liga-1-cc my-2"></div>
           </div>
           <div class="container-fluid">
             <div class="row my-4">
               @if (item.dt.length > 1) {
                 <div [id]="'carousel'+$index" class="carousel slide" [attr.data-bs-ride]="'carousel'+$index">
-                  <div class="carousel-inner">
-                    @for (dtList of item.dt; track $index) {
-                      @if ($index == 0) {
-                        <div class="carousel-item active" data-bs-interval="10000">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <img class="dt-logo" [src]="dtList.img ? dtList.img : './assets/images/otros/no-manager.png'" alt="DT-logo">
-                              <div class="dt">
-                                <div class="text-center">
-                                  <div class="dt-status">
-                                    <div class="row">
-                                      <p class="dt-active">Dirigiendo</p>
-                                    </div>
+                  @for (dtList of item.dt; track $index) {
+                    @if ($index == 0) {
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <img class="dt-logo" [src]="dtList.img ? dtList.img : './assets/images/otros/no-manager.png'" alt="DT-logo">
+                            <div class="dt">
+                              <div class="text-center">
+                                <div class="dt-status">
+                                  <div class="row">
+                                    <p class="dt-active">Dirigiendo</p>
                                   </div>
-                                  <p class="dt-name"><b>{{ dtList.name }}</b></p>
-                                  <p class="dt-flag"><span class="fi fi-{{dtList.cod}} flag"></span>&nbsp;&nbsp; {{ dtList.country }}</p>
                                 </div>
+                                <p class="dt-name"><b>{{ dtList.name }}</b></p>
+                                <p class="dt-flag"><span class="fi fi-{{dtList.cod}} flag"></span>&nbsp;{{ dtList.country }}</p>
                               </div>
                             </div>
                           </div>
                         </div>
-                      }@else {
-                        <div class="carousel-item" data-bs-interval="5000">
-                          <div class="container-fluid">
-                            <div class="row">
-                              <img class="dt-logo" [src]="dtList.img ? dtList.img : './assets/images/otros/no-manager.png'" alt="DT-logo">
-                              <div class="dt">
-                                <div class="text-center">
-                                  <div class="dt-status">
-                                    <div class="row">
-                                      <p class="dt-disable">Destituido</p>
-                                    </div>
+                      </div>
+                    }@else {
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <img class="dt-logo" [src]="dtList.img ? dtList.img : './assets/images/otros/no-manager.png'" alt="DT-logo">
+                            <div class="dt">
+                              <div class="text-center">
+                                <div class="dt-status">
+                                  <div class="row">
+                                    <p class="dt-disable">Destituido</p>
                                   </div>
-                                  <p class="dt-name"><b>{{ dtList.name }}</b></p>
-                                  <p class="dt-flag"><span class="fi fi-{{dtList.cod}} flag"></span>&nbsp;&nbsp; {{ dtList.country }}</p>
                                 </div>
+                                <p class="dt-name"><b>{{ dtList.name }}</b></p>
+                                <p class="dt-flag"><span class="fi fi-{{dtList.cod}} flag"></span>&nbsp; {{ dtList.country }}</p>
                               </div>
                             </div>
                           </div>
                         </div>
-                      }
+                      </div>
                     }
-                  </div>
+                  }
                   <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel'+$index" data-bs-slide="prev">
                     <i class="fa-solid fa-angle-left slider-carousel"></i>
                   </button>
@@ -88,7 +84,7 @@
                       </div>
                     </div>
                     <p class="dt-name"><b>{{ item.dt[0].name }}</b></p>
-                    <p class="dt-flag"><span class="fi fi-{{item.dt[0].cod}} flag"></span>&nbsp;&nbsp; {{ item.dt[0].country }}</p>
+                    <p class="dt-flag"><span class="fi fi-{{item.dt[0].cod}} flag"></span>&nbsp; {{ item.dt[0].country }}</p>
                   </div>
                 </div>
               }
@@ -96,8 +92,9 @@
           </div>
         }
       }
+
     </div>
   </div>
 </div>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-1-cc liga-1-bi"></div>

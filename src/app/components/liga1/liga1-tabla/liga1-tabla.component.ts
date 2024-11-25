@@ -36,19 +36,24 @@ export class Liga1TablaComponent {
 
       // Definicion del campeón
       if (data.Info.final) {
-        const { idaA, vueltaA, penal: { teamA: penalA } } = data.Final;
-        const { idaB, vueltaB, penal: { teamB: penalB } } = data.Final;
 
-        if (idaA != null && vueltaA != null && idaB != null && vueltaB != null) {
-          const totalA = idaA + vueltaA;
-          const totalB = idaB + vueltaB;
+        if (this.winnerApertura === this.winnerClausura) {
+          this.champion = this.winnerApertura;
+        } else {
+          const { idaA, vueltaA, penal: { teamA: penalA } } = data.Final;
+          const { idaB, vueltaB, penal: { teamB: penalB } } = data.Final;
 
-          if (totalA > totalB) {
-            this.champion = this.winnerApertura;
-          } else if (totalB > totalA) {
-            this.champion = this.winnerClausura;
-          } else if (penalA != null && penalB != null) {
-            this.champion = penalA > penalB ? this.winnerApertura : this.winnerClausura;
+          if (idaA != null && vueltaA != null && idaB != null && vueltaB != null) {
+            const totalA = idaA + vueltaA;
+            const totalB = idaB + vueltaB;
+
+            if (totalA > totalB) {
+              this.champion = this.winnerApertura;
+            } else if (totalB > totalA) {
+              this.champion = this.winnerClausura;
+            } else if (penalA != null && penalB != null) {
+              this.champion = penalA > penalB ? this.winnerApertura : this.winnerClausura;
+            }
           }
         }
       }

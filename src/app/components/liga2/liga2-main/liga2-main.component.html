@@ -1,7 +1,7 @@
 <app-top-list-teams [value]="value"/>
-<div class="container-fluid divisor-type"></div>
+<div class="divider-sm liga-2-cc"></div>
 <!-- D -->
-<div class="container-fluid bg-light nav-options-bar hide-options-D">
+<div class="container-fluid bg-light nav-options-bar hide-options-D block-content">
   <div class="row">
     <div class="col-lg-2 col-md-3 col-sm-4 p-0">
       <a (click)="mainPage = false;" routerLink="/liga2/equipos">
@@ -26,41 +26,41 @@
   </div>
 </div>
 <!-- M -->
-<div class="dropdown hide-options-M">
-  <button class="btn bg-light dropdown-option w-100 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Liga 2
-  </button>
+<div class="hide-options-M block-content">
+  <button class="bg-light dropdown-btn w-100 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Liga 2</button>
   <ul class="dropdown-menu bg-light w-100">
-    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/liga2/equipos">Clubes</a></li>
-    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/liga2/fixture">Fixture</a></li>
-    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/liga2/tabla">Tabla</a></li>
-    <li><a (click)="mainPage = false;" class="dropdown-item text-center dropdown-option-item" routerLink="/liga2/tecnicos">Técnicos</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-option-item" routerLink="/liga2/equipos">Clubes</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-option-item" routerLink="/liga2/fixture">Fixture</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-option-item" routerLink="/liga2/tabla">Tabla</a></li>
+    <li><a (click)="mainPage = false;" class="dropdown-option-item" routerLink="/liga2/tecnicos">Técnicos</a></li>
   </ul>
 </div>
 <!-- Content -->
 @if (mainPage) {
   <!-- Banner -->
-  <img src="./assets/images/banners/liga2banner.jpg" alt="banner" class="w-100">
+  <img class="w-100" src="./assets/images/banners/liga2banner.jpg" alt="banner">
   <!-- Description -->
   <app-description-league [value]="value"/>
   <!-- Divider -->
-  <div class="container-fluid divider"></div>
+  <div class="divider liga-2-cc liga-2-bi"></div>
   <!-- Mapa -->
-  <div class="container-fluid bg-light py-5 px-5 text-center content-block">
+  <div class="container-fluid p-4 block-content bg-light text-center">
     <div class="row vertical-center">
       <!-- Info -->
-      <div class="col-sm-12 col-md-5 col-lg-7 my-4">
+      <div class="col-sm-12 col-md-6 col-lg-5 mb-3">
         <div class="title text-start">Equipos</div>
-        <div class="line mb-3"></div>
-        <p>En la temporada <b>{{ data && data.Info ? data.Info.temporada : '' }}</b> el número de equipos participantes de la <b>Liga 1</b> es de <b> {{ data && data.Info ? data.Info.equipos : '' }} </b> equipos:</p>
-        <div class="text-center" *ngIf="data">
-          @for (item of data.Teams; track $index) {
-            <a [href]="item.url">
-              <img [src]="item.image" class="map-item-list" [alt]="item.alt">
-            </a>
-          }
+        <div class="line-title liga-2-cc"></div>
+        <div class="my-3">
+          <p class="mb-0">En la temporada <b>{{ data && data.Info ? data.Info.temporada : '' }}</b> el número de equipos participantes de la <b>Liga 1</b> es de <b> {{ data && data.Info ? data.Info.equipos : '' }} </b> equipos:</p>
+          <div class="text-center" *ngIf="data">
+            @for (item of data.Teams; track $index) {
+              <a [href]="item.url">
+                <img [src]="item.image" class="img-item-list" [alt]="item.alt">
+              </a>
+            }
+          </div>
         </div>
-        <div class="line-lg my-3"></div>
+        <div class="line-content liga-2-cc"></div>
         <div class="row">
           <div class="col"></div>
           <div class="col">
@@ -80,7 +80,7 @@
         </div>
       </div>
       <!-- Mapa -->
-      <div class="col-sm-12 col-md-7 col-lg-4">
+      <div class="col-sm-12 col-md-5 col-lg-4">
         <div class="map py-5">
           <svg stroke-width="2" viewBox="-200 0 1400 1470" xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink"version="1.1">
             @if (data) {
@@ -95,44 +95,44 @@
     </div>
   </div>
   <!-- Formato -->
-  <div class="container-fluid py-5 px-5 format-content content-block">
+  <div class="container-fluid p-4 block-content dark-content">
     <div class="row">
       <!-- L -->
-      <div class="col-sm-12 col-md-5 col-lg-4 vertical-center">
+      <div class="col-sm-12 col-md-4 col-lg-4 vertical-center">
         <div>
           <div class="title">Ascenso</div>
-          <div class="line mb-3"></div>
+          <div class="line-title liga-2-cc mb-3"></div>
           <p>El campeonato de <b>Ascenso</b> se definirá mediante una clasificacion a una <b>Fase de Grupos y </b>posteriormente una <b>Fase Eliminatoria</b>.</p>
-          <img class="img-fluid" src="https://cdn.futbolperuano.com/sdi/2022/01/10/los-equipos-mas-ganadores-de-la-segunda-division-986505.jpg" alt="formato-logo">
+          <img class="img-fluid" src="./assets/images/otros/copa-liga-2.webp" alt="formato-logo">
         </div>
       </div>
       <!-- R -->
-      <div class="col-sm-12 col-md-7 col-lg-7 vertical-center">
+      <div class="col-sm-12 col-md-7 col-lg-5 vertical-center">
         <div class="col-12">
           <!-- Item 1 -->
           <div class="row format-item my-4 mx-1">
-            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-2"><div class="circle"><i class="far fa-futbol"></i></div></div>
             <div class="col-sm-12 col-md-10">
               <p><b>Fase Regional</b></p>
-              <div class="line2"></div>
+              <div class="line-subtitle liga-2-cc"></div>
               <p>El torneo se llevará a cabo mediante una división de dos zonas, según la distribución geográfica de los equipos. Estos se agruparán en <b>Zona Norte</b> y <b>Zona Sur</b>, y se enfrentarán en dos rondas <b>(ida y vuelta)</b>.</p>
             </div>
           </div>
           <!-- Item 2 -->
           <div class="row format-item my-4 mx-1">
-            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-2"><div class="circle"><i class="far fa-futbol"></i></div></div>
             <div class="col-sm-12 col-md-10">
               <p><b>Fase de Grupos</b></p>
-              <div class="line2"></div>
+              <div class="line-subtitle liga-2-cc"></div>
               <p>Basado en los resultados de la Zona Norte y Zona Sur, se crearán tres nuevas tablas: dos para disputar el ascenso y una para definir el descenso, con seis equipos en cada grupo, respectivamente.</p>
             </div>
           </div>
           <!-- Item 3 -->
           <div class="row format-item my-4 mx-1">
-            <div class="col-sm-12 col-md-2"><div class="round"><i class="far fa-futbol"></i></div></div>
+            <div class="col-sm-12 col-md-2"><div class="circle"><i class="far fa-futbol"></i></div></div>
             <div class="col-sm-12 col-md-10">
               <p><b>Playoff</b></p>
-              <div class="line2"></div>
+              <div class="line-subtitle liga-2-cc"></div>
               <p>El torneo se definirá a través de tres etapas eliminatorias: <b>Fase 1, Semifinales y Final</b>, para determinar al <b>Campeón y Subcampeón</b>, los cuales ascenderán a la <b>Liga 1</b>.</p>
             </div>
           </div>
@@ -141,14 +141,15 @@
     </div>
   </div>
   <!-- Grupos -->
-  <div class="container-fluid bg-light py-5 px-5 content-block">
+  <div class="container-fluid p-4 block-content bg-light">
     <div class="row">
-      <div class="col-sm-12 col-md-11">
+      <div class="col-sm-12 col-md-11 col-lg-9">
         <div class="title">Grupos</div>
-        <div class="line mb-3"></div>
+        <div class="line-title liga-2-cc mb-3"></div>
         <p>La clasificación de los equipos a la fase de grupos se realizarán en base a la posición obtenida en la <b>Zona Norte</b> y <b>Zona Sur</b>, para ello se crearán 3 grupos: <b>Grupo A</b>,, <b>Grupo B</b> y <b>Grupo Descenso</b>. La distribución de los equipos será de la siguente manera.</p>
       </div>
-      <div class="col-sm-12 col-md-11">
+      <!-- Clasificación -->
+      <div class="col-sm-12 col-md-11 col-lg-9">
         <div class="row">
           <!-- L -->
           <div class="col-sm-12 col-md-5">
@@ -156,6 +157,7 @@
               <img class="img-fluid px-3" src="https://cdn.futbolperuano.com/sdi/2024/01/03/cuando-arrancara-la-nueva-temporada-de-la-liga-2-este-2024-1216430.jpg">
             </div>
           </div>
+          <!-- R -->
           <div class="col-sm-12 col-md-5">
             <div class="clasifiers border-A">
               <!-- Grupo A -->
@@ -218,19 +220,21 @@
     </div>
   </div>
   <!-- Descenso -->
-  <div class="container-fluid py-5 px-5 relegation-content content-block">
+  <div class="container-fluid p-4 block-content dark-content">
     <div class="row">
-      <div class="col-sm-12 col-md-5">
+      <div class="col-sm-12 col-md-7 col-lg-6">
         <div class="title">Descenso</div>
-        <div class="line mb-3"></div>
-        <p>En la temporada actual, los equipos situados en las <b>2 últimas posiciones</b> del grupo de <b>Descenso</b> sufrirán el <b>descenso directo de categoría</b>, relegándolos a participar en la <b>Liga 3</b>.</p>
+        <div class="line-title liga-2-cc mb-3"></div>
+        <p>En la temporada actual, el equipo situado en la <b>última posicion</b> del grupo de <b>Descenso</b> sufrirá el <b>descenso directo de categoría</b>, relegándolo a participar en la <b>Liga 3 2025</b>.</p>
       </div>
-      <div class="col-sm-12 col-md-3">
-        <img class="img-fluid relegation-img"  alt="liga-3" src="./assets/images/liga-2/liga2-descenso.png">
+      <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="row">
+          <img class="img-fluid relegation-img" alt="liga-3" src="./assets/images/otros/relegation-liga-3.webp">
+        </div>
       </div>
     </div>
   </div>
   <!-- Divider -->
-  <div class="container-fluid divider"></div>
+  <div class="divider liga-2-cc liga-2-bi"></div>
 }
 <router-outlet/>

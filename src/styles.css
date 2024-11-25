@@ -1,1 +1,806 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --light: #F8F9FA;
+  --dark: #161513;
+  --gold: #d8b145;
+  --liga-1: #DC143C;
+  --liga-2: #dc8514;
+  --copa-peru: #2DAAA7;
+}
+/* ==============================================================*/
+/* =======================General Styles=========================*/
+/* ==============================================================*/
+/* Containers */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+/* Title */
+.title {
+  font-size: 36px;
+}
+.title-container {
+  background-size: cover;
+  height: 250px;
+}
+.title-container h1 {
+  font-size: 72px;
+  color: #fff;
+}
+@media screen and (max-width: 767.5px) {
+  .title-content {
+    text-align: center;
+  }
+}
+/* Map */
+.map {
+  background-color: #161513;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.map svg {
+  fill: #dad8d9;
+  fill-opacity: 1;
+  stroke:#ffffff;
+  stroke-opacity: 1;
+  stroke-width:2.5;
+}
+.map-item-active {
+  fill: #851111;
+  transition: 0.5s;
+}
+.map-item-active:hover {
+  fill: #D8A928;
+}
+/* Stages */
+.title-stages {
+  height: 100%;
+}
+.title-stages {
+  display: flex;
+  align-items: center;
+}
+.description-stages{
+  min-height: 70px;
+  padding: 14px 0px;
+}
+.description-stages .notes{
+  margin-bottom: 0px;
+  font-size: 12px;
+  font-style: italic;
+}
+@media screen and (max-width: 575.5px) {
+  .title-stages h1{
+    padding: 0px;
+  }
+  .title-stages div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title-stages h1{
+    font-size: 50px;
+  }
+}
+/* Page Tree */
+.arrow {
+  padding: 40px 0px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.arrow span {
+  color: #fff;
+}
+@media screen and (max-width: 575.5px) {
+  .arrow {
+    font-size: 14px;
+  }
+}
+/* Content Color */
+.light-content {
+  color: var(--dark);
+  background: var(--light);
+}
+.dark-content {
+  color: var(--light);
+  background: var(--dark);
+}
+/* Block Content */
+.block-content {
+  user-select: none;
+}
+/* Divider */
+.divider-sm {
+  height: 10px;
+}
+.divider {
+  height: 20px;
+}
+/* Lines */
+.line-title {
+  width: 220px;
+  height: 8px;
+  transform: skew(50deg);
+}
+.line-content {
+  width: 100%;
+  height: 8px;
+  transform: skew(50deg);
+}
+.line-subtitle {
+  width: 60px;
+  height: 4px;
+  transition: 1s;
+  transform: skew(50deg);
+}
+@media screen and (max-width: 767.5px) {
+  .line-subtitle {
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+/* Switch Button */
+.switch-button {
+  width: 95%;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.9rem 2rem;
+  overflow: hidden;
+  transform: skew(30deg);
+}
+.switch-button:hover,
+.switch-button.active {
+  color: #fff;
+}
+.switch-button span {
+  transition: color 0.3s;
+  display:inline-block;
+  transform: skew(-30deg);
+}
+.switch-button.active span {
+  color: #fff;
+}
+.switch-button::before,
+.switch-button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.switch-button::before {
+  content: "";
+  background: #ffffff;
+  width: 120%;
+  left: -10%;
+  transition: transform 0.5s cubic-bezier(0.3, 1, 0.8, 1);
+}
+.switch-button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+.switch-button.active::before {
+  transform: translate3d(100%, 0, 0);
+}
+/* Table */
+.table-title-group {
+  font-size: 38px;
+}
+.table-content {
+  margin-bottom: 0px;
+  width: 100%;
+  background-color: var(--light);
+  color: var(--dark);
+  border-collapse: collapse;
+}
+.table-header th {
+  color: #fff;
+  font-size: 15px;
+  height: 40px;
+  padding: 0.5rem;
+}
+.table-body tr {
+  height: 40px;
+  border-bottom: solid 1px #e4e4e4;
+}
+.table-body td {
+  padding: 0px;
+  white-space: nowrap;
+  font-size: 15px;
+}
+.table-body a {
+  text-decoration:none;
+  color: var(--dark);
+}
+.t-w-lg {
+  max-width: 150px;
+  min-width: 150px;
+}
+.team-status {
+  padding: 0px;
+}
+.table-logo {
+  width: 35px;
+}
+.table-region{
+  font-size: 10px;
+  font-weight: 500;
+}
+.line-table {
+  width: 6px;
+  height: 5px;
+  width: auto;
+}
+.table-info {
+  padding: 10px;
+  background-color: var(--light);
+}
+/* Table Clasification */
+.clasifier {
+  width: 6px;
+  height: 39px;
+  padding: 0px;
+}
+.winner {
+  background: var(--gold);
+  color: var(--gold);
+}
+/* Liga 1 */
+.libertadores {
+  background: #FBBC04;
+  color: #FBBC04;
+}
+.sudamericana {
+  background: #34A853;
+  color: #34A853;
+}
+.relegation {
+  background: #c1272d;
+  color: #c1272d;
+}
+/* Liga 2 */
+.playoff-promotion {
+  background: #27943C;
+  color: #27943C;
+}
+.playoff-relegation {
+  background: #c1272d;
+  color: #c1272d;
+}
+.semifinal {
+  background: #f1c13a;
+  color: #f1c13a;
+}
+.quarter {
+  background: #11759c;
+  color: #11759c;
+}
+/* Copa Perú */
+.next-round {
+  background: #2DAAA7;
+  color: #2DAAA7;
+}
+/* Game Status */
+.win {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #3AA757;
+  font-size: 18px;
+}
+.draw {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #9AA0A6;
+  font-size: 18px;
+}
+.lose {
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 1px;
+  color: #EA4335;
+  font-size: 18px;
+}
+/* Brackets */
+.bracket-title {
+  font-weight: bold;
+  font-size: 20px;
+  transform: skew(30deg);
+  min-width: 260px;
+  text-align: center;
+}
+.bracket-title p {
+  margin: 0px;
+  transform: skew(-30deg);
+  color: #fff;
+}
+.bracket-table {
+  width: 100%;
+}
+.bracket-table td {
+  height: 45px;
+}
+.bracket-table .result {
+  width: 25px;
+  min-width: 25px;
+  max-width: 25px;
+  text-align: center;
+}
+.bracket {
+  border-color: #cccccc;
+  border-width: 1px;
+  font-size: 13px;
+}
+.bracket a {
+  text-decoration:none;
+  color: var(--dark);
+}
+.bracket-logo {
+  width: 35px;
+}
+/* Lines Brackets */
+.linetop {
+  border-width: 0;
+  border-color: black;
+  border-style: solid;
+  border-top-width: 2px;
+  min-width: 10px;
+}
+.linebottom {
+  border-width: 0;
+  border-color: black;
+  border-style: solid;
+  border-bottom-width: 2px;
+  min-width: 10px;
+}
+.lineright {
+  border-width: 0;
+  border-color: black;
+  border-style: solid;
+  border-right-width: 2px;
+}
+.lineleft {
+  border-width: 0;
+  border-color: black;
+  border-style: solid;
+  border-left-width: 2px;
+}
+/* Finalist */
+.finalist-team div{
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #d8b145;
+  transform: skew(30deg);
+  margin: 10px 50px;
+}
+.finalist-team p:first-child {
+  font-size: 25px;
+  transform: skew(-30deg);
+  color: #fff;
+}
+.finalist-team img {
+  width: 120px;
+}
+.finalist-team p {
+  font-size: 20px;
+  margin: 0px;
+}
+/* ==============================================================*/
+/* ====================Color Codes & Styles======================*/
+/* ==============================================================*/
+/* Light Color */
+.light-bg {
+  background: var(--light);
+}
+/* Liga 1 */
+.liga-1-cc {
+  background: var(--liga-1);
+}
+.liga-1-bi {
+  background-image: url('/assets/images/banners/background-pattern-liga-1.svg');
+  background-size: cover;
+}
+.liga-1-arrow-color {
+  color: #ffbaba;
+}
+.liga-1-table {
+  background-color: var(--liga-1);
+}
+.liga-1-line-table {
+  background: linear-gradient(270deg, var(--liga-1), var(--gold));
+}
+/* Liga 2 */
+.liga-2-cc {
+  background: var(--liga-2);
+}
+.liga-2-bi {
+  background-image: url('/assets/images/banners/background-pattern-liga-2.svg');
+  background-size: cover;
+}
+.liga-2-arrow-color {
+  color: #fcd7ad;
+}
+.liga-2-table {
+  background-color: var(--liga-2);
+}
+.liga-2-line-table {
+  background: linear-gradient(270deg, var(--liga-2), var(--gold));
+}
+/* Liga 3 */
+.liga-3-cc {
+  background: #DC143C;
+}
+/* Copa Perú */
+.copa-peru-cc {
+  background: var(--copa-peru);
+}
+.copa-peru-bi {
+  background-image: url('/assets/images/banners/background-pattern-copa-peru.svg');
+  background-size: cover;
+}
+.copa-peru-arrow-color {
+  color: #cdfeff;
+}
+.copa-peru-table {
+  background-color: var(--copa-peru);
+}
+.copa-peru-line-table {
+  background: linear-gradient(270deg, var(--copa-peru), var(--gold));
+}
+/* Eliminatorais */
+.eliminatorias-cc {
+  background: #5c0f6b;
+}
+/* ==============================================================*/
+/* ========================Main Options==========================*/
+/* ==============================================================*/
+/* Navbar */
+.nav-options-bar {
+  height: 50px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 15%);
+}
+.nav-options-bar a {
+  color: #646464;
+  text-decoration: none;
+  font-size: 15px;
+}
+.nav-options-item {
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  transition: border .1s ease-out;
+  -webkit-transition: border .1s ease-out;
+}
+.nav-options-item:hover {
+  border-bottom: 5px solid #d8a928;
+}
+.nav-options-item-selected {
+  border-bottom: 5px solid #d8a928;
+}
+/* Dropdown */
+.dropdown-btn {
+  height: 50px;
+  border: 0;
+  border-bottom: 5px solid #d8a928;
+  border-radius: 0;
+}
+.dropdown-option-item {
+  display: block;
+  width: 100%;
+  padding: 0.35rem 1.5rem;
+  font-weight: 400;
+  color: #212529;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+.dropdown-option-item:hover {
+  background-color: #e0e0e0;
+}
+@media screen and (max-width: 767.5px) {
+  .hide-options-D {
+    display: none;
+  }
+}
+@media screen and (min-width: 767.5px) {
+  .hide-options-M {
+    display: none;
+  }
+}
+/* Map / Team Section */
+.img-item-list {
+  width: 35px;
+}
+.img-item-list-lg {
+  width: 60px;
+}
+/* Format */
+.format-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.format-item p:first-child {
+  margin: 0px;
+  font-size: 25px;
+}
+.format-item:hover .line-subtitle {
+  width: 90px;
+}
+.format-item div:first-child {
+  display: flex;
+  justify-content: center;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #161513;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+@media screen and (max-width: 767px) {
+  .format-item div:first-child {
+    margin-bottom: 0px;
+  }
+  .format-item p {
+    text-align: center;
+  }
+  .format-item:hover .line-subtitle {
+    width: 150px;
+  }
+}
+/* Relegation */
+.relegation-img {
+  width: 450px;
+  border-radius: 30px;
+}
+/* ==============================================================*/
+/* ========================Teams Styles==========================*/
+/* ==============================================================*/
+a {
+  text-decoration:none;
+  color: #ffff;
+  border: none;
+}
+/* Cards */
+.card-team {
+  text-decoration: none;
+}
+.card-team img {
+  width: 64px;
+  transition: all 2s ease;
+}
+.card-team:hover img {
+  transform: scale(1.2);
+}
+.card-item {
+  background: #312f2b;
+  color: #fafafa;
+  padding: 32px 24px;
+}
+.card-item p {
+  margin: 0px;
+}
+.card-item i {
+  padding-left: 5px;
+}
+.card-item .card-img {
+  max-width: 80px;
+}
+.card-club-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-item-stadium {
+  font-size: 14px;
+}
+.card-item-location {
+  font-size: 12px;
+}
+/* ==============================================================*/
+/* =======================Fixture Styles==========================*/
+/* ==============================================================*/
+/* Fixture Title */
+.fixture-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+/* Fixture Select */
+.fixture-select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+.fixture-select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #393939;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+.fixture-select select {
+  border: 0;
+  flex: 1;
+  padding: 0 1em;
+  background: #242424;
+  color: #fff;
+}
+/* Fixture content */
+.fixture-title-group {
+  font-size: 28px;
+}
+.fixture-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixture-location-form {
+  border-bottom: 18px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  font-size: 12px;
+  font-weight: 500;
+  width: 220px;
+  color: #161513;
+  margin-bottom: -4px;
+  margin-top: 2px;
+}
+.fixture-location-form p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixture-item-bg {
+  background: #242424;
+  color: #fff;
+}
+.fixture-row-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixture-name {
+  font-size: 13.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.team-abbreviation {
+  display: none;
+}
+.fixture-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 44px;
+  min-width: 44px;
+}
+.fixture-item img {
+  width: 35px;
+}
+.result-bg {
+  margin: 0px 2px;
+  height: 50px;
+  background: #393939;
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 475px) {
+  .team-name {
+    display: none;
+  }
+  .team-abbreviation {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+/* ==============================================================*/
+/* ========================Table Styles==========================*/
+/* ==============================================================*/
+/* Scoreboard Bracket */
+.scoreboard {
+  width: 100%;
+}
+.scoreboard .score{
+  font-size: 13px;
+  font-style: italic;
+}
+.scoreboard td {
+  font-size: 40px;
+}
+.scoreboard div{
+  font-style: italic;
+  background-color: crimson;
+  transform: skew(30deg);
+}
+.scoreboard p{
+  margin: 0px;
+  font-size: 15px;
+  transform: skew(-30deg);
+  color: #fff;
+}
+.scoreboard .score-global{
+  font-size: 18px;
+}
+/* ==============================================================*/
+/* =======================Manager Pages==========================*/
+/* ==============================================================*/
+/* DT card */
+.manager-logo {
+  width: 50px;
+}
+.dt-status {
+  font-size: 14px;
+}
+.dt-status p {
+  width: 6rem;
+  padding: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.dt-active {
+  background: var(--gold);
+}
+.dt-disable {
+  background: #a00424;
+  color: #fff;
+}
+.dt-name {
+  font-size: 16px;
+  padding: 5px 0px;
+}
+.dt-flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dt-flag .flag {
+  font-size: 25px;
+}
+.dt p {
+  margin: 0px;
+}
+.slider-carousel {
+  font-size: 30px;
+}
+@media screen and (max-width: 575.5px) {
+  .dt-status {
+    font-size: 12px;
+  }
+  .dt-name {
+    font-size: 12px;
+  }
+  .dt-flag {
+    font-size: 12px;
+  }
+  .dt-flag .flag {
+    font-size: 16px;
+  }
+  .slider-carousel {
+    font-size: 20px;
+  }
+}
+/* ==============================================================*/
+/* =======================Options Pages==========================*/
+/* ==============================================================*/

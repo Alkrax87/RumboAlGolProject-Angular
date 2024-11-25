@@ -1,10 +1,8 @@
 <!-- Title -->
-<div class="container-fluid background content-block">
+<div class="container-fluid title-container liga-2-cc liga-2-bi block-content">
   <div class="row">
-    <div class="col-10 title">
-      <div class="row">
-        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 2<i class="fas fa-chevron-right px-3"></i><span>FIXTURE</span></p>
-      </div>
+    <div class="col-10 title-content">
+      <p class="arrow liga-2-arrow-color">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 2<i class="fas fa-chevron-right px-3"></i><span>FIXTURE</span></p>
       <h1><b>Fixture</b></h1>
     </div>
   </div>
@@ -12,45 +10,57 @@
 <!-- Description -->
 <app-description-league [value]="2"/>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-2-cc liga-2-bi"></div>
 <!-- Fixture Regional -->
-<div class="fixture-content container-fluid content-block py-5">
+<div class="container-fluid p-4 block-content dark-content">
   <div class="row">
 
     <!-- Titulo -->
     <div class="col-md-12 col-lg-10 col-xl-8">
-      <p class="fixture-title">Regional Fecha {{ selectedGroup }}</p>
+      <p class="fixture-title">Regional Fecha {{ selectedFixture }}</p>
       <!-- Selector -->
-      <div class="select">
-        <select class="form-select" [(ngModel)]="selectedFixture">
+      <div class="fixture-select">
+        <select [(ngModel)]="selectedFixture">
           @for (fixture of fixtureIndexNorth; track $index) {
             <option [value]="fixture">Fecha {{ fixture }}</option>
           }
         </select>
       </div>
-      <div class="line my-4"></div>
+      <div class="line-content light-bg my-4"></div>
     </div>
     <!-- Fixture Grupo Norte -->
     <div class="col-md-12 col-lg-10 col-xl-8">
-      <div class="title-group-fixture text-start">Grupo Norte</div>
-      <div class="line3 my-3"></div>
+      <div class="fixture-title-group">Grupo Norte</div>
+      <div class="line-title liga-2-cc mb-3"></div>
       @for (item of matchesByRoundNorth; track $index) {
         @if (selectedFixture === null || selectedFixture === item.round) {
           <div class="container-fluid fixture-location">
             <div class="row">
               <div class="col-12 text-center">
-                <div class="fixture-location-form "><p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p></div>
+                <div class="fixture-location-form ">
+                  <p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="container-fluid my-1 content-block fixture-item-bg">
+          <div class="container-fluid my-1 fixture-item-bg">
             <div class="fixture-row-container">
-              <div class="col fixture-name text-end W-100"><span class="name-team">{{ item.homeTeam.name }}</span><span class="abbreviation-team">{{ item.homeTeam.abbreviation }}</span></div>
-              <div class="col fixture-item"><img [src]="item.homeTeam.image" alt="{{ item.homeTeam.alt }}"></div>
+              <div class="col fixture-name text-end W-100">
+                <span class="team-name">{{ item.homeTeam.name ? item.homeTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.homeTeam.abbreviation ? item.homeTeam.abbreviation : 'PD' }}</span>
+              </div>
+              <div class="col fixture-item">
+                <img [src]="item.homeTeam.image ? item.homeTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.homeTeam.alt ? item.homeTeam.alt : 'no-team-logo' }}">
+              </div>
               <div class="col fixture-item result-bg">{{ item.result.home !== null ? item.result.home : '' }}</div>
               <div class="col fixture-item result-bg">{{ item.result.away !== null ? item.result.away : '' }}</div>
-              <div class="col fixture-item"><img [src]="item.awayTeam.image" alt="{{ item.awayTeam.alt }}"></div>
-              <div class="col fixture-name text-start W-100"><span class="name-team">{{ item.awayTeam.name }}</span><span class="abbreviation-team">{{ item.awayTeam.abbreviation }}</span></div>
+              <div class="col fixture-item">
+                <img [src]="item.awayTeam.image ? item.awayTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.awayTeam.alt ? item.awayTeam.alt : 'no-team-logo' }}">
+              </div>
+              <div class="col fixture-name text-start W-100">
+                <span class="team-name">{{ item.awayTeam.name ? item.awayTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.awayTeam.abbreviation ? item.awayTeam.abbreviation : 'PD' }}</span>
+              </div>
             </div>
           </div>
         }
@@ -58,25 +68,37 @@
     </div>
     <!-- Fixture Grupo Sur -->
     <div class="col-md-12 col-lg-10 col-xl-8">
-      <div class="title-group-fixture text-start">Grupo Sur</div>
-      <div class="line3 my-3"></div>
+      <div class="fixture-title-group">Grupo Sur</div>
+      <div class="line-title liga-2-cc mb-3"></div>
       @for (item of matchesByRoundSouth; track $index) {
         @if (selectedFixture === null || selectedFixture === item.round) {
           <div class="container-fluid fixture-location">
             <div class="row">
               <div class="col-12 text-center">
-                <div class="fixture-location-form "><p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p></div>
+                <div class="fixture-location-form ">
+                  <p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="container-fluid my-1 content-block fixture-item-bg">
+          <div class="container-fluid my-1 fixture-item-bg">
             <div class="fixture-row-container">
-              <div class="col fixture-name text-end W-100"><span class="name-team">{{ item.homeTeam.name }}</span><span class="abbreviation-team">{{ item.homeTeam.abbreviation }}</span></div>
-              <div class="col fixture-item"><img [src]="item.homeTeam.image" alt="{{ item.homeTeam.alt }}"></div>
+              <div class="col fixture-name text-end W-100">
+                <span class="team-name">{{ item.homeTeam.name ? item.homeTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.homeTeam.abbreviation ? item.homeTeam.abbreviation : 'PD' }}</span>
+              </div>
+              <div class="col fixture-item">
+                <img [src]="item.homeTeam.image ? item.homeTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.homeTeam.alt ? item.homeTeam.alt : 'no-team-logo' }}">
+              </div>
               <div class="col fixture-item result-bg">{{ item.result.home !== null ? item.result.home : '' }}</div>
               <div class="col fixture-item result-bg">{{ item.result.away !== null ? item.result.away : '' }}</div>
-              <div class="col fixture-item"><img [src]="item.awayTeam.image" alt="{{ item.awayTeam.alt }}"></div>
-              <div class="col fixture-name text-start W-100"><span class="name-team">{{ item.awayTeam.name }}</span><span class="abbreviation-team">{{ item.awayTeam.abbreviation }}</span></div>
+              <div class="col fixture-item">
+                <img [src]="item.awayTeam.image ? item.awayTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.awayTeam.alt ? item.awayTeam.alt : 'no-team-logo' }}">
+              </div>
+              <div class="col fixture-name text-start W-100">
+                <span class="team-name">{{ item.awayTeam.name ? item.awayTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.awayTeam.abbreviation ? item.awayTeam.abbreviation : 'PD' }}</span>
+              </div>
             </div>
           </div>
         }
@@ -86,7 +108,7 @@
   </div>
 </div>
 <!-- Grupos -->
-<div class="container-fluid background content-block">
+<div class="container-fluid title-container liga-2-cc liga-2-bi block-content">
   <div class="row title-stages">
     <div class="col-10">
       <h1><b>Grupos</b></h1>
@@ -94,7 +116,7 @@
   </div>
 </div>
 <!-- Description -->
-<div class="container-fluid bg-light content-block">
+<div class="container-fluid bg-light block-content">
   <div class="row description-stages">
     <div class="col-sm-12 col-md-6 text-center">
       <p class="notes">Grupos Ascenso</p>
@@ -107,17 +129,17 @@
   </div>
 </div>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-2-cc liga-2-bi"></div>
 <!-- Fixture Grupos -->
-<div class="fixture-content container-fluid content-block py-5">
+<div class="container-fluid p-4 block-content dark-content">
   <div class="row">
 
     <!-- Titulo -->
     <div class="col-md-12 col-lg-10 col-xl-8">
       <p class="fixture-title">Grupos Fecha {{ selectedGroup }}</p>
       <!-- Selector -->
-      <div class="select">
-        <select class="form-select" [(ngModel)]="selectedGroup">
+      <div class="fixture-select">
+        <select [(ngModel)]="selectedGroup">
           @for (fixture of groupIndexGroupA; track $index) {
             <option [value]="fixture">Fecha {{ fixture }}</option>
           }
@@ -127,25 +149,37 @@
     </div>
     <!-- Fixture Grupo A -->
     <div class="col-md-12 col-lg-10 col-xl-8">
-      <div class="title-group-fixture text-start">Grupo A</div>
-      <div class="line3 my-3"></div>
+      <div class="fixture-title-group">Grupo A</div>
+      <div class="line-title liga-2-cc mb-3"></div>
       @for (item of matchesByRoundGroupA; track $index) {
         @if (selectedGroup === null || selectedGroup === item.round) {
           <div class="container-fluid fixture-location">
             <div class="row">
               <div class="col-12 text-center">
-                <div class="fixture-location-form "><p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p></div>
+                <div class="fixture-location-form ">
+                  <p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="container-fluid my-1 content-block fixture-item-bg">
             <div class="fixture-row-container">
-              <div class="col fixture-name text-end W-100"><span class="name-team">{{ item.homeTeam.name }}</span><span class="abbreviation-team">{{ item.homeTeam.abbreviation }}</span></div>
-              <div class="col fixture-item"><img [src]="item.homeTeam.image" alt="{{ item.homeTeam.alt }}"></div>
+              <div class="col fixture-name text-end W-100">
+                <span class="team-name">{{ item.homeTeam.name ? item.homeTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.homeTeam.abbreviation ? item.homeTeam.abbreviation : 'PD' }}</span>
+              </div>
+              <div class="col fixture-item">
+                <img [src]="item.homeTeam.image ? item.homeTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.homeTeam.alt ? item.homeTeam.alt : 'no-team-logo' }}">
+              </div>
               <div class="col fixture-item result-bg">{{ item.result.home !== null ? item.result.home : '' }}</div>
               <div class="col fixture-item result-bg">{{ item.result.away !== null ? item.result.away : '' }}</div>
-              <div class="col fixture-item"><img [src]="item.awayTeam.image" alt="{{ item.awayTeam.alt }}"></div>
-              <div class="col fixture-name text-start W-100"><span class="name-team">{{ item.awayTeam.name }}</span><span class="abbreviation-team">{{ item.awayTeam.abbreviation }}</span></div>
+              <div class="col fixture-item">
+                <img [src]="item.awayTeam.image ? item.awayTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.awayTeam.alt ? item.awayTeam.alt : 'no-team-logo' }}">
+              </div>
+              <div class="col fixture-name text-start W-100">
+                <span class="team-name">{{ item.awayTeam.name ? item.awayTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.awayTeam.abbreviation ? item.awayTeam.abbreviation : 'PD' }}</span>
+              </div>
             </div>
           </div>
         }
@@ -153,25 +187,37 @@
     </div>
     <!-- Fixture Grupo B -->
     <div class="col-md-12 col-lg-10 col-xl-8">
-      <div class="title-group-fixture text-start">Grupo B</div>
-      <div class="line3 my-3"></div>
+      <div class="fixture-title-group">Grupo B</div>
+      <div class="line-title liga-2-cc mb-3"></div>
       @for (item of matchesByRoundGroupB; track $index) {
         @if (selectedGroup === null || selectedGroup === item.round) {
           <div class="container-fluid fixture-location">
             <div class="row">
               <div class="col-12 text-center">
-                <div class="fixture-location-form "><p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p></div>
+                <div class="fixture-location-form ">
+                  <p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="container-fluid my-1 content-block fixture-item-bg">
             <div class="fixture-row-container">
-              <div class="col fixture-name text-end W-100"><span class="name-team">{{ item.homeTeam.name }}</span><span class="abbreviation-team">{{ item.homeTeam.abbreviation }}</span></div>
-              <div class="col fixture-item"><img [src]="item.homeTeam.image" alt="{{ item.homeTeam.alt }}"></div>
+              <div class="col fixture-name text-end W-100">
+                <span class="team-name">{{ item.homeTeam.name ? item.homeTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.homeTeam.abbreviation ? item.homeTeam.abbreviation : 'PD' }}</span>
+              </div>
+              <div class="col fixture-item">
+                <img [src]="item.homeTeam.image ? item.homeTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.homeTeam.alt ? item.homeTeam.alt : 'no-team-logo' }}">
+              </div>
               <div class="col fixture-item result-bg">{{ item.result.home !== null ? item.result.home : '' }}</div>
               <div class="col fixture-item result-bg">{{ item.result.away !== null ? item.result.away : '' }}</div>
-              <div class="col fixture-item"><img [src]="item.awayTeam.image" alt="{{ item.awayTeam.alt }}"></div>
-              <div class="col fixture-name text-start W-100"><span class="name-team">{{ item.awayTeam.name }}</span><span class="abbreviation-team">{{ item.awayTeam.abbreviation }}</span></div>
+              <div class="col fixture-item">
+                <img [src]="item.awayTeam.image ? item.awayTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.awayTeam.alt ? item.awayTeam.alt : 'no-team-logo' }}">
+              </div>
+              <div class="col fixture-name text-start W-100">
+                <span class="team-name">{{ item.awayTeam.name ? item.awayTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.awayTeam.abbreviation ? item.awayTeam.abbreviation : 'PD' }}</span>
+              </div>
             </div>
           </div>
         }
@@ -179,25 +225,37 @@
     </div>
     <!-- Fixture Grupo Descenso -->
     <div class="col-md-12 col-lg-10 col-xl-8">
-      <div class="title-group-fixture text-start">Grupo Descenso</div>
-      <div class="line3 my-3"></div>
+      <div class="fixture-title-group">Grupo Descenso</div>
+      <div class="line-title liga-2-cc mb-3"></div>
       @for (item of matchesByRoundGroupRelegation; track $index) {
         @if (selectedGroup === null || selectedGroup === item.round) {
           <div class="container-fluid fixture-location">
             <div class="row">
               <div class="col-12 text-center">
-                <div class="fixture-location-form "><p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p></div>
+                <div class="fixture-location-form ">
+                  <p><i class="fas fa-map-marker-alt"></i>&nbsp; {{ item.homeTeam.stadium ? item.homeTeam.stadium : 'Por Definir' }}</p>
+                </div>
               </div>
             </div>
           </div>
           <div class="container-fluid my-1 content-block fixture-item-bg">
             <div class="fixture-row-container">
-              <div class="col fixture-name text-end W-100"><span class="name-team">{{ item.homeTeam.name }}</span><span class="abbreviation-team">{{ item.homeTeam.abbreviation }}</span></div>
-              <div class="col fixture-item"><img [src]="item.homeTeam.image" alt="{{ item.homeTeam.alt }}"></div>
+              <div class="col fixture-name text-end W-100">
+                <span class="team-name">{{ item.homeTeam.name ? item.homeTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.homeTeam.abbreviation ? item.homeTeam.abbreviation : 'PD' }}</span>
+              </div>
+              <div class="col fixture-item">
+                <img [src]="item.homeTeam.image ? item.homeTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.homeTeam.alt ? item.homeTeam.alt : 'no-team-logo' }}">
+              </div>
               <div class="col fixture-item result-bg">{{ item.result.home !== null ? item.result.home : '' }}</div>
               <div class="col fixture-item result-bg">{{ item.result.away !== null ? item.result.away : '' }}</div>
-              <div class="col fixture-item"><img [src]="item.awayTeam.image" alt="{{ item.awayTeam.alt }}"></div>
-              <div class="col fixture-name text-start W-100"><span class="name-team">{{ item.awayTeam.name }}</span><span class="abbreviation-team">{{ item.awayTeam.abbreviation }}</span></div>
+              <div class="col fixture-item">
+                <img [src]="item.awayTeam.image ? item.awayTeam.image : './assets/images/otros/no-team-liga-2.png'" alt="{{ item.awayTeam.alt ? item.awayTeam.alt : 'no-team-logo' }}">
+              </div>
+              <div class="col fixture-name text-start W-100">
+                <span class="team-name">{{ item.awayTeam.name ? item.awayTeam.name : "Por Definir" }}</span>
+                <span class="team-abbreviation">{{ item.awayTeam.abbreviation ? item.awayTeam.abbreviation : 'PD' }}</span>
+              </div>
             </div>
           </div>
         }
@@ -207,4 +265,4 @@
   </div>
 </div>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-2-cc liga-2-bi"></div>

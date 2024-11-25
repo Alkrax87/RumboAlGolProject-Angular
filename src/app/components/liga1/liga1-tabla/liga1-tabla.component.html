@@ -1,10 +1,8 @@
 <!-- Title -->
-<div class="container-fluid background content-block">
+<div class="container-fluid title-container liga-1-cc liga-1-bi block-content">
   <div class="row">
-    <div class="col-10 title">
-      <div class="row">
-        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 1<i class="fas fa-chevron-right px-3"></i><span>TABLA</span></p>
-      </div>
+    <div class="col-10 title-content">
+      <p class="arrow liga-1-arrow-color">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 1<i class="fas fa-chevron-right px-3"></i><span>TABLA</span></p>
       <h1><b>Tabla</b></h1>
     </div>
   </div>
@@ -12,19 +10,31 @@
 <!-- Description -->
 <app-description-league [value]="1"/>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-1-cc liga-1-bi"></div>
 <!-- Tables -->
-<div class="table-content container-fluid content-block py-5">
+<div class="container-fluid p-4 block-content dark-content">
   <div class="row">
 
-    <!-- Switch Table -->
-    <div class="container-fluid switch-container">
+    <!-- Switch Buttons -->
+    <div class="container-fluid mb-4">
       <div class="row">
         <div class="col-sm-12 col-md-9 ">
           <div class="row">
-            <div class="col-sm-12 col-md-4 text-center"><button (click)="tableSwitch(1)" class="table-switch" [ngClass]="{'active': activeButton === 1}"><span>Acumulado</span></button></div>
-            <div class="col-sm-12 col-md-4 text-center"><button (click)="tableSwitch(2)" class="table-switch" [ngClass]="{'active': activeButton === 2}"><span>Apertura</span></button></div>
-            <div class="col-sm-12 col-md-4 text-center"><button (click)="tableSwitch(3)" class="table-switch" [ngClass]="{'active': activeButton === 3}"><span>Clausura</span></button></div>
+            <div class="col-sm-12 col-md-4 text-center">
+              <button (click)="tableSwitch(1)" class="switch-button liga-1-cc" [ngClass]="{'active': activeButton === 1}">
+                <span>Acumulado</span>
+              </button>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+              <button (click)="tableSwitch(2)" class="switch-button liga-1-cc" [ngClass]="{'active': activeButton === 2}">
+                <span>Apertura</span>
+              </button>
+            </div>
+            <div class="col-sm-12 col-md-4 text-center">
+              <button (click)="tableSwitch(3)" class="switch-button liga-1-cc" [ngClass]="{'active': activeButton === 3}">
+                <span>Clausura</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -32,11 +42,11 @@
 
     <!-- Apertura -->
     @if (table1) {
-      <div class="col-md-12 col-lg-10 col-xl-8">
+      <div class="col-md-12 col-lg-10 col-xl-8 px-0">
         <div class="table-responsive">
           <!-- Table -->
-          <table class="table align-middle">
-            <thead class="table-header">
+          <table class="table-content">
+            <thead class="table-header liga-1-table">
               <tr class="text-center">
                 <th scope="col"></th>
                 <th scope="col">#</th>
@@ -53,12 +63,16 @@
               </tr>
             </thead>
             @if (apertura) {
-              <tbody>
+              <tbody class="table-body">
                 @for (item of apertura; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'winner': $index == 0}"></div>
+                    <th class="team-status">
+                      <div class="clasifier" [ngClass]="{'winner': $index == 0}"></div>
+                    </th>
                     <th>{{ 1 + $index }}</th>
-                    <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                    <td class="text-start ps-2">
+                      <a href="{{ item.url }}"><img class="table-logo" src="{{ item.image ? item.image : './assets/images/otros/no-team-liga-1.png' }}" alt="{{ item.alt ? item.alt : 'no-team-logo' }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a>
+                    </td>
                     <td class="fw-bold">{{ item.data.apertura.puntos ? item.data.apertura.puntos : '0'}}</td>
                     <td>{{ item.data.apertura.pj ? item.data.apertura.pj  : '0'}}</td>
                     <td>{{ item.data.apertura.pg ? item.data.apertura.pg  : '0'}}</td>
@@ -92,25 +106,23 @@
           </table>
         </div>
         <!-- Table Footer -->
-        <div class="line-table"></div>
+        <div class="line-table liga-1-line-table"></div>
         <div class="table-info">
-          <h6 class="text-start"><b>Estado</b></h6>
-          <div class="text-start">
-            <i class="fas fa-square winner"></i>
-            <span class="mx-2">Ganador Apertura</span>
-          </div>
+          <h6><b>Estado</b></h6>
+          <i class="fas fa-square winner"></i>
+          <span class="mx-2">Ganador Apertura</span>
         </div>
-        <div class="line-table"></div>
+        <div class="line-table liga-1-line-table"></div>
       </div>
     }
 
     <!-- Clausura -->
     @if (table2) {
-      <div class="col-md-12 col-lg-10 col-xl-8">
+      <div class="col-md-12 col-lg-10 col-xl-8 px-0">
         <div class="table-responsive">
           <!-- Table -->
-          <table class="table align-middle">
-            <thead class="table-header">
+          <table class="table-content">
+            <thead class="table-header liga-1-table">
               <tr class="text-center">
                 <th scope="col"></th>
                 <th scope="col">#</th>
@@ -127,13 +139,16 @@
               </tr>
             </thead>
             @if (clausura) {
-              <tbody>
+              <tbody class="table-body">
                 @for (item of clausura; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'winner': $index == 0}"></div>
+                    <th class="team-status">
+                      <div class="clasifier" [ngClass]="{'winner': $index == 0}"></div>
                     </th>
                     <th>{{ 1 + $index }}</th>
-                    <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                    <td class="text-start ps-2">
+                      <a href="{{ item.url }}"><img class="table-logo" src="{{ item.image ? item.image : './assets/images/otros/no-team-liga-1.png' }}" alt="{{ item.alt ? item.alt : 'no-team-logo' }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a>
+                    </td>
                     <td class="fw-bold">{{ item.data.clausura.puntos ? item.data.clausura.puntos : '0'}}</td>
                     <td>{{ item.data.clausura.pj ? item.data.clausura.pj  : '0'}}</td>
                     <td>{{ item.data.clausura.pg ? item.data.clausura.pg  : '0'}}</td>
@@ -167,25 +182,23 @@
           </table>
         </div>
         <!-- Table Footer -->
-        <div class="line-table"></div>
+        <div class="line-table liga-1-line-table"></div>
         <div class="table-info">
-          <h6 class="text-start"><b>Estado</b></h6>
-          <div class="text-start">
-            <i class="fas fa-square winner"></i>
-            <span class="mx-2">Ganador Clausura</span>
-          </div>
+          <h6><b>Estado</b></h6>
+          <i class="fas fa-square winner"></i>
+          <span class="mx-2">Ganador Clausura</span>
         </div>
-        <div class="line-table"></div>
+        <div class="line-table liga-1-line-table"></div>
       </div>
     }
 
     <!-- Acumulado -->
     @if (table3) {
-      <div class="col-md-12 col-lg-10 col-xl-8">
+      <div class="col-md-12 col-lg-10 col-xl-8 px-0">
         <div class="table-responsive">
           <!-- Table -->
-          <table class="table align-middle">
-            <thead class="table-header">
+          <table class="table-content">
+            <thead class="table-header liga-1-table">
               <tr class="text-center">
                 <th scope="col"></th>
                 <th scope="col">#</th>
@@ -202,20 +215,24 @@
               </tr>
             </thead>
             @if (acumulado) {
-              <tbody>
+              <tbody class="table-body">
                 @for (item of acumulado; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'libertadores': $index >= 0 && $index <= 3, 'sudamericana': $index >= 4 && $index <= 7, 'relegation': $index >= 15 && $index <= 17}"></div></th>
+                    <th class="team-status">
+                      <div class="clasifier" [ngClass]="{'libertadores': $index >= 0 && $index <= 3, 'sudamericana': $index >= 4 && $index <= 7, 'relegation': $index >= 15 && $index <= 17}"></div>
+                    </th>
                     <th>{{ 1 + $index }}</th>
-                    <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
-                    <td class="fw-bold">{{ item.puntos }}</td>
-                    <td>{{ item.pj }}</td>
-                    <td>{{ item.pg }}</td>
-                    <td>{{ item.pe }}</td>
-                    <td>{{ item.pp }}</td>
-                    <td>{{ item.gf }}</td>
-                    <td>{{ item.gc }}</td>
-                    <td>{{ item.dg }}</td>
+                    <td class="text-start ps-2">
+                      <a href="{{ item.url }}"><img class="table-logo" src="{{ item.image ? item.image : './assets/images/otros/no-team-liga-1.png' }}" alt="{{ item.alt ? item.alt : 'no-team-logo' }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a>
+                    </td>
+                    <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
+                    <td>{{ item.pj ? item.pj : '0'}}</td>
+                    <td>{{ item.pg ? item.pg : '0'}}</td>
+                    <td>{{ item.pe ? item.pe : '0'}}</td>
+                    <td>{{ item.pp ? item.pp : '0'}}</td>
+                    <td>{{ item.gf ? item.gf : '0'}}</td>
+                    <td>{{ item.gc ? item.gc : '0'}}</td>
+                    <td>{{ item.dg ? item.dg : '0'}}</td>
                     <td>
                       @for (lg of item.lastGames; track $index) {
                         @switch (lg) {
@@ -241,30 +258,30 @@
           </table>
         </div>
         <!-- Table Footer -->
-        <div class="line-table"></div>
+        <div class="line-table liga-1-line-table"></div>
         <div class="table-info">
-          <h6 class="text-start"><b>Clasificación / Descenso</b></h6>
-          <div class="text-start">
+          <h6><b>Clasificación / Descenso</b></h6>
+          <div>
             <i class="fas fa-square libertadores"></i>
             <span class="mx-2">Copa Libertadores</span>
           </div>
-          <div class="text-start">
+          <div>
             <i class="fas fa-square sudamericana"></i>
             <span class="mx-2">Copa Sudamericana</span>
           </div>
-          <div class="text-start">
+          <div>
             <i class="fas fa-square relegation"></i>
             <span class="mx-2">Descenso</span>
           </div>
         </div>
-        <div class="line-table"></div>
+        <div class="line-table liga-1-line-table"></div>
       </div>
     }
 
   </div>
 </div>
 <!-- Campeón -->
-<div class="container-fluid background content-block">
+<div class="container-fluid title-container liga-1-cc liga-1-bi block-content">
   <div class="row title-stages">
     <div class="col-10">
       <h1><b>Campeón</b></h1>
@@ -285,81 +302,78 @@
   </div>
 </div>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-1-cc liga-1-bi"></div>
 <!-- Table -->
-<div class="table-content container-fluid  py-5">
+<div class="container-fluid p-4 block-content dark-content">
   <div class="row">
-    <div class="col-xl-9 col-lg-11 col-md-12">
-      <div class="bg-light py-3">
+    <div class="col-md-12 col-lg-10 col-xl-8 px-0">
+      <div class="light-content py-3">
         <!-- Final -->
-        <div class="container">
-          <div class="row text-center">
-            <!-- Team 1 -->
-            <div class="col-sm-12 col-md-4 champion-team">
-              @if (winnerApertura) {
-                <img [src]="winnerApertura.image" [alt]="winnerApertura.alt">
-                <p>{{ winnerApertura.name }}</p>
-              } @else {
-                <span><i class="fas fa-shield-alt team-shield"></i></span>
-                <p>Por Definir</p>
-              }
-            </div>
-            <!-- Marcador -->
-            <div class="col-sm-6 col-md-3 text-center">
-              <!-- Ida -->
-              <table class="scoreboard">
-                <tr>
-                  <td colspan="3" class="score"><div><p>Ida</p></div></td>
-                </tr>
-                <tr>
-                  <td><b>{{ data && data.Info.final ? data.Final.idaA : "" }}</b></td>
-                  <td>-</td>
-                  <td><b>{{ data && data.Info.final ? data.Final.idaB : "" }}</b></td>
-                </tr>
-                <!-- Vuelta -->
-                <tr>
-                  <td colspan="3" class="score"><div><p>Vuelta</p></div></td>
-                </tr>
-                <tr>
-                  <td><b>{{ data && data.Info.final ? data.Final.vueltaA : "" }}</b></td>
-                  <td>-</td>
-                  <td><b>{{ data && data.Info.final ? data.Final.vueltaB : "" }}</b></td>
-                </tr>
-                <!-- Global -->
-                <tr>
-                  <td colspan="3" class="score"><div><p>Global</p></div></td>
-                </tr>
-                <tr>
-                  <td colspan="3" class="score-global">({{ data && data.Final.penal.teamA != null ? data.Final.penal.teamA + ")" : "" }} <span>{{ data && data.Info.final && data.Final.idaA && data.Final.vueltaA ? data.Final.idaA + data.Final.vueltaA : '' }}</span> - <span>{{ data && data.Info.final && data.Final.idaB && data.Final.vueltaB ? data.Final.idaB + data.Final.vueltaB : '' }}</span> {{ data && data.Final.penal.teamB != null ? "(" + data.Final.penal.teamB : "" }})</td>
-                </tr>
-              </table>
-            </div>
-            <!-- Team 2 -->
-            <div class="col-sm-12 col-md-4 champion-team">
-              @if (winnerClausura) {
-                <img [src]="winnerClausura.image" [alt]="winnerClausura.alt">
-                <p>{{ winnerClausura.name }}</p>
-              } @else {
-                <span><i class="fas fa-shield-alt team-shield"></i></span>
-                <p>Por Definir</p>
-              }
-            </div>
+        <div class="row text-center">
+          <!-- Team 1 -->
+          <div class="col-sm-12 col-md-4 finalist-team">
+            @if (winnerApertura) {
+              <img [src]="winnerApertura.image" [alt]="winnerApertura.alt">
+              <p>{{ winnerApertura.name }}</p>
+            } @else {
+              <img src="./assets/images/otros/no-team-liga-1.png" alt="team-shield-logo">
+              <p>Por Definir</p>
+            }
+          </div>
+          <!-- Marcador -->
+          <div class="col-sm-6 col-md-3 text-center">
+            <!-- Ida -->
+            <table class="scoreboard">
+              <tr>
+                <td colspan="3" class="score"><div><p>Ida</p></div></td>
+              </tr>
+              <tr>
+                <td><b>{{ data && data.Info.final ? data.Final.idaA : "" }}</b></td>
+                <td>-</td>
+                <td><b>{{ data && data.Info.final ? data.Final.idaB : "" }}</b></td>
+              </tr>
+              <!-- Vuelta -->
+              <tr>
+                <td colspan="3" class="score"><div><p>Vuelta</p></div></td>
+              </tr>
+              <tr>
+                <td><b>{{ data && data.Info.final ? data.Final.vueltaA : "" }}</b></td>
+                <td>-</td>
+                <td><b>{{ data && data.Info.final ? data.Final.vueltaB : "" }}</b></td>
+              </tr>
+              <!-- Global -->
+              <tr>
+                <td colspan="3" class="score"><div><p>Global</p></div></td>
+              </tr>
+              <tr>
+                <td colspan="3" class="score-global">({{ data && data.Final.penal.teamA != null ? data.Final.penal.teamA + ")" : "" }} <span>{{ data && data.Info.final && data.Final.idaA && data.Final.vueltaA ? data.Final.idaA + data.Final.vueltaA : '' }}</span> - <span>{{ data && data.Info.final && data.Final.idaB && data.Final.vueltaB ? data.Final.idaB + data.Final.vueltaB : '' }}</span> {{ data && data.Final.penal.teamB != null ? "(" + data.Final.penal.teamB : "" }})</td>
+              </tr>
+            </table>
+          </div>
+          <!-- Team 2 -->
+          <div class="col-sm-12 col-md-4 finalist-team">
+            @if (winnerClausura) {
+              <img [src]="winnerClausura.image" [alt]="winnerClausura.alt">
+              <p>{{ winnerClausura.name }}</p>
+            } @else {
+              <img src="./assets/images/otros/no-team-liga-1.png" alt="team-shield-logo">
+              <p>Por Definir</p>
+            }
           </div>
         </div>
-        <hr class="divider-bracket">
+        <!-- Divider -->
+        <div class="divider liga-1-cc my-3"></div>
         <!-- Campeón -->
         <div class="row text-center">
-          <div class="col-sm-12 col-md-7">
-            <div class="champion-team">
-              <div><p>CAMPEÓN</p></div>
-              @if (champion) {
-                <img [src]="champion.image" [alt]="champion.alt">
-                <p>{{ champion.name }}</p>
-              } @else {
-                <span><i class="fas fa-shield-alt team-shield"></i></span>
-                <p>Por Definir</p>
-              }
-            </div>
+          <div class="col-sm-12 col-md-6 finalist-team">
+            <div><p>CAMPEÓN</p></div>
+            @if (champion) {
+              <img [src]="champion.image" [alt]="champion.alt">
+              <p>{{ champion.name }}</p>
+            } @else {
+              <img src="./assets/images/otros/no-team-liga-1.png" alt="team-shield-logo">
+              <p>Por Definir</p>
+            }
           </div>
         </div>
       </div>
@@ -367,4 +381,4 @@
   </div>
 </div>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-1-cc liga-1-bi"></div>

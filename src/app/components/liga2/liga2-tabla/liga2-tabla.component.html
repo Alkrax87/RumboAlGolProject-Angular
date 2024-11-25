@@ -1,10 +1,8 @@
 <!-- Title -->
-<div class="container-fluid background content-block">
+<div class="container-fluid title-container liga-2-cc liga-2-bi block-content">
   <div class="row">
-    <div class="col-10 title">
-      <div class="row">
-        <p class="arrow">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 2<i class="fas fa-chevron-right px-3"></i><span>TABLA</span></p>
-      </div>
+    <div class="col-10 title-content">
+      <p class="arrow liga-2-arrow-color">HOME<i class="fas fa-chevron-right px-3"></i>LIGA 2<i class="fas fa-chevron-right px-3"></i><span>TABLA</span></p>
       <h1><b>Tabla</b></h1>
     </div>
   </div>
@@ -12,19 +10,19 @@
 <!-- Description -->
 <app-description-league [value]="2"/>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-2-cc liga-2-bi"></div>
 <!-- Tables -->
-<div class="table-content container-fluid content-block py-5">
+<div class="container-fluid p-4 block-content dark-content">
   <div class="row">
 
     <!-- Grupo Norte -->
-    <div class="col-md-12 col-lg-10 col-xl-8">
-      <div class="title-table text-start">Grupo Norte</div>
-      <div class="line mb-3"></div>
+    <div class="col-md-12 col-lg-10 col-xl-8 px-0">
+      <div class="table-title-group">Grupo Norte</div>
+      <div class="line-title liga-2-cc mb-3"></div>
       <div class="table-responsive">
         <!-- Table -->
-        <table class="table align-middle">
-          <thead class="table-header">
+        <table class="table-content">
+          <thead class="table-header liga-2-table">
             <tr class="text-center">
               <th scope="col"></th>
               <th scope="col">#</th>
@@ -40,12 +38,16 @@
               <th scope="col" class="t-w-lg">Últimos 5</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table-body">
             @for (item of norte; track $index) {
               <tr class="text-center">
-                <th class="team-status"><div class="clasifier" [ngClass]="{'playoff-promotion': $index >= 0 && $index <= 5, 'playoff-relegation': $index >= 6 && $index <= 8}"></div>
+                <th class="team-status">
+                  <div class="clasifier" [ngClass]="{'playoff-promotion': $index >= 0 && $index <= 5, 'playoff-relegation': $index >= 6 && $index <= 8}"></div>
+                </th>
                 <th>{{ 1 + $index }}</th>
-                <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                <td class="text-start ps-2">
+                  <a href="{{ item.url }}"><img class="table-logo" src="{{ item.image ? item.image : './assets/images/otros/no-team-liga-2.png' }}" alt="{{ item.alt ? item.alt : 'no-team-logo' }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a>
+                </td>
                 <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
                 <td>{{ item.pj ? item.pj : '0'}}</td>
                 <td>{{ item.pg ? item.pg : '0'}}</td>
@@ -78,29 +80,29 @@
         </table>
       </div>
       <!-- Table Footer -->
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
       <div class="table-info">
-        <h6 class="text-start"><b>Clasificación</b></h6>
-        <div class="text-start">
+        <h6><b>Clasificación</b></h6>
+        <div>
           <i class="fas fa-square playoff-promotion"></i>
           <span class="mx-2">PlayOff Ascenso</span>
         </div>
-        <div class="text-start">
+        <div>
           <i class="fas fa-square playoff-relegation "></i>
           <span class="mx-2">PlayOff Descenso</span>
         </div>
       </div>
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
     </div>
 
     <!-- Grupo Sur -->
-    <div class="col-md-12 col-lg-10 col-xl-8 mt-5">
-      <div class="title-table text-start">Grupo Sur</div>
-      <div class="line mb-3"></div>
+    <div class="col-md-12 col-lg-10 col-xl-8 px-0">
+      <div class="table-title-group">Grupo Sur</div>
+      <div class="line-title liga-2-cc mb-3"></div>
       <div class="table-responsive">
         <!-- Table -->
-        <table class="table align-middle">
-          <thead class="table-header">
+          <table class="table-content">
+          <thead class="table-header liga-2-table">
             <tr class="text-center">
               <th scope="col"></th>
               <th scope="col">#</th>
@@ -116,12 +118,16 @@
               <th scope="col" class="t-w-lg">Últimos 5</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table-body">
             @for (item of sur; track $index) {
               <tr class="text-center">
-                <th class="team-status"><div class="clasifier" [ngClass]="{'playoff-promotion': $index >= 0 && $index <= 5, 'playoff-relegation': $index >= 6 && $index <= 8}"></div>
+                <th class="team-status">
+                  <div class="clasifier" [ngClass]="{'playoff-promotion': $index >= 0 && $index <= 5, 'playoff-relegation': $index >= 6 && $index <= 8}"></div>
+                </th>
                 <th>{{ 1 + $index }}</th>
-                <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                <td class="text-start ps-2">
+                  <a href="{{ item.url }}"><img class="table-logo" src="{{ item.image ? item.image : './assets/images/otros/no-team-liga-2.png' }}" alt="{{ item.alt ? item.alt : 'no-team-logo' }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a>
+                </td>
                 <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
                 <td>{{ item.pj ? item.pj : '0'}}</td>
                 <td>{{ item.pg ? item.pg : '0'}}</td>
@@ -154,25 +160,25 @@
         </table>
       </div>
       <!-- Table Footer -->
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
       <div class="table-info">
-        <h6 class="text-start"><b>Clasificación</b></h6>
-        <div class="text-start">
+        <h6><b>Clasificación</b></h6>
+        <div>
           <i class="fas fa-square playoff-promotion"></i>
           <span class="mx-2">PlayOff Ascenso</span>
         </div>
-        <div class="text-start">
+        <div>
           <i class="fas fa-square playoff-relegation "></i>
           <span class="mx-2">PlayOff Descenso</span>
         </div>
       </div>
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
     </div>
 
   </div>
 </div>
 <!-- Ascenso -->
-<div class="container-fluid background content-block">
+<div class="container-fluid title-container liga-2-cc liga-2-bi block-content">
   <div class="row title-stages">
     <div class="col-10">
       <h1><b>Ascenso</b></h1>
@@ -180,7 +186,7 @@
   </div>
 </div>
 <!-- Description -->
-<div class="container-fluid bg-light content-block">
+<div class="container-fluid bg-light block-content">
   <div class="row description-stages">
     <div class="col-12 text-center">
       <p class="notes">Descripción</p>
@@ -189,19 +195,19 @@
   </div>
 </div>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-2-cc liga-2-bi"></div>
 <!-- Tables -->
-<div class="table-content container-fluid content-block py-5">
+<div class="container-fluid p-4 block-content dark-content">
   <div class="row">
 
     <!-- Ascenso A -->
-    <div class="col-md-12 col-lg-10 col-xl-8">
-      <div class="title-table text-start">Grupo A</div>
-      <div class="line mb-3"></div>
+    <div class="col-md-12 col-lg-10 col-xl-8 px-0">
+      <div class="table-title-group">Grupo A</div>
+      <div class="line-title liga-2-cc mb-3"></div>
       <div class="table-responsive">
         <!-- Table -->
-        <table class="table align-middle">
-          <thead class="table-header">
+        <table class="table-content">
+          <thead class="table-header liga-2-table">
             <tr class="text-center">
               <th scope="col"></th>
               <th scope="col">#</th>
@@ -217,14 +223,18 @@
               <th scope="col" class="t-w-lg">Últimos 5</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table-body">
             @if (data) {
               @if (data.Info.playoff) {
                 @for (item of ascenso1; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
+                    <th class="team-status">
+                      <div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
+                    </th>
                     <th>{{ 1 + $index }}</th>
-                    <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                    <td class="text-start ps-2">
+                      <a href="{{ item.url }}"><img class="table-logo" src="{{ item.image ? item.image : './assets/images/otros/no-team-liga-2.png' }}" alt="{{ item.alt ? item.alt : 'no-team-logo' }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a>
+                    </td>
                     <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
                     <td>{{ item.pj ? item.pj : '0'}}</td>
                     <td>{{ item.pg ? item.pg : '0'}}</td>
@@ -256,9 +266,13 @@
               } @else {
                 @for (i of [1,2,3,4,5,6]; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
+                    <th class="team-status">
+                      <div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
+                    </th>
                     <th>{{ i }}</th>
-                    <td class="text-start">Por Definir</td>
+                    <th class="text-start ps-2">
+                      <img class="table-logo" src="./assets/images/otros/no-team-liga-2.png" alt="no-team-logo"><span class="fw-normal">&nbsp; Por Definir</span>
+                    </th>
                     <td class="fw-bold">0</td>
                     <td>0</td>
                     <td>0</td>
@@ -282,29 +296,29 @@
         </table>
       </div>
       <!-- Table Footer -->
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
       <div class="table-info">
-        <h6 class="text-start"><b>Ascenso</b></h6>
-        <div class="text-start">
+        <h6><b>Ascenso</b></h6>
+        <div>
           <i class="fas fa-square semifinal"></i>
           <span class="mx-2">Semifinal</span>
         </div>
-        <div class="text-start">
+        <div>
           <i class="fas fa-square quarter"></i>
           <span class="mx-2">Cuartos de Final</span>
         </div>
       </div>
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
     </div>
 
     <!-- Ascenso B -->
-    <div class="col-md-12 col-lg-10 col-xl-8 mt-5">
-      <div class="title-table text-start">Grupo B</div>
-      <div class="line mb-3"></div>
+    <div class="col-md-12 col-lg-10 col-xl-8 px-0">
+      <div class="table-title-group">Grupo B</div>
+      <div class="line-title liga-2-cc mb-3"></div>
       <div class="table-responsive">
         <!-- Table -->
-        <table class="table align-middle">
-          <thead class="table-header">
+        <table class="table-content">
+          <thead class="table-header liga-2-table">
             <tr class="text-center">
               <th scope="col"></th>
               <th scope="col">#</th>
@@ -320,14 +334,18 @@
               <th scope="col" class="t-w-lg">Últimos 5</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table-body">
             @if (data) {
               @if (data.Info.playoff) {
                 @for (item of ascenso2; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
+                    <th class="team-status">
+                      <div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
+                    </th>
                     <th>{{ 1 + $index }}</th>
-                    <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                    <td class="text-start ps-2">
+                      <a href="{{ item.url }}"><img class="table-logo" src="{{ item.image ? item.image : './assets/images/otros/no-team-liga-2.png' }}" alt="{{ item.alt ? item.alt : 'no-team-logo' }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a>
+                    </td>
                     <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
                     <td>{{ item.pj ? item.pj : '0'}}</td>
                     <td>{{ item.pg ? item.pg : '0'}}</td>
@@ -359,9 +377,13 @@
               } @else {
                 @for (i of [1,2,3,4,5,6]; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
+                    <th class="team-status">
+                      <div class="clasifier" [ngClass]="{'semifinal': $index == 0 , 'quarter': $index >= 1 && $index <= 2}"></div>
+                    </th>
                     <th>{{ i }}</th>
-                    <td class="text-start">Por Definir</td>
+                    <th class="text-start ps-2">
+                      <img class="table-logo" src="./assets/images/otros/no-team-liga-2.png" alt="no-team-logo"><span class="fw-normal">&nbsp; Por Definir</span>
+                    </th>
                     <td class="fw-bold">0</td>
                     <td>0</td>
                     <td>0</td>
@@ -385,25 +407,25 @@
         </table>
       </div>
       <!-- Table Footer -->
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
       <div class="table-info">
-        <h6 class="text-start"><b>Ascenso</b></h6>
-        <div class="text-start">
+        <h6><b>Ascenso</b></h6>
+        <div>
           <i class="fas fa-square semifinal"></i>
           <span class="mx-2">Semifinal</span>
         </div>
-        <div class="text-start">
+        <div>
           <i class="fas fa-square quarter"></i>
           <span class="mx-2">Cuartos de Final</span>
         </div>
       </div>
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
     </div>
 
   </div>
 </div>
 <!-- Descenso -->
-<div class="container-fluid background content-block">
+<div class="container-fluid title-container liga-2-cc liga-2-bi block-content">
   <div class="row title-stages">
     <div class="col-10">
       <h1><b>Descenso</b></h1>
@@ -411,7 +433,7 @@
   </div>
 </div>
 <!-- Description -->
-<div class="container-fluid bg-light content-block">
+<div class="container-fluid bg-light block-content">
   <div class="row description-stages">
     <div class="col-12 text-center">
       <p class="notes">Descripción</p>
@@ -420,17 +442,17 @@
   </div>
 </div>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
-<!-- Tables -->
-<div class="table-content container-fluid content-block py-5">
+<div class="divider liga-2-cc liga-2-bi"></div>
+<!-- Table -->
+<div class="container-fluid p-4 block-content dark-content">
   <div class="row">
 
     <!-- Descenso -->
-    <div class="col-md-12 col-lg-10 col-xl-8">
+    <div class="col-md-12 col-lg-10 col-xl-8 px-0">
       <div class="table-responsive">
         <!-- Table -->
-        <table class="table align-middle">
-          <thead class="table-header">
+        <table class="table-content">
+          <thead class="table-header liga-2-table">
             <tr class="text-center">
               <th scope="col"></th>
               <th scope="col">#</th>
@@ -446,14 +468,18 @@
               <th scope="col" class="t-w-lg">Últimos 5</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table-body">
             @if (data) {
               @if (data.Info.playoff) {
                 @for (item of descenso; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'relegation': $index == 3 }"></div>
+                    <th class="team-status">
+                      <div class="clasifier" [ngClass]="{'relegation': $index == 3 }"></div>
+                    </th>
                     <th>{{ 1 + $index }}</th>
-                    <td class="text-start"><a href="{{ item.url }}"><img class="logos" src="{{ item.image }}" alt="{{ item.alt }}">&nbsp; {{ item.name }}</a></td>
+                    <td class="text-start ps-2">
+                      <a href="{{ item.url }}"><img class="table-logo" src="{{ item.image ? item.image : './assets/images/otros/no-team-liga-2.png' }}" alt="{{ item.alt ? item.alt : 'no-team-logo' }}">&nbsp; {{ item.name ? item.name : "Por Definir" }}</a>
+                    </td>
                     <td class="fw-bold">{{ item.puntos ? item.puntos : '0'}}</td>
                     <td>{{ item.pj ? item.pj : '0'}}</td>
                     <td>{{ item.pg ? item.pg : '0'}}</td>
@@ -485,9 +511,13 @@
               } @else {
                 @for (i of [1,2,3,4,5,6]; track $index) {
                   <tr class="text-center">
-                    <th class="team-status"><div class="clasifier" [ngClass]="{'relegation': $index == 5 }"></div>
+                    <th class="team-status">
+                      <div class="clasifier" [ngClass]="{'relegation': $index == 5 }"></div>
+                    </th>
                     <th>{{ i }}</th>
-                    <td class="text-start">Por Definir</td>
+                    <th class="text-start ps-2">
+                      <img class="table-logo" src="./assets/images/otros/no-team-liga-2.png" alt="no-team-logo"><span class="fw-normal">&nbsp; Por Definir</span>
+                    </th>
                     <td class="fw-bold">0</td>
                     <td>0</td>
                     <td>0</td>
@@ -511,7 +541,7 @@
         </table>
       </div>
       <!-- Table Footer -->
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
       <div class="table-info">
         <h6 class="text-start"><b>Descenso</b></h6>
         <div class="text-start">
@@ -519,13 +549,13 @@
           <span class="mx-2">Descenso a Copa Perú</span>
         </div>
       </div>
-      <div class="line-table"></div>
+      <div class="line-table liga-2-line-table"></div>
     </div>
 
   </div>
 </div>
 <!-- Play-offs -->
-<div class="container-fluid background content-block">
+<div class="container-fluid title-container liga-2-cc liga-2-bi block-content">
   <div class="row title-stages">
     <div class="col-10">
       <h1><b>Play-offs</b></h1>
@@ -533,7 +563,7 @@
   </div>
 </div>
 <!-- Description -->
-<div class="container-fluid bg-light content-block">
+<div class="container-fluid bg-light block-content">
   <div class="row description-stages">
     <div class="col-12 text-center">
       <p class="notes">Descripción</p>
@@ -542,22 +572,22 @@
   </div>
 </div>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-2-cc liga-2-bi"></div>
 <!-- Table -->
-<div class="table-content container-fluid content-block py-5">
+<div class="container-fluid p-4 block-content dark-content">
   <div class="row">
-    <div class="col-xl-9 col-lg-11 col-md-12">
-      <div class="bg-light">
+    <div class="col-lg-11 col-xl-9">
+      <div class="light-content">
         <div class="table-responsive py-3 px-4">
           <!-- Brackets -->
-          <table class="table-bracket">
+          <table class="bracket-table">
             <!-- 1 -->
             <tr>
-              <td colspan="3" class="bracket-title"><p>Eliminatoria</p></td>
+              <td colspan="3" class="bracket-title liga-2-table"><p>Eliminatoria</p></td>
               <td colspan="2"></td>
-              <td colspan="5" class="bracket-title"><p>Semifinal</p></td>
+              <td colspan="5" class="bracket-title liga-2-table"><p>Semifinal</p></td>
               <td colspan="2"></td>
-              <td colspan="3" class="bracket-title"><p>Final</p></td>
+              <td colspan="3" class="bracket-title liga-2-table"><p>Final</p></td>
             </tr>
             <!-- 2 -->
             <tr>
@@ -569,10 +599,10 @@
               <td class="linebottom"></td>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[0].url"><img class="logos" [src]="clasifiers[0].image" [alt]="clasifiers[0].alt">&nbsp; {{ clasifiers[0].name }}</a>
+                  <a [href]="clasifiers[0].url"><img class="bracket-logo" [src]="clasifiers[0].image" [alt]="clasifiers[0].alt">&nbsp; {{ clasifiers[0].name }}</a>
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°1 Grupo A</td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt"></i> Posicion N°1 Grupo A</td>
               }
               @if (data && data.Info.semifinal) {
                 <td colspan="1" class="bracket result">{{ data.Semifinal[0].idaA }}</td>
@@ -594,7 +624,7 @@
             <tr>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[3].url"><img class="logos" [src]="clasifiers[3].image" [alt]="clasifiers[3].alt">&nbsp; {{ clasifiers[3].name }}</a>
+                  <a [href]="clasifiers[3].url"><img class="bracket-logo" [src]="clasifiers[3].image" [alt]="clasifiers[3].alt">&nbsp; {{ clasifiers[3].name }}</a>
                 </td>
                 <td colspan="1" class="bracket result">
                   <div class="fw-bold">{{ data.Cuartos[0].teamA !== null ? data.Cuartos[0].teamA : "" }}</div>
@@ -603,16 +633,14 @@
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°2 Grupo A</td>
-                <td colspan="1" class="bracket result"></td>
-                <td colspan="1" class="bracket result"></td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt"></i> Posicion N°2 Grupo A</td>
                 <td colspan="1" class="bracket result"></td>
               }
               <td class="lineright"></td>
               <td></td>
               @if (data && data.Info.semifinal) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="semifinalist[2].url"><img class="logos" [src]="semifinalist[2].image" [alt]="semifinalist[2].alt">&nbsp; {{ semifinalist[2].name }}</a>
+                  <a [href]="semifinalist[2].url"><img class="bracket-logo" [src]="semifinalist[2].image" [alt]="semifinalist[2].alt">&nbsp; {{ semifinalist[2].name }}</a>
                 </td>
                 <td colspan="1" class="bracket result">{{ data.Semifinal[0].idaB }}</td>
                 <td colspan="1" class="bracket result">{{ data.Semifinal[0].vueltaB }}</td>
@@ -623,7 +651,7 @@
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Eliminatoria 1</td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt"></i> Eliminatoria 1</td>
                 <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
@@ -634,7 +662,7 @@
             <tr>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[4].url"><img class="logos" [src]="clasifiers[4].image" [alt]="clasifiers[4].alt">&nbsp; {{ clasifiers[4].name }}</a>
+                  <a [href]="clasifiers[4].url"><img class="bracket-logo" [src]="clasifiers[4].image" [alt]="clasifiers[4].alt">&nbsp; {{ clasifiers[4].name }}</a>
                 </td>
                 <td colspan="1" class="bracket result">
                   <div class="fw-bold">{{ data.Cuartos[0].teamB !== null ? data.Cuartos[0].teamB : "" }}</div>
@@ -643,9 +671,7 @@
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°3 Grupo B</td>
-                <td colspan="1" class="bracket result"></td>
-                <td colspan="1" class="bracket result"></td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt"></i> Posicion N°3 Grupo B</td>
                 <td colspan="1" class="bracket result"></td>
               }
               <td class="linetop"></td>
@@ -654,7 +680,7 @@
               <td></td>
               @if (data && data.Info.final) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="finalist[0].url"><img class="logos" [src]="finalist[0].image" [alt]="finalist[0].alt">&nbsp; {{ finalist[0].name }}</a>
+                  <a [href]="finalist[0].url"><img class="bracket-logo" [src]="finalist[0].image" [alt]="finalist[0].alt">&nbsp; {{ finalist[0].name }}</a>
                 </td>
                 <td colspan="1" class="bracket result">
                   <div>{{ data.Final.teamA }}</div>
@@ -674,7 +700,7 @@
               <td class="linetop"></td>
               @if (data && data.Info.final) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="finalist[1].url"><img class="logos" [src]="finalist[1].image" [alt]="finalist[1].alt">&nbsp; {{ finalist[1].name }}</a>
+                  <a [href]="finalist[1].url"><img class="bracket-logo" [src]="finalist[1].image" [alt]="finalist[1].alt">&nbsp; {{ finalist[1].name }}</a>
                 </td>
                 <td colspan="1" class="bracket result">
                   <div>{{ data.Final.teamB }}</div>
@@ -693,7 +719,7 @@
               <td class="linebottom"></td>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[1].url"><img class="logos" [src]="clasifiers[1].image" [alt]="clasifiers[1].alt">&nbsp; {{ clasifiers[1].name }}</a>
+                  <a [href]="clasifiers[1].url"><img class="bracket-logo" [src]="clasifiers[1].image" [alt]="clasifiers[1].alt">&nbsp; {{ clasifiers[1].name }}</a>
                 </td>
               } @else {
                 <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt"></i> Posicion N°1 Grupo B</td>
@@ -718,7 +744,7 @@
             <tr>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[2].url"><img class="logos" [src]="clasifiers[2].image" [alt]="clasifiers[2].alt">&nbsp; {{ clasifiers[2].name }}</a>
+                  <a [href]="clasifiers[2].url"><img class="bracket-logo" [src]="clasifiers[2].image" [alt]="clasifiers[2].alt">&nbsp; {{ clasifiers[2].name }}</a>
                 </td>
                 <td colspan="1" class="bracket result">
                   <div class="fw-bold">{{ data.Cuartos[1].teamA !== null ? data.Cuartos[1].teamA : "" }}</div>
@@ -727,16 +753,14 @@
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°2 Grupo B</td>
-                <td colspan="1" class="bracket result"></td>
-                <td colspan="1" class="bracket result"></td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt"></i> Posicion N°2 Grupo B</td>
                 <td colspan="1" class="bracket result"></td>
               }
               <td class="lineright"></td>
               <td></td>
               @if (data && data.Info.semifinal) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="semifinalist[3].url"><img class="logos" [src]="semifinalist[3].image" [alt]="semifinalist[3].alt">&nbsp; {{ semifinalist[3].name }}</a>
+                  <a [href]="semifinalist[3].url"><img class="bracket-logo" [src]="semifinalist[3].image" [alt]="semifinalist[3].alt">&nbsp; {{ semifinalist[3].name }}</a>
                 </td>
                 <td colspan="1" class="bracket result">{{ data.Semifinal[1].idaB }}</td>
                 <td colspan="1" class="bracket result">{{ data.Semifinal[1].vueltaB }}</td>
@@ -747,7 +771,7 @@
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Eliminatoria 2</td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt"></i> Eliminatoria 2</td>
                 <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
                 <td colspan="1" class="bracket result"></td>
@@ -758,7 +782,7 @@
             <tr>
               @if (data && data.Info.cuartos) {
                 <td colspan="2" class="bracket px-2 text-start">
-                  <a [href]="clasifiers[5].url"><img class="logos" [src]="clasifiers[5].image" [alt]="clasifiers[5].alt">&nbsp; {{ clasifiers[5].name }}</a>
+                  <a [href]="clasifiers[5].url"><img class="bracket-logo" [src]="clasifiers[5].image" [alt]="clasifiers[5].alt">&nbsp; {{ clasifiers[5].name }}</a>
                 </td>
                 <td colspan="1" class="bracket result">
                   <div class="fw-bold">{{ data.Cuartos[1].teamB !== null ? data.Cuartos[1].teamB : "" }}</div>
@@ -767,39 +791,36 @@
                   }
                 </td>
               } @else {
-                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt nacional"></i> Posicion N°3 Grupo A</td>
-                <td colspan="1" class="bracket result"></td>
-                <td colspan="1" class="bracket result"></td>
+                <td colspan="2" class="bracket px-2 text-start"><i class="fas fa-shield-alt"></i> Posicion N°3 Grupo A</td>
                 <td colspan="1" class="bracket result"></td>
               }
               <td class="linetop"></td>
             </tr>
           </table>
         </div>
-        <hr class="divider-bracket">
+        <!-- Divider -->
+        <div class="divider liga-2-cc my-3"></div>
         <!-- Ascendidos -->
-        <div class="promotion-teams">
-          <div class="row text-center">
-            <div class="col-sm-12 col-md-6 promotion-title">
-              <div><p>CAMPEÓN</p></div>
-              @if (data && data.Final.teamA != null && data.Final.teamB != null) {
-                <img [src]="finalist[n1].image" [alt]="finalist[n1].alt">
-                <p>{{ finalist[n1].name }}</p>
-              } @else {
-                <span><i class="fas fa-shield-alt promotion-shield"></i></span>
-                <p>Por Definir</p>
-              }
-            </div>
-            <div class="col-sm-12 col-md-6 promotion-title">
-              <div><p>SUBCAMPEÓN</p></div>
-              @if (data && data.Final.teamA != null && data.Final.teamB != null) {
-                <img [src]="finalist[n2].image" [alt]="finalist[n2].alt">
-                <p>{{ finalist[n2].name }}</p>
-              } @else {
-                <span><i class="fas fa-shield-alt promotion-shield"></i></span>
-                <p>Por Definir</p>
-              }
-            </div>
+        <div class="row text-center pb-3">
+          <div class="col-sm-12 col-md-6 finalist-team">
+            <div><p>CAMPEÓN</p></div>
+            @if (data && data.Final.teamA != null && data.Final.teamB != null) {
+              <img [src]="finalist[n1].image" [alt]="finalist[n1].alt">
+              <p>{{ finalist[n1].name }}</p>
+            } @else {
+              <img src="./assets/images/otros/no-team-liga-2.png" alt="team-shield-logo">
+              <p>Por Definir</p>
+            }
+          </div>
+          <div class="col-sm-12 col-md-6 finalist-team">
+            <div><p>SUBCAMPEÓN</p></div>
+            @if (data && data.Final.teamA != null && data.Final.teamB != null) {
+              <img [src]="finalist[n2].image" [alt]="finalist[n2].alt">
+              <p>{{ finalist[n2].name }}</p>
+            } @else {
+              <img src="./assets/images/otros/no-team-liga-2.png" alt="team-shield-logo">
+              <p>Por Definir</p>
+            }
           </div>
         </div>
       </div>
@@ -807,4 +828,4 @@
   </div>
 </div>
 <!-- Divider -->
-<div class="container-fluid divider"></div>
+<div class="divider liga-2-cc liga-2-bi"></div>
